@@ -26,43 +26,49 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
+
+    <header>
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => '<img src="img/logo/logo.png"; class="logo">',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
+            'class' => 'navbar navbar-fixed-top',
+        ]
+
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-center'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
+            ['label' => 'О нас', 'url' => ['/site/index']],
+            ['label' => 'Продукты', 'url' => ['/site/about']],
+            ['label' => 'Преимущества', 'url' => ['/site/contact']],
+            ['label' => 'Отчетность', 'url' => ['/site/contact']],
+            ['label' => 'Вопросы', 'url' => ['/site/contact']],
+            ['label' => 'Новости', 'url' => ['/site/contact']],
+            ['label' => 'Новости',  ]
+//            ,
+//            Yii::$app->user->isGuest ? (
+//                ['label' => 'Login', 'url' => ['/site/login']]
+//            ) : (
+//                '<li>'
+//                . Html::beginForm(['/site/logout'], 'post')
+//                . Html::submitButton(
+//                    'Logout (' . Yii::$app->user->identity->username . ')',
+//                    ['class' => 'btn btn-link logout']
+//                )
+//                . Html::endForm()
+//                . '</li>'
+//            )
         ],
     ]);
+    echo "<a class=\"btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3\" href=\"https://github.com/twbs/bootstrap/archive/v4.0.0.zip\">Download</a>";
     NavBar::end();
     ?>
-
+    </header>
+<div class="wrap">
     <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
+
         <?= $content ?>
     </div>
 </div>
