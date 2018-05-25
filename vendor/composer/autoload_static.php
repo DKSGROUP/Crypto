@@ -31,6 +31,10 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'l' => 
+        array (
+            'lajax\\languagepicker\\' => 21,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
@@ -112,6 +116,10 @@ class ComposerStaticInit17c2607c0204b8fd1fd014d25ec61763
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'lajax\\languagepicker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lajax/yii2-language-picker',
         ),
         'cebe\\markdown\\' => 
         array (

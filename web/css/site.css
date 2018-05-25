@@ -117,3 +117,11 @@ a.desc:after {
 header .logo {
      width: 80px;
 }
+
+header a.navbar-brand {
+    padding: 0 5px;
+}
+
+header>nav>div.container {
+    max-width: 1400px;
+}

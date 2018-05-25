@@ -48,4 +48,13 @@ return array (
       '@yii/gii' => $vendorDir . '/yiisoft/yii2-gii',
     ),
   ),
+  'lajax/yii2-language-picker' => 
+  array (
+    'name' => 'lajax/yii2-language-picker',
+    'version' => '1.2.1.0',
+    'alias' => 
+    array (
+      '@lajax/languagepicker' => $vendorDir . '/lajax/yii2-language-picker',
+    ),
+  ),
 );
