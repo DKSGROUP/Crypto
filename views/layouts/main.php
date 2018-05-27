@@ -41,16 +41,18 @@ AppAsset::register($this);
             );
 
     NavBar::begin([
-        'brandLabel' => '<img src="img/logo/logo.png"; class="logo">',
+        'brandLabel' => '<img src="img/logo/logo-SCI.png"; class="logo">',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-expand-sm navbar-dark bg-dark',
+            'class' => 'navbar navbar-expand-md ',
+            'style' => 'background-color: inherit;'
 
         ]
 
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-toggleable-xs collapse'],
+        'options' => ['class' => 'navbar-toggleable-md collapse nav-wid',
+                        'style' => 'margin: 0 auto;'],
         'items' => [
             ['label' => 'О нас', 'url' => ['/site/index']],
             ['label' => 'Продукты', 'url' => ['/site/about']],
@@ -70,7 +72,7 @@ AppAsset::register($this);
 
         echo Button::widget([
             'label' => $endDiv,
-            'options' => ['class' => 'btn btn-outline-success'],
+            'options' => ['class' => 'btn btn-outline-success', 'style' => 'margin-left: 15px; color: #fff;'],
         ]);
     ?>
 </div>
@@ -82,16 +84,18 @@ AppAsset::register($this);
     <div class="container">
 
         <?= $content ?>
+
+
     </div>
 </div>
 
-<footer class="footer">
+<!--footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
-</footer>
+</footer-->
 
 <?php $this->endBody() ?>
 </body>
