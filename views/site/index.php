@@ -44,12 +44,9 @@ echo"<script language='javascript' src=\"js/Triangle.js\"></script>"
             </div>
     </section>
     <section class="graph">
-        <canvas id="lineChart" style="display: block; height: 150px; " class="chartjs-render-monitor"></canvas>
+        <canvas id="lineChart" style="display: block; width: 100%;" class="chartjs-render-monitor"></canvas>
 
-    <!--
-    to do:
-    -пофиксить скрипт
-    -->
+
     <?php
     echo"<script language='javascript'>
         var ctxL = document.getElementById(\"lineChart\").getContext('2d');
@@ -125,7 +122,7 @@ echo"<script language='javascript' src=\"js/Triangle.js\"></script>"
                 ]
             },
             options: {
-                responsive: true,
+                responsive: false,
                 scales: {
                     xAxes: [{
                         display:false,
@@ -403,7 +400,7 @@ to do:
     </section>
     <section class="advnateges">
         <div class="adv-caption">
-            <h4>Преимущества</h4>
+            <h1 style=" font-size: 22px;">Преимущества</h1>
         </div>
         <div class="adv-content">
             <div class="row">
@@ -500,7 +497,9 @@ to do:
         <!-- REPORTS -->
         <div class="container-fluid">
           <div class="container text-center">
-            <div class="title">Отчетность</div>
+            <div class="title">
+                <h1 style=" font-size: 22px;">Отчетность</h1>
+            </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="report-title">
@@ -545,11 +544,106 @@ to do:
           </div>
         </div>
 
+        <div class="chart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 style=" font-size: 22px;">Наши результаты</h1>
+                    </div>
+
+                    <section class="result" style=" margin: 0 auto;">
+
+                        <div class="container" style="position: relative;">
+                            <div class="row">
+                                <div class="col-md-6" style="position: absolute; top: 25px;">
+                                    <p>В соответствии со статистикой, отобраденной на этом графике вы можете видеть, что операции дают солидный доход, достигая в среднем 0,5-1% прибыли в день. При такой прибыли вклад равный 1ВТС за 17 месяцев вырос до 144,5ВТС благодаря грамотныс стратегиям трейдинга и тщательному прогнозированию поведения рынка.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <canvas id="lineChartResult" style="height: 500px;"  class="chartjs-render-monitor"></canvas>
+                    </section>
+                    <?php
+                    echo"<script language='javascript'>
+                        var ctxL = document.getElementById(\"lineChartResult\").getContext('2d');
+                                        
+                        var gradientFillTwo = ctxL.createLinearGradient(0, 50, 0, 10);
+                        gradientFillTwo.addColorStop(1, \"rgba(17, 77, 49, 1)\");
+                        gradientFillTwo.addColorStop(0, \"rgba(17, 77, 49, 0.6)\");
+            
+            
+                        var myLineChart = new Chart(ctxL, {
+					            type: 'line',
+					            data: {
+					                labels: [\"01.2017\", \"03.2017\", \"05.2017\", \"07.2017\", \"09.2017\",\"11.2017\",\"01.2018\",\"03.2018\",\"05.2018\"],
+					                scaleLabel: false,
+					                datasets: [
+					                    {
+					                        radius: 5,
+					                        fillColor: \"rgba(17, 77, 49, 1.2)\",
+					                        strokeColor: \"rgba(0, 255, 135 ,1)\",
+					                        pointColor: \"rgba(0, 255, 135 ,1)\",
+					                        pointStrokeColor: \"#00ff87\",
+					                        pointHighlightFill: \"#00ff87\",
+					                        pointHighlightStroke: \"rgba(0, 255, 135,1)\",
+					                        data: [0,40,30,60,75,55,100,120,144.5],
+					                        pointHoverBackgroundColor: '#00ff87',//5
+					                        pointHoverBorderColor: \"rgba(0, 255, 135,1)\",
+					                        backgroundColor: gradientFillTwo,
+					                    	borderColor: [
+					                        'rgba(0, 255, 135,1)'
+					                    	],
+					                    	borderWidth: 1
+					                    }
+					                ]
+					            },
+					            options: {
+					                responsive: true,
+					                scales: {
+					            xAxes: [{
+					            			display:true,
+
+					                        gridLines: {
+					                            color: \"rgba(255, 255, 255, 0)\",
+					                        },
+					                        ticks: {
+					                            display: true
+					                        } 
+					                    }],
+					            yAxes: [{
+					            			//display:false,
+					                        gridLines: {
+					                            color: \"rgba(0, 0, 0, 0)\",
+					                        },
+					                        ticks: {
+					                            display: false
+					                        }   
+					                    }]
+					            },
+					            legend: {
+					                    display: false
+					                 },
+					                 tooltips: {
+					                    enabled: true
+					                 }
+					            },
+					            scaleLabel: {
+					            	display: true
+					            }
+
+					        });
+        </script>
+        ";
+                    ?>
+                </div>
+            </div>
+        </div>
 
         <!-- QUESTIONS -->
         <div class="container-fluid">
       <div class="container">
-        <div class="title text-center">Вопросы</div>
+        <div class="title text-center">
+            <h1 style=" font-size: 22px;">Вопросы</h1>
+        </div>
         <div class="questions">
           <input class="hide" id="hd-1" type="checkbox">
           <label for="hd-1">ПОЧЕМУ ИМЕННО SMART CRYPTO INVEST?</label>
@@ -619,7 +713,7 @@ to do:
     </section>
     <section class="news">
         <div class="news-caption">
-            <h4>Преимущества</h4>
+            <h1 style=" font-size: 22px;">Преимущества</h1>
         </div>
         <div id="news-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">

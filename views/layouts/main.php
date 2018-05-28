@@ -89,13 +89,45 @@ AppAsset::register($this);
     </div>
 </div>
 
-<!--footer class="footer">
+<footer class="footer" style="width: 100%; background-color: #000000; margin-top: 25px; padding: 10px;">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <div class="row">
+            <div class="col-md-1">
+                <?php
+                echo"<img src=\"img/logo/logo-SCI.png\"; class=\"logo-footer\" style=\"width: 80px; display: flex; vertical-align: middle;\">";
+                ?>
+            </div>
+            <div class="col-md-11 d-flex justify-content-end">
+                <?php
+                echo Button::widget([
+                        'label' => '1',
+                        'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px;'],
+                ]);
+                ?>
+                <?php
+                echo Button::widget([
+                'label' => '2',
+                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px;'],
+                ]);
+                ?>
+                <?php
+                echo Button::widget([
+                'label' => '3',
+                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px;'],
+                ]);
+                ?>
+                <?php
+                echo Button::widget([
+                'label' => '4',
+                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin-left: 3px;'],
+                ]);
+                ?>
+            </div>
+        </div>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+
     </div>
-</footer-->
+</footer>
 
 <?php $this->endBody() ?>
 </body>
