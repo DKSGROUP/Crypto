@@ -8,9 +8,22 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
+
 $this->title = 'Smart Crypto Invest';
 ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<?php
+echo"<script language='javascript' src=\"js/Triangle.js\"></script>"
+?>
+
+
 <div class="site-index">
+    <section class="back">
+        <div id="container" class="container">
+            <div id="output" class="container">
+            </div>
+        </div>
+    </section>
     <section class="title-text">
             <div class="container">
                 <div class="row">
@@ -32,40 +45,41 @@ $this->title = 'Smart Crypto Invest';
     </section>
     <section class="graph">
         <canvas id="lineChart" style="display: block; height: 150px; " class="chartjs-render-monitor"></canvas>
-    </section>
+
     <!--
     to do:
     -пофиксить скрипт
     -->
-    <!--<script>
-        var ctxL = document.getElementById("lineChart").getContext('2d');
+    <?php
+    echo"<script language='javascript'>
+        var ctxL = document.getElementById(\"lineChart\").getContext('2d');
 
         var gradientFill = ctxL.createLinearGradient(0, 800, 0, 0);
-        gradientFill.addColorStop(1, "rgba(25, 99, 16, 0.6)");
-        gradientFill.addColorStop(0, "rgba(6, 14, 31, 0)");
+        gradientFill.addColorStop(1, \"rgba(25, 99, 16, 0.6)\");
+        gradientFill.addColorStop(0, \"rgba(6, 14, 31, 0)\");
 
         var gradientFill1 = ctxL.createLinearGradient(0, 800, 0, 100);
-        gradientFill1.addColorStop(1, "rgba(71, 186, 0, 0.6)");
-        gradientFill1.addColorStop(0, "rgba(6, 14, 31, 0)");
+        gradientFill1.addColorStop(1, \"rgba(71, 186, 0, 0.6)\");
+        gradientFill1.addColorStop(0, \"rgba(6, 14, 31, 0)\");
 
 
         var myLineChart = new Chart(ctxL, {
             type: 'line',
             data: {
-                labels: [" ", " ", " ", " ", " "],
+                labels: [\" \", \" \", \" \", \" \", \" \"],
                 scaleLabel: false,
                 datasets: [
                     {
                         //radius: 0,
-                        fillColor: "rgba(25, 99, 16, 1.2)",
-                        strokeColor: "rgba(25, 99, 16 ,1)",
-                        pointColor: "rgba(25, 99, 16 ,1)",
-                        pointStrokeColor: "#196310",
-                        pointHighlightFill: "#196310",
-                        pointHighlightStroke: "rgba(25, 99, 16,1)",
+                        fillColor: \"rgba(25, 99, 16, 1.2)\",
+                        strokeColor: \"rgba(25, 99, 16 ,1)\",
+                        pointColor: \"rgba(25, 99, 16 ,1)\",
+                        pointStrokeColor: \"#196310\",
+                        pointHighlightFill: \"#196310\",
+                        pointHighlightStroke: \"rgba(25, 99, 16,1)\",
                         data: [12,2,25,16,30],
                         pointHoverBackgroundColor: '#196310',//5
-                        pointHoverBorderColor: "rgba(25, 99, 16,1)",
+                        pointHoverBorderColor: \"rgba(25, 99, 16,1)\",
                         backgroundColor: gradientFill,
                         borderColor: [
                             'rgba(25,99,16,1)'
@@ -74,15 +88,15 @@ $this->title = 'Smart Crypto Invest';
                     },
                     {
                         //radius: 0,
-                        fillColor: "rgba(198,3,16,0.2)",
-                        strokeColor: "rgba(198,3,16,1)",
-                        pointColor: "rgba(198,3,16,1)",
-                        pointStrokeColor: "#47ba00",
-                        pointHighlightFill: "#47ba00",
-                        pointHighlightStroke: "rgba(198,3,16,1)",
+                        fillColor: \"rgba(198,3,16,0.2)\",
+                        strokeColor: \"rgba(198,3,16,1)\",
+                        pointColor: \"rgba(198,3,16,1)\",
+                        pointStrokeColor: \"#47ba00\",
+                        pointHighlightFill: \"#47ba00\",
+                        pointHighlightStroke: \"rgba(198,3,16,1)\",
                         data: [9,5,18,30,15],
                         pointHoverBackgroundColor: '#47ba00',
-                        pointHoverBorderColor: "rgba(71, 186, 0,1)",
+                        pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                         borderColor: 0,
                         backgroundColor: gradientFill1,
                         borderColor: [
@@ -92,15 +106,15 @@ $this->title = 'Smart Crypto Invest';
                     },
                     {
                         //radius: 0,
-                        fillColor: "rgba(198,3,16,0.2)",
-                        strokeColor: "rgba(198,3,16,1)",
-                        pointColor: "rgba(198,3,16,1)",
-                        pointStrokeColor: "#47ba00",
-                        pointHighlightFill: "#47ba00",
-                        pointHighlightStroke: "rgba(198,3,16,1)",
+                        fillColor: \"rgba(198,3,16,0.2)\",
+                        strokeColor: \"rgba(198,3,16,1)\",
+                        pointColor: \"rgba(198,3,16,1)\",
+                        pointStrokeColor: \"#47ba00\",
+                        pointHighlightFill: \"#47ba00\",
+                        pointHighlightStroke: \"rgba(198,3,16,1)\",
                         data: [9,5,18,30,15],
                         pointHoverBackgroundColor: '#47ba00',
-                        pointHoverBorderColor: "rgba(71, 186, 0,1)",
+                        pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                         borderColor: 0,
                         backgroundColor: gradientFill1,
                         borderColor: [
@@ -117,7 +131,7 @@ $this->title = 'Smart Crypto Invest';
                         display:false,
 
                         gridLines: {
-                            color: "rgba(0, 0, 0, 0)",
+                            color: \"rgba(0, 0, 0, 0)\",
                         },
                         ticks: {
                             display: false
@@ -126,7 +140,7 @@ $this->title = 'Smart Crypto Invest';
                     yAxes: [{
                         display:false,
                         gridLines: {
-                            color: "rgba(0, 0, 0, 0)",
+                            color: \"rgba(0, 0, 0, 0)\",
                         },
                         ticks: {
                             display: false
@@ -145,15 +159,16 @@ $this->title = 'Smart Crypto Invest';
             }
 
         });
-
-    </script>-->
+        </script>
+        ";
+    ?>
+    </section>
 
 <!--
 packages status: почти;
 
 to do:
 -прогуглить как сделать нормальные линки, а не костыльную херь
--сделать нормальное расположение при мобильной версии
 -->
 
     <section class="invest-packages">
@@ -529,6 +544,8 @@ to do:
             </div>
           </div>
         </div>
+
+
         <!-- QUESTIONS -->
         <div class="container-fluid">
       <div class="container">
@@ -589,7 +606,13 @@ to do:
           </div>
         </div>
         <div class="d-flex justify-content-center">
-          <a href="#"><button type="button" class="btn button">Остались вопросы?</button></a>
+          <a href="#">
+              <?php
+              echo Button::widget([
+                  'label' => 'Остались вопросы?',
+                  'options' => ['class' => 'btn button', 'style' => 'padding: 0;'],
+              ]);
+              ?></a>
         </div>
       </div>
     </div>
