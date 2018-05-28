@@ -498,10 +498,16 @@ to do:
                   прибыли, чем при API-управлении, отчисляется клиенту.
                 </div>
                 <div class="report-img">
-                  <img src="img/sheet.png" alt="Report sheet">
+                  <?php
+                    echo"<img src=\"img/reports/sheet.png\"; class=\"analis\">";
+                   ?>
                 </div>
                 <div id="report-download-btn">
-                  <a href="#"><img src="img/download-btn.png" alt="download button"></a>
+                  <a href="#">
+                      <?php
+                        echo"<img src=\"img/reports/download-btn.png\"; class=\"analis\">";
+                       ?>
+                  </a>
                 </div>
               </div>
               <div class="col-md-6">
@@ -515,7 +521,9 @@ to do:
                   диаграммы в личном кабинете.
                 </div>
                 <div class="report-img">
-                  <img src="img/report-graphs.png" alt="Graphs">
+                    <?php
+                      echo"<img src=\"img/reports/report-graphs.png\"; class=\"analis\">";
+                     ?>
                 </div>
               </div>
             </div>
