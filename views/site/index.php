@@ -517,8 +517,11 @@ to do:
                 <div id="report-download-btn">
                   <a href="#">
                       <?php
-                        echo"<img src=\"img/reports/download-btn.png\"; class=\"analis\">";
-                       ?>
+                      echo Button::widget([
+                          'label' => 'Скачать пример отчетности',
+                          'options' => ['class' => 'btn btn-outline-success text-right'],
+                      ]);
+                      ?>
                   </a>
                 </div>
               </div>
@@ -721,7 +724,14 @@ to do:
               </div>
             </div>
             <div class="row d-flex justify-content-center">
-              <a href="#"><button type="button" class="btn button">Остались вопросы?</button></a>
+              <a href="#">
+                  <?php
+                  echo Button::widget([
+                      'label' => 'Остались вопросы?',
+                      'options' => ['class' => 'btn btn-outline-success text-right'],
+                  ]);
+                  ?>
+              </a>
             </div>
           </div>
         </div>
