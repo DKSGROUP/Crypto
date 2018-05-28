@@ -18,18 +18,21 @@
 .second-slide{
     max-height: 500px;
 }
-.third-slide{
-    max-height: 500px
+.carousel-caption{
+    background-color: rgba(100, 100,100,0.0);
+    width: 90%;
+    margin-left: -10%;
+    margin-bottom: -9%;
 }
-.btn-primary{
-    background-color: #00A656;
-    color: white;
+h5,p{
+    background-color: rgba(100, 100,100,0.0);
 }
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:visited{
-    background-color: #00A656;;
-    color: white;
-
+.news-img{
+    opacity: .45;
+}
+.carousel-control-prev{
+    margin-left: -5%;
+}
+.carousel-control-next{
+    margin-right: -5%;
 }

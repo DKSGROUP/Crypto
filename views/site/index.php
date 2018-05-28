@@ -386,6 +386,98 @@ to do:
             </div>
         </div>
     </section>
+    <section class="advnateges">
+        <div class="adv-caption">
+            <h4>Преимущества</h4>
+        </div>
+        <div class="adv-content">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="plus">
+                        <div class="imgg">
+                            <?php
+                            echo"<img src=\"img/advanteges/analis.png\"; class=\"analis\">";
+                            ?>
+                        </div>
+                        <h5 class="mincapt">Достоверный анализ</h5>
+                        <p>Наши агоритмы прогнозирования</br>
+                            позволяют составить грамотный</br>
+                            и достоверный прогноз поведения</br>
+                            рынка</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="plus">
+                        <div class="imgg">
+                            <?php
+                            echo"<img src=\"img/advanteges/exchange.png\"; class=\"analis\">";
+                            ?>
+                        </div>
+                        <h5 class="mincapt">Мультивалютный трейдинг</h5>
+                        <p>Наш сервис позволяет торговать</br>
+                            востребованными цифровыми</br>
+                            валютами: Bitcoin и Etherium</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="plus">
+                        <div class="imgg">
+                            <?php
+                            echo"<img src=\"img/advanteges/onlinebanking.png\"; class=\"analis\">";
+                            ?>
+                        </div>
+                        <h5 class="mincapt">Простота использования</h5>
+                        <p>Быстрая и лёгкая регистрация</br>
+                            сочетается с выгодными тарифными</br>
+                            планами и авторасчётом разных</br>
+                            вариантов финансовых операций</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="plus">
+                        <div class="imgg">
+                            <?php
+                            echo"<img src=\"img/advanteges/cryptocurrency.png\"; class=\"analis\">";
+                            ?>
+                        </div>
+                        <h5 class="mincapt">Безопасность</h5>
+                        <p>Обеспечиваем надёжную защиту</br>
+                            ваших финансовых операций и</br>
+                            персональных данных от любого</br>
+                            постороннего вмешательства</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="plus">
+                        <div class="imgg">
+                            <?php
+                            echo"<img src=\"img/advanteges/time.png\"; class=\"analis\">";
+                            ?>
+                        </div>
+                        <h5 class="mincapt">Свободное время</h5>
+                        <p>Автоматический трейдинг дает вам</br>
+                            возможность настроить и запустить</br>
+                            систему, оставаясь полностью</br>
+                            свободными для полезных дел</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="plus">
+                        <div class="imgg">
+                            <?php
+                            echo"<img src=\"img/advanteges/operetions.png\"; class=\"analis\">";
+                            ?>
+                        </div>
+                        <h5 class="mincapt">Прозрачность операций</h5>
+                        <p>Следите в режиме реального</br>
+                            времени за прибыльностью своих</br>
+                            трейдингов, используя отчетность</br>
+                            нашего сервиса перед клиентами</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="report">
 
@@ -493,4 +585,133 @@ to do:
         </div>
       </div>
     </div>
+    </section>
+    <section class="news">
+        <div class="news-caption">
+            <h4>Преимущества</h4>
+        </div>
+        <div id="news-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" style="margin-left: 95px;">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="news-img">
+                                <?php
+                                echo"<img class=\"d-block img-fluid\" src=\"img/news/news-1.png\" alt=\"First slide\">";
+                                ?>
+                            </div>
+                            <div class="container">
+                                <div class="carousel-caption text-left">
+                                    <h5>Джордж Сорос готов
+                                            торговать криптовалютами</h5>
+                                    <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut </p>
+                                    <p><a href="#">
+                                                <?php
+                                                echo Button::widget([
+                                                    'label' => 'Читать далее',
+                                                    'options' => ['class' => 'btn btn-success text-left'],
+                                                ]);
+                                                ?>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="news-img">
+                                <?php
+                                echo"<img class=\"d-block img-fluid\" src=\"img/news/news-2.png\" alt=\"First slide\">";
+                                ?>
+                            </div>
+                            <div class="container">
+                                <div class="carousel-caption text-left">
+                                    <h5>Джордж Сорос готов
+                                        торговать криптовалютами</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut </p>
+                                    <p><a href="#">
+                                            <?php
+                                            echo Button::widget([
+                                                    'label' => 'Читать далее',
+                                                    'options' => ['class' => 'btn btn-success text-left'],
+                                            ]);
+                                            ?>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="margin-left: 95px;">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="news-img">
+                                <?php
+                                echo"<img class=\"d-block img-fluid\" src=\"img/news/news-1.png\" alt=\"Second slide\">";
+                                ?>
+                            </div>
+                            <div class="container">
+                                <div class="carousel-caption text-left">
+                                    <h5>Джордж Сорос готов
+                                        торговать криптовалютами</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut </p>
+                                    <p><a href="#">
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Читать далее',
+                                                'options' => ['class' => 'btn btn-success text-left'],
+                                            ]);
+                                            ?>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="news-img">
+                                <?php
+                                echo"<img class=\"d-block img-fluid\" src=\"img/news/news-2.png\" alt=\"Second slide\">";
+                                ?>
+                            </div>
+                            <div class="container">
+                                <div class="carousel-caption text-left">
+                                    <h5>Джордж Сорос готов
+                                        торговать криптовалютами</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut </p>
+                                    <p><a href="#">
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Читать далее',
+                                                'options' => ['class' => 'btn btn-success text-left'],
+                                            ]);
+                                            ?>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </section>
