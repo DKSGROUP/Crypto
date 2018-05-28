@@ -162,8 +162,8 @@ to do:
                 <div class="col-12 text-center" style="margin: 25px 0;">
                     <h1 style=" font-size: 22px;">Инвестиционные пакеты</h1>
                 </div>
-                <div class="col-md-12 d-flex justify-content-center">
-                    <div class="col-md-4" style="margin: 0 10px;">
+                    <div class="col-xl-2 col-lg-2 col-sm-3"></div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="card">
                             <div class="card-header text-center start">
                                 Starter
@@ -194,7 +194,7 @@ to do:
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-xl-4 col-lg-5 col-md-6">
                         <div class="card">
                             <div class="card-header text-center start">
                                 Competent
@@ -225,8 +225,8 @@ to do:
                             </div>
                         </div>
                     </div>
-                </div>
-                    <div class="col-md-4">
+
+                    <div class="col-xl-4 col-lg-5 col-md-6">
                     <div class="card">
                         <div class="card-header text-center pro-card">
                             Advanced
@@ -257,38 +257,38 @@ to do:
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header text-center pro-card">
-                            Expert
-                        </div>
-                        <div class="card-body pro-pack">
-                            <table>
-                                <tr>
-                                    <td>срок инвестирования</td>
-                                    <td class="text-right">30 дней</td>
-                                </tr>
-                                <tr>
-                                    <td>распределение прибыли</td>
-                                    <td class="text-right">60/40</td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 22px; color: #31C37D;">от 3000$</td>
-                                    <td><a href="#"><!--костылище-->
-                                            <?php
-                                            echo Button::widget([
-                                                'label' => 'Инвестировать',
-                                                'options' => ['class' => 'btn btn-success text-right'],
-                                            ]);
-                                            ?>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
+                    <div class="col-xl-4 col-lg-5 col-md-6">
+                        <div class="card">
+                            <div class="card-header text-center pro-card">
+                                Expert
+                            </div>
+                            <div class="card-body pro-pack">
+                                <table>
+                                    <tr>
+                                        <td>срок инвестирования</td>
+                                        <td class="text-right">30 дней</td>
+                                    </tr>
+                                    <tr>
+                                        <td>распределение прибыли</td>
+                                        <td class="text-right">60/40</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 22px; color: #31C37D;">от 3000$</td>
+                                        <td><a href="#"><!--костылище-->
+                                                <?php
+                                                echo Button::widget([
+                                                    'label' => 'Инвестировать',
+                                                    'options' => ['class' => 'btn btn-success text-right'],
+                                                ]);
+                                                ?>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 ">
+                    <div class="col-xl-4 col-lg-5 col-md-6">
                     <div class="card">
                         <div class="card-header text-center pro-card">
                             Master - API
@@ -319,8 +319,9 @@ to do:
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12  col-sm-6 d-flex justify-content-center">
-                    <div class="col-md-4 col-sm-12" style="margin: 0 10px;">
+
+                     <div class="col-xl-2 col-lg-2 col-sm-0"></div>
+                    <div class="col-xl-4 col-lg-5 col-md-6">
                         <div class="card">
                             <div class="card-header text-center start">
                                 Novice - API
@@ -351,7 +352,7 @@ to do:
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12">
+                    <div class="col-xl-4 col-lg-5 col-md-6">
                         <div class="card">
                             <div class="card-header text-center start">
                                 Proficient
@@ -384,7 +385,6 @@ to do:
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <section class="advnateges">
         <div class="adv-caption">
