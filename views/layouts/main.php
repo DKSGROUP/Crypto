@@ -98,28 +98,35 @@ AppAsset::register($this);
                 ?>
             </div>
             <div class="col-md-11 d-flex justify-content-end">
+
+
+            <?php
+
+                echo Button::widget([
+                        'label' => ' ',
+                        'options'=>['class' => 'btn',
+                            'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(img/footer/telegram.png) center center no-repeat; background-size : 100%;',
+                            ],
+                ]);
+               
+                ?>
+
                 <?php
                 echo Button::widget([
-                        'label' => '1',
-                        'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px;'],
+                'label' => ' ',
+                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(img/footer/vk.png) center center no-repeat;background-size : 100%;'],
                 ]);
                 ?>
                 <?php
                 echo Button::widget([
-                'label' => '2',
-                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px;'],
+                'label' => ' ',
+                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(img/footer/facebook.png) center center no-repeat;background-size : 100%;'],
                 ]);
                 ?>
                 <?php
                 echo Button::widget([
-                'label' => '3',
-                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px;'],
-                ]);
-                ?>
-                <?php
-                echo Button::widget([
-                'label' => '4',
-                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin-left: 3px;'],
+                'label' => ' ',
+                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin-left: 3px; background: #123 url(img/footer/instagram.png) center center no-repeat;background-size : 100%;'],
                 ]);
                 ?>
             </div>
