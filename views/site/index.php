@@ -13,7 +13,7 @@ $this->title = 'Smart Crypto Invest';
 ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <?php
-echo"<script language='javascript' src=\"js/Triangle.js\"></script>"
+echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
 ?>
 
 
@@ -37,6 +37,7 @@ echo"<script language='javascript' src=\"js/Triangle.js\"></script>"
                         'label' => 'Инвестировать',
                         'options' => ['class' => 'btn btn btn-success', 'style' => 'width: 152px;
                         height: 22px; font-size: 14px; text-align: center; padding:0;'],
+
                         ]);
                         ?>
                     </div>
@@ -177,30 +178,41 @@ to do:
                     <div class="col-xl-2 col-lg-2 col-sm-3"></div>
                     <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="card">
-                            <div class="card-header text-center start">
-                                Starter
+                            <div class="card-header  start">
+                                <table>
+                                    <tr>
+                                        <td>Стартовый</td>
+                                        <td class="text-right">от 50$</td>
+                                    </tr>
+                                </table>
                             </div>
                             <div class="card-body start-pack">
                                 <table>
                                     <tr>
-                                        <td>срок инвестирования</td>
+                                        <td>Минимальный срок инвестирования</td>
                                         <td class="text-right">тестовые 15 дней</td>
                                     </tr>
                                     <tr>
-                                        <td>распределение прибыли</td>
+                                        <td>Распределение прибыли<br>инвестор/фонд(%)</td>
                                         <td class="text-right">45/55</td>
                                     </tr>
                                     <tr>
-                                        <td style="color: #31C37D;">от 50$</td>
-                                        <td><a href="#"><!--костылище-->
+                                        <td>
                                             <?php
                                             echo Button::widget([
-                                                'label' => 'Инвестировать',
-                                                'options' => ['class' => 'btn btn-outline-success text-right'],
+                                                'label' => 'Подробнее',
+                                                'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                    "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
                                             ]);
-                                            ?>
-                                            </a>
-                                        </td>
+                                            ?></td>
+
+                                        <td>
+                                        <?php
+                                        echo Button::widget([
+                                            'label' => 'Инвестировать',
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                        ]);
+                                        ?></td>
                                     </tr>
                                 </table>
                             </div>
@@ -208,30 +220,40 @@ to do:
                     </div>
                     <div class="col-xl-4 col-lg-5 col-md-6">
                         <div class="card">
-                            <div class="card-header text-center start">
-                                Competent
+                            <div class="card-header  start">
+                                <table>
+                                    <tr>
+                                        <td>Стандартный</td>
+                                        <td class="text-right">до 1000$</td>
+                                    </tr>
+                                </table>
                             </div>
                             <div class="card-body start-pack">
                                 <table>
                                     <tr>
-                                        <td>срок инвестирования</td>
+                                        <td>Минимальный срок инвестирования</td>
                                         <td class="text-right">30 дней</td>
                                     </tr>
                                     <tr>
-                                        <td>распределение прибыли</td>
+                                        <td>Распределение прибыли<br>инвестор/фонд(%)</td>
                                         <td class="text-right">50/50</td>
                                     </tr>
                                     <tr>
-                                        <td style="color: #31C37D;">до 1000$</td>
-                                        <td><a href="#"><!--костылище-->
-                                                <?php
-                                                echo Button::widget([
-                                                    'label' => 'Инвестировать',
-                                                    'options' => ['class' => 'btn btn-outline-success text-right'],
-                                                ]);
-                                                ?>
-                                            </a>
-                                        </td>
+                                        <td>
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Подробнее',
+                                                'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                    "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                            ]);
+                                            ?></td>
+                                        <td>
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Инвестировать',
+                                                'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                            ]);
+                                            ?></td>
                                     </tr>
                                 </table>
                             </div>
@@ -239,126 +261,166 @@ to do:
                     </div>
 
                     <div class="col-xl-4 col-lg-5 col-md-6">
-                    <div class="card">
-                        <div class="card-header text-center pro-card">
-                            Advanced
-                        </div>
-                        <div class="card-body pro-pack">
-                            <table>
-                                <tr>
-                                    <td>срок инвестирования</td>
-                                    <td class="text-right">30 дней</td>
-                                </tr>
-                                <tr>
-                                    <td>распределение прибыли</td>
-                                    <td class="text-right">50/50</td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 22px; color: #31C37D;">от 1000$</td>
-                                    <td><a href="#"><!--костылище-->
-                                            <?php
-                                            echo Button::widget([
-                                                'label' => 'Инвестировать',
-                                                'options' => ['class' => 'btn btn-success text-right'],
-                                            ]);
-                                            ?>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                    <div class="col-xl-4 col-lg-5 col-md-6">
                         <div class="card">
-                            <div class="card-header text-center pro-card">
-                                Expert
+                            <div class="card-header  pro-card">
+                                <table>
+                                    <tr>
+                                        <td>Оптимальный</td>
+                                        <td class="text-right">от 1000$</td>
+                                    </tr>
+                                </table>
                             </div>
                             <div class="card-body pro-pack">
                                 <table>
                                     <tr>
-                                        <td>срок инвестирования</td>
+                                        <td>Минимальный срок инвестирования</td>
                                         <td class="text-right">30 дней</td>
                                     </tr>
                                     <tr>
-                                        <td>распределение прибыли</td>
+                                        <td>Распределение прибыли<br>инвестор/фонд(%)</td>
+                                        <td class="text-right">55/45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Подробнее',
+                                                'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                    "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                            ]);
+                                            ?></td>
+                                        <td>
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Инвестировать',
+                                                'options' => ['class' => 'btn btn-success text-center investr'],
+                                            ]);
+                                            ?></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+                    <div class="col-xl-4 col-lg-5 col-md-6">
+                        <div class="card">
+                            <div class="card-header  pro-card">
+                                <table>
+                                    <tr>
+                                        <td>Продвинутый</td>
+                                        <td class="text-right">от 3000$</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-body pro-pack">
+                                <table>
+                                    <tr>
+                                        <td>Минимальный срок инвестирования</td>
+                                        <td class="text-right">30 дней</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Распределение прибыли<br>инвестор/фонд(%)</td>
                                         <td class="text-right">60/40</td>
                                     </tr>
                                     <tr>
-                                        <td style="font-size: 22px; color: #31C37D;">от 3000$</td>
-                                        <td><a href="#"><!--костылище-->
-                                                <?php
-                                                echo Button::widget([
-                                                    'label' => 'Инвестировать',
-                                                    'options' => ['class' => 'btn btn-success text-right'],
-                                                ]);
-                                                ?>
-                                            </a>
-                                        </td>
+                                        <td>
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Подробнее',
+                                                'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                    "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                            ]);
+                                            ?></td>
+                                        <td>
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Инвестировать',
+                                                'options' => ['class' => 'btn btn-success text-center investr'],
+                                            ]);
+                                            ?></td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-5 col-md-6">
-                    <div class="card">
-                        <div class="card-header text-center pro-card">
-                            Master - API
-                        </div>
-                        <div class="card-body pro-pack">
-                            <table>
-                                <tr>
-                                    <td>срок инвестирования</td>
-                                    <td class="text-right">бесконечность</td>
-                                </tr>
-                                <tr>
-                                    <td>распределение прибыли</td>
-                                    <td class="text-right">55/45</td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 22px; color: #31C37D;">от 5000$</td>
-                                    <td><a href="#"><!--костылище-->
+                        <div class="card">
+                            <div class="card-header  pro-card">
+                                <table>
+                                    <tr>
+                                        <td>Премиум</td>
+                                        <td class="text-right">от 5000$</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="card-body pro-pack">
+                                <table>
+                                    <tr>
+                                        <td>Минимальный срок инвестирования</td>
+                                        <td class="text-right">-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Распределение прибыли<br>инвестор/фонд(%)</td>
+                                        <td class="text-right">55/45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Подробнее',
+                                                'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                    "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                            ]);
+                                            ?></td>
+                                        <td>
                                             <?php
                                             echo Button::widget([
                                                 'label' => 'Инвестировать',
-                                                'options' => ['class' => 'btn btn-success text-right'],
+                                                'options' => ['class' => 'btn btn-success text-center investr'],
                                             ]);
-                                            ?>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
+                                            ?></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
                 </div>
 
                      <div class="col-xl-2 col-lg-2 col-sm-0"></div>
                     <div class="col-xl-4 col-lg-5 col-md-6">
                         <div class="card">
-                            <div class="card-header text-center start">
-                                Novice - API
+                            <div class="card-header  start">
+                                <table>
+                                    <tr>
+                                        <td>Бизнес - API</td>
+                                        <td class="text-right">от 2000$</td>
+                                    </tr>
+                                </table>
                             </div>
                             <div class="card-body start-pack">
                                 <table>
                                     <tr>
-                                        <td>срок инвестирования</td>
+                                        <td>Минимальный срок инвестирования</td>
                                         <td class="text-right">тестовые 15 дней</td>
                                     </tr>
                                     <tr>
-                                        <td>распределение прибыли</td>
-                                        <td class="text-right">45/55</td>
+                                        <td>Распределение прибыли<br>инвестор/фонд(%)</td>
+                                        <td class="text-right">50/50</td>
                                     </tr>
                                     <tr>
-                                        <td style="color: #31C37D;">от 2000$</td>
-                                        <td><a href="#"><!--костылище-->
-                                                <?php
-                                                echo Button::widget([
-                                                    'label' => 'Инвестировать',
-                                                    'options' => ['class' => 'btn btn-outline-success text-right'],
-                                                ]);
-                                                ?>
-                                            </a>
-                                        </td>
+                                        <td>
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Подробнее',
+                                                'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                    "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                            ]);
+                                            ?></td>
+                                        <td>
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Инвестировать',
+                                                'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                            ]);
+                                            ?></td>
                                     </tr>
                                 </table>
                             </div>
@@ -366,34 +428,149 @@ to do:
                     </div>
                     <div class="col-xl-4 col-lg-5 col-md-6">
                         <div class="card">
-                            <div class="card-header text-center start">
-                                Proficient
+                            <div class="card-header  start">
+                                <table>
+                                    <tr>
+                                        <td>Эксклюзив - API</td>
+                                        <td class="text-right">от 15000$</td>
+                                    </tr>
+                                </table>
                             </div>
                             <div class="card-body start-pack">
                                 <table>
                                     <tr>
-                                        <td>срок инвестирования</td>
-                                        <td class="text-right">бесконечность</td>
+                                        <td>Минимальный срок инвестирования</td>
+                                        <td class="text-right">-</td>
                                     </tr>
                                     <tr>
-                                        <td>распределение прибыли</td>
-                                        <td class="text-right">по договоренности</td>
+                                        <td>Распределение прибыли<br> инвестор/фонд(%)</td>
+                                        <td class="text-right">по<br>договоренности</td>
                                     </tr>
                                     <tr>
-                                        <td style="color: #31C37D;">от 15000$</td>
-                                        <td><a href="#"><!--костылище-->
-                                                <?php
-                                                echo Button::widget([
-                                                    'label' => 'Инвестировать',
-                                                    'options' => ['class' => 'btn btn-outline-success text-right'],
-                                                ]);
-                                                ?>
-                                            </a>
-                                        </td>
+                                        <td>
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Подробнее',
+                                                'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                    "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                            ]);
+                                            ?></td>
+                                        <td>
+                                            <?php
+                                            echo Button::widget([
+                                                'label' => 'Инвестировать',
+                                                'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                            ]);
+                                            ?></td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="ModalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center" id="exampleModalLabel">%NAME%</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <!--Формат-->
+                                    <div class="col-6 light">
+                                        <p>Формат</p>
+                                    </div>
+                                    <div class="col-6 light">
+                                        <p>Доверительная форма</p>
+                                    </div>
+                                    <!--Минимальный вход-->
+                                    <div class="col-6 dark">
+                                        <p>Минимальный вход</p>
+                                    </div>
+                                    <div class="col-6 dark">
+                                        <p> </p>
+                                    </div>
+                                    <!--Доходность-->
+                                    <div class="col-6 light">
+                                        <p>Доходность</p>
+                                    </div>
+                                    <div class="col-6 light">
+                                        <p> </p>
+                                    </div>
+                                    <!--Минимальный срок инвестирования-->
+                                    <div class="col-6 dark">
+                                        <p>Минимальный срок инвестирования</p>
+                                    </div>
+                                    <div class="col-6 dark">
+                                        <p> </p>
+                                    </div>
+                                    <!--Распределение прибыли-->
+                                    <div class="col-6 light">
+                                        <p>Распределение прибыли инвестор/фонд в %</p>
+                                    </div>
+                                    <div class="col-6 light">
+                                        <p> </p>
+                                    </div>
+                                    <!--Выплаты-->
+                                    <div class="col-6 dark">
+                                        <p>Выплаты</p>
+                                    </div>
+                                    <div class="col-6 dark">
+                                        <p> </p>
+                                    </div>
+                                    <!--Условия получения прибыли-->
+                                    <div class="col-6 light">
+                                        <p>Условия получения прибыли</p>
+                                    </div>
+                                    <div class="col-6 light">
+                                        <p> </p>
+                                    </div>
+                                    <!--USD-->
+                                    <div class="col-6 dark">
+                                        <p>Условия вывода в USD</p>
+                                    </div>
+                                    <div class="col-6 dark">
+                                        <p> </p>
+                                    </div>
+                                    <!--Досрочный вывод-->
+                                    <div class="col-6 light">
+                                        <p>Досрочный вывод</p>
+                                    </div>
+                                    <div class="col-6 light">
+                                        <p> </p>
+                                    </div>
+                                    <!--Формат пополнения-->
+                                    <div class="col-6 dark">
+                                        <p>Формат пополнения</p>
+                                    </div>
+                                    <div class="col-6 dark">
+                                        <p> </p>
+                                    </div>
+                                    <!--Капитализация процентов-->
+                                    <div class="col-6 light">
+                                        <p>Капитализация процентов</p>
+                                    </div>
+                                    <div class="col-6 light">
+                                        <p> </p>
+                                    </div>
+                                    <!--Отчетность-->
+                                    <div class="col-6 dark">
+                                        <p>Отчетность</p>
+                                    </div>
+                                    <div class="col-6 dark">
+                                        <p> </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
