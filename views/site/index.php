@@ -492,8 +492,6 @@ to do:
     </section>
 
     <section class="report">
-
-
         <!-- REPORTS -->
         <div class="container-fluid">
           <div class="container text-center">
@@ -519,8 +517,11 @@ to do:
                 <div id="report-download-btn">
                   <a href="#">
                       <?php
-                        echo"<img src=\"img/reports/download-btn.png\"; class=\"analis\">";
-                       ?>
+                      echo Button::widget([
+                          'label' => 'Скачать пример отчетности',
+                          'options' => ['class' => 'btn btn-outline-success text-right'],
+                      ]);
+                      ?>
                   </a>
                 </div>
               </div>
@@ -565,12 +566,12 @@ to do:
                     <?php
                     echo"<script language='javascript'>
                         var ctxL = document.getElementById(\"lineChartResult\").getContext('2d');
-                                        
+
                         var gradientFillTwo = ctxL.createLinearGradient(0, 50, 0, 10);
                         gradientFillTwo.addColorStop(1, \"rgba(17, 77, 49, 1)\");
                         gradientFillTwo.addColorStop(0, \"rgba(17, 77, 49, 0.6)\");
-            
-            
+
+
                         var myLineChart = new Chart(ctxL, {
 					            type: 'line',
 					            data: {
@@ -607,7 +608,7 @@ to do:
 					                        },
 					                        ticks: {
 					                            display: true
-					                        } 
+					                        }
 					                    }],
 					            yAxes: [{
 					            			//display:false,
@@ -616,7 +617,7 @@ to do:
 					                        },
 					                        ticks: {
 					                            display: false
-					                        }   
+					                        }
 					                    }]
 					            },
 					            legend: {
@@ -640,77 +641,102 @@ to do:
 
         <!-- QUESTIONS -->
         <div class="container-fluid">
-      <div class="container">
-        <div class="title text-center">
-            <h1 style=" font-size: 22px;">Вопросы</h1>
+          <div class="container">
+            <div class="title text-center">Вопросы</div>
+            <div class="questions">
+              <div class="row d-flex align-items-center">
+                  <?php
+                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                   ?>
+                <input class="hide" id="hd-1" type="checkbox">
+                <label for="hd-1">ПОЧЕМУ ИМЕННО SMART CRYPTO INVEST?</label>
+                <div>
+                  Наш сервис нужен пользователю не только для увеличения прибыльности
+                  криптовалютных операций, но и для экономии полезного времени.
+                  С помощью нашего автотрейдинга вы можете автоматически проводить
+                  финансовые операции всего за несколько кликов!
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                  <?php
+                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                   ?>
+                <input class="hide" id="hd-2" type="checkbox">
+                <label for="hd-2">КАКОВА РАЗНИЦА МЕЖДУ УПРАВЛЕНИЕМ ЧЕРЕЗ API И ДОВЕРИТЕЛЬНЫМ УПРАВЛЕНИЕМ?</label>
+                <div>
+                  Управление через API, предоставляемое нашим сервисом, позволяет вам лично
+                  регулировать свои финансовые операции с помощью удобного интерфейса.
+                  Доверительное управление позволяет делегировать контроль нам. Несмотря
+                  на отсутствие возможности управлять ходом операций самому, доверительное
+                  управление позволяет максимизировать прибыли благодаря оптимальным
+                  стратегиям трейдинга.
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                  <?php
+                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                   ?>
+                <input class="hide" id="hd-3" type="checkbox">
+                <label for="hd-3">СКОЛЬКО ПРИБЫЛИ Я МОГУ ПОЛУЧИТЬ?</label>
+                <div>
+                  Количество получаемой валюты зависит от вашего инвестиционного пакета
+                  и обстановки на рынке. Увеличивайте свою прибыль, используя наиболее
+                  подходящие вам тарифные планы и регулярно проверяя отчёты по финансовым
+                  операциям!
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                  <?php
+                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                   ?>
+                <input class="hide" id="hd-4" type="checkbox">
+                <label for="hd-4">МОГУ ЛИ Я ДОВЕРЯТЬ SMART CRYPTO INVEST?</label>
+                <div>
+                  Вам не нужно беспокоиться о надёжности нашего трейдинга - мы обеспечиваем
+                  полную приватность и защиту ваших данных, а также гарантируем прибыльность
+                  финансовых операций проводимых с помощью сервиса.
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                  <?php
+                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                   ?>
+                <input class="hide" id="hd-5" type="checkbox">
+                <label for="hd-5">А ЧТО НАСЧЁТ БЕЗОПАСНОСТИ?</label>
+                <div>
+                  Мы приложили большие усилия чтобы обеспечить безопасность ваших
+                  трейдинг-операций настолько, насколько это вообще возможно.
+                  Риски утечки данных или хакерской атаки на нашем сайте минимизированы.
+                  Более того, мы привыкли к строгим стандартам безопасности, что позволяет
+                  наладить хорошую защиту трейдинга.
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                  <?php
+                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                   ?>
+                <input class="hide" id="hd-6" type="checkbox">
+                <label for="hd-6">ПРОСТО ЛИ ПОЛЬЗОВАТЬСЯ SMART CRYPTO INVEST?</label>
+                <div>
+                  Да! Для использования нашего сервиса вам нужно всего лишь зарегистрироваться
+                  на сайте, выбрать инвестиционный пакет - и начать получать прибыль.
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <a href="#">
+                  <?php
+                  echo Button::widget([
+                      'label' => 'Остались вопросы?',
+                      'options' => ['class' => 'btn btn-outline-success text-right'],
+                  ]);
+                  ?>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="questions">
-          <input class="hide" id="hd-1" type="checkbox">
-          <label for="hd-1">ПОЧЕМУ ИМЕННО SMART CRYPTO INVEST?</label>
-          <div>
-            Наш сервис нужен пользователю не только для увеличения прибыльности
-            криптовалютных операций, но и для экономии полезного времени.
-            С помощью нашего автотрейдинга вы можете автоматически проводить
-            финансовые операции всего за несколько кликов!
-          </div>
-          <br>
-          <input class="hide" id="hd-2" type="checkbox">
-          <label for="hd-2">КАКОВА РАЗНИЦА МЕЖДУ УПРАВЛЕНИЕМ ЧЕРЕЗ API И ДОВЕРИТЕЛЬНЫМ УПРАВЛЕНИЕМ?</label>
-          <div>
-            Управление через API, предоставляемое нашим сервисом, позволяет вам лично
-            регулировать свои финансовые операции с помощью удобного интерфейса.
-            Доверительное управление позволяет делегировать контроль нам. Несмотря
-            на отсутствие возможности управлять ходом операций самому, доверительное
-            управление позволяет максимизировать прибыли благодаря оптимальным
-            стратегиям трейдинга.
-          </div>
-          <br>
-          <input class="hide" id="hd-3" type="checkbox">
-          <label for="hd-3">СКОЛЬКО ПРИБЫЛИ Я МОГУ ПОЛУЧИТЬ?</label>
-          <div>
-            Количество получаемой валюты зависит от вашего инвестиционного пакета
-            и обстановки на рынке. Увеличивайте свою прибыль, используя наиболее
-            подходящие вам тарифные планы и регулярно проверяя отчёты по финансовым
-            операциям!
-          </div>
-          <br>
-          <input class="hide" id="hd-4" type="checkbox">
-          <label for="hd-4">МОГУ ЛИ Я ДОВЕРЯТЬ SMART CRYPTO INVEST?</label>
-          <div>
-            Вам не нужно беспокоиться о надёжности нашего трейдинга - мы обеспечиваем
-            полную приватность и защиту ваших данных, а также гарантируем прибыльность
-            финансовых операций проводимых с помощью сервиса.
-          </div>
-          <br>
-          <input class="hide" id="hd-5" type="checkbox">
-          <label for="hd-5">А ЧТО НАСЧЁТ БЕЗОПАСНОСТИ?</label>
-          <div>
-            Мы приложили большие усилия чтобы обеспечить безопасность ваших
-            трейдинг-операций настолько, насколько это вообще возможно.
-            Риски утечки данных или хакерской атаки на нашем сайте минимизированы.
-            Более того, мы привыкли к строгим стандартам безопасности, что позволяет
-            наладить хорошую защиту трейдинга.
-          </div>
-          <br>
-          <input class="hide" id="hd-6" type="checkbox">
-          <label for="hd-6">ПРОСТО ЛИ ПОЛЬЗОВАТЬСЯ SMART CRYPTO INVEST?</label>
-          <div>
-            Да! Для использования нашего сервиса вам нужно всего лишь зарегистрироваться
-            на сайте, выбрать инвестиционный пакет - и начать получать прибыль.
-          </div>
-        </div>
-        <div class="d-flex justify-content-center">
-          <a href="#">
-              <?php
-              echo Button::widget([
-                  'label' => 'Остались вопросы?',
-                  'options' => ['class' => 'btn button', 'style' => 'padding: 0;'],
-              ]);
-              ?></a>
-        </div>
-      </div>
-    </div>
     </section>
+
     <section class="news">
         <div class="news-caption">
             <h1 style=" font-size: 22px;">Новости</h1>

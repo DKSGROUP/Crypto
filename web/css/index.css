@@ -3,7 +3,7 @@
 }
 body{
     /*это градиент, спросить за него*/
-   /* background-color:#1b294d;*/
+    background-color:#1b294d;
 }
 .container{
   /* margin-left: 20px;
@@ -50,10 +50,19 @@ body{
 /* вид текста label */
 .hide + label {
   cursor: pointer;
-  margin-bottom: 10px;
+  margin: 20px 0 20px 25px;
   color: rgba(125, 219, 165, 0.74);
   display: inline-block;
 }
+.hide + label::before {
+  /*юля, я с этим доразбираюсь.
+  Там картинка не ставится, сволочь,
+  оно пока не хочет работать.
+  Но я его заставлю*/
+  display:block;
+  float: left;
+}
+
 /* вид текста label при активном переключателе */
 .hide:checked + label {
     color:#7DDBA5;
@@ -61,8 +70,8 @@ body{
 /* когда чекбокс активен показываем блоки с содержанием  */
 .hide:checked + label + div {
     display: block;
-    margin-left: 20px;
-    padding: 10px;
+    margin-left: 60px;
+    margin-bottom:10px;
     /* чуточку анимации при появлении */
      -webkit-animation:fade ease-in 0.5s;
      -moz-animation:fade ease-in 0.5s;
@@ -80,14 +89,4 @@ to { opacity: 1 }
 @keyframes fade {
     from { opacity: 0; }
 to { opacity: 1 }
-}
-.hide + label:before {
-  /*юля, я с этим доразбираюсь.
-  Там картинка не ставится, сволочь,
-  оно пока не хочет работать.
-  Но я его заставлю*/
-    content: url(img/question.png);
-    display: block;
-    float: left;
-
 }
