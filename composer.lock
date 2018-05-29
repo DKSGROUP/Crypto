@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9f2c4096daae319bd4037d6bc0d0b3e",
+    "content-hash": "bc2fe33fb2265f19f32109ee8c80e664",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -27,7 +27,7 @@
             "version": "v4.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "url": "git@github.com:FortAwesome/Font-Awesome.git",
                 "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687"
             },
             "dist": {
@@ -89,7 +89,7 @@
             "version": "v1.12.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FezVrasta/popper.js.git",
+                "url": "git@github.com:FezVrasta/popper.js.git",
                 "reference": "bf60988e6ee6f7b73e7be8088fd325985bb6e7f4"
             },
             "dist": {
@@ -200,6 +200,47 @@
                 "markdown-extra"
             ],
             "time": "2017-07-16T21:13:23+00:00"
+        },
+        {
+            "name": "codemix/yii2-localeurls",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codemix/yii2-localeurls.git",
+                "reference": "6f0c49e2bea65c373a6c60f306e96b512c97d436"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codemix/yii2-localeurls/zipball/6f0c49e2bea65c373a6c60f306e96b512c97d436",
+                "reference": "6f0c49e2bea65c373a6c60f306e96b512c97d436",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "codemix\\localeurls\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Härtl",
+                    "email": "haertl.mike@gmail.com"
+                }
+            ],
+            "description": "Automatic locale/language management for URLs.",
+            "keywords": [
+                "i18n",
+                "locale",
+                "yii2"
+            ],
+            "time": "2018-02-13T09:07:17+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",

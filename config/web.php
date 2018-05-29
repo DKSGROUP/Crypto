@@ -12,7 +12,8 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'language' => 'en',
-    'bootstrap' => ['languagepicker'],
+    'sourceLanguage'=>'en',
+//    'bootstrap' => ['languagepicker'],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -47,16 +48,23 @@ $config = [
         'db' => $db,
 
         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
+            'class'=> 'codemix\localeurls\UrlManager',
+            'languages'=>['ru','en'],
+            'enableDefaultLanguageUrlCode'=>true,
+            'enableLanguagePersistence' => false,
             'rules' => [
+                '/' => 'site/index',
+                '<controller:\w+>/<action:\w+>/'=>'<controller>/<action>',
             ],
         ],
-        'languagepicker' => [
-            'class' => 'lajax\languagepicker\Component',
-            'languages' => ['en', 'de', 'fr']               // List of available languages
-        ]
-
+        'i18n'=>[
+            'translations' => [
+                'common*' =>[
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages',
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];
