@@ -745,7 +745,7 @@ to do:
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active" style="margin-left: 95px;">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-sm-10 col-md-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"img/news/news-1.png\" alt=\"First slide\">";
@@ -771,7 +771,7 @@ to do:
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="d-none d-lg-block col-lg-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"img/news/news-2.png\" alt=\"First slide\">";
@@ -801,7 +801,7 @@ to do:
                 </div>
                 <div class="carousel-item" style="margin-left: 95px;">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-sm-10 col-md-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"img/news/news-1.png\" alt=\"Second slide\">";
@@ -827,7 +827,7 @@ to do:
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="d-none d-lg-block col-lg-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"img/news/news-2.png\" alt=\"Second slide\">";
