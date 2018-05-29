@@ -408,7 +408,7 @@ to do:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"img/advanteges/analis.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/analis.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Достоверный анализ</h5>
@@ -422,7 +422,7 @@ to do:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"img/advanteges/exchange.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/exchange.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Мультивалютный трейдинг</h5>
@@ -435,7 +435,7 @@ to do:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"img/advanteges/onlinebanking.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/onlinebanking.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Простота использования</h5>
@@ -449,7 +449,7 @@ to do:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"img/advanteges/cryptocurrency.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/cryptocurrency.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Безопасность</h5>
@@ -463,7 +463,7 @@ to do:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"img/advanteges/time.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/time.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Свободное время</h5>
@@ -477,7 +477,7 @@ to do:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"img/advanteges/operetions.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/operetions.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Прозрачность операций</h5>
@@ -511,7 +511,7 @@ to do:
                 </div>
                 <div class="report-img">
                   <?php
-                    echo"<img src=\"img/reports/sheet.png\"; class=\"analis\">";
+                    echo"<img src=\"../img/reports/sheet.png\"; class=\"analis\">";
                    ?>
                 </div>
                 <div id="report-download-btn">
@@ -537,7 +537,7 @@ to do:
                 </div>
                 <div class="report-img">
                     <?php
-                      echo"<img src=\"img/reports/report-graphs.png\"; class=\"analis\">";
+                      echo"<img src=\"../img/reports/report-graphs.png\"; class=\"analis\">";
                      ?>
                 </div>
               </div>
@@ -646,7 +646,7 @@ to do:
             <div class="questions">
               <div class="row d-flex align-items-center">
                   <?php
-                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                    echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
                    ?>
                 <input class="hide" id="hd-1" type="checkbox">
                 <label for="hd-1">ПОЧЕМУ ИМЕННО SMART CRYPTO INVEST?</label>
@@ -659,7 +659,7 @@ to do:
               </div>
               <div class="row d-flex align-items-center">
                   <?php
-                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                    echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
                    ?>
                 <input class="hide" id="hd-2" type="checkbox">
                 <label for="hd-2">КАКОВА РАЗНИЦА МЕЖДУ УПРАВЛЕНИЕМ ЧЕРЕЗ API И ДОВЕРИТЕЛЬНЫМ УПРАВЛЕНИЕМ?</label>
@@ -674,7 +674,7 @@ to do:
               </div>
               <div class="row d-flex align-items-center">
                   <?php
-                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                    echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
                    ?>
                 <input class="hide" id="hd-3" type="checkbox">
                 <label for="hd-3">СКОЛЬКО ПРИБЫЛИ Я МОГУ ПОЛУЧИТЬ?</label>
@@ -687,7 +687,7 @@ to do:
               </div>
               <div class="row d-flex align-items-center">
                   <?php
-                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                    echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
                    ?>
                 <input class="hide" id="hd-4" type="checkbox">
                 <label for="hd-4">МОГУ ЛИ Я ДОВЕРЯТЬ SMART CRYPTO INVEST?</label>
@@ -699,7 +699,7 @@ to do:
               </div>
               <div class="row d-flex align-items-center">
                   <?php
-                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                    echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
                    ?>
                 <input class="hide" id="hd-5" type="checkbox">
                 <label for="hd-5">А ЧТО НАСЧЁТ БЕЗОПАСНОСТИ?</label>
@@ -713,7 +713,7 @@ to do:
               </div>
               <div class="row d-flex align-items-center">
                   <?php
-                    echo"<img src=\"img/questions/question.png\"; class=\"analis\">";
+                    echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
                    ?>
                 <input class="hide" id="hd-6" type="checkbox">
                 <label for="hd-6">ПРОСТО ЛИ ПОЛЬЗОВАТЬСЯ SMART CRYPTO INVEST?</label>
@@ -748,7 +748,7 @@ to do:
                         <div class="col-sm-10 col-md-5">
                             <div class="news-img">
                                 <?php
-                                echo"<img class=\"d-block img-fluid\" src=\"img/news/news-1.png\" alt=\"First slide\">";
+                                echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"First slide\">";
                                 ?>
                             </div>
                             <div class="container">
@@ -774,7 +774,7 @@ to do:
                         <div class="d-none d-lg-block col-lg-5">
                             <div class="news-img">
                                 <?php
-                                echo"<img class=\"d-block img-fluid\" src=\"img/news/news-2.png\" alt=\"First slide\">";
+                                echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"First slide\">";
                                 ?>
                             </div>
                             <div class="container">
@@ -804,7 +804,7 @@ to do:
                         <div class="col-sm-10 col-md-5">
                             <div class="news-img">
                                 <?php
-                                echo"<img class=\"d-block img-fluid\" src=\"img/news/news-1.png\" alt=\"Second slide\">";
+                                echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"Second slide\">";
                                 ?>
                             </div>
                             <div class="container">
@@ -830,7 +830,7 @@ to do:
                         <div class="d-none d-lg-block col-lg-5">
                             <div class="news-img">
                                 <?php
-                                echo"<img class=\"d-block img-fluid\" src=\"img/news/news-2.png\" alt=\"Second slide\">";
+                                echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"Second slide\">";
                                 ?>
                             </div>
                             <div class="container">

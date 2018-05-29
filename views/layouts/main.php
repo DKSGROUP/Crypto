@@ -42,7 +42,7 @@ AppAsset::register($this);
             );
 
     NavBar::begin([
-        'brandLabel' => '<img src="img/logo/logo-SCI.png"; class="logo">',
+        'brandLabel' => '<img src="../img/logo/logo-SCI.png"; class="logo">',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar navbar-expand-md ',
@@ -94,7 +94,7 @@ AppAsset::register($this);
         <div class="row">
             <div class="col-md-1">
                 <?php
-                echo"<img src=\"img/logo/logo-SCI.png\"; class=\"logo-footer\" style=\"width: 80px; display: flex; vertical-align: middle;\">";
+                echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"logo-footer\" style=\"width: 80px; display: flex; vertical-align: middle;\">";
                 ?>
             </div>
             <div class="col-md-11 d-flex justify-content-end">
@@ -105,7 +105,7 @@ AppAsset::register($this);
                 echo Button::widget([
                         'label' => ' ',
                         'options'=>['class' => 'btn',
-                            'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(img/footer/telegram.png) center center no-repeat; background-size : 100%;',
+                            'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/telegram.png) center center no-repeat; background-size : 100%;',
                             ],
                 ]);
                
@@ -114,19 +114,19 @@ AppAsset::register($this);
                 <?php
                 echo Button::widget([
                 'label' => ' ',
-                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(img/footer/vk.png) center center no-repeat;background-size : 100%;'],
+                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/vk.png) center center no-repeat;background-size : 100%;'],
                 ]);
                 ?>
                 <?php
                 echo Button::widget([
                 'label' => ' ',
-                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(img/footer/facebook.png) center center no-repeat;background-size : 100%;'],
+                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/facebook.png) center center no-repeat;background-size : 100%;'],
                 ]);
                 ?>
                 <?php
                 echo Button::widget([
                 'label' => ' ',
-                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin-left: 3px; background: #123 url(img/footer/instagram.png) center center no-repeat;background-size : 100%;'],
+                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin-left: 3px; background: #123 url(../img/footer/instagram.png) center center no-repeat;background-size : 100%;'],
                 ]);
                 ?>
             </div>
