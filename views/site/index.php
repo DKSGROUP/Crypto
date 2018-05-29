@@ -404,7 +404,7 @@ to do:
         </div>
         <div class="adv-content">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -418,7 +418,7 @@ to do:
                             рынка</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -431,7 +431,7 @@ to do:
                             валютами: Bitcoin и Etherium</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -445,7 +445,7 @@ to do:
                             вариантов финансовых операций</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -459,7 +459,7 @@ to do:
                             постороннего вмешательства</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -473,7 +473,7 @@ to do:
                             свободными для полезных дел</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -519,7 +519,7 @@ to do:
                       <?php
                       echo Button::widget([
                           'label' => 'Скачать пример отчетности',
-                          'options' => ['class' => 'btn button'],
+                          'options' => ['class' => 'btn btn-outline-success text-right'],
                       ]);
                       ?>
                   </a>
@@ -728,7 +728,7 @@ to do:
                   <?php
                   echo Button::widget([
                       'label' => 'Остались вопросы?',
-                      'options' => ['class' => 'btn button'],
+                      'options' => ['class' => 'btn btn-outline-success text-right'],
                   ]);
                   ?>
               </a>
@@ -739,7 +739,7 @@ to do:
 
     <section class="news">
         <div class="news-caption">
-            <h1 style=" font-size: 22px;">Новости</h1>
+            <h1 style=" font-size: 22px;">Преимущества</h1>
         </div>
         <div id="news-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
