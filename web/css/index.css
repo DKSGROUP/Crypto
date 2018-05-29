@@ -16,8 +16,6 @@ body{
 }
 .button{
   background:linear-gradient(to bottom, #05AB5B , #048748);
-  height:33px;
-  width:189px;
 }
 /*-----REPORTING-----*/
 .report-title{

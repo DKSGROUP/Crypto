@@ -519,7 +519,7 @@ to do:
                       <?php
                       echo Button::widget([
                           'label' => 'Скачать пример отчетности',
-                          'options' => ['class' => 'btn btn-outline-success text-right'],
+                          'options' => ['class' => 'btn button'],
                       ]);
                       ?>
                   </a>
@@ -728,7 +728,7 @@ to do:
                   <?php
                   echo Button::widget([
                       'label' => 'Остались вопросы?',
-                      'options' => ['class' => 'btn btn-outline-success text-right'],
+                      'options' => ['class' => 'btn button'],
                   ]);
                   ?>
               </a>
