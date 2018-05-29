@@ -1,6 +1,4 @@
-.news{
-    margin: 8% 0;
-}
+
 .news-caption{
     width: 100%;
     text-align: center;
@@ -29,11 +27,12 @@ h5,p{
 }
 .news-img{
     opacity: .45;
-    border-radius: 30px;/*не работает*/
 }
 .carousel-control-prev{
     margin-left: -5%;
+    padding-left: 11%;
 }
 .carousel-control-next{
     margin-right: -5%;
+    padding-left: 11%;
 }

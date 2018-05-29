@@ -404,7 +404,7 @@ to do:
         </div>
         <div class="adv-content">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -418,7 +418,7 @@ to do:
                             рынка</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -431,7 +431,7 @@ to do:
                             валютами: Bitcoin и Etherium</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -445,7 +445,7 @@ to do:
                             вариантов финансовых операций</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -459,7 +459,7 @@ to do:
                             постороннего вмешательства</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -473,7 +473,7 @@ to do:
                             свободными для полезных дел</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -739,13 +739,13 @@ to do:
 
     <section class="news">
         <div class="news-caption">
-            <h1 style=" font-size: 22px;">Новости</h1>
+            <h1 style=" font-size: 22px;">Преимущества</h1>
         </div>
         <div id="news-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active" style="margin-left: 95px;">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-sm-10 col-md-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"img/news/news-1.png\" alt=\"First slide\">";
@@ -771,7 +771,7 @@ to do:
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="d-none d-lg-block col-lg-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"img/news/news-2.png\" alt=\"First slide\">";
@@ -801,7 +801,7 @@ to do:
                 </div>
                 <div class="carousel-item" style="margin-left: 95px;">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-sm-10 col-md-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"img/news/news-1.png\" alt=\"Second slide\">";
@@ -827,7 +827,7 @@ to do:
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="d-none d-lg-block col-lg-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"img/news/news-2.png\" alt=\"Second slide\">";

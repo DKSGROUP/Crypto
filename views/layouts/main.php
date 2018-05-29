@@ -11,6 +11,7 @@ use yii\bootstrap\Button;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use lajax\languagepicker\widgets\LanguagePicker;
+use app\widgets\MultiLangD\MultiLang;
 
 AppAsset::register($this);
 ?>
@@ -52,23 +53,22 @@ AppAsset::register($this);
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-toggleable-md collapse nav-wid',
-                        'style' => 'margin: 0 auto;'],
+            'style' => 'margin: 0 auto;'],
         'items' => [
-            ['label' => 'О нас', 'url' => ['/site/index']],
-            ['label' => 'Продукты', 'url' => ['/site/about']],
-            ['label' => 'Преимущества', 'url' => ['/site/contact']],
-            ['label' => 'Отчетность', 'url' => ['/site/contact']],
-            ['label' => 'Вопросы', 'url' => ['/site/contact']],
-            ['label' => 'Новости', 'url' => ['/site/contact']]
+            ['label' => Yii::t('app', 'About Us'), 'url' => ['/site/index']],
+            ['label' => Yii::t('app', 'Products'), 'url' => ['/site/about']],
+            ['label' =>  Yii::t('app', 'Advantages'), 'url' => ['/site/contact']],
+            ['label' =>  Yii::t('app', 'Accountability'), 'url' => ['/site/contact']],
+            ['label' => Yii::t('app', 'Questions'), 'url' => ['/site/contact']],
+            ['label' => Yii::t('app', 'News'), 'url' => ['/site/contact']]
         ],
     ]);
 ?>
 <div class="navbar-text pull-right">
     <?php
-    echo LanguagePicker::widget([
-            'skin' => \lajax\languagepicker\widgets\LanguagePicker::SKIN_DROPDOWN,
-            'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_LARGE
-        ]);
+    echo MultiLang::widget([
+        'cssClass'=>'pull-right language'
+    ]);
 
         echo Button::widget([
             'label' => $endDiv,
