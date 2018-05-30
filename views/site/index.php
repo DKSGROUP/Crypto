@@ -626,7 +626,7 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
         </div>
         <div class="adv-content">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -637,7 +637,7 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                         <p><?=Yii::t('app','Our service specialises on cryptocurrencies purchase&sale, using precise trading strategies to deal bids according to  exchange rates')?></p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -648,7 +648,7 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                         <p><?=Yii::t('app','SCI supports investment in Bitcoin as well as Ethereum allowing you to profit from exchange rate differencies')?></p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -659,7 +659,7 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                         <p><?=Yii::t('app','Give us API access only for trading purposes or choose trust management delegating funds control to us')?></p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -670,7 +670,7 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                         <p><?=Yii::t('app','We provide safe protection of your financial operations and personal data from any uncensored access')?></p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -681,7 +681,7 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                         <p><?=Yii::t('app','Automated trading allows you to configure and start the system, saving your time and energy')?></p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
