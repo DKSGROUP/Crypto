@@ -3,7 +3,7 @@ namespace widgets\MultiLangD\Views;
 use yii\helpers\Html;
 use Yii;
 ?>
-
+<!--поменять цвет фона -->
 <div class="btn-group <?= $cssClass = null; ?>">
     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
         <span class="uppercase"><?= Yii::$app->language; ?></span>
