@@ -989,7 +989,7 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                                     <p><a href="#">
                                             <?php
                                             echo Button::widget([
-                                                'label' => 'Читать далее',
+                                                'label' => Yii::t('app','Read more'),
                                                 'options' => ['class' => 'btn btn-success text-left'],
                                             ]);
                                             ?>
@@ -1015,7 +1015,7 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                                     <p><a href="#">
                                             <?php
                                             echo Button::widget([
-                                                'label' => 'Читать далее',
+                                                'label' => Yii::t('app','Read more'),
                                                 'options' => ['class' => 'btn btn-success text-left'],
                                             ]);
                                             ?>
