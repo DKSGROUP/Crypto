@@ -43,7 +43,7 @@ $this->title = 'Smart Crypto Invest';
                     echo Button::widget([
                         'label' => Yii::t('app','Invest'),
                         'options' => ['class' => 'btn btn btn-success', 'style' => 'width: 152px;
-                        height: 22px; font-size: 14px; text-align: center; padding:0;'],
+                        height: 33px; font-size: 14px; text-align: center; padding:0;'],
 
                     ]);
                     ?>
