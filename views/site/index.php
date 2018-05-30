@@ -629,84 +629,84 @@ to do:
             <div class="row">
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg-fr">
+                        <div class="imgg">
                             <?php
                             echo"<img src=\"../img/advanteges/analis.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Достоверный анализ</h5>
-                        <p>Наши агоритмы прогнозирования
-                            позволяют составить грамотный
-                            и достоверный прогноз поведения
+                        <p>Наши агоритмы прогнозирования</br>
+                            позволяют составить грамотный</br>
+                            и достоверный прогноз поведения</br>
                             рынка</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg-fr">
+                        <div class="imgg">
                             <?php
                             echo"<img src=\"../img/advanteges/exchange.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Мультивалютный трейдинг</h5>
-                        <p>Наш сервис позволяет торговать
-                            востребованными цифровыми
+                        <p>Наш сервис позволяет торговать</br>
+                            востребованными цифровыми</br>
                             валютами: Bitcoin и Etherium</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg-fr">
+                        <div class="imgg">
                             <?php
                             echo"<img src=\"../img/advanteges/onlinebanking.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Простота использования</h5>
-                        <p>Быстрая и лёгкая регистрация
-                            сочетается с выгодными тарифными
-                            планами и авторасчётом разных
+                        <p>Быстрая и лёгкая регистрация</br>
+                            сочетается с выгодными тарифными</br>
+                            планами и авторасчётом разных</br>
                             вариантов финансовых операций</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg-sc">
+                        <div class="imgg">
                             <?php
                             echo"<img src=\"../img/advanteges/cryptocurrency.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Безопасность</h5>
-                        <p>Обеспечиваем надёжную защиту
-                            ваших финансовых операций и
-                            персональных данных от любого
+                        <p>Обеспечиваем надёжную защиту</br>
+                            ваших финансовых операций и</br>
+                            персональных данных от любого</br>
                             постороннего вмешательства</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg-sc">
+                        <div class="imgg">
                             <?php
                             echo"<img src=\"../img/advanteges/time.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Свободное время</h5>
-                        <p>Автоматический трейдинг дает вам
-                            возможность настроить и запустить
-                            систему, оставаясь полностью
+                        <p>Автоматический трейдинг дает вам</br>
+                            возможность настроить и запустить</br>
+                            систему, оставаясь полностью</br>
                             свободными для полезных дел</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg-sc">
+                        <div class="imgg">
                             <?php
                             echo"<img src=\"../img/advanteges/operetions.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Прозрачность операций</h5>
-                        <p>Следите в режиме реального
-                            времени за прибыльностью своих
-                            трейдингов, используя отчетность
+                        <p>Следите в режиме реального</br>
+                            времени за прибыльностью своих</br>
+                            трейдингов, используя отчетность</br>
                             нашего сервиса перед клиентами</p>
                     </div>
                 </div>
@@ -966,9 +966,9 @@ to do:
         </div>
         <div id="news-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
-                <div class="pull-center carousel-item active" style="margin-left: 95px;">
+                <div class="carousel-item active" style="margin-left: 95px;">
                     <div class="row">
-                        <div class="col-sm-9 col-md-5">
+                        <div class="col-sm-10 col-md-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"First slide\">";
@@ -1024,7 +1024,7 @@ to do:
                 </div>
                 <div class="carousel-item" style="margin-left: 95px;">
                     <div class="row">
-                        <div class="col-sm-9 col-md-5">
+                        <div class="col-sm-10 col-md-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"Second slide\">";
