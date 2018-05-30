@@ -100,7 +100,7 @@ $this->title = 'Smart Crypto Invest';
                                     <?php
                                     echo"<img src=\"../img/main/Ellipse.png\";>";
                                     ?>
-                                    <p class="text-white "><?=Yii::t('app','CMake profits')?></p>
+                                    <p class="text-white "><?=Yii::t('app','Make profits')?></p>
                                 </div>
                             </div>
 
