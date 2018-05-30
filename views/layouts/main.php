@@ -36,7 +36,7 @@ AppAsset::register($this);
 
 
     Yii::$app->user->isGuest ? (
-                $endDiv = 'Личный кабинет'
+                $endDiv = Yii::t('app','User Account')
             ) : (
                 $endDiv = Yii::$app->user->identity->username
             );
@@ -58,7 +58,7 @@ AppAsset::register($this);
             ['label' => Yii::t('app', 'About Us'), 'url' => ['/site/index']],
             ['label' => Yii::t('app', 'Products'), 'url' => ['/site/about']],
             ['label' =>  Yii::t('app', 'Advantages'), 'url' => ['/site/contact']],
-            ['label' =>  Yii::t('app', 'Accountability'), 'url' => ['/site/contact']],
+            ['label' =>  Yii::t('app', 'Reporting'), 'url' => ['/site/contact']],
             ['label' => Yii::t('app', 'Questions'), 'url' => ['/site/contact']],
             ['label' => Yii::t('app', 'News'), 'url' => ['/site/contact']]
         ],
