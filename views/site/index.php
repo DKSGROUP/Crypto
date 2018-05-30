@@ -6,23 +6,31 @@
 use yii\bootstrap\Button;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use yii\helpers\Html;
 
 AppAsset::register($this);
 
 $this->title = 'Smart Crypto Invest';
 ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<?php
-echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
-?>
 
 
 <div class="site-index">
     <section class="back">
-        <div id="container" class="container">
-            <div id="output" class="container">
+<!--
+        <div id="container" class="triangle-container">
+            <div id="output" class="">
             </div>
+
+
         </div>
+        <div id="controls" class="">
+        </div>-->
+
+        <?php
+        echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
+        ?>
+
     </section>
     <section class="title-text">
             <div class="container">
@@ -41,22 +49,25 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                         ]);
                         ?>
                     </div>
-                    <div class="d-none d-lg-block col-lg-2 offset-11">
+                  <!--  <div class="d-none d-lg-block col-lg-2 offset-11">
                         <div class="pull-right exchange ">
                             BTC/USD <b style="color: #31C37D;">682.20 </b></br>
                              ETH/USD <b style="color: #31C37D;">12.2700 </b>
                         </div>
                     </div>
+-->
                     <div class="col-md-5" style="padding-top:100px; padding-left:100px;">
                         <div class="row">
                             <div class="col-6">
+                                <div class="text text-center">
                                 <?php
-                                echo"<img src=\"../img/main/Ellipse.png\";>";
+                                    echo"<img src=\"../img/main/Ellipse.png\"  >";
                                 ?>
-                                <p class="text-white text-center">Регистрируйся</p>
+                                <p class="text-white">Регистрируйся</p>
+                                </div>
                             </div>
                             <div class="col-6 position-relative">
-                                <div class="position-absolute" style="width:40px; left:-25px; bottom:0;">
+                                <div class="position-absolute" style="bottom: 0; left: 0;">
                                     <?php
                                     echo"<img src=\"../img/main/arrow-right.png\";>";
                                     ?>
@@ -65,25 +76,29 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                         </div>
                         <div class="row">
                             <div class="col-6 position-relative">
-                                <div class="position-absolute" style="width:40px; right:20px; bottom:0;">
+                                <div class="position-absolute" style="bottom: 0; right: 0;">
                                     <?php
                                     echo"<img src=\"../img/main/arrow-left.png\";>";
                                     ?>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <?php
-                                echo"<img src=\"../img/main/Ellipse.png\";>";
-                                ?>
-                                <p class="text-white text-center">Инвестируй</p>
+                                <div class="text text-center">
+                                    <?php
+                                    echo"<img src=\"../img/main/Ellipse.png\";>";
+                                    ?>
+                                    <p class="text-white">Инвестируй</p>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <?php
-                                echo"<img src=\"../img/main/Ellipse.png\";>";
-                                ?>
-                                <p class="text-white text-center">Получай прибыль</p>
+                                <div class="text text-center">
+                                    <?php
+                                    echo"<img src=\"../img/main/Ellipse.png\";>";
+                                    ?>
+                                    <p class="text-white ">Получай прибыль</p>
+                                </div>
                             </div>
                         </div>
                     </div>
