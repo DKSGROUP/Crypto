@@ -41,12 +41,12 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                         ]);
                         ?>
                     </div>
-<<<<<<< HEAD
                     <div class="d-none d-lg-block col-lg-2 offset-11">
                         <div class="pull-right exchange ">
                             BTC/USD <b style="color: #31C37D;">682.20 </b></br>
                              ETH/USD <b style="color: #31C37D;">12.2700 </b>
-=======
+                        </div>
+                    </div>
                     <div class="col-md-5" style="padding-top:100px; padding-left:100px;">
                         <div class="row">
                             <div class="col-6">
@@ -85,7 +85,6 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                                 ?>
                                 <p class="text-white text-center">Получай прибыль</p>
                             </div>
->>>>>>> ab627a13cd86151e5e35d82654ffbd9710f0e4f8
                         </div>
                     </div>
                 </div>
