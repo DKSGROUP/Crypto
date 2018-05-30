@@ -916,7 +916,7 @@ to do:
 
     <section class="news">
         <div class="news-caption">
-            <h1 style=" font-size: 22px;">Преимущества</h1>
+            <h1 style=" font-size: 22px;">Новости</h1>
         </div>
         <div id="news-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
