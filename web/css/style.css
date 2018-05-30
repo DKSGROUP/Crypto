@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Font;
-    src: url("../font/Font.ttf");
+    font-family: GothaProReg;
+    src: url("../font/Gotham Cyrillic/GothaProReg.otf");
 }
 
 *{
@@ -10,7 +10,7 @@
 }
 
 body{
-    font-family: Font, Arial, sans;
+    font-family: GothaProReg, Arial, sans !important;
     background: linear-gradient(#060E1F, #22335C, #060E1F);
     color: #fff;
 }
@@ -54,7 +54,7 @@ h1{
 
 .card{
     width: 360px;
-    height: 190px !important;
+   // height: 190px !important;
     margin: 15px 0;
     background-color: inherit;
     border-radius: 4px 4px 4px 4px;
@@ -150,52 +150,6 @@ table{
     border-radius: 4px 0px 0px 4px;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Gabriela|Dosis:200);
-
-body {
-    font-family: "Vidaloka", serif;
-    font-smoothing: antialiased;
-    font-weight: normal;
-    background: #151618;
-    color: #FFF;
-    margin: 0;
-}
-
-h1 {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: normal;
-    font-size: 16px;
-}
-
-p {
-    line-height: 1.6em;
-    text-align: center;
-    font-size: 14px;
-}
-
-p + p {
-    margin-top: 1.0em;
-}
-
-a {
-    transition: color 0.2s ease-out;
-    text-decoration: none;
-    color: #FBB;
-}
-
-a:hover {
-    color: #444;
-}
-
-.overlay {
-    pointer-events: none;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
 
 .triangle-container {
     position: absolute;
@@ -203,7 +157,7 @@ a:hover {
     width: 100%;
 }
 
-
+/*
 .controls {
     font-smoothing: subpixel-antialiased;
     position: absolute;
@@ -283,5 +237,5 @@ a:hover {
 
 .hide {
     opacity: 0;
-}
+}*/
 
