@@ -534,84 +534,84 @@ $this->title = 'Smart Crypto Invest';
                             <div class="row">
                                 <!--Формат-->
                                 <div class="col-6 light">
-                                    <p>Формат</p>
+                                    <p><?=Yii::t('app','Format')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">Доверительная форма</p>
+                                    <p class="info-modal"><?=Yii::t('app','Trust management ')?></p>
                                 </div>
                                 <!--Минимальный вход-->
                                 <div class="col-6 dark">
-                                    <p>Минимальный вход</p>
+                                    <p><?=Yii::t('app','Minimal income')?></p>
                                 </div>
                                 <div class="col-6 dark">
                                     <p class="info-modal"> </p>
                                 </div>
                                 <!--Доходность-->
                                 <div class="col-6 light">
-                                    <p>Доходность</p>
+                                    <p><?=Yii::t('app','Profitability')?></p>
                                 </div>
                                 <div class="col-6 light">
                                     <p class="info-modal"> </p>
                                 </div>
                                 <!--Минимальный срок инвестирования-->
                                 <div class="col-6 dark">
-                                    <p>Минимальный срок инвестирования</p>
+                                    <p><?=Yii::t('app','Minimal investment term')?></p>
                                 </div>
                                 <div class="col-6 dark">
                                     <p class="info-modal"> </p>
                                 </div>
                                 <!--Распределение прибыли-->
                                 <div class="col-6 light">
-                                    <p>Распределение прибыли инвестор/фонд в %</p>
+                                    <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
                                 </div>
                                 <div class="col-6 light">
                                     <p class="info-modal"> </p>
                                 </div>
                                 <!--Выплаты-->
                                 <div class="col-6 dark">
-                                    <p>Выплаты</p>
+                                    <p><?=Yii::t('app','Payments')?></p>
                                 </div>
                                 <div class="col-6 dark">
                                     <p class="info-modal"> </p>
                                 </div>
                                 <!--Условия получения прибыли-->
                                 <div class="col-6 light">
-                                    <p>Условия получения прибыли</p>
+                                    <p><?=Yii::t('app','Income receiving conditions')?></p>
                                 </div>
                                 <div class="col-6 light">
                                     <p class="info-modal"> </p>
                                 </div>
                                 <!--USD-->
                                 <div class="col-6 dark">
-                                    <p>Условия вывода в USD</p>
+                                    <p><?=Yii::t('app','USD withdrawal conditions')?></p>
                                 </div>
                                 <div class="col-6 dark">
                                     <p class="info-modal"> </p>
                                 </div>
                                 <!--Досрочный вывод-->
                                 <div class="col-6 light">
-                                    <p>Досрочный вывод</p>
+                                    <p><?=Yii::t('app','Preschedule withdrawal')?></p>
                                 </div>
                                 <div class="col-6 light">
                                     <p class="info-modal"> </p>
                                 </div>
                                 <!--Формат пополнения-->
                                 <div class="col-6 dark">
-                                    <p>Формат пополнения</p>
+                                    <p><?=Yii::t('app','Replenishment format')?></p>
                                 </div>
                                 <div class="col-6 dark">
                                     <p class="info-modal"> </p>
                                 </div>
                                 <!--Капитализация процентов-->
                                 <div class="col-6 light">
-                                    <p>Капитализация процентов</p>
+                                    <p><?=Yii::t('app','Per cent capitalization')?></p>
                                 </div>
                                 <div class="col-6 light">
                                     <p class="info-modal"> </p>
                                 </div>
                                 <!--Отчетность-->
                                 <div class="col-6 dark">
-                                    <p>Отчетность</p>
+                                    <p><?=Yii::t('app','Reporting')?></p>
                                 </div>
                                 <div class="col-6 dark">
                                     <p class="info-modal"> </p>
@@ -938,7 +938,7 @@ $this->title = 'Smart Crypto Invest';
                                     <p><a href="#">
                                             <?php
                                             echo Button::widget([
-                                                'label' => Yii::t('app','Read More'),
+                                                'label' => Yii::t('app','Read more'),
                                                 'options' => ['class' => 'btn btn-success text-left'],
                                             ]);
                                             ?>
@@ -964,7 +964,7 @@ $this->title = 'Smart Crypto Invest';
                                     <p><a href="#">
                                             <?php
                                             echo Button::widget([
-                                                'label' => Yii::t('app','Read More'),
+                                                'label' => Yii::t('app','Read more'),
                                                 'options' => ['class' => 'btn btn-success text-left'],
                                             ]);
                                             ?>
