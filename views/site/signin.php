@@ -10,7 +10,34 @@ AppAsset::register($this);
 
 $this->title = 'Smart Crypto Invest';
 ?>
-
+<?php
+echo"<style>
+body{
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  background-image: url("../img/signin/signin_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+p{
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+input, a{
+  width: 290px !important;
+}
+.data{
+  background-color:#1B2435;
+  border-radius: 4px;
+  border-color: #3B4451;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.button-signin{
+  background: linear-gradient(to bottom, #05AB5B, #05AB5B);
+}</style>"
+?>
 <!-- ЮЛЯ, ПРОСТИ ПОЖАЛУЙСТА. Я ВЫРУБАЮСЬ -->
 
 <div class="container-fluid d-flex flex-column justify-content-center align-items-center">

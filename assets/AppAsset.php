@@ -24,9 +24,7 @@ class AppAsset extends AssetBundle
         'css/style.css',
         'css/advanteges.css',
         'css/news.css',
-        'css/index.css',
-        'css/signin.css',
-        'css/password-recover2.css'
+        'css/index.css'
     ];
     public $js = [
         'js/Chart.min.js',
