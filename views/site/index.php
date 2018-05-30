@@ -629,84 +629,84 @@ to do:
             <div class="row">
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg">
+                        <div class="imgg-fr">
                             <?php
                             echo"<img src=\"../img/advanteges/analis.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Достоверный анализ</h5>
-                        <p>Наши агоритмы прогнозирования</br>
-                            позволяют составить грамотный</br>
-                            и достоверный прогноз поведения</br>
+                        <p>Наши агоритмы прогнозирования
+                            позволяют составить грамотный
+                            и достоверный прогноз поведения
                             рынка</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg">
+                        <div class="imgg-fr">
                             <?php
                             echo"<img src=\"../img/advanteges/exchange.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Мультивалютный трейдинг</h5>
-                        <p>Наш сервис позволяет торговать</br>
-                            востребованными цифровыми</br>
+                        <p>Наш сервис позволяет торговать
+                            востребованными цифровыми
                             валютами: Bitcoin и Etherium</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg">
+                        <div class="imgg-fr">
                             <?php
                             echo"<img src=\"../img/advanteges/onlinebanking.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Простота использования</h5>
-                        <p>Быстрая и лёгкая регистрация</br>
-                            сочетается с выгодными тарифными</br>
-                            планами и авторасчётом разных</br>
+                        <p>Быстрая и лёгкая регистрация
+                            сочетается с выгодными тарифными
+                            планами и авторасчётом разных
                             вариантов финансовых операций</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg">
+                        <div class="imgg-sc">
                             <?php
                             echo"<img src=\"../img/advanteges/cryptocurrency.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Безопасность</h5>
-                        <p>Обеспечиваем надёжную защиту</br>
-                            ваших финансовых операций и</br>
-                            персональных данных от любого</br>
+                        <p>Обеспечиваем надёжную защиту
+                            ваших финансовых операций и
+                            персональных данных от любого
                             постороннего вмешательства</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg">
+                        <div class="imgg-sc">
                             <?php
                             echo"<img src=\"../img/advanteges/time.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Свободное время</h5>
-                        <p>Автоматический трейдинг дает вам</br>
-                            возможность настроить и запустить</br>
-                            систему, оставаясь полностью</br>
+                        <p>Автоматический трейдинг дает вам
+                            возможность настроить и запустить
+                            систему, оставаясь полностью
                             свободными для полезных дел</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="plus">
-                        <div class="imgg">
+                        <div class="imgg-sc">
                             <?php
                             echo"<img src=\"../img/advanteges/operetions.png\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt">Прозрачность операций</h5>
-                        <p>Следите в режиме реального</br>
-                            времени за прибыльностью своих</br>
-                            трейдингов, используя отчетность</br>
+                        <p>Следите в режиме реального
+                            времени за прибыльностью своих
+                            трейдингов, используя отчетность
                             нашего сервиса перед клиентами</p>
                     </div>
                 </div>

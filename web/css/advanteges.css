@@ -27,12 +27,19 @@ p{
     padding: 10px;
 
 }
-.imgg{
-    background-color: transparent;
+.imgg-fr{
+    background-color: #1c2b4f;
     margin-top: -50px;
     margin-right: 61%;
-    margin-left: 10%;
-    padding-left: 2%;
+    margin-left: 5%;
+
+}
+.imgg-sc{
+    background-color: #203057;
+    margin-top: -50px;
+    margin-right: 61%;
+    margin-left: 5%;
+
 }
 .adv-content{
     height: 100%;
