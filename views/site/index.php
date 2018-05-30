@@ -66,7 +66,7 @@ $this->title = 'Smart Crypto Invest';
                                 <?php
                                     echo"<img src=\"../img/main/Ellipse.png\"  >";
                                 ?>
-                                <p class="text-white">Регистрируйся</p>
+                                <p class="text-white"><?=Yii::t('app','Create account')?></p>
                                 </div>
                             </div>
                             <div class="col-6 position-relative">
@@ -90,7 +90,7 @@ $this->title = 'Smart Crypto Invest';
                                     <?php
                                     echo"<img src=\"../img/main/Ellipse.png\";>";
                                     ?>
-                                    <p class="text-white">Инвестируй</p>
+                                    <p class="text-white"><?=Yii::t('app',' Invest ')?></p>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ $this->title = 'Smart Crypto Invest';
                                     <?php
                                     echo"<img src=\"../img/main/Ellipse.png\";>";
                                     ?>
-                                    <p class="text-white ">Получай прибыль</p>
+                                    <p class="text-white "><?=Yii::t('app','CMake profits')?></p>
                                 </div>
                             </div>
 
@@ -955,7 +955,7 @@ $this->title = 'Smart Crypto Invest';
                                     <p><a href="#">
                                             <?php
                                             echo Button::widget([
-                                                'label' => 'Читать далее',
+                                                'label' => Yii::t('app','Read More'),
                                                 'options' => ['class' => 'btn btn-success text-left'],
                                             ]);
                                             ?>
@@ -981,7 +981,7 @@ $this->title = 'Smart Crypto Invest';
                                     <p><a href="#">
                                             <?php
                                             echo Button::widget([
-                                                'label' => 'Читать далее',
+                                                'label' => Yii::t('app','Read More'),
                                                 'options' => ['class' => 'btn btn-success text-left'],
                                             ]);
                                             ?>
