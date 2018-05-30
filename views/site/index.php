@@ -966,9 +966,9 @@ to do:
         </div>
         <div id="news-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active" style="margin-left: 95px;">
+                <div class="pull-center carousel-item active" style="margin-left: 95px;">
                     <div class="row">
-                        <div class="col-sm-10 col-md-5">
+                        <div class="col-sm-9 col-md-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"First slide\">";
@@ -1024,7 +1024,7 @@ to do:
                 </div>
                 <div class="carousel-item" style="margin-left: 95px;">
                     <div class="row">
-                        <div class="col-sm-10 col-md-5">
+                        <div class="col-sm-9 col-md-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"Second slide\">";
