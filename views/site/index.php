@@ -41,6 +41,12 @@ echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
                         ]);
                         ?>
                     </div>
+                    <div class="d-none d-lg-block col-lg-2 offset-11">
+                        <div class="pull-right exchange ">
+                            BTC/USD <b style="color: #31C37D;">682.20 </b></br>
+                             ETH/USD <b style="color: #31C37D;">12.2700 </b>
+                        </div>
+                    </div>
                 </div>
             </div>
     </section>
