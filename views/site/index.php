@@ -955,7 +955,7 @@ $this->title = 'Smart Crypto Invest';
                                     <p><a href="#">
                                             <?php
                                             echo Button::widget([
-                                                'label' => Yii::t('app','Read More'),
+                                                'label' => Yii::t('app','Read more'),
                                                 'options' => ['class' => 'btn btn-success text-left'],
                                             ]);
                                             ?>
@@ -981,7 +981,7 @@ $this->title = 'Smart Crypto Invest';
                                     <p><a href="#">
                                             <?php
                                             echo Button::widget([
-                                                'label' => Yii::t('app','Read More'),
+                                                'label' => Yii::t('app','Read more'),
                                                 'options' => ['class' => 'btn btn-success text-left'],
                                             ]);
                                             ?>
