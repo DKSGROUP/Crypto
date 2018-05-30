@@ -48,11 +48,6 @@ $this->title = 'Smart Crypto Invest';
                     ]);
                     ?>
                 </div>
-                <div class="d-none d-lg-block col-lg-2 offset-11">
-                    <div class="pull-right exchange ">
-                        BTC/USD <b style="color: #31C37D;">682.20 </b></br>
-                        ETH/USD <b style="color: #31C37D;">12.2700 </b>
-                    </div>
 
 
 
@@ -112,49 +107,7 @@ $this->title = 'Smart Crypto Invest';
 
 
                 </div>
-                <div class="col-md-5" style="padding-top:100px; padding-left:100px;">
-                    <div class="row">
-                        <div class="col-6">
-                            <?php
-                            echo"<img src=\"../img/main/Ellipse.png\";>";
-                            ?>
-                            <p class="text-white text-center"><?=Yii::t('app','Create account')?></p>
-                        </div>
-                        <div class="col-6 position-relative">
-                            <div class="position-absolute" style="width:40px; left:-25px; bottom:0;">
-                                <?php
-                                echo"<img src=\"../img/main/arrow-right.png\";>";
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 position-relative">
-                            <div class="position-absolute" style="width:40px; right:20px; bottom:0;">
-                                <?php
-                                echo"<img src=\"../img/main/arrow-left.png\";>";
-                                ?>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <?php
-                            echo"<img src=\"../img/main/Ellipse.png\";>";
-                            ?>
-                            <p class="text-white text-center"><?=Yii::t('app',' Invest ')?></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <?php
-                            echo"<img src=\"../img/main/Ellipse.png\";>";
-                            ?>
-                            <p class="text-white text-center"><?=Yii::t('app','Make profits')?></p>
 
-
-                            
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
