@@ -265,4 +265,27 @@ table{
 .hide {
     opacity: 0;
 }*/
+#aside1 {  /* селектор блока, который будет оставаться на месте */
+    position: fixed;
+    z-index: 101;
+    bottom: 0px;
+    left: 0px;
+    height: 400px;
+    width: 220px;
+    align-items: center;
+    background: url(../img/banner/ban.png) no-repeat;
+    margin-right: -100%;
+}
 
+.butt{
+    width: 150px !important;
+}
+.button-signup{
+    background: linear-gradient(180deg, #289FD9 0%, #0A6B9B 100%);
+}
+.elipse{
+    margin: 10% 0;
+}
+.textt{
+    margin-top: 10%;
+}
