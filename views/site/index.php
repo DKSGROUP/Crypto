@@ -51,17 +51,12 @@ $this->title = 'Smart Crypto Invest';
 <div class="site-index">
 
 
-    <!-- banner-->
-  <!--  <div onload="init();" style="margin:0px;">
-    <canvas id="canvas" width="350" height="430" style="display: block; background-color: rgb(255, 255, 255); margin: 0px auto; width: 240px; height: 400px;">
-        <a class="various" data-fancybox-type="iframe" href="views/site/banner.php"></a>
-    </canvas>
-    </div>-->
+
     <section class="title-text">
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <h1 class="green" style="font-size:<h0px;"><b>Smart Crypto Invest</b><?=Yii::t('app',' - the best way to invest into cryptocurrencies')?></h1>
+                    <h1 class="green" style="font-size:22px;"><b>Smart Crypto Invest</b><?=Yii::t('app',' - the best way to invest into cryptocurrencies')?></h1>
 
                     <p style="font-size: 22px; margin: 30px 0;"><?=Yii::t('app','Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks')?> </p>
 
@@ -97,7 +92,7 @@ $this->title = 'Smart Crypto Invest';
                             <div class="col-6 position-relative">
                                 <div class="position-absolute" style="bottom: 0; left: 0;">
                                     <?php
-                                    echo"<img src=\"../img/main/arrow-right.png\";>";
+                                    echo"<img src=\"../img/main/arrow-right.png\" class=\"animated fadeIn\" ;>";
                                     ?>
                                 </div>
                             </div>
@@ -106,7 +101,7 @@ $this->title = 'Smart Crypto Invest';
                             <div class="col-6 position-relative">
                                 <div class="position-absolute" style="bottom: 0; right: 0;">
                                     <?php
-                                    echo"<img src=\"../img/main/arrow-left.png\";>";
+                                    echo"<img src=\"../img/main/arrow-left.png\"  class=\"animated fadeIn\";>";
                                     ?>
                                 </div>
                             </div>
