@@ -39,12 +39,10 @@ h1{
 }
 
 
-#container{
-    z-index: 1;
-}
+
 .graph{
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: -5%;
     height: 500px !important;
     width: 105% !important; /*работает - НЕ ЛАПАЙ И МОЛИСЬ НА ЭТО!*/
@@ -57,7 +55,7 @@ h1{
 
 /*---------cards----------*/
 .invest-packages{
-    margin-top: 180px;
+    margin-top: 250px;
     padding-bottom: 30px;
 }
 
