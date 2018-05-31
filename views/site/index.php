@@ -2,7 +2,6 @@
 
 /* @var $this yii\web\View */
 
-
 use yii\bootstrap\Button;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
@@ -13,8 +12,9 @@ AppAsset::register($this);
 $this->title = 'Smart Crypto Invest';
 ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<aside id="aside1" class="d-none d-lg-block">
-    <div id="closeButton" onclick="document.getElementById('aside1').style.display='none'">Х</div>
+<div class="d-none d-lg-block">
+<aside id="aside1" >
+    <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'">Х</div>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <div class="text-center text-white textt">
             <h2>У нас можно купить <b>GRAM</b></h2>
@@ -31,6 +31,7 @@ $this->title = 'Smart Crypto Invest';
         </div>
     </div>
 </aside>
+</div>
 <!--<aside id="aside2" class="d-none d-sm-block">
     <div id="closeButton" class="text-right" onclick="document.getElementById('aside2').style.display='none'">Х</div>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
