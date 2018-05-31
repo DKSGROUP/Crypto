@@ -16,22 +16,7 @@ $this->title = 'Smart Crypto Invest';
 
 
 <div class="site-index">
-    <section class="back">
 
-        <div id="container" class="triangle-container">
-            <div id="output" class="">
-            </div>
-
-
-        </div>
-        <div id="controls" class="">
-        </div>
-
-        <?php
-        echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
-        ?>
-
-    </section>
     <section class="title-text">
         <div class="container">
             <div class="row">
@@ -64,7 +49,7 @@ $this->title = 'Smart Crypto Invest';
                             <div class="col-6">
                                 <div class="text text-center">
                                 <?php
-                                    echo"<img src=\"../img/main/Ellipse.png\" >";
+                                    echo"<img src=\"../img/main/handshake.png\" >";
 
                                 ?>
                                 <p class="text-white"><?=Yii::t('app','Create account')?></p>
@@ -89,7 +74,7 @@ $this->title = 'Smart Crypto Invest';
                             <div class="col-6">
                                 <div class="text text-center">
                                     <?php
-                                    echo"<img src=\"../img/main/Ellipse.png\";>";
+                                    echo"<img src=\"../img/main/money.png\";>";
                                     ?>
                                     <p class="text-white"><?=Yii::t('app',' Invest ')?></p>
                                 </div>
@@ -99,7 +84,7 @@ $this->title = 'Smart Crypto Invest';
                             <div class="col-6">
                                 <div class="text text-center">
                                     <?php
-                                    echo"<img src=\"../img/main/Ellipse.png\";>";
+                                    echo"<img src=\"../img/main/coins.png\";>";
                                     ?>
                                     <p class="text-white "><?=Yii::t('app','Make profits')?></p>
                                 </div>
@@ -113,7 +98,7 @@ $this->title = 'Smart Crypto Invest';
         </div>
     </section>
     <section class="graph">
-        <canvas id="lineChart" style="display: block; width: 100%; height: 400px !important;" class="chartjs-render-monitor"></canvas>
+        <canvas id="lineChart" style="display: block; width: 100%; height: 400px !important; z-index: 999; position: relative;overflow: auto;" class="chartjs-render-monitor"></canvas>
 
 
         <?php
