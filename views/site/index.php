@@ -13,7 +13,24 @@ AppAsset::register($this);
 $this->title = 'Smart Crypto Invest';
 ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<aside id="aside1">
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
 
+        <div class="text-center text-white textt">
+            <h2>У нас можно купить <b>GRAM</b></h2>
+        </div>
+        <div class="text text-center">
+            <?php
+            echo"<img src=\"../img/banner/elipse.png\"; class=\"elipse\">";
+            ?>
+            <div class="butt">
+                <a class="btn button-signup text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
+                    Купить
+                </a>
+            </div>
+        </div>
+    </div>
+</aside>
 
 <div class="site-index">
 
