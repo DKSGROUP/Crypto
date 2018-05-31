@@ -31,6 +31,21 @@ AppAsset::register($this);
 
 
     <header>
+        <section class="back">
+        <div id="container" class="triangle-container">
+            <div id="output" class="">
+            </div>
+
+
+        </div>
+        <div id="controls" class="" style="display: none;">
+        </div>
+
+        <?php
+            echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
+            ?>
+
+        </section>
     <?php
 
 

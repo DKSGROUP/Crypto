@@ -33,22 +33,8 @@ $this->title = 'Smart Crypto Invest';
 </aside>
 
 <div class="site-index">
-    <section class="back">
-
-        <div id="container" class="triangle-container">
-            <div id="output" class="">
-            </div>
 
 
-        </div>
-        <div id="controls" class="">
-        </div>
-
-        <?php
-        echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
-        ?>
-
-    </section>
     <!-- banner-->
   <!--  <div onload="init();" style="margin:0px;">
     <canvas id="canvas" width="350" height="430" style="display: block; background-color: rgb(255, 255, 255); margin: 0px auto; width: 240px; height: 400px;">
@@ -82,12 +68,12 @@ $this->title = 'Smart Crypto Invest';
                         </div>
                     </div>-->
 
-                    <div class="col-md-5" style="padding-top:100px; padding-left:100px;">
+                    <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px;">
                         <div class="row">
                             <div class="col-6">
                                 <div class="text text-center">
                                 <?php
-                                    echo"<img src=\"../img/main/Ellipse.png\" >";
+                                    echo"<img src=\"../img/main/handshake.png\" >";
 
                                 ?>
                                 <p class="text-white"><?=Yii::t('app','Create account')?></p>
@@ -112,7 +98,7 @@ $this->title = 'Smart Crypto Invest';
                             <div class="col-6">
                                 <div class="text text-center">
                                     <?php
-                                    echo"<img src=\"../img/main/Ellipse.png\";>";
+                                    echo"<img src=\"../img/main/money.png\";>";
                                     ?>
                                     <p class="text-white"><?=Yii::t('app',' Invest ')?></p>
                                 </div>
@@ -122,7 +108,7 @@ $this->title = 'Smart Crypto Invest';
                             <div class="col-6">
                                 <div class="text text-center">
                                     <?php
-                                    echo"<img src=\"../img/main/Ellipse.png\";>";
+                                    echo"<img src=\"../img/main/coins.png\";>";
                                     ?>
                                     <p class="text-white "><?=Yii::t('app','Make profits')?></p>
                                 </div>
@@ -135,12 +121,21 @@ $this->title = 'Smart Crypto Invest';
             </div>
         </div>
     </section>
-    <section class="graph">
-        <canvas id="lineChart" style="display: block; width: 100%; height: 400px !important;" class="chartjs-render-monitor"></canvas>
+
+    <!--
+    packages status: почти;
+
+    to do:
+    -прогуглить как сделать нормальные линки, а не костыльную херь
+    -->
+
+    <section class="invest-packages">
+        <section class="graph">
+            <canvas id="lineChart" style="display: block; width: 100%; height: 400px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
 
 
-        <?php
-        echo"<script language='javascript'>
+            <?php
+            echo"<script language='javascript'>
         var ctxL = document.getElementById(\"lineChart\").getContext('2d');
 
         var gradientFill = ctxL.createLinearGradient(0, 400, 0, 0);
@@ -232,17 +227,9 @@ $this->title = 'Smart Crypto Invest';
         });
         </script>
         ";
-        ?>
-    </section>
+            ?>
+        </section>
 
-    <!--
-    packages status: почти;
-
-    to do:
-    -прогуглить как сделать нормальные линки, а не костыльную херь
-    -->
-
-    <section class="invest-packages">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" style="margin: 25px 0;">
