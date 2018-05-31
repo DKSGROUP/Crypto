@@ -92,7 +92,7 @@ return[
     'Yes! For using our service you need only to sign up, choose your investment package – and receive income!'=>'Да! Для использования нашего сервиса вам нужно всего лишь зарегистрироваться на сайте, выбрать инвестиционный пакет - и начать получать прибыль.',
 
     'Any questions?'=>'Остались вопросы?',
-    'Read more' => 'Читати далі',
+    'Read more' => 'Читать дальше',
 
     'Format'=>'Формат',
     'Trust management '=>'Доверительная форма',
