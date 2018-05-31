@@ -42,7 +42,7 @@ AppAsset::register($this);
         </div>
 
         <?php
-            echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
+            echo"<script language='javascript' src=\"../js/Triangle.js\"></script>";
             ?>
 
         </section>

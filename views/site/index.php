@@ -143,100 +143,98 @@ $this->title = 'Smart Crypto Invest';
         <section class="graph">
             <canvas id="lineChart" style="display: block; width: 100%; height: 400px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
 
-
             <?php
             echo"<script language='javascript'>
-        var ctxL = document.getElementById(\"lineChart\").getContext('2d');
-
-        var gradientFill = ctxL.createLinearGradient(0, 400, 0, 0);
-        gradientFill.addColorStop(1, \"rgba(71, 186, 0, 1)\");
-        gradientFill.addColorStop(0, \"rgba(15,26,51, 0.8)\");
-
-        var gradientFill1 = ctxL.createLinearGradient(0, 300, 0, 0);
-        gradientFill1.addColorStop(1, \"rgba(71, 186, 0, 1)\");
-        gradientFill1.addColorStop(0, \"rgba(15,26,51, 0.8)\");
-
-
-        var myLineChart = new Chart(ctxL, {
-            type: 'line',
-            data: {
-                labels: [\" \", \" \", \" \", \" \", \" \"],
-                scaleLabel: false,
-                datasets: [
-                    {
-                        //radius: 0,
-                        fillColor: \"rgba(25, 99, 16, 1.2)\",
-                        strokeColor: \"rgba(25, 99, 16 ,1)\",
-                        pointColor: \"rgba(25, 99, 16 ,1)\",
-                        pointStrokeColor: \"#196310\",
-                        pointHighlightFill: \"#196310\",
-                        pointHighlightStroke: \"rgba(25, 99, 16,1)\",
-                        data: [6,2,10,6,14],
-                        pointHoverBackgroundColor: '#196310',//5
-                        pointHoverBorderColor: \"rgba(25, 99, 16,1)\",
-                        backgroundColor: gradientFill,
-                        borderColor: [
-                            'rgba(25,99,16,1)'
-                        ],
-                        borderWidth: 1
+                var ctxL = document.getElementById(\"lineChart\").getContext('2d');
+        
+                var gradientFill = ctxL.createLinearGradient(0, 400, 0, 0);
+                gradientFill.addColorStop(1, \"rgba(71, 186, 0, 1)\");
+                gradientFill.addColorStop(0, \"rgba(15,26,51, 0.8)\");
+        
+                var gradientFill1 = ctxL.createLinearGradient(0, 300, 0, 0);
+                gradientFill1.addColorStop(1, \"rgba(71, 186, 0, 1)\");
+                gradientFill1.addColorStop(0, \"rgba(15,26,51, 0.8)\");
+        
+        
+                var myLineChart = new Chart(ctxL, {
+                    type: 'line',
+                    data: {
+                        labels: [\" \", \" \", \" \", \" \", \" \"],
+                        scaleLabel: false,
+                        datasets: [
+                            {
+                                //radius: 0,
+                                fillColor: \"rgba(25, 99, 16, 1.2)\",
+                                strokeColor: \"rgba(25, 99, 16 ,1)\",
+                                pointColor: \"rgba(25, 99, 16 ,1)\",
+                                pointStrokeColor: \"#196310\",
+                                pointHighlightFill: \"#196310\",
+                                pointHighlightStroke: \"rgba(25, 99, 16,1)\",
+                                data: [6,2,10,6,14],
+                                pointHoverBackgroundColor: '#196310',//5
+                                pointHoverBorderColor: \"rgba(25, 99, 16,1)\",
+                                backgroundColor: gradientFill,
+                                borderColor: [
+                                    'rgba(25,99,16,1)'
+                                ],
+                                borderWidth: 1
+                            },
+                            {
+                                //radius: 0,
+                                fillColor: \"rgba(198,3,16,0.2)\",
+                                strokeColor: \"rgba(198,3,16,1)\",
+                                pointColor: \"rgba(198,3,16,1)\",
+                                pointStrokeColor: \"#47ba00\",
+                                pointHighlightFill: \"#47ba00\",
+                                pointHighlightStroke: \"rgba(198,3,16,1)\",
+                                data: [2,5,3,10,5],
+                                pointHoverBackgroundColor: '#47ba00',
+                                pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
+                                borderColor: 0,
+                                backgroundColor: gradientFill1,
+                                borderColor: [
+                                    'rgba(71, 186, 0,1)'
+                                ],
+                                borderWidth: 1
+                            }
+                        ]
                     },
-                    {
-                        //radius: 0,
-                        fillColor: \"rgba(198,3,16,0.2)\",
-                        strokeColor: \"rgba(198,3,16,1)\",
-                        pointColor: \"rgba(198,3,16,1)\",
-                        pointStrokeColor: \"#47ba00\",
-                        pointHighlightFill: \"#47ba00\",
-                        pointHighlightStroke: \"rgba(198,3,16,1)\",
-                        data: [2,5,3,10,5],
-                        pointHoverBackgroundColor: '#47ba00',
-                        pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
-                        borderColor: 0,
-                        backgroundColor: gradientFill1,
-                        borderColor: [
-                            'rgba(71, 186, 0,1)'
-                        ],
-                        borderWidth: 1
+                    options: {
+                        responsive: false,
+                        scales: {
+                            xAxes: [{
+                                display:false,
+        
+                                gridLines: {
+                                    color: \"rgba(15,26,51, 0)\",
+                                },
+                                ticks: {
+                                    display: false
+                                }
+                            }],
+                            yAxes: [{
+                                display:false,
+                                gridLines: {
+                                    color: \"rgba(15,26,51, 0)\",
+                                },
+                                ticks: {
+                                    display: false
+                                }
+                            }]
+                        },
+                        legend: {
+                            display: false
+                        },
+                        tooltips: {
+                            enabled: false
+                        }
+                    },
+                    scaleLabel: {
+                        display: false
                     }
-                ]
-            },
-            options: {
-                responsive: false,
-                scales: {
-                    xAxes: [{
-                        display:false,
-
-                        gridLines: {
-                            color: \"rgba(15,26,51, 0)\",
-                        },
-                        ticks: {
-                            display: false
-                        }
-                    }],
-                    yAxes: [{
-                        display:false,
-                        gridLines: {
-                            color: \"rgba(15,26,51, 0)\",
-                        },
-                        ticks: {
-                            display: false
-                        }
-                    }]
-                },
-                legend: {
-                    display: false
-                },
-                tooltips: {
-                    enabled: false
-                }
-            },
-            scaleLabel: {
-                display: false
-            }
-
-        });
-        </script>
-        ";
+        
+                });
+        </script>";
             ?>
         </section>
 
@@ -645,6 +643,7 @@ $this->title = 'Smart Crypto Invest';
             </div>
         </div>
     </section>
+
     <section class="advnateges">
         <div class="adv-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','Advantages')?></h1>
@@ -789,14 +788,14 @@ $this->title = 'Smart Crypto Invest';
                     </section>
                     <?php
                     echo"<script language='javascript'>
-                        var ctxL = document.getElementById(\"lineChartResult\").getContext('2d');
+                        var ctxL2 = document.getElementById(\"lineChartResult\").getContext('2d');
 
-                        var gradientFillTwo = ctxL.createLinearGradient(0, 50, 0, 10);
+                        var gradientFillTwo = ctxL2.createLinearGradient(0, 50, 0, 10);
                         gradientFillTwo.addColorStop(1, \"rgba(17, 77, 49, 1)\");
                         gradientFillTwo.addColorStop(0, \"rgba(17, 77, 49, 0.6)\");
 
 
-                        var myLineChart = new Chart(ctxL, {
+                        var myNewLineChart = new Chart(ctxL2, {
 					            type: 'line',
 					            data: {
 					                labels: [\"01.2017\", \"03.2017\", \"05.2017\", \"07.2017\", \"09.2017\",\"11.2017\",\"01.2018\",\"03.2018\",\"05.2018\"],
@@ -822,7 +821,7 @@ $this->title = 'Smart Crypto Invest';
 					                ]
 					            },
 					            options: {
-					                responsive: true,
+					                responsive: true ,
 					                scales: {
 					            xAxes: [{
 					            			display:true,
@@ -856,8 +855,7 @@ $this->title = 'Smart Crypto Invest';
 					            }
 
 					        });
-        </script>
-        ";
+        </script>";
                     ?>
                 </div>
             </div>
