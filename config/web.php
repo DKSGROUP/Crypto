@@ -49,7 +49,7 @@ $config = [
 
         'urlManager' => [
             'class'=> 'codemix\localeurls\UrlManager',
-            'languages'=>['RU','EU','UA'],
+            'languages'=>['RU','EN','UA'],
             'enableDefaultLanguageUrlCode'=>true,
             'enableLanguagePersistence' => false,
             'rules' => [

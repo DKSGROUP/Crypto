@@ -17,7 +17,7 @@ $this->title = 'Smart Crypto Invest';
 
 <div class="site-index">
     <section class="back">
-<!--
+
         <div id="container" class="triangle-container">
             <div id="output" class="">
             </div>
@@ -25,7 +25,7 @@ $this->title = 'Smart Crypto Invest';
 
         </div>
         <div id="controls" class="">
-        </div>-->
+        </div>
 
         <?php
         echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
@@ -51,14 +51,14 @@ $this->title = 'Smart Crypto Invest';
 
 
 
-
-                  <!--  <div class="d-none d-lg-block col-lg-2 offset-11">
+<!--
+                    <div class="d-none d-lg-block offset-11">
                         <div class="pull-right exchange ">
                             BTC/USD <b style="color: #31C37D;">682.20 </b></br>
                              ETH/USD <b style="color: #31C37D;">12.2700 </b>
                         </div>
-                    </div>
--->
+                    </div>-->
+
                     <div class="col-md-5" style="padding-top:100px; padding-left:100px;">
                         <div class="row">
                             <div class="col-6">
