@@ -122,12 +122,12 @@ $this->title = 'Smart Crypto Invest';
         var ctxL = document.getElementById(\"lineChart\").getContext('2d');
 
         var gradientFill = ctxL.createLinearGradient(0, 400, 0, 0);
-        gradientFill.addColorStop(1, \"rgba(25, 99, 16, 0.6)\");
-        gradientFill.addColorStop(0, \"rgba(6, 14, 31, 0)\");
+        gradientFill.addColorStop(1, \"rgba(71, 186, 0, 1)\");
+        gradientFill.addColorStop(0, \"rgba(15,26,51, 0.8)\");
 
-        var gradientFill1 = ctxL.createLinearGradient(0, 500, 0, 0);
-        gradientFill1.addColorStop(1, \"rgba(71, 186, 0, 0.6)\");
-        gradientFill1.addColorStop(0, \"rgba(6, 14, 31, 0)\");
+        var gradientFill1 = ctxL.createLinearGradient(0, 300, 0, 0);
+        gradientFill1.addColorStop(1, \"rgba(71, 186, 0, 1)\");
+        gradientFill1.addColorStop(0, \"rgba(15,26,51, 0.8)\");
 
 
         var myLineChart = new Chart(ctxL, {
@@ -144,7 +144,7 @@ $this->title = 'Smart Crypto Invest';
                         pointStrokeColor: \"#196310\",
                         pointHighlightFill: \"#196310\",
                         pointHighlightStroke: \"rgba(25, 99, 16,1)\",
-                        data: [13,2,12,9,14],
+                        data: [6,2,10,6,14],
                         pointHoverBackgroundColor: '#196310',//5
                         pointHoverBorderColor: \"rgba(25, 99, 16,1)\",
                         backgroundColor: gradientFill,
@@ -161,7 +161,7 @@ $this->title = 'Smart Crypto Invest';
                         pointStrokeColor: \"#47ba00\",
                         pointHighlightFill: \"#47ba00\",
                         pointHighlightStroke: \"rgba(198,3,16,1)\",
-                        data: [10,5,3,15,5],
+                        data: [2,5,3,10,5],
                         pointHoverBackgroundColor: '#47ba00',
                         pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                         borderColor: 0,
@@ -180,7 +180,7 @@ $this->title = 'Smart Crypto Invest';
                         display:false,
 
                         gridLines: {
-                            color: \"rgba(0, 0, 0, 0)\",
+                            color: \"rgba(15,26,51, 0)\",
                         },
                         ticks: {
                             display: false
@@ -189,7 +189,7 @@ $this->title = 'Smart Crypto Invest';
                     yAxes: [{
                         display:false,
                         gridLines: {
-                            color: \"rgba(0, 0, 0, 0)\",
+                            color: \"rgba(15,26,51, 0)\",
                         },
                         ticks: {
                             display: false
