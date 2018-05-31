@@ -17,7 +17,7 @@ $this->title = 'Smart Crypto Invest';
 
 <div class="site-index">
     <section class="back">
-<!--
+
         <div id="container" class="triangle-container">
             <div id="output" class="">
             </div>
@@ -25,7 +25,7 @@ $this->title = 'Smart Crypto Invest';
 
         </div>
         <div id="controls" class="">
-        </div>-->
+        </div>
 
         <?php
         echo"<script language='javascript' src=\"../js/Triangle.js\"></script>"
@@ -57,20 +57,21 @@ $this->title = 'Smart Crypto Invest';
 
 
 
-
-                  <!--  <div class="d-none d-lg-block col-lg-2 offset-11">
+<!--
+                    <div class="d-none d-lg-block offset-11">
                         <div class="pull-right exchange ">
                             BTC/USD <b style="color: #31C37D;">682.20 </b></br>
                              ETH/USD <b style="color: #31C37D;">12.2700 </b>
                         </div>
-                    </div>
--->
+                    </div>-->
+
                     <div class="col-md-5" style="padding-top:100px; padding-left:100px;">
                         <div class="row">
                             <div class="col-6">
                                 <div class="text text-center">
                                 <?php
-                                    echo"<img src=\"../img/main/Ellipse.png\"  >";
+                                    echo"<img src=\"../img/main/Ellipse.png\" >";
+
                                 ?>
                                 <p class="text-white"><?=Yii::t('app','Create account')?></p>
                                 </div>
@@ -118,18 +119,18 @@ $this->title = 'Smart Crypto Invest';
         </div>
     </section>
     <section class="graph">
-        <canvas id="lineChart" style="display: block; width: 100%;" class="chartjs-render-monitor"></canvas>
+        <canvas id="lineChart" style="display: block; width: 100%; height: 400px !important;" class="chartjs-render-monitor"></canvas>
 
 
         <?php
         echo"<script language='javascript'>
         var ctxL = document.getElementById(\"lineChart\").getContext('2d');
 
-        var gradientFill = ctxL.createLinearGradient(0, 800, 0, 0);
+        var gradientFill = ctxL.createLinearGradient(0, 400, 0, 0);
         gradientFill.addColorStop(1, \"rgba(25, 99, 16, 0.6)\");
         gradientFill.addColorStop(0, \"rgba(6, 14, 31, 0)\");
 
-        var gradientFill1 = ctxL.createLinearGradient(0, 800, 0, 100);
+        var gradientFill1 = ctxL.createLinearGradient(0, 500, 0, 0);
         gradientFill1.addColorStop(1, \"rgba(71, 186, 0, 0.6)\");
         gradientFill1.addColorStop(0, \"rgba(6, 14, 31, 0)\");
 
@@ -148,7 +149,7 @@ $this->title = 'Smart Crypto Invest';
                         pointStrokeColor: \"#196310\",
                         pointHighlightFill: \"#196310\",
                         pointHighlightStroke: \"rgba(25, 99, 16,1)\",
-                        data: [12,2,25,16,30],
+                        data: [13,2,12,9,14],
                         pointHoverBackgroundColor: '#196310',//5
                         pointHoverBorderColor: \"rgba(25, 99, 16,1)\",
                         backgroundColor: gradientFill,
@@ -165,25 +166,7 @@ $this->title = 'Smart Crypto Invest';
                         pointStrokeColor: \"#47ba00\",
                         pointHighlightFill: \"#47ba00\",
                         pointHighlightStroke: \"rgba(198,3,16,1)\",
-                        data: [9,5,18,30,15],
-                        pointHoverBackgroundColor: '#47ba00',
-                        pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
-                        borderColor: 0,
-                        backgroundColor: gradientFill1,
-                        borderColor: [
-                            'rgba(71, 186, 0,1)'
-                        ],
-                        borderWidth: 1
-                    },
-                    {
-                        //radius: 0,
-                        fillColor: \"rgba(198,3,16,0.2)\",
-                        strokeColor: \"rgba(198,3,16,1)\",
-                        pointColor: \"rgba(198,3,16,1)\",
-                        pointStrokeColor: \"#47ba00\",
-                        pointHighlightFill: \"#47ba00\",
-                        pointHighlightStroke: \"rgba(198,3,16,1)\",
-                        data: [9,5,18,30,15],
+                        data: [10,5,3,15,5],
                         pointHoverBackgroundColor: '#47ba00',
                         pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                         borderColor: 0,
@@ -254,7 +237,7 @@ $this->title = 'Smart Crypto Invest';
                         <div class="card-header  start">
                             <table>
                                 <tr>
-                                    <td><?=Yii::t('app','Starter')?></td>
+                                    <td class="bold-text"><?=Yii::t('app','Starter')?></td>
                                     <td class="text-right"><?=Yii::t('app','from 50$')?></td>
                                 </tr>
                             </table>
@@ -296,7 +279,7 @@ $this->title = 'Smart Crypto Invest';
                         <div class="card-header  start">
                             <table>
                                 <tr>
-                                    <td><?=Yii::t('app','Standard')?></td>
+                                    <td class="bold-text"><?=Yii::t('app','Standard')?></td>
                                     <td class="text-right"><?=Yii::t('app','up to 1000$')?></td>
                                 </tr>
                             </table>
@@ -338,7 +321,7 @@ $this->title = 'Smart Crypto Invest';
                         <div class="card-header  pro-card">
                             <table>
                                 <tr>
-                                    <td><?=Yii::t('app','Optimal')?></td>
+                                    <td class="bold-text"><?=Yii::t('app','Optimal')?></td>
                                     <td class="text-right"><?=Yii::t('app','from 1000$')?></td>
                                 </tr>
                             </table>
@@ -379,7 +362,7 @@ $this->title = 'Smart Crypto Invest';
                         <div class="card-header  pro-card">
                             <table>
                                 <tr>
-                                    <td><?=Yii::t('app','Advanced')?></td>
+                                    <td class="bold-text"><?=Yii::t('app','Advanced')?></td>
                                     <td class="text-right"><?=Yii::t('app','from 3000$')?></td>
                                 </tr>
                             </table>
@@ -420,7 +403,7 @@ $this->title = 'Smart Crypto Invest';
                         <div class="card-header  pro-card">
                             <table>
                                 <tr>
-                                    <td><?=Yii::t('app','Premium')?></td>
+                                    <td class="bold-text"><?=Yii::t('app','Premium')?></td>
                                     <td class="text-right"><?=Yii::t('app','from 5000$')?></td>
                                 </tr>
                             </table>
@@ -429,7 +412,7 @@ $this->title = 'Smart Crypto Invest';
                             <table>
                                 <tr>
                                     <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right">-</td>
+                                    <td class="text-right">&#8734</td>
                                 </tr>
                                 <tr>
                                     <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
@@ -463,7 +446,7 @@ $this->title = 'Smart Crypto Invest';
                         <div class="card-header  start">
                             <table>
                                 <tr>
-                                    <td><?=Yii::t('app','Business - API')?></td>
+                                    <td class="bold-text"><?=Yii::t('app','Business - API')?></td>
                                     <td class="text-right"><?=Yii::t('app','from 2000$')?></td>
                                 </tr>
                             </table>
@@ -504,7 +487,7 @@ $this->title = 'Smart Crypto Invest';
                         <div class="card-header  start">
                             <table>
                                 <tr>
-                                    <td><?=Yii::t('app','Exlusive - API')?></td>
+                                    <td class="bold-text"><?=Yii::t('app','Exlusive - API')?></td>
                                     <td class="text-right"><?=Yii::t('app','from 15000$')?></td>
                                 </tr>
                             </table>
@@ -513,7 +496,7 @@ $this->title = 'Smart Crypto Invest';
                             <table>
                                 <tr>
                                     <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right">-</td>
+                                    <td class="text-right">&#8734</td>
                                 </tr>
                                 <tr>
                                     <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
@@ -557,87 +540,87 @@ $this->title = 'Smart Crypto Invest';
                             <div class="row">
                                 <!--Формат-->
                                 <div class="col-6 light">
-                                    <p>Формат</p>
+                                    <p><?=Yii::t('app','Format')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p>Доверительная форма</p>
+                                    <p class="info-modal"><?=Yii::t('app','Trust management ')?></p>
                                 </div>
                                 <!--Минимальный вход-->
                                 <div class="col-6 dark">
-                                    <p>Минимальный вход</p>
+                                    <p><?=Yii::t('app','Minimal income')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p> </p>
+                                    <p class="info-modal"> </p>
                                 </div>
                                 <!--Доходность-->
                                 <div class="col-6 light">
-                                    <p>Доходность</p>
+                                    <p><?=Yii::t('app','Profitability')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p> </p>
+                                    <p class="info-modal"> </p>
                                 </div>
                                 <!--Минимальный срок инвестирования-->
                                 <div class="col-6 dark">
-                                    <p>Минимальный срок инвестирования</p>
+                                    <p><?=Yii::t('app','Minimal investment term')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p> </p>
+                                    <p class="info-modal"> </p>
                                 </div>
                                 <!--Распределение прибыли-->
                                 <div class="col-6 light">
-                                    <p>Распределение прибыли инвестор/фонд в %</p>
+                                    <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p> </p>
+                                    <p class="info-modal"> </p>
                                 </div>
                                 <!--Выплаты-->
                                 <div class="col-6 dark">
-                                    <p>Выплаты</p>
+                                    <p><?=Yii::t('app','Payments')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p> </p>
+                                    <p class="info-modal"> </p>
                                 </div>
                                 <!--Условия получения прибыли-->
                                 <div class="col-6 light">
-                                    <p>Условия получения прибыли</p>
+                                    <p><?=Yii::t('app','Income receiving conditions')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p> </p>
+                                    <p class="info-modal"> </p>
                                 </div>
                                 <!--USD-->
                                 <div class="col-6 dark">
-                                    <p>Условия вывода в USD</p>
+                                    <p><?=Yii::t('app','USD withdrawal conditions')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p> </p>
+                                    <p class="info-modal"> </p>
                                 </div>
                                 <!--Досрочный вывод-->
                                 <div class="col-6 light">
-                                    <p>Досрочный вывод</p>
+                                    <p><?=Yii::t('app','Preschedule withdrawal')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p> </p>
+                                    <p class="info-modal"> </p>
                                 </div>
                                 <!--Формат пополнения-->
                                 <div class="col-6 dark">
-                                    <p>Формат пополнения</p>
+                                    <p><?=Yii::t('app','Replenishment format')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p> </p>
+                                    <p class="info-modal"> </p>
                                 </div>
                                 <!--Капитализация процентов-->
                                 <div class="col-6 light">
-                                    <p>Капитализация процентов</p>
+                                    <p><?=Yii::t('app','Per cent capitalization')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p> </p>
+                                    <p class="info-modal"> </p>
                                 </div>
                                 <!--Отчетность-->
                                 <div class="col-6 dark">
-                                    <p>Отчетность</p>
+                                    <p><?=Yii::t('app','Reporting')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p> </p>
+                                    <p class="info-modal"> </p>
                                 </div>
 
                             </div>
@@ -961,7 +944,7 @@ $this->title = 'Smart Crypto Invest';
                                     <p><a href="#">
                                             <?php
                                             echo Button::widget([
-                                                'label' => Yii::t('app','Read More'),
+                                                'label' => Yii::t('app','Read more'),
                                                 'options' => ['class' => 'btn btn-success text-left'],
                                             ]);
                                             ?>
@@ -987,7 +970,7 @@ $this->title = 'Smart Crypto Invest';
                                     <p><a href="#">
                                             <?php
                                             echo Button::widget([
-                                                'label' => Yii::t('app','Read More'),
+                                                'label' => Yii::t('app','Read more'),
                                                 'options' => ['class' => 'btn btn-success text-left'],
                                             ]);
                                             ?>
