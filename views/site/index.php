@@ -51,7 +51,7 @@ $this->title = 'Smart Crypto Invest';
                         </div>
                     </div>-->
 
-                    <div class="col-md-5" style="padding-top:100px; padding-left:100px;">
+                    <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px;">
                         <div class="row">
                             <div class="col-6">
                                 <div class="text text-center">
@@ -104,12 +104,21 @@ $this->title = 'Smart Crypto Invest';
             </div>
         </div>
     </section>
-    <section class="graph">
-        <canvas id="lineChart" style="display: block; width: 100%; height: 400px !important; z-index: 999; position: relative;overflow: auto;" class="chartjs-render-monitor"></canvas>
+
+    <!--
+    packages status: почти;
+
+    to do:
+    -прогуглить как сделать нормальные линки, а не костыльную херь
+    -->
+
+    <section class="invest-packages">
+        <section class="graph">
+            <canvas id="lineChart" style="display: block; width: 100%; height: 400px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
 
 
-        <?php
-        echo"<script language='javascript'>
+            <?php
+            echo"<script language='javascript'>
         var ctxL = document.getElementById(\"lineChart\").getContext('2d');
 
         var gradientFill = ctxL.createLinearGradient(0, 400, 0, 0);
@@ -201,17 +210,9 @@ $this->title = 'Smart Crypto Invest';
         });
         </script>
         ";
-        ?>
-    </section>
+            ?>
+        </section>
 
-    <!--
-    packages status: почти;
-
-    to do:
-    -прогуглить как сделать нормальные линки, а не костыльную херь
-    -->
-
-    <section class="invest-packages">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center" style="margin: 25px 0;">
