@@ -13,10 +13,8 @@ AppAsset::register($this);
 $this->title = 'Smart Crypto Invest';
 ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<aside id="aside1">
+<aside id="aside1" class="d-none d-lg-block">
     <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'">Х</div>
-
-
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <div class="text-center text-white textt">
             <h2>У нас можно купить <b>GRAM</b></h2>
@@ -33,6 +31,21 @@ $this->title = 'Smart Crypto Invest';
         </div>
     </div>
 </aside>
+<!--<aside id="aside2" class="d-none d-sm-block">
+    <div id="closeButton" class="text-right" onclick="document.getElementById('aside2').style.display='none'">Х</div>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center text-white textt">
+            <h2>У нас можно купить <b>GRAM</b></h2>
+        </div>
+        <div class="text text-center">
+            <div class="butt">
+                <a class="btn button-signup text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
+                    Купить
+                </a>
+            </div>
+        </div>
+    </div>
+</aside> -->
 
 <div class="site-index">
 
@@ -50,6 +63,7 @@ $this->title = 'Smart Crypto Invest';
                     <h1 class="green" style="font-size:<h0px;"><b>Smart Crypto Invest</b><?=Yii::t('app',' - the best way to invest into cryptocurrencies')?></h1>
 
                     <p style="font-size: 22px; margin: 30px 0;"><?=Yii::t('app','Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks')?> </p>
+
                     <?php
                     echo Button::widget([
                         'label' => Yii::t('app','Invest'),
@@ -59,16 +73,14 @@ $this->title = 'Smart Crypto Invest';
                     ]);
                     ?>
                 </div>
-
-
-
-<!--
+                <div class="exch-top">
                     <div class="d-none d-lg-block offset-11">
                         <div class="pull-right exchange ">
                             BTC/USD <b style="color: #31C37D;">682.20 </b></br>
                              ETH/USD <b style="color: #31C37D;">12.2700 </b>
                         </div>
-                    </div>-->
+                    </div>
+                </div>
 
                     <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px;">
                         <div class="row">
