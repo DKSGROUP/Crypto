@@ -274,11 +274,12 @@ table{
     z-index: 101;
     bottom: 0px;
     left: 0px;
-    height: 400px;
+    height: 420px;
     width: 220px;
     align-items: center;
     background: url(../img/banner/ban.png) no-repeat;
     margin-right: -100%;
+    display: block;
 }
 
 .butt{
@@ -290,6 +291,9 @@ table{
 .elipse{
     margin: 10% 0;
 }
-.textt{
-    margin-top: 10%;
+#pop-checkbox {
+    display: none;
+}
+#pop-checkbox:checked + #aside1 {
+    visibility: hidden; /*чтобы освободить занимаемое место - display: none;*/
 }
