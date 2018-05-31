@@ -32,11 +32,17 @@ $this->title = 'Smart Crypto Invest';
         ?>
 
     </section>
+    <!-- banner-->
+  <!--  <div onload="init();" style="margin:0px;">
+    <canvas id="canvas" width="350" height="430" style="display: block; background-color: rgb(255, 255, 255); margin: 0px auto; width: 240px; height: 400px;">
+        <a class="various" data-fancybox-type="iframe" href="views/site/banner.php"></a>
+    </canvas>
+    </div>-->
     <section class="title-text">
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <h1 class="green" style="font-size: 30px;"><b>Smart Crypto Invest</b><?=Yii::t('app',' - the best way to invest into cryptocurrencies')?></h1>
+                    <h1 class="green" style="font-size:<h0px;"><b>Smart Crypto Invest</b><?=Yii::t('app',' - the best way to invest into cryptocurrencies')?></h1>
 
                     <p style="font-size: 22px; margin: 30px 0;"><?=Yii::t('app','Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks')?> </p>
                     <?php
@@ -648,18 +654,18 @@ $this->title = 'Smart Crypto Invest';
         </div>
         <div class="adv-content">
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="text-left col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
                             echo"<img src=\"../img/advanteges/analis.png\"; class=\"analis\">";
                             ?>
                         </div>
-                        <h5 class="mincapt"><?=Yii::t('app','Accurate analysis')?></h5>
+                        <h5 class="text-left mincapt"><?=Yii::t('app','Accurate analysis')?></h5>
                         <p><?=Yii::t('app','Our service specialises on cryptocurrencies purchase&sale, using precise trading strategies to deal bids according to  exchange rates')?></p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="text-left col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -670,7 +676,7 @@ $this->title = 'Smart Crypto Invest';
                         <p><?=Yii::t('app','SCI supports investment in Bitcoin as well as Ethereum allowing you to profit from exchange rate differencies')?></p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="text-left col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -681,7 +687,7 @@ $this->title = 'Smart Crypto Invest';
                         <p><?=Yii::t('app','Give us API access only for trading purposes or choose trust management delegating funds control to us')?></p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="text-left col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -692,7 +698,7 @@ $this->title = 'Smart Crypto Invest';
                         <p><?=Yii::t('app','We provide safe protection of your financial operations and personal data from any uncensored access')?></p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="text-left col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
@@ -703,14 +709,14 @@ $this->title = 'Smart Crypto Invest';
                         <p><?=Yii::t('app','Automated trading allows you to configure and start the system, saving your time and energy')?></p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="text-left col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
                             <?php
                             echo"<img src=\"../img/advanteges/operetions.png\"; class=\"analis\">";
                             ?>
                         </div>
-                        <h5 class="mincapt"><?=Yii::t('app','Operations transparency')?></h5>
+                        <h5 class="text-left mincapt"><?=Yii::t('app','Operations transparency')?></h5>
                         <p><?=Yii::t('app','Track your tradings’ profitability in the real-time, using our site’s financial reporting')?></p>
                     </div>
                 </div>
@@ -1059,3 +1065,4 @@ $this->title = 'Smart Crypto Invest';
             </a>
         </div>
     </section>
+
