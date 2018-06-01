@@ -129,7 +129,7 @@ $this->title = 'Smart Crypto Invest';
         </div>
     </section>
 
-    <section class="invest-packages ">
+    <section class="invest-packages " style="z-index: 1000;">
         <section class="graph">
             <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
 
@@ -678,7 +678,7 @@ $this->title = 'Smart Crypto Invest';
                         <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
                             Зарегестрироваться
                         </a>
-                        <a class="btn text-white" data-toggle="modal" data-target="#signin">
+                        <a class=" text-white" style="margin-bottom: 10px;">
                             У вас уже есть аккаунт?
                         </a>
 
@@ -733,10 +733,10 @@ $this->title = 'Smart Crypto Invest';
                       <a class="btn button-signin text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
                         Войти
                       </a>
-                      <a class="btn text-white" href="#">
+                      <p class=" text-white" style="margin-bottom: 10px;">
                         У вас нет аккаунта?
-                      </a>
-                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal"" >
+                      </p>
+                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal">
                         Зарегестрироваться
                       </a>
                     </div>
