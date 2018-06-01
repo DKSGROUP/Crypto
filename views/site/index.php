@@ -24,16 +24,11 @@ $this->title = 'Smart Crypto Invest';
             echo"<img src=\"../img/banner/elipse.png\"; class=\"elipse\">";
             ?>
         </div>
-        <div class="butt">
-            <a class="btn button-signup text-white align-items-center" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; width: 140px ">
-                <?=Yii::t('app','Buy')?>
-            </a>
             <div class="butt">
                 <a class="btn button-baner text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
                     <?=Yii::t('app','Buy')?>
                 </a>
             </div>
-        </div>
     </div>
 </aside>
 </div>
