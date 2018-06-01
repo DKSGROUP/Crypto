@@ -58,9 +58,9 @@ h1{
 
 /*---------cards----------*/
 .invest-packages{
-    margin-top: 210px;
+    margin-top: 230px;
     padding-bottom: 30px;
-    z-index: 999;
+    z-index: 1000;
 }
 
 .card{
