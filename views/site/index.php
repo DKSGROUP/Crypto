@@ -23,7 +23,7 @@ $this->title = 'Smart Crypto Invest';
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <div class="d-none d-lg-block">
-<aside id="aside1" >
+<aside id="aside1" class="animated fadeInLeft">
     <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'">Х</div>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <div class="text-center text-white textt">
@@ -59,8 +59,9 @@ $this->title = 'Smart Crypto Invest';
                     <?php
                     echo Button::widget([
                         'label' => Yii::t('app','Invest'),
-                        'options' => ['class' => 'btn  btn-success', 'style' => 'width: 152px;
-                        height: 33px; font-size: 14px; text-align: center; padding:0;'],
+                        'options' => ['class' => 'btn  btn-success wow pulse animated', 'style' => 'width: 152px;
+                        height: 33px; font-size: 14px; text-align: center; padding:0; visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;',
+                            'data-wow-delay' =>'300ms', 'data-wow-iteration' => 'infinite', 'data-wow-duration'=>'2s' ],
 
                     ]);
                     ?>
@@ -135,7 +136,7 @@ $this->title = 'Smart Crypto Invest';
     -прогуглить как сделать нормальные линки, а не костыльную херь
     -->
 
-    <section class="invest-packages">
+    <section class="invest-packages animated wow fadeIn">
         <section class="graph">
             <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
 
@@ -787,7 +788,7 @@ $this->title = 'Smart Crypto Invest';
         </div>
     </section>
 
-    <section class="advnateges">
+    <section class="advnateges  animated wow fadeIn">
         <div class="adv-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','Advantages')?></h1>
         </div>
@@ -864,7 +865,7 @@ $this->title = 'Smart Crypto Invest';
         </div>
     </section>
 
-    <section class="report">
+    <section class="report  animated wow fadeIn">
         <!-- REPORTS -->
         <div class="container-fluid">
             <div class="container text-center">
@@ -912,7 +913,7 @@ $this->title = 'Smart Crypto Invest';
             </div>
         </div>
 
-        <div class="chart">
+        <div class="chart  wow animated fadeIn">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -938,7 +939,7 @@ $this->title = 'Smart Crypto Invest';
                         gradientFillTwo.addColorStop(1, \"rgba(17, 77, 49, 1)\");
                         gradientFillTwo.addColorStop(0, \"rgba(17, 77, 49, 0.6)\");
 
-
+                            var done = false;
                         var myNewLineChart = new Chart(ctxL2, {
 					            type: 'line',
 					            data: {
@@ -956,6 +957,11 @@ $this->title = 'Smart Crypto Invest';
 					                        data: [0,40,30,60,75,55,100,120,144.5],
 					                        pointHoverBackgroundColor: '#00ff87',//5
 					                        pointHoverBorderColor: \"rgba(0, 255, 135,1)\",
+					                        
+                                            pointBackgroundColor: \"#00ff87\",
+                                            pointHoverBackgroundColor: \"#00ff87\",
+                                            pointHoverBorderColor: \"#00ff87\",
+                                            
 					                        backgroundColor: gradientFillTwo,
 					                    	borderColor: [
 					                        'rgba(0, 255, 135,1)'
@@ -967,39 +973,40 @@ $this->title = 'Smart Crypto Invest';
 					            options: {
 					                responsive: true ,
 					                scales: {
-					            xAxes: [{
-					            			display:true,
-
-					                        gridLines: {
-					                            color: \"rgba(255, 255, 255, 0)\",
-					                        },
-					                        ticks: {
-					                            display: true
-					                        }
-					                    }],
-					            yAxes: [{
-					            			//display:false,
-					                        gridLines: {
-					                            color: \"rgba(0, 0, 0, 0)\",
-					                        },
-					                        ticks: {
-					                            display: false
-					                        }
-					                    }]
-					            },
-					            legend: {
-					                    display: false
-					                 },
-					                 tooltips: {
-					                    enabled: true
-					                 }
-					            },
-					            scaleLabel: {
-					            	display: true
-					            }
+                                        xAxes: [{
+                                                    display:true,
+        
+                                                    gridLines: {
+                                                        color: \"rgba(255, 255, 255, 0)\",
+                                                    },
+                                                    ticks: {
+                                                        display: true
+                                                    }
+                                                }],
+                                        yAxes: [{
+                                                    //display:false,
+                                                    gridLines: {
+                                                        color: \"rgba(0, 0, 0, 0)\",
+                                                    },
+                                                    ticks: {
+                                                        display: false
+                                                    }
+                                                }]
+                                        },
+                                        legend: {
+                                                display: false
+                                             },
+                                             tooltips: {
+                                                enabled: true
+                                             }
+                                        },
+                                scaleLabel: {
+                                       display: true
+                                },
+                                
 
 					        });
-        </script>";
+                        </script>";
                     ?>
                 </div>
             </div>
@@ -1075,7 +1082,7 @@ $this->title = 'Smart Crypto Invest';
         </div>
     </section>
 
-    <section class="news">
+    <section class="news  animated wow fadeIn">
         <div class="news-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','News')?></h1>
         </div>
