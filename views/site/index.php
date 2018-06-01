@@ -17,17 +17,17 @@ $this->title = 'Smart Crypto Invest';
     <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'">Х</div>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <div class="text-center text-white textt">
-            <h2><?=Yii::t('app','We can buy ')?><b>GRAM</b></h2>
+            <h4><?=Yii::t('app','We can buy ')?><b>GRAM</b></h4>
         </div>
         <div class="text text-center">
             <?php
             echo"<img src=\"../img/banner/elipse.png\"; class=\"elipse\">";
             ?>
-            <div class="butt">
-                <a class="btn button-signup text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
-                    <?=Yii::t('app','Buy')?>
-                </a>
-            </div>
+        </div>
+        <div class="butt">
+            <a class="btn button-signup text-white align-items-center" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; width: 140px ">
+                <?=Yii::t('app','Buy')?>
+            </a>
         </div>
     </div>
 </aside>
