@@ -17,7 +17,7 @@ $this->title = 'Smart Crypto Invest';
     <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'">Х</div>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <div class="text-center text-white textt">
-            <h2>У нас можно купить <b>GRAM</b></h2>
+            <h2><?=Yii::t('app','We can buy ')?><b>GRAM</b></h2>
         </div>
         <div class="text text-center">
             <?php
@@ -25,7 +25,7 @@ $this->title = 'Smart Crypto Invest';
             ?>
             <div class="butt">
                 <a class="btn button-signup text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
-                    Купить
+                    <?=Yii::t('app','Buy')?>
                 </a>
             </div>
         </div>

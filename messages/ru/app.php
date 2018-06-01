@@ -106,8 +106,9 @@ return[
     'Preschedule withdrawal'=>'Досрочный вывод',
     'Replenishment format'=>'Формат пополнения',
     'Per cent capitalization'=>'Капитализация процентов',
-    ''=>'',
-    ''=>'',
+
+    'We can buy '=>'У нас можно купить ',
+    'Buy'=>'Купить',
     ''=>'',
     ''=>'',
 
