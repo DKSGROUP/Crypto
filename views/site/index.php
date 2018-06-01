@@ -17,18 +17,18 @@ $this->title = 'Smart Crypto Invest';
     <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'">Х</div>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <div class="text-center text-white textt">
-            <h2><?=Yii::t('app','We can buy ')?><b>GRAM</b></h2>
+            <h4><?=Yii::t('app','We can buy ')?><b>GRAM</b></h4>
         </div>
         <div class="text text-center">
             <?php
             echo"<img src=\"../img/banner/elipse.png\"; class=\"elipse\">";
             ?>
+        </div>
             <div class="butt">
                 <a class="btn button-baner text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
                     <?=Yii::t('app','Buy')?>
                 </a>
             </div>
-        </div>
     </div>
 </aside>
 </div>
@@ -1056,7 +1056,11 @@ $this->title = 'Smart Crypto Invest';
                         <?php
                         echo Button::widget([
                             'label' => Yii::t('app','Any questions?'),
+<<<<<<< HEAD
                             'options' => ['class' => 'btn btn som-success text-right'],
+=======
+                            'options' => ['class' => 'btn btn-success text-right'],
+>>>>>>> 5a605c30eeeb44d0f744ba0e4b9a452b30bdcc98
                         ]);
                         ?>
                     </a>
@@ -1083,6 +1087,7 @@ $this->title = 'Smart Crypto Invest';
                                 <div class="carousel-caption text-left">
                                     <h5>Джордж Сорос готов
                                         торговать криптовалютами</h5>
+                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                     <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit, sed do eiusmod tempor incididunt ut labore et
                                         dolore magna aliqua. Ut enim ad minim veniam,
@@ -1109,6 +1114,7 @@ $this->title = 'Smart Crypto Invest';
                                 <div class="carousel-caption text-left">
                                     <h5>Джордж Сорос готов
                                         торговать криптовалютами</h5>
+                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit, sed do eiusmod tempor incididunt ut labore et
                                         dolore magna aliqua. Ut enim ad minim veniam,
@@ -1139,6 +1145,7 @@ $this->title = 'Smart Crypto Invest';
                                 <div class="carousel-caption text-left">
                                     <h5>Джордж Сорос готов
                                         торговать криптовалютами</h5>
+                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit, sed do eiusmod tempor incididunt ut labore et
                                         dolore magna aliqua. Ut enim ad minim veniam,
@@ -1165,6 +1172,7 @@ $this->title = 'Smart Crypto Invest';
                                 <div class="carousel-caption text-left">
                                     <h5>Джордж Сорос готов
                                         торговать криптовалютами</h5>
+                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit, sed do eiusmod tempor incididunt ut labore et
                                         dolore magna aliqua. Ut enim ad minim veniam,

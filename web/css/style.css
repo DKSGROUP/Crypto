@@ -183,8 +183,8 @@ table{
     z-index: 101;
     bottom: 0px;
     left: 0px;
-    height: 420px;
-    width: 220px;
+    height: 300px;
+    width: 215px;
     align-items: center;
     background: url(../img/banner/ban.png) no-repeat;
     margin-right: -100%;
@@ -192,12 +192,13 @@ table{
 }
 
 .butt{
-    width: 150px !important;
+    width: 160px !important;
 }
 .button-baner{
     background: linear-gradient(180deg, #289FD9 0%, #0A6B9B 100%);
 }
 .elipse{
-    margin: 10% 0;
+    margin: 12% 0 20% 0;
+    width: 110px;
 }
 
