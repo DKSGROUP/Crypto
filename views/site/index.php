@@ -940,7 +940,6 @@ $this->title = 'Smart Crypto Invest';
                         gradientFillTwo.addColorStop(1, \"rgba(17, 77, 49, 1)\");
                         gradientFillTwo.addColorStop(0, \"rgba(17, 77, 49, 0.6)\");
 
-                            var done = false;
                         var myNewLineChart = new Chart(ctxL2, {
 					            type: 'line',
 					            data: {
@@ -955,10 +954,7 @@ $this->title = 'Smart Crypto Invest';
 					                        pointStrokeColor: \"#00ff87\",
 					                        pointHighlightFill: \"#00ff87\",
 					                        pointHighlightStroke: \"rgba(0, 255, 135,1)\",
-					                        data: [0,40,30,60,75,55,100,120,144.5],
-					                        pointHoverBackgroundColor: '#00ff87',//5
-					                        pointHoverBorderColor: \"rgba(0, 255, 135,1)\",
-					                        
+					                        data: [0,40,30,60,75,55,100,120,144.5],					                        
                                             pointBackgroundColor: \"#00ff87\",
                                             pointHoverBackgroundColor: \"#00ff87\",
                                             pointHoverBorderColor: \"#00ff87\",
@@ -981,13 +977,14 @@ $this->title = 'Smart Crypto Invest';
                                                         color: \"rgba(255, 255, 255, 0)\",
                                                     },
                                                     ticks: {
-                                                        display: true
+                                                        display: true,
+                                                        fontColor: \"white\"
                                                     }
                                                 }],
                                         yAxes: [{
-                                                    //display:false,
+                                                    display:false,
                                                     gridLines: {
-                                                        color: \"rgba(0, 0, 0, 0)\",
+                                                        color: \"rgba(255, 0, 0, 0)\",
                                                     },
                                                     ticks: {
                                                         display: false
@@ -1002,7 +999,8 @@ $this->title = 'Smart Crypto Invest';
                                              }
                                         },
                                 scaleLabel: {
-                                       display: true
+                                       display: true,
+                                       color : \"#fff\",
                                 },
                                 
 
@@ -1014,8 +1012,7 @@ $this->title = 'Smart Crypto Invest';
         </div>
 
         <!-- QUESTIONS -->
-        <div class="container-fluid">
-            <div class="container">
+            <div class="container" style="margin-top: 50px;">
                 <div class="title text-center"><?=Yii::t('app','Questions')?></div>
                 <div class="questions">
                     <div class="row d-flex align-items-center">
