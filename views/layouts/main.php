@@ -87,7 +87,9 @@ AppAsset::register($this);
 
         echo Button::widget([
             'label' => $endDiv,
-            'options' => ['class' => 'btn btn-outline-success', 'style' => 'margin-left: 15px; color: #fff;'],
+            'options' => ['class' => 'btn btn-outline-success',
+            'style' => 'margin-left: 15px; color: #fff;',
+        "data-toggle"=>"modal", "data-target"=>"#signup"],
         ]);
     ?>
 </div>
@@ -123,7 +125,7 @@ AppAsset::register($this);
                             'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/telegram.png) center center no-repeat; background-size : 100%;',
                             ],
                 ]);
-               
+
                 ?>
 
                 <?php
