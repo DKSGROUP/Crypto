@@ -60,6 +60,7 @@ h1{
 .invest-packages{
     margin-top: 210px;
     padding-bottom: 30px;
+    z-index: 999;
 }
 
 .card{

@@ -11,6 +11,16 @@ AppAsset::register($this);
 
 $this->title = 'Smart Crypto Invest';
 ?>
+
+<?php
+     echo"<script language='javascript' src='../js/wow.min.js'></script>";
+
+    echo"<script language='JavaScript'>
+        new WOW().init();
+    </script>";
+?>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <div class="d-none d-lg-block">
 <aside id="aside1" >
@@ -55,7 +65,7 @@ $this->title = 'Smart Crypto Invest';
                     ]);
                     ?>
                 </div>
-                <div class="exch-top">
+                <div class="exch-top animated fadeInRightBig ">
                     <div class="d-none d-lg-block offset-11">
                         <div class="pull-right exchange ">
                             BTC/USD <b style="color: #31C37D;">682.20 </b></br>
@@ -677,7 +687,7 @@ $this->title = 'Smart Crypto Invest';
                         <a class="btn text-white" data-toggle="modal" data-target="#signin">
                             У вас уже есть аккаунт?
                         </a>
-                        <a class="enter btn btn-outline-success" href="#">
+                        <a class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin">
                             Войти
                         </a>
                     </div>
@@ -1056,11 +1066,7 @@ $this->title = 'Smart Crypto Invest';
                         <?php
                         echo Button::widget([
                             'label' => Yii::t('app','Any questions?'),
-<<<<<<< HEAD
-                            'options' => ['class' => 'btn btn som-success text-right'],
-=======
                             'options' => ['class' => 'btn btn-success text-right'],
->>>>>>> 5a605c30eeeb44d0f744ba0e4b9a452b30bdcc98
                         ]);
                         ?>
                     </a>
