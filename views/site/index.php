@@ -678,6 +678,7 @@ $this->title = 'Smart Crypto Invest';
                         <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
                             Зарегестрироваться
                         </a>
+                        
                         <a class=" text-white" style="margin-bottom: 10px;">
                             У вас уже есть аккаунт?
                         </a>
@@ -745,7 +746,6 @@ $this->title = 'Smart Crypto Invest';
             </div>
         </div>
         <div class="modal fade" id="recover-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-            <div>SEEEEEEE WHAT HAPPEN</div>
             <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <?php
