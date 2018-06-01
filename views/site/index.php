@@ -32,21 +32,7 @@ $this->title = 'Smart Crypto Invest';
     </div>
 </aside>
 </div>
-<!--<aside id="aside2" class="d-none d-sm-block">
-    <div id="closeButton" class="text-right" onclick="document.getElementById('aside2').style.display='none'">Х</div>
-    <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
-        <div class="text-center text-white textt">
-            <h2>У нас можно купить <b>GRAM</b></h2>
-        </div>
-        <div class="text text-center">
-            <div class="butt">
-                <a class="btn button-signup text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
-                    Купить
-                </a>
-            </div>
-        </div>
-    </div>
-</aside> -->
+
 
 <div class="site-index">
 
@@ -141,15 +127,15 @@ $this->title = 'Smart Crypto Invest';
 
     <section class="invest-packages">
         <section class="graph">
-            <canvas id="lineChart" style="display: block; width: 100%; height: 400px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
+            <canvas id="lineChart" style="display: block; width: 100%; height: 200px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
 
             <?php
             echo"<script language='javascript'>
                 var ctxL = document.getElementById(\"lineChart\").getContext('2d');
         
-                var gradientFill = ctxL.createLinearGradient(0, 400, 0, 0);
+                var gradientFill = ctxL.createLinearGradient(0, 200, 0, 0);
                 gradientFill.addColorStop(1, \"rgba(71, 186, 0, 1)\");
-                gradientFill.addColorStop(0, \"rgba(15,26,51, 0.8)\");
+                gradientFill.addColorStop(0, \"rgba(15,26,51, 0.4)\");
         
                 var gradientFill1 = ctxL.createLinearGradient(0, 300, 0, 0);
                 gradientFill1.addColorStop(1, \"rgba(71, 186, 0, 1)\");
@@ -170,7 +156,7 @@ $this->title = 'Smart Crypto Invest';
                                 pointStrokeColor: \"#196310\",
                                 pointHighlightFill: \"#196310\",
                                 pointHighlightStroke: \"rgba(25, 99, 16,1)\",
-                                data: [6,2,10,6,14],
+                                data: [6,4,7,5,8],
                                 pointHoverBackgroundColor: '#196310',//5
                                 pointHoverBorderColor: \"rgba(25, 99, 16,1)\",
                                 backgroundColor: gradientFill,
@@ -178,7 +164,7 @@ $this->title = 'Smart Crypto Invest';
                                     'rgba(25,99,16,1)'
                                 ],
                                 borderWidth: 1
-                            },
+                            }/*,
                             {
                                 //radius: 0,
                                 fillColor: \"rgba(198,3,16,0.2)\",
@@ -196,7 +182,7 @@ $this->title = 'Smart Crypto Invest';
                                     'rgba(71, 186, 0,1)'
                                 ],
                                 borderWidth: 1
-                            }
+                            }*/
                         ]
                     },
                     options: {
@@ -653,6 +639,7 @@ $this->title = 'Smart Crypto Invest';
                 <div class="text-left col-sm-12 col-md-6 col-lg-4">
                     <div class="plus">
                         <div class="imgg">
+
                             <?php
                             echo"<img src=\"../img/advanteges/analis.png\"; class=\"analis\">";
                             ?>
