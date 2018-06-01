@@ -129,14 +129,7 @@ $this->title = 'Smart Crypto Invest';
         </div>
     </section>
 
-    <!--
-    packages status: почти;
-
-    to do:
-    -прогуглить как сделать нормальные линки, а не костыльную херь
-    -->
-
-    <section class="invest-packages animated wow fadeIn">
+    <section class="invest-packages ">
         <section class="graph">
             <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
 
@@ -235,7 +228,7 @@ $this->title = 'Smart Crypto Invest';
             ?>
         </section>
 
-        <div class="container">
+        <div class="container animated wow fadeIn">
             <div class="row">
                 <div class="col-12 text-center" style="margin: 25px 0;">
                     <h1 style=" font-size: 22px;"><?=Yii::t('app','Investition Packages')?></h1>
@@ -751,7 +744,8 @@ $this->title = 'Smart Crypto Invest';
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="recover-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="recover-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div>SEEEEEEE WHAT HAPPEN</div>
             <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <?php
@@ -1077,7 +1071,6 @@ $this->title = 'Smart Crypto Invest';
                     </a>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="news  animated wow fadeIn">
@@ -1213,3 +1206,4 @@ $this->title = 'Smart Crypto Invest';
             </a>
         </div>
     </section>
+</div>
