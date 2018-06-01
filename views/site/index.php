@@ -688,7 +688,7 @@ $this->title = 'Smart Crypto Invest';
                             У вас уже есть аккаунт?
                         </a>
 
-                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" onclick="document.getElementById('signup').style.display='none'" >
+                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal"" >
                             Войти
                         </a>
                     </div>
@@ -742,7 +742,7 @@ $this->title = 'Smart Crypto Invest';
                       <a class="btn text-white" href="#">
                         У вас нет аккаунта?
                       </a>
-                      <a class="btn btn-outline-success" href="#">
+                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal"" >
                         Зарегестрироваться
                       </a>
                     </div>
