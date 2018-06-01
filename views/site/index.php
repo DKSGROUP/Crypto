@@ -49,7 +49,7 @@ $this->title = 'Smart Crypto Invest';
                     <?php
                     echo Button::widget([
                         'label' => Yii::t('app','Invest'),
-                        'options' => ['class' => 'btn btn btn-success', 'style' => 'width: 152px;
+                        'options' => ['class' => 'btn  btn-success', 'style' => 'width: 152px;
                         height: 33px; font-size: 14px; text-align: center; padding:0;'],
 
                     ]);
@@ -127,19 +127,19 @@ $this->title = 'Smart Crypto Invest';
 
     <section class="invest-packages">
         <section class="graph">
-            <canvas id="lineChart" style="display: block; width: 100%; height: 200px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
+            <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
 
             <?php
             echo"<script language='javascript'>
                 var ctxL = document.getElementById(\"lineChart\").getContext('2d');
 
-                var gradientFill = ctxL.createLinearGradient(0, 200, 0, 0);
+                var gradientFill = ctxL.createLinearGradient(0, 410, 0, 0);
                 gradientFill.addColorStop(1, \"rgba(71, 186, 0, 1)\");
-                gradientFill.addColorStop(0, \"rgba(15,26,51, 0.4)\");
+                gradientFill.addColorStop(0, \"rgba(11,21,42, 0.4)\");
 
-                var gradientFill1 = ctxL.createLinearGradient(0, 300, 0, 0);
-                gradientFill1.addColorStop(1, \"rgba(71, 186, 0, 1)\");
-                gradientFill1.addColorStop(0, \"rgba(15,26,51, 0.8)\");
+                var gradientFill1 = ctxL.createLinearGradient(0, 410, 0, 0);
+                gradientFill1.addColorStop(1, \"rgba(10,19,39, 1)\");
+                gradientFill1.addColorStop(0, \"rgba(11,21,42, 0.8)\");
 
 
                 var myLineChart = new Chart(ctxL, {
@@ -156,7 +156,7 @@ $this->title = 'Smart Crypto Invest';
                                 pointStrokeColor: \"#196310\",
                                 pointHighlightFill: \"#196310\",
                                 pointHighlightStroke: \"rgba(25, 99, 16,1)\",
-                                data: [6,4,7,5,8],
+                                data: [9,7,9,8,11],
                                 pointHoverBackgroundColor: '#196310',//5
                                 pointHoverBorderColor: \"rgba(25, 99, 16,1)\",
                                 backgroundColor: gradientFill,
@@ -164,16 +164,16 @@ $this->title = 'Smart Crypto Invest';
                                     'rgba(25,99,16,1)'
                                 ],
                                 borderWidth: 1
-                            }/*,
+                            },
                             {
-                                //radius: 0,
+                                radius: 0,
                                 fillColor: \"rgba(198,3,16,0.2)\",
                                 strokeColor: \"rgba(198,3,16,1)\",
                                 pointColor: \"rgba(198,3,16,1)\",
                                 pointStrokeColor: \"#47ba00\",
                                 pointHighlightFill: \"#47ba00\",
                                 pointHighlightStroke: \"rgba(198,3,16,1)\",
-                                data: [2,5,3,10,5],
+                                data: [9,7,9,8,11],
                                 pointHoverBackgroundColor: '#47ba00',
                                 pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                                 borderColor: 0,
@@ -182,7 +182,7 @@ $this->title = 'Smart Crypto Invest';
                                     'rgba(71, 186, 0,1)'
                                 ],
                                 borderWidth: 1
-                            }*/
+                            }
                         ]
                     },
                     options: {
@@ -879,7 +879,7 @@ $this->title = 'Smart Crypto Invest';
                                 <?php
                                 echo Button::widget([
                                     'label' => Yii::t('app','Download reporting exam'),
-                                    'options' => ['class' => 'btn btn-outline-success text-right'],
+                                    'options' => ['class' => 'btn btn-success text-right'],
                                 ]);
                                 ?>
                             </a>
@@ -1056,7 +1056,7 @@ $this->title = 'Smart Crypto Invest';
                         <?php
                         echo Button::widget([
                             'label' => Yii::t('app','Any questions?'),
-                            'options' => ['class' => 'btn btn-outline-success text-right'],
+                            'options' => ['class' => 'btn btn som-success text-right'],
                         ]);
                         ?>
                     </a>

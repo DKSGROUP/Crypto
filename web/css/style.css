@@ -16,7 +16,7 @@
 
 body{
     font-family: GothaProReg, Arial, sans !important;
-    background: linear-gradient(#060E1F, #22335C, #060E1F);
+    background: linear-gradient(#060e1f, #172341, #060e1f);23,35,65
     color: #fff;
 }
 
@@ -33,11 +33,13 @@ h1{
     color: green;
 }
 
+.title-text{
+    pointer-events: none;
+}
 
 .title-text h1 {
     margin-top: 100px;
 }
-
 
 
 .graph{
@@ -47,6 +49,7 @@ h1{
     height: 500px !important;
     width: 105% !important; /*работает - НЕ ЛАПАЙ И МОЛИСЬ НА ЭТО!*/
     z-index: 2;
+    pointer-events: none;
 }
 .ellipse-main{
     z-index: 999;
@@ -55,7 +58,7 @@ h1{
 
 /*---------cards----------*/
 .invest-packages{
-    margin-top: 100px;
+    margin-top: 210px;
     padding-bottom: 30px;
 }
 
