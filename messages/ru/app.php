@@ -52,7 +52,7 @@ return[
     'by agreement'=>'по договоренности',
 
     'Accurate analysis'=>'Достоверный анализ',
-    'Our service specialises on cryptocurrencies purchase&sale, using precise trading strategies to deal bids according to  exchange rates'=>'Наш сервис занимается покупкой и продажей криптовалюты, достигая доходность благодаря оценке рынка и грамотному трейдингу.',
+    'Our service specialises on cryptocurrencies purchase&sale, using precise trading strategies to deal bids according to  exchange rates'=>'Наш сервис занимается покупкой и продажей криптовалюты, достигая доходность благодаря оценке рынка и грамотному трейдингу',
 
     'Multi-currency trading'=>'Мультивалютный трейдинг',
     'SCI supports investment in Bitcoin as well as Ethereum allowing you to profit from exchange rate differencies'=>'SCI поддерживает размещение сбережений как в Bitcoin, так и в Ethereum. Получайте прибыль за счет курсовой разницы валют',

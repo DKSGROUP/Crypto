@@ -15,7 +15,7 @@ return[
     'User Account' => 'Особистий кабінет',
 
     ' - the best way to invest into cryptocurrencies' => ' - найкращий спосіб інвестувати в криптовалюту',
-    'Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks' => 'Наша система автоматизованого трейдинга дозволяє виробляти прибутктрейдинговие операції за кілька кліківові трейдингові операції за декілька кліків ',
+    'Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks' => 'Наша система автоматизованого трейдингу дозволяє виробляти прибуткові трейдингові операції за декілька кліків',
     'Invest' => 'Інвестувати',
 
     'Create account' => 'Реєструйся',
@@ -68,7 +68,7 @@ return[
 
 
     'Accurate analysis' => 'Достовірний аналіз',
-    'Our service specialises on cryptocurrencies purchase&sale, using precise trading strategies to deal bids according to  exchange rates' => 'Наш сервіс займається придбанням та продажем криптовалюти, досягаючи прибутковості за рахунок оцінки ринку та грамотному трейдингу ',
+    'Our service specialises on cryptocurrencies purchase&sale, using precise trading strategies to deal bids according to  exchange rates' => 'Наш сервіс займається придбанням та продажем криптовалюти, досягаючи прибутковості за рахунок оцінки ринку та грамотному трейдингу',
 
     'Multi-currency trading' => 'Мультивалютний трейдинг',
     'SCI supports investment in Bitcoin as well as Ethereum allowing you to profit from exchange rate differencies' => 'SCI підтримує розміщення зощаджень як у Bitcoin, так і в Ethereum. Отримуйте прибуток за рахунок курсової різниці валют',
@@ -114,7 +114,7 @@ return[
     'We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.' => 'Ми доклали великих зусиль щоб забезпечити безпеку ваших трейдинг-операцій настільки, наскільки це взагалі можливо. Ризики витоку даних або хакерської атаки нашого сайту мінімізовані. Більш того, ми звикли до суворих стандартів безпеки, що дозволяє налагодити хороший захист трейдингу.',
 
     'Is it easy to use SCI?' => 'ЧИ ЛЕГКО КОРИСТУВАТИСЯ SMART CRYPTO INVEST?',
-    'es! For using our service you need only to sign up, choose your investment package – and receive income!' => 'Так! Для використання нашого сервісу вам потрібно всього лише зареєструватися на сайті, обрати інвестиційний пакет - і почати отримувати прибуток.',
+    'Yes! For using our service you need only to sign up, choose your investment package – and receive income!' => 'Так! Для використання нашого сервісу вам потрібно всього лише зареєструватися на сайті, обрати інвестиційний пакет - і почати отримувати прибуток.',
 
     'Any questions?'=>'Залишились питання?',
 
