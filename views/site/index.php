@@ -50,7 +50,7 @@ $this->title = 'Smart Crypto Invest';
                     echo Button::widget([
                         'label' => Yii::t('app','Invest'),
                         'options' => ['class' => 'btn btn btn-success', 'style' => 'width: 152px;
-                        height: 33px; font-size: 14px; text-align: center; padding:0;'],
+                        height: 33px; font-size: 14px; text-align: center; padding:0; background: linear-gradient(to bottom, #05AB5B, #048748);'],
 
                     ]);
                     ?>
@@ -155,13 +155,13 @@ $this->title = 'Smart Crypto Invest';
                                 pointColor: \"rgba(25, 99, 16 ,1)\",
                                 pointStrokeColor: \"#196310\",
                                 pointHighlightFill: \"#196310\",
-                                pointHighlightStroke: \"rgba(25, 99, 16,1)\",
+                                pointHighlightStroke: \"#31C37D\",
                                 data: [6,4,7,5,8],
-                                pointHoverBackgroundColor: '#196310',//5
-                                pointHoverBorderColor: \"rgba(25, 99, 16,1)\",
+                                pointHoverBackgroundColor: '#31C37D',//5
+                                pointHoverBorderColor: \"#31C37D\",
                                 backgroundColor: gradientFill,
                                 borderColor: [
-                                    'rgba(25,99,16,1)'
+                                    '#31C37D'
                                 ],
                                 borderWidth: 1
                             }/*,
@@ -256,7 +256,8 @@ $this->title = 'Smart Crypto Invest';
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
 
@@ -264,7 +265,8 @@ $this->title = 'Smart Crypto Invest';
                                         <?php
                                         echo Button::widget([
                                             'label' =>Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                            'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                 </tr>
@@ -298,14 +300,16 @@ $this->title = 'Smart Crypto Invest';
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     <td>
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                        'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                 </tr>
@@ -340,14 +344,16 @@ $this->title = 'Smart Crypto Invest';
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     <td>
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr'],
+                                            'options' => ['class' => 'btn btn-success text-center investr',
+                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?></td>
                                 </tr>
@@ -381,14 +387,16 @@ $this->title = 'Smart Crypto Invest';
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     <td>
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr'],
+                                            'options' => ['class' => 'btn btn-success text-center investr',
+                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?></td>
                                 </tr>
@@ -422,14 +430,16 @@ $this->title = 'Smart Crypto Invest';
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     <td>
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr'],
+                                            'options' => ['class' => 'btn btn-success text-center investr',
+                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?></td>
                                 </tr>
@@ -465,14 +475,16 @@ $this->title = 'Smart Crypto Invest';
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     <td>
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                        'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                 </tr>
@@ -506,14 +518,16 @@ $this->title = 'Smart Crypto Invest';
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     <td>
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                        'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                 </tr>
@@ -635,6 +649,7 @@ $this->title = 'Smart Crypto Invest';
                     echo"<style>
                     .modal-signup{
                         max-width:325px !important;
+                        height:570px !important;
                     }
                     .signup{
                       background-image: url(../img/signin/signin_bg.png);
@@ -674,10 +689,10 @@ $this->title = 'Smart Crypto Invest';
                         <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
                             Зарегестрироваться
                         </a>
-                        <a class="btn text-white" data-toggle="modal" data-target="#signin">
+                        <p class="text-white">
                             У вас уже есть аккаунт?
-                        </a>
-                        <a class="enter btn btn-outline-success" href="#">
+                        </p>
+                        <a class="enter btn btn-outline-success" data-toggle="modal" data-target="#signin" href="#">
                             Войти
                         </a>
                     </div>
@@ -685,12 +700,13 @@ $this->title = 'Smart Crypto Invest';
             </div>
         </div>
         <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-signup modal-signup modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-signin modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <?php
                     echo"<style>
-                    .modal-signup{
+                    .modal-signin{
                         max-width:325px !important;
+                        height:570px !important;
                     }
                     .signin{
                       background-image: url(../img/signin/signin_bg.png);
@@ -725,13 +741,16 @@ $this->title = 'Smart Crypto Invest';
                       <input class="data form-control" type="text" placeholder="Пароль" />
 
                       <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
-                      <a class="btn button-signin text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
+                      <a class="btn button-signin text-white" href="#">
                         Войти
                       </a>
-                      <a class="btn text-white" href="#">
-                        У вас нет аккаунта?
+                      <a class="text-white" style="margin-bottom:40px; margin-top: 10px;"  data-toggle="modal" data-target="#recover-password">
+                          Забыли пароль?
                       </a>
-                      <a class="btn btn-outline-success" href="#">
+                      <p class="text-white">
+                        У вас нет аккаунта?
+                    </p>
+                      <a class="btn btn-outline-success" style="margin-bottom:25px;" data-toggle="modal" data-target="#signup" href="#">
                         Зарегестрироваться
                       </a>
                     </div>
@@ -740,14 +759,14 @@ $this->title = 'Smart Crypto Invest';
             </div>
         </div>
         <div class="modal fade" id="recover-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-recover modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <?php
                     echo"<style>
-                    .modal-signup{
+                    .modal-recover{
                         max-width:325px !important;
                     }
-                    .signup{
+                    .recover{
                       background-image: url(../img/signin/signin_bg.png);
                     }
                     .signup-text{
@@ -771,7 +790,19 @@ $this->title = 'Smart Crypto Invest';
                       background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     }</style>"
                     ?>
+                    <div class="recover container-fluid d-flex flex-column justify-content-center align-items-center">
+                        <?php
+                        echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"img-fluid mt-4\">";
+                        ?>
+                        <div class="text-center text-white">
+                            <p>Smart Crypto Invest</p>
+                        </div>
 
+                        <input class="data form-control" type="text" placeholder="E-mail*" />
+                        <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
+                            Восстановить
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -879,7 +910,8 @@ $this->title = 'Smart Crypto Invest';
                                 <?php
                                 echo Button::widget([
                                     'label' => Yii::t('app','Download reporting exam'),
-                                    'options' => ['class' => 'btn btn-outline-success text-right'],
+                                    'options' => ['class' => 'btn text-right',
+                                'style' => 'color:white; background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                 ]);
                                 ?>
                             </a>

@@ -88,7 +88,7 @@ AppAsset::register($this);
         echo Button::widget([
             'label' => $endDiv,
             'options' => ['class' => 'btn btn-outline-success',
-            'style' => 'margin-left: 15px; color: #fff;',
+            'style' => 'margin-left: 15px; color: #fff; border: 2px solid #27AE60; border-radius:4px;',
         "data-toggle"=>"modal", "data-target"=>"#signup"],
         ]);
     ?>

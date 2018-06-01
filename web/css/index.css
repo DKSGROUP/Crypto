@@ -14,8 +14,8 @@ body{
   Line Height: 26px;
   margin-bottom: 42px;
 }
-.button{
-  background:linear-gradient(to bottom, #05AB5B , #048748);
+.button-report{
+    background: linear-gradient(to bottom, #05AB5B, #048748);
   height:33px;
   width:189px;
 }
