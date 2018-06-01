@@ -687,7 +687,8 @@ $this->title = 'Smart Crypto Invest';
                         <a class="btn text-white" data-toggle="modal" data-target="#signin">
                             У вас уже есть аккаунт?
                         </a>
-                        <a class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin">
+
+                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" onclick="document.getElementById('signup').style.display='none'" >
                             Войти
                         </a>
                     </div>
