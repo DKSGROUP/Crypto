@@ -28,6 +28,11 @@ $this->title = 'Smart Crypto Invest';
             <a class="btn button-signup text-white align-items-center" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; width: 140px ">
                 <?=Yii::t('app','Buy')?>
             </a>
+            <div class="butt">
+                <a class="btn button-baner text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
+                    <?=Yii::t('app','Buy')?>
+                </a>
+            </div>
         </div>
     </div>
 </aside>
@@ -132,16 +137,16 @@ $this->title = 'Smart Crypto Invest';
             <?php
             echo"<script language='javascript'>
                 var ctxL = document.getElementById(\"lineChart\").getContext('2d');
-        
+
                 var gradientFill = ctxL.createLinearGradient(0, 200, 0, 0);
                 gradientFill.addColorStop(1, \"rgba(71, 186, 0, 1)\");
                 gradientFill.addColorStop(0, \"rgba(15,26,51, 0.4)\");
-        
+
                 var gradientFill1 = ctxL.createLinearGradient(0, 300, 0, 0);
                 gradientFill1.addColorStop(1, \"rgba(71, 186, 0, 1)\");
                 gradientFill1.addColorStop(0, \"rgba(15,26,51, 0.8)\");
-        
-        
+
+
                 var myLineChart = new Chart(ctxL, {
                     type: 'line',
                     data: {
@@ -190,7 +195,7 @@ $this->title = 'Smart Crypto Invest';
                         scales: {
                             xAxes: [{
                                 display:false,
-        
+
                                 gridLines: {
                                     color: \"rgba(15,26,51, 0)\",
                                 },
@@ -218,7 +223,7 @@ $this->title = 'Smart Crypto Invest';
                     scaleLabel: {
                         display: false
                     }
-        
+
                 });
         </script>";
             ?>
@@ -624,6 +629,153 @@ $this->title = 'Smart Crypto Invest';
                             </div>
                         </div>
                     </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <?php
+                    echo"<style>
+                    .modal-signup{
+                        max-width:325px !important;
+                    }
+                    .signup{
+                      background-image: url(../img/signin/signin_bg.png);
+                    }
+                    .signup-text{
+                      margin-bottom: 40px;
+                      margin-top: 10px;
+                    }
+                    .data, .button-signup, .enter{
+                      width: 290px !important;
+                    }
+                    .data{
+                      background-color:#1B2435;
+                      border-radius: 4px;
+                      border-color: #3B4451;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                    }
+                    .enter{
+                        margin-bottom:25px;
+                    }
+                    .button-signup{
+                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
+                    }</style>"
+                    ?>
+                    <div class="signup container-fluid d-flex flex-column justify-content-center align-items-center">
+                        <?php
+                        echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"img-fluid mt-4\">";
+                        ?>
+                        <div class="text-center text-white">
+                            <p class="signup-text">Smart Crypto Invest</p>
+                        </div>
+                        <input class="data form-control" type="text" placeholder="Имя*" />
+                        <input class="data form-control" type="text" placeholder="E-mail*" />
+                        <input class="data form-control" type="text" placeholder="Пароль*" />
+
+                        <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
+                            Зарегестрироваться
+                        </a>
+                        <a class="btn text-white" data-toggle="modal" data-target="#signin">
+                            У вас уже есть аккаунт?
+                        </a>
+                        <a class="enter btn btn-outline-success" href="#">
+                            Войти
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-signup modal-signup modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <?php
+                    echo"<style>
+                    .modal-signup{
+                        max-width:325px !important;
+                    }
+                    .signin{
+                      background-image: url(../img/signin/signin_bg.png);
+                    }
+                    .signin-text{
+                      margin-bottom: 40px;
+                      margin-top: 10px;
+                    }
+                    .data, .button-signin, .enter{
+                      width: 290px !important;
+                    }
+                    .data{
+                      background-color:#1B2435;
+                      border-radius: 4px;
+                      border-color: #3B4451;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                    }
+                    .button-signin{
+                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
+                    }
+                    </style>"
+                    ?>
+                    <div class="signin container-fluid d-flex flex-column justify-content-center align-items-center">
+                      <?php
+                        echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"img-fluid mt-4\">";
+                       ?>
+                      <div class="text-center text-white">
+                        <p class="signin-text">Smart Crypto Invest</p>
+                      </div>
+                      <input class="data form-control" type="text" placeholder="E-mail" />
+                      <input class="data form-control" type="text" placeholder="Пароль" />
+
+                      <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
+                      <a class="btn button-signin text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
+                        Войти
+                      </a>
+                      <a class="btn text-white" href="#">
+                        У вас нет аккаунта?
+                      </a>
+                      <a class="btn btn-outline-success" href="#">
+                        Зарегестрироваться
+                      </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="recover-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <?php
+                    echo"<style>
+                    .modal-signup{
+                        max-width:325px !important;
+                    }
+                    .signup{
+                      background-image: url(../img/signin/signin_bg.png);
+                    }
+                    .signup-text{
+                      margin-bottom: 40px;
+                      margin-top: 10px;
+                    }
+                    .data, .button-signup, .enter{
+                      width: 290px !important;
+                    }
+                    .data{
+                      background-color:#1B2435;
+                      border-radius: 4px;
+                      border-color: #3B4451;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                    }
+                    .enter{
+                        margin-bottom:25px;
+                    }
+                    .button-signup{
+                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
+                    }</style>"
+                    ?>
 
                 </div>
             </div>
@@ -1047,4 +1199,3 @@ $this->title = 'Smart Crypto Invest';
             </a>
         </div>
     </section>
-
