@@ -59,8 +59,6 @@ TO DO:
 STATUS: -
 
 TO DO:
--поменять цвет кнопок
--текст "выше" всех
 -прилепить курс валют к сонтейнеру что бы тот не улетал в бок
 
 -->
@@ -143,14 +141,7 @@ TO DO:
             </div>
         </div>
     </section>
-    <!--CHartOne
 
-           Status: -
-
-           To Do:
-           -сделать так что бі тот был под текстом
-           -поменять цвет
-           -->
     <section class="graph" style="z-index: 0;">
         <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:-5px;" class="chartjs-render-monitor"></canvas>
 
@@ -181,7 +172,7 @@ TO DO:
                                 pointStrokeColor: \"#196310\",
                                 pointHighlightFill: \"#196310\",
                                 pointHighlightStroke: \"#31C37D\",
-                                data: [6,4,7,5,8],
+                                data: [9,8,9,8.5,11],
                                 pointHoverBackgroundColor: '#31C37D',//5
                                 pointHoverBorderColor: \"#31C37D\",
                                 backgroundColor: gradientFill,
@@ -249,7 +240,6 @@ TO DO:
         ?>
     </section>
     <section class="invest-packages " style="z-index: 3;">
-        <a href="#invest-packages"></a>
 
         <!--Invest packages
 
@@ -300,7 +290,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
                                              'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
@@ -310,7 +300,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' =>Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
@@ -356,7 +346,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
@@ -366,7 +356,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
                                         'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
@@ -423,7 +413,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr',
+                                            'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
                                         'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?>
@@ -479,7 +469,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr',
+                                            'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
                                         'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?>
@@ -534,7 +524,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr',
+                                            'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
                                         'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?>
@@ -582,7 +572,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
@@ -592,7 +582,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
                                         'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
@@ -636,7 +626,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
@@ -646,7 +636,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
                                         'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
@@ -764,7 +754,8 @@ TO DO:
             </div>
         </div>
         <!--Modal SIGN UP-->
-        <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel
+" aria-hidden="true">
             <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <?php
@@ -814,7 +805,7 @@ TO DO:
                         <p class="text-white">
                             У вас уже есть аккаунт?
                         </p>
-                        <a class="enter btn btn-outline-success" data-toggle="modal" data-target="#signin" href="#">
+                        <a class="enter btn btn-outline-success" data-toggle="modal" data-target="#signin" da data-dismiss="signup" href="#" >
                             Войти
                         </a>
                     </div>
@@ -822,7 +813,7 @@ TO DO:
             </div>
         </div>
         <!--Modal SIGN IN-->
-        <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
             <div class="modal-dialog modal-signin modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <?php
@@ -873,7 +864,7 @@ TO DO:
                       <p class="text-white">
                         У вас нет аккаунта?
                     </p>
-                      <a class="btn btn-outline-success" style="margin-bottom:25px;" data-toggle="modal" data-target="#signup" href="#">
+                      <a class="btn btn-outline-success" style="margin-bottom:25px;" data-toggle="modal" data-target="#signup" data-dismiss="signin" href="#">
                         Зарегестрироваться
                       </a>
                     </div>
@@ -1018,7 +1009,7 @@ TO DO:
                     <h1 style=" font-size: 22px;"><?=Yii::t('app','Reporting')?></h1>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="margin-bottom: 35px;">
                         <div class="report-title">
                             <?=Yii::t('app','Trust management')?>
                         </div>
@@ -1027,7 +1018,7 @@ TO DO:
                         </div>
                         <div class="report-img">
                             <?php
-                            echo"<img src=\"../img/reports/sheet.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/reports/sheet.png\"; class=\"analis img-fluid\">";
                             ?>
                         </div>
                         <div id="report-download-btn">
@@ -1051,7 +1042,7 @@ TO DO:
                         </div>
                         <div class="report-img">
                             <?php
-                            echo"<img src=\"../img/reports/report-graphs.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/reports/report-graphs.png\"; class=\"analis img-fluid\">";
                             ?>
                         </div>
                     </div>
@@ -1163,82 +1154,103 @@ TO DO:
         </div>
 
         <!-- QUESTIONS -->
-            <div class="container" style="margin-top: 50px;">
-                <div class="title text-center"><?=Yii::t('app','Questions')?></div>
-                <div class="questions">
-                    <div class="row d-flex align-items-center">
-                        <?php
-                        echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
-                        ?>
-                        <input class="hide" id="hd-1" type="checkbox">
-                        <label for="hd-1"><?=Yii::t('app','Why Smart Crypto Invest?')?></label>
-                        <div>
-                            <?=Yii::t('app','Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!')?>
+        <div class="container" style="margin-top: 50px;">
+            <div class="title text-center"><?=Yii::t('app','Questions')?></div>
+            <div class="questions">
+                <div class="row d-flex align-items-center">
+                    <input class="hide" id="hd-1" type="checkbox">
+                    <label for="hd-1">
+                        <div class="row">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"analis\">";
+                            ?>
+                            <?=Yii::t('app','Why Smart Crypto Invest?')?>
                         </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <?php
-                        echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
-                        ?>
-                        <input class="hide" id="hd-2" type="checkbox">
-                        <label for="hd-2"><?=Yii::t('app','Can I trust SCI?')?></label>
-                        <div>
-                            <?=Yii::t('app','You don’t have to worry about reliability of our trading – we guarantee full privacy and personal data protection, as well as profitability of financial operations accomplished with the aid of our service.')?>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <?php
-                        echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
-                        ?>
-                        <input class="hide" id="hd-3" type="checkbox">
-                        <label for="hd-3"><?=Yii::t('app','How much income can I make?')?></label>
-                        <div>
-                            <?=Yii::t('app','Quantity of currency received depends on your investment package and the situation on the market. Increase your profits by using tariff plans most suitable for you and by regular monitoring of financial operations review!')?>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <?php
-                        echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
-                        ?>
-                        <input class="hide" id="hd-5" type="checkbox">
-                        <label for="hd-5"><?=Yii::t('app','And what about security?')?></label>
-                        <div>
-                            <?=Yii::t('app','We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.')?>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <?php
-                        echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
-                        ?>
-                        <input class="hide" id="hd-6" type="checkbox">
-                        <label for="hd-6"><?=Yii::t('app','Is it easy to use SCI?')?></label>
-                        <div>
-                            <?=Yii::t('app','Yes! For using our service you need only to sign up, choose your investment package – and receive income!')?>
-                        </div>
+                    </label>
+                    <div>
+                        <?=Yii::t('app','Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!')?>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center">
-                    <a href="#">
-                        <?php
-                        echo Button::widget([
-                            'label' => Yii::t('app','Any questions?'),
-                            'options' => ['class' => 'btn btn-success text-right'],
-                        ]);
-                        ?>
-                    </a>
+                <div class="row d-flex align-items-center">
+                    <input class="hide" id="hd-2" type="checkbox">
+                    <label for="hd-2">
+                        <div class="row">
+                            <?php
+                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            ?>
+                            <?=Yii::t('app','Can I trust SCI?')?>
+                        </div>
+                    </label>
+                    <div>
+                        <?=Yii::t('app','You don’t have to worry about reliability of our trading – we guarantee full privacy and personal data protection, as well as profitability of financial operations accomplished with the aid of our service.')?>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <input class="hide" id="hd-3" type="checkbox">
+                    <label for="hd-3">
+                        <div class="row">
+                            <?php
+                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            ?>
+                            <?=Yii::t('app','How much income can I make?')?>
+                        </div>
+                    </label>
+                    <div>
+                        <?=Yii::t('app','Quantity of currency received depends on your investment package and the situation on the market. Increase your profits by using tariff plans most suitable for you and by regular monitoring of financial operations review!')?>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <input class="hide" id="hd-5" type="checkbox">
+                    <label for="hd-5">
+                        <div class="row">
+                            <?php
+                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            ?>
+                            <?=Yii::t('app','And what about security?')?>
+                        </div>
+                    </label>
+                    <div>
+                        <?=Yii::t('app','We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.')?>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <input class="hide" id="hd-6" type="checkbox">
+                    <label for="hd-6">
+                        <div class="row">
+                            <?php
+                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            ?>
+                            <?=Yii::t('app','Is it easy to use SCI?')?>
+                        </div>
+                    </label>
+                    <div>
+                        <?=Yii::t('app','Yes! For using our service you need only to sign up, choose your investment package – and receive income!')?>
+                    </div>
                 </div>
             </div>
+            <div class="row d-flex justify-content-center">
+                <a href="#">
+                    <?php
+                    echo Button::widget([
+                        'label' => Yii::t('app','Any questions?'),
+                        'options' => ['class' => 'btn btn-success text-right'],
+                    ]);
+                    ?>
+                </a>
+            </div>
+        </div>
     </section>
 
     <section class="news  animated wow fadeIn">
         <div class="news-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','News')?></h1>
         </div>
+        <div class="d-none d-lg-block">
         <div id="news-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active" style="margin-left: 95px;">
                     <div class="row">
-                        <div class="col-sm-10 col-md-5">
+                        <div class="col-sm-12 col-md-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"First slide\">";
@@ -1296,7 +1308,7 @@ TO DO:
                 </div>
                 <div class="carousel-item" style="margin-left: 95px;">
                     <div class="row">
-                        <div class="col-sm-10 col-md-5">
+                        <div class="col-sm-12 col-md-5">
                             <div class="news-img">
                                 <?php
                                 echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"Second slide\">";
@@ -1361,6 +1373,137 @@ TO DO:
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
+        </div>
+        <div class="d-none d-sm-block d-md-none">
+            <div id="news-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" >
+                        <div class="row">
+                            <div class="col-sm-12 col-md-5">
+                                <div class="news-img">
+                                    <?php
+                                    echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"First slide\">";
+                                    ?>
+                                </div>
+                                <div class="container">
+                                    <div class="carousel-caption text-left">
+                                        <h5>Джордж Сорос готов
+                                            торговать криптовалютами</h5>
+                                        <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                        <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut </p>
+                                        <p><a href="#">
+                                                <?php
+                                                echo Button::widget([
+                                                    'label' => Yii::t('app','Read more'),
+                                                    'options' => ['class' => 'btn btn-success text-left'],
+                                                ]);
+                                                ?>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block col-lg-5">
+                                <div class="news-img">
+                                    <?php
+                                    echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"First slide\">";
+                                    ?>
+                                </div>
+                                <div class="container">
+                                    <div class="carousel-caption text-left">
+                                        <h5>Джордж Сорос готов
+                                            торговать криптовалютами</h5>
+                                        <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut </p>
+                                        <p><a href="#">
+                                                <?php
+                                                echo Button::widget([
+                                                    'label' => Yii::t('app','Read more'),
+                                                    'options' => ['class' => 'btn btn-success text-left'],
+                                                ]);
+                                                ?>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-5">
+                                <div class="news-img">
+                                    <?php
+                                    echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"Second slide\">";
+                                    ?>
+                                </div>
+                                <div class="container">
+                                    <div class="carousel-caption text-left">
+                                        <h5>Джордж Сорос готов
+                                            торговать криптовалютами</h5>
+                                        <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut </p>
+                                        <p><a href="#">
+                                                <?php
+                                                echo Button::widget([
+                                                    'label' => Yii::t('app','Read more'),
+                                                    'options' => ['class' => 'btn btn-success text-left'],
+                                                ]);
+                                                ?>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block col-lg-5">
+                                <div class="news-img">
+                                    <?php
+                                    echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"Second slide\">";
+                                    ?>
+                                </div>
+                                <div class="container">
+                                    <div class="carousel-caption text-left">
+                                        <h5>Джордж Сорос готов
+                                            торговать криптовалютами</h5>
+                                        <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut </p>
+                                        <p><a href="#">
+                                                <?php
+                                                echo Button::widget([
+                                                    'label' => Yii::t('app','Read more'),
+                                                    'options' => ['class' => 'btn btn-success text-left'],
+                                                ]);
+                                                ?>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
     </section>
 </div>
