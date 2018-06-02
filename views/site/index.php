@@ -1017,7 +1017,7 @@ TO DO:
                         </div>
                         <div class="report-img">
                             <?php
-                            echo"<img src=\"../img/reports/sheet.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/reports/sheet.png\"; class=\"analis img-fluid\">";
                             ?>
                         </div>
                         <div id="report-download-btn">
@@ -1041,7 +1041,7 @@ TO DO:
                         </div>
                         <div class="report-img">
                             <?php
-                            echo"<img src=\"../img/reports/report-graphs.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/reports/report-graphs.png\"; class=\"analis img-fluid\">";
                             ?>
                         </div>
                     </div>
