@@ -628,7 +628,7 @@ TO DO:
                                     <div class="col-8 text">
                                         <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
                                     </div>
-                                    <div class="col-4 text-right text" style="font-size: 12px;">
+                                    <div class="col-4 text-right text" style="font-size: 10px;">
                                         <?=Yii::t('app','by agreement')?>
                                     </div>
                                     <!--buttons-->
@@ -1058,10 +1058,10 @@ TO DO:
                                 <div class="col-lg-6 col-md-6 col-sm-6" style="position: absolute; top: 8px;">
                                     <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
                                 </div>
-                                <div class="col-md-6"></div>
-                                <div class="col-md-12" >
+                                <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
+                                <div class="col-md-12" ">
                                     <div class="chart-container">
-                                    <canvas id="lineChartResult"  class="chartjs-render-monitor"></canvas>
+                                    <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
                                     </div>
                                 </div>
                             </div>

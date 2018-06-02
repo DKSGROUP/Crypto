@@ -9,7 +9,7 @@ use Yii;
         <span class="uppercase"><?= Yii::$app->language; ?></span>
         <span class="caret"></span>
     </a>
-    <ul class="dropdown-menu" style="color: #fff; background-color: rgba(51, 63, 87, 0.5);">
+    <ul class="dropdown-menu" style="color: #fff; background-color: rgba(51, 63, 87, 0.98);">
         <li class="item-lang" style="padding-left: 15px;">
             <?= Html::a('EN', array_merge(
                 \Yii::$app->request->get(),
