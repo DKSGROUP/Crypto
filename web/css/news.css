@@ -33,10 +33,8 @@ h5,p{
 
 }
 .carousel-control-prev{
-    margin-left: -5%;
-
+    right: 0%;
 }
 .carousel-control-next{
-    margin-right: -5%;
-    padding-left: 11%;
+   left: 85%;
 }
