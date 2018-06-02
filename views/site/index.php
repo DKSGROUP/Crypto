@@ -1008,7 +1008,7 @@ TO DO:
                     <h1 style=" font-size: 22px;"><?=Yii::t('app','Reporting')?></h1>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="margin-bottom: 35px;">
                         <div class="report-title">
                             <?=Yii::t('app','Trust management')?>
                         </div>
