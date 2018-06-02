@@ -11,7 +11,7 @@ body{
 }
 .title{
   font-size: 22px;
-  Line Height: 26px;
+  line-height: 26px;
   margin-bottom: 42px;
 }
 .button-report{
@@ -21,6 +21,7 @@ body{
 }
 /*-----REPORTING-----*/
 .report-title{
+    margin-top: 20px;
   color: #31C37D;
   font-size: 22px;
   line-height: 26px;

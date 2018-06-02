@@ -81,8 +81,8 @@ h1{
     left: -5%;
     height: 500px !important;
     width: 105% !important; /*работает - НЕ ЛАПАЙ И МОЛИСЬ НА ЭТО!*/
-   /* z-index: 2;*/
     pointer-events: none;
+    overflow: hidden;
 }
 .ellipse-main{
     z-index: 2;
@@ -249,13 +249,17 @@ table{
     background-color: #0D172D;
     text-align: left;
     padding: 3%;
-    box-shadow: 0px 3px 14px rgba(7, 57, 39, 0.59);    border-radius: 4px 0px 0px 4px;
+    box-shadow: 0px 3px 14px rgba(7, 57, 39, 0.59);
+    border-radius: 4px 0px 0px 4px;
+
 }
 .exch-top{
+    width: 200px !important;
     top: 180px;
-    right: 12%;
+    right: 193px;
     position: absolute;
     z-index: 101;
+   // overflow: hidden;
 }
 
 .triangle-container {
@@ -277,6 +281,7 @@ table{
     background: url(../img/banner/ban.png) no-repeat;
     margin-right: -100%;
     display: block;
+    overflow: hidden;
 }
 
 .butt{
@@ -289,7 +294,6 @@ table{
     margin: 12% 0 20% 0;
     width: 110px;
 }
-
 .carousel-control-next{
    margin-left: 9%;
 }
@@ -319,7 +323,6 @@ table{
 }
 
 .nav-item a{
-
     border-bottom: 2px solid rgba(0,0,0,0);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;

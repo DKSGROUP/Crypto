@@ -127,7 +127,7 @@ TO DO:
                             </div>
                         </div>
                         <div class="row">
-                            <div "col-6">
+                            <div class="col-6">
                                 <div class="text text-center">
                                     <?php
                                     echo"<img src=\"../img/main/coins.png\";>";
@@ -1009,7 +1009,7 @@ TO DO:
                     <h1 style=" font-size: 22px;"><?=Yii::t('app','Reporting')?></h1>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="margin-bottom: 35px;">
                         <div class="report-title">
                             <?=Yii::t('app','Trust management')?>
                         </div>
@@ -1154,71 +1154,91 @@ TO DO:
         </div>
 
         <!-- QUESTIONS -->
-            <div class="container" style="margin-top: 50px;">
-                <div class="title text-center"><?=Yii::t('app','Questions')?></div>
-                <div class="questions">
-                    <div class="row d-flex align-items-center">
-                        <?php
-                        echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
-                        ?>
-                        <input class="hide" id="hd-1" type="checkbox">
-                        <label for="hd-1"><?=Yii::t('app','Why Smart Crypto Invest?')?></label>
-                        <div>
-                            <?=Yii::t('app','Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!')?>
+        <div class="container" style="margin-top: 50px;">
+            <div class="title text-center"><?=Yii::t('app','Questions')?></div>
+            <div class="questions">
+                <div class="row d-flex align-items-center">
+                    <input class="hide" id="hd-1" type="checkbox">
+                    <label for="hd-1">
+                        <div class="row">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"analis\">";
+                            ?>
+                            <?=Yii::t('app','Why Smart Crypto Invest?')?>
                         </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <?php
-                        echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
-                        ?>
-                        <input class="hide" id="hd-2" type="checkbox">
-                        <label for="hd-2"><?=Yii::t('app','Can I trust SCI?')?></label>
-                        <div>
-                            <?=Yii::t('app','You don’t have to worry about reliability of our trading – we guarantee full privacy and personal data protection, as well as profitability of financial operations accomplished with the aid of our service.')?>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <?php
-                        echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
-                        ?>
-                        <input class="hide" id="hd-3" type="checkbox">
-                        <label for="hd-3"><?=Yii::t('app','How much income can I make?')?></label>
-                        <div>
-                            <?=Yii::t('app','Quantity of currency received depends on your investment package and the situation on the market. Increase your profits by using tariff plans most suitable for you and by regular monitoring of financial operations review!')?>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <?php
-                        echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
-                        ?>
-                        <input class="hide" id="hd-5" type="checkbox">
-                        <label for="hd-5"><?=Yii::t('app','And what about security?')?></label>
-                        <div>
-                            <?=Yii::t('app','We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.')?>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <?php
-                        echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
-                        ?>
-                        <input class="hide" id="hd-6" type="checkbox">
-                        <label for="hd-6"><?=Yii::t('app','Is it easy to use SCI?')?></label>
-                        <div>
-                            <?=Yii::t('app','Yes! For using our service you need only to sign up, choose your investment package – and receive income!')?>
-                        </div>
+                    </label>
+                    <div>
+                        <?=Yii::t('app','Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!')?>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center">
-                    <a href="#">
-                        <?php
-                        echo Button::widget([
-                            'label' => Yii::t('app','Any questions?'),
-                            'options' => ['class' => 'btn btn-success text-right'],
-                        ]);
-                        ?>
-                    </a>
+                <div class="row d-flex align-items-center">
+                    <input class="hide" id="hd-2" type="checkbox">
+                    <label for="hd-2">
+                        <div class="row">
+                            <?php
+                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            ?>
+                            <?=Yii::t('app','Can I trust SCI?')?>
+                        </div>
+                    </label>
+                    <div>
+                        <?=Yii::t('app','You don’t have to worry about reliability of our trading – we guarantee full privacy and personal data protection, as well as profitability of financial operations accomplished with the aid of our service.')?>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <input class="hide" id="hd-3" type="checkbox">
+                    <label for="hd-3">
+                        <div class="row">
+                            <?php
+                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            ?>
+                            <?=Yii::t('app','How much income can I make?')?>
+                        </div>
+                    </label>
+                    <div>
+                        <?=Yii::t('app','Quantity of currency received depends on your investment package and the situation on the market. Increase your profits by using tariff plans most suitable for you and by regular monitoring of financial operations review!')?>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <input class="hide" id="hd-5" type="checkbox">
+                    <label for="hd-5">
+                        <div class="row">
+                            <?php
+                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            ?>
+                            <?=Yii::t('app','And what about security?')?>
+                        </div>
+                    </label>
+                    <div>
+                        <?=Yii::t('app','We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.')?>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <input class="hide" id="hd-6" type="checkbox">
+                    <label for="hd-6">
+                        <div class="row">
+                            <?php
+                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            ?>
+                            <?=Yii::t('app','Is it easy to use SCI?')?>
+                        </div>
+                    </label>
+                    <div>
+                        <?=Yii::t('app','Yes! For using our service you need only to sign up, choose your investment package – and receive income!')?>
+                    </div>
                 </div>
             </div>
+            <div class="row d-flex justify-content-center">
+                <a href="#">
+                    <?php
+                    echo Button::widget([
+                        'label' => Yii::t('app','Any questions?'),
+                        'options' => ['class' => 'btn btn-success text-right'],
+                    ]);
+                    ?>
+                </a>
+            </div>
+        </div>
     </section>
 
     <section class="news  animated wow fadeIn">
