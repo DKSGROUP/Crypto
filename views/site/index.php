@@ -249,7 +249,7 @@ TO DO:
         ?>
     </section>
     <section class="invest-packages " style="z-index: 3;">
-
+        <a href="#invest-packages"></a>
 
         <!--Invest packages
 
@@ -257,8 +257,6 @@ TO DO:
 
         To do :
         -расстояние между блоками
-        -цвета кнопок
-        -шрифты
         -->
         <div class="container animated wow fadeIn" >
             <div class="row">
