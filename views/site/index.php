@@ -11,37 +11,64 @@ AppAsset::register($this);
 
 $this->title = 'Smart Crypto Invest';
 ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<!--Initial scripts-->
+<?php
+     echo"<script language='javascript' src='../js/wow.min.js'></script>";
+
+    echo"<script language='JavaScript'>
+        new WOW().init();
+    </script>";
+?>
+
+
+<?php
+echo"<script language='javascript' src='../js/Chart.min.js'></script>";
+?>
+
+<!--banner GRAM
+STATUS:-
+
+TO DO:
+-
+-->
+
 <div class="d-none d-lg-block">
-<aside id="aside1" >
-    <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'">Х</div>
-    <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
-        <div class="text-center text-white textt">
-            <h2><?=Yii::t('app','We can buy ')?><b>GRAM</b></h2>
-        </div>
-        <div class="text text-center">
-            <?php
-            echo"<img src=\"../img/banner/elipse.png\"; class=\"elipse\">";
-            ?>
+    <aside id="aside1" class="animated fadeInLeft"  style="z-index:100000;">
+        <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+            <div class="text-center text-white textt">
+                <h4><?=Yii::t('app','We can buy ')?><b>GRAM</b></h4>
+            </div>
+            <div class="text text-center">
+                <?php
+                echo"<img src=\"../img/banner/elipse.png\"; class=\"elipse\">";
+                ?>
+            </div>
             <div class="butt">
-                <a class="btn button-signup text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
+                <a class="btn button-baner text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
                     <?=Yii::t('app','Buy')?>
                 </a>
             </div>
-        </div>
-    </div>
-</aside>
+    </aside>
 </div>
 
 
 <div class="site-index">
 
+<!--Site title
+STATUS: -
 
+TO DO:
+-поменять цвет кнопок
+-текст "выше" всех
+-прилепить курс валют к сонтейнеру что бы тот не улетал в бок
 
-    <section class="title-text">
+-->
+
+    <section class="title-text" style="z-index: 3;">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7" style="z-index:999;">
                     <h1 class="green" style="font-size:22px;"><b>Smart Crypto Invest</b><?=Yii::t('app',' - the best way to invest into cryptocurrencies')?></h1>
 
                     <p style="font-size: 22px; margin: 30px 0;"><?=Yii::t('app','Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks')?> </p>
@@ -49,22 +76,23 @@ $this->title = 'Smart Crypto Invest';
                     <?php
                     echo Button::widget([
                         'label' => Yii::t('app','Invest'),
-                        'options' => ['class' => 'btn btn btn-success', 'style' => 'width: 152px;
-                        height: 33px; font-size: 14px; text-align: center; padding:0; background: linear-gradient(to bottom, #05AB5B, #048748);'],
+                        'options' => ['class' => 'btn  btn-success wow pulse animated', 'style' => 'pointer-events: all;  width: 152px;
+                        height: 33px; font-size: 14px; text-align: center; padding:0; visibility: visible; animation-duration: 2s;
+                        animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse; border: none; background: linear-gradient(#048949, #05AA5B) !important;',
+                            'data-wow-delay' =>'300ms', 'data-wow-iteration' => 'infinite', 'data-wow-duration'=>'2s' ],
 
                     ]);
                     ?>
                 </div>
-                <div class="exch-top">
+                <div class="exch-top animated fadeInRightBig ">
                     <div class="d-none d-lg-block offset-11">
                         <div class="pull-right exchange ">
                             BTC/USD <b style="color: #31C37D;">682.20 </b></br>
-                             ETH/USD <b style="color: #31C37D;">12.2700 </b>
+                            ETH/USD <b style="color: #31C37D;">12.2700 </b>
                         </div>
                     </div>
                 </div>
-
-                    <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px;">
+                <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
                         <div class="row">
                             <div class="col-6">
                                 <div class="text text-center">
@@ -109,37 +137,34 @@ $this->title = 'Smart Crypto Invest';
                                     <p class="text-white "><?=Yii::t('app','Make profits')?></p>
                                 </div>
                             </div>
-
-
+                        </div>
 
                 </div>
-
             </div>
         </div>
     </section>
+    <!--CHartOne
 
-    <!--
-    packages status: почти;
+           Status: -
 
-    to do:
-    -прогуглить как сделать нормальные линки, а не костыльную херь
-    -->
+           To Do:
+           -сделать так что бі тот был под текстом
+           -поменять цвет
+           -->
+    <section class="graph" style="z-index: 0;">
+        <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:-5px;" class="chartjs-render-monitor"></canvas>
 
-    <section class="invest-packages">
-        <section class="graph">
-            <canvas id="lineChart" style="display: block; width: 100%; height: 200px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
-
-            <?php
-            echo"<script language='javascript'>
+        <?php
+        echo"<script language='javascript'>
                 var ctxL = document.getElementById(\"lineChart\").getContext('2d');
 
-                var gradientFill = ctxL.createLinearGradient(0, 200, 0, 0);
-                gradientFill.addColorStop(1, \"rgba(71, 186, 0, 1)\");
-                gradientFill.addColorStop(0, \"rgba(15,26,51, 0.4)\");
+                var gradientFill = ctxL.createLinearGradient(0, 410, 0, 0);
+                gradientFill.addColorStop(1, \"rgba(7,115,62, 1)\");
+                gradientFill.addColorStop(0, \"rgba(11,21,42, 0.4)\");
 
-                var gradientFill1 = ctxL.createLinearGradient(0, 300, 0, 0);
-                gradientFill1.addColorStop(1, \"rgba(71, 186, 0, 1)\");
-                gradientFill1.addColorStop(0, \"rgba(15,26,51, 0.8)\");
+                var gradientFill1 = ctxL.createLinearGradient(0, 410, 0, 0);
+                gradientFill1.addColorStop(1, \"rgba(7,115,62, 1)\");
+                gradientFill1.addColorStop(0, \"rgba(11,21,42, 0.8)\");
 
 
                 var myLineChart = new Chart(ctxL, {
@@ -164,16 +189,16 @@ $this->title = 'Smart Crypto Invest';
                                     '#31C37D'
                                 ],
                                 borderWidth: 1
-                            }/*,
+                            },
                             {
-                                //radius: 0,
+                                radius: 0,
                                 fillColor: \"rgba(198,3,16,0.2)\",
                                 strokeColor: \"rgba(198,3,16,1)\",
                                 pointColor: \"rgba(198,3,16,1)\",
                                 pointStrokeColor: \"#47ba00\",
                                 pointHighlightFill: \"#47ba00\",
                                 pointHighlightStroke: \"rgba(198,3,16,1)\",
-                                data: [2,5,3,10,5],
+                                data: [9,8,9,8.5,11],
                                 pointHoverBackgroundColor: '#47ba00',
                                 pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                                 borderColor: 0,
@@ -182,7 +207,7 @@ $this->title = 'Smart Crypto Invest';
                                     'rgba(71, 186, 0,1)'
                                 ],
                                 borderWidth: 1
-                            }*/
+                            }
                         ]
                     },
                     options: {
@@ -221,37 +246,57 @@ $this->title = 'Smart Crypto Invest';
 
                 });
         </script>";
-            ?>
-        </section>
+        ?>
+    </section>
+    <section class="invest-packages " style="z-index: 3;">
+        <a href="#invest-packages"></a>
 
-        <div class="container">
+        <!--Invest packages
+
+        Status: -
+
+        To do :
+        -расстояние между блоками
+        -->
+        <div class="container animated wow fadeIn" >
             <div class="row">
                 <div class="col-12 text-center" style="margin: 25px 0;">
                     <h1 style=" font-size: 22px;"><?=Yii::t('app','Investition Packages')?></h1>
                 </div>
                 <div class="col-xl-2 col-lg-2 col-sm-3"></div>
                 <div class="col-xl-4 col-lg-6 col-md-6">
+                    <!--STARTER-->
                     <div class="card">
                         <div class="card-header  start">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Starter')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 50$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Starter')?></h1>
+                                    </div>
+                                    <div class="col-6">
+                                        <h1 class="text-right"style="font-size: 22px;" ><?=Yii::t('app','from 50$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body start-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right"><?=Yii::t('app','test 15 days')?></td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">45/55</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        <?=Yii::t('app','test 15 days')?>
+                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        45/55
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -260,42 +305,54 @@ $this->title = 'Smart Crypto Invest';
                                              'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
-
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
                                             'label' =>Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr',
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--STANDART-->
                     <div class="card">
                         <div class="card-header  start">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Standard')?></td>
-                                    <td class="text-right"><?=Yii::t('app','up to 1000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Standard')?></h1>
+                                    </div>
+                                    <div class="col-5">
+                                        <h1 class="text-right"style="font-size: 22px;" ><?=Yii::t('app','up to 1000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body start-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right"><?=Yii::t('app','30 days')?></td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">50/50</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        <?=Yii::t('app','30 days')?>
+                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        50/50
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -304,42 +361,55 @@ $this->title = 'Smart Crypto Invest';
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr',
                                         'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--Optimal-->
                     <div class="card">
                         <div class="card-header  pro-card">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Optimal')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 1000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Optimal')?></h1>
+                                    </div>
+                                    <div class="col-5">
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 1000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body pro-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right"><?=Yii::t('app','30 days')?></td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">55/45</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        <?=Yii::t('app','30 days')?>
+                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        55/45
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -348,41 +418,54 @@ $this->title = 'Smart Crypto Invest';
                                             'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr',
                                         'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--Advanced-->
                     <div class="card">
                         <div class="card-header  pro-card">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Advanced')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 3000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Advanced')?></h1>
+                                    </div>
+                                    <div class="col-5">
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 3000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body pro-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right"><?=Yii::t('app','30 days')?></td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">60/40</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        <?=Yii::t('app','30 days')?>
+                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        60/40
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -391,41 +474,53 @@ $this->title = 'Smart Crypto Invest';
                                             'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr',
                                         'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--Premium-->
                     <div class="card">
                         <div class="card-header  pro-card">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Premium')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 5000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Premium')?></h1>
+                                    </div>
+                                    <div class="col-5">
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 5000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body pro-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right">&#8734</td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">55/45</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">&#8734                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        55/45
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -434,43 +529,56 @@ $this->title = 'Smart Crypto Invest';
                                             'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr',
                                         'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xl-2 col-lg-2 col-sm-0"></div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--Business - API-->
                     <div class="card">
                         <div class="card-header  start">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Business - API')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 2000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Business-API')?></h1>
+                                    </div>
+                                    <div class="col-5">
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 2000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body start-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right"><?=Yii::t('app','test 15 days')?></td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">50/50</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        <?=Yii::t('app','test 15 days')?>
+                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        50/50
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -479,41 +587,52 @@ $this->title = 'Smart Crypto Invest';
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr',
                                         'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--Exlusive-API-->
                     <div class="card">
                         <div class="card-header  start">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Exlusive - API')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 15000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Exlusive-API')?></h1>
+                                    </div>
+                                    <div class="col-6">
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 15000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body start-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right">&#8734</td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right"><?=Yii::t('app','by agreement')?></td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">&#8734</div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text" style="font-size: 12px;">
+                                        <?=Yii::t('app','by agreement')?>
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -522,22 +641,24 @@ $this->title = 'Smart Crypto Invest';
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr',
                                         'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        <!--Modal for packages-->
         <div class="modal fade" id="ModalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -642,6 +763,7 @@ $this->title = 'Smart Crypto Invest';
                 </div>
             </div>
         </div>
+        <!--Modal SIGN UP-->
         <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -699,6 +821,7 @@ $this->title = 'Smart Crypto Invest';
                 </div>
             </div>
         </div>
+        <!--Modal SIGN IN-->
         <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-signin modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -808,7 +931,9 @@ $this->title = 'Smart Crypto Invest';
         </div>
     </section>
 
-    <section class="advnateges">
+
+    <!--ADVANTEGES-->
+    <section class="advnateges  animated wow fadeIn">
         <div class="adv-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','Advantages')?></h1>
         </div>
@@ -885,7 +1010,7 @@ $this->title = 'Smart Crypto Invest';
         </div>
     </section>
 
-    <section class="report">
+    <section class="report  animated wow fadeIn">
         <!-- REPORTS -->
         <div class="container-fluid">
             <div class="container text-center">
@@ -934,23 +1059,28 @@ $this->title = 'Smart Crypto Invest';
             </div>
         </div>
 
-        <div class="chart">
+        <div class="chart  wow animated fadeIn">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h1 style=" font-size: 22px;"><?=Yii::t('app','Our results')?></h1>
                     </div>
 
-                    <section class="result" style=" margin: 0 auto;">
+                    <section class="result" >
 
                         <div class="container" style="position: relative;">
                             <div class="row">
-                                <div class="col-md-6" style="position: absolute; top: 25px;">
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="position: absolute; top: 8px;">
                                     <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
+                                </div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-12" >
+                                    <div class="chart-container">
+                                    <canvas id="lineChartResult"  class="chartjs-render-monitor"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <canvas id="lineChartResult" style="height: 500px;"  class="chartjs-render-monitor"></canvas>
                     </section>
                     <?php
                     echo"<script language='javascript'>
@@ -959,7 +1089,6 @@ $this->title = 'Smart Crypto Invest';
                         var gradientFillTwo = ctxL2.createLinearGradient(0, 50, 0, 10);
                         gradientFillTwo.addColorStop(1, \"rgba(17, 77, 49, 1)\");
                         gradientFillTwo.addColorStop(0, \"rgba(17, 77, 49, 0.6)\");
-
 
                         var myNewLineChart = new Chart(ctxL2, {
 					            type: 'line',
@@ -976,8 +1105,10 @@ $this->title = 'Smart Crypto Invest';
 					                        pointHighlightFill: \"#00ff87\",
 					                        pointHighlightStroke: \"rgba(0, 255, 135,1)\",
 					                        data: [0,40,30,60,75,55,100,120,144.5],
-					                        pointHoverBackgroundColor: '#00ff87',//5
-					                        pointHoverBorderColor: \"rgba(0, 255, 135,1)\",
+                                            pointBackgroundColor: \"#00ff87\",
+                                            pointHoverBackgroundColor: \"#00ff87\",
+                                            pointHoverBorderColor: \"#00ff87\",
+
 					                        backgroundColor: gradientFillTwo,
 					                    	borderColor: [
 					                        'rgba(0, 255, 135,1)'
@@ -987,49 +1118,52 @@ $this->title = 'Smart Crypto Invest';
 					                ]
 					            },
 					            options: {
-					                responsive: true ,
+					                responsive: true,
+					                 maintainAspectRatio: false,
 					                scales: {
-					            xAxes: [{
-					            			display:true,
+                                        xAxes: [{
+                                                    display:true,
 
-					                        gridLines: {
-					                            color: \"rgba(255, 255, 255, 0)\",
-					                        },
-					                        ticks: {
-					                            display: true
-					                        }
-					                    }],
-					            yAxes: [{
-					            			//display:false,
-					                        gridLines: {
-					                            color: \"rgba(0, 0, 0, 0)\",
-					                        },
-					                        ticks: {
-					                            display: false
-					                        }
-					                    }]
-					            },
-					            legend: {
-					                    display: false
-					                 },
-					                 tooltips: {
-					                    enabled: true
-					                 }
-					            },
-					            scaleLabel: {
-					            	display: true
-					            }
+                                                    gridLines: {
+                                                        color: \"rgba(255, 255, 255, 0)\",
+                                                    },
+                                                    ticks: {
+                                                        display: true,
+                                                        fontColor: \"white\"
+                                                    }
+                                                }],
+                                        yAxes: [{
+                                                    display:false,
+                                                    gridLines: {
+                                                        color: \"rgba(255, 0, 0, 0)\",
+                                                    },
+                                                    ticks: {
+                                                        display: false
+                                                    }
+                                                }]
+                                        },
+                                        legend: {
+                                                display: false
+                                             },
+                                             tooltips: {
+                                                enabled: true
+                                             }
+                                        },
+                                scaleLabel: {
+                                       display: true,
+                                       color : \"#fff\",
+                                },
+
 
 					        });
-        </script>";
+                        </script>";
                     ?>
                 </div>
             </div>
         </div>
 
         <!-- QUESTIONS -->
-        <div class="container-fluid">
-            <div class="container">
+            <div class="container" style="margin-top: 50px;">
                 <div class="title text-center"><?=Yii::t('app','Questions')?></div>
                 <div class="questions">
                     <div class="row d-flex align-items-center">
@@ -1088,16 +1222,15 @@ $this->title = 'Smart Crypto Invest';
                         <?php
                         echo Button::widget([
                             'label' => Yii::t('app','Any questions?'),
-                            'options' => ['class' => 'btn btn-outline-success text-right'],
+                            'options' => ['class' => 'btn btn-success text-right'],
                         ]);
                         ?>
                     </a>
                 </div>
             </div>
-        </div>
     </section>
 
-    <section class="news">
+    <section class="news  animated wow fadeIn">
         <div class="news-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','News')?></h1>
         </div>
@@ -1115,6 +1248,7 @@ $this->title = 'Smart Crypto Invest';
                                 <div class="carousel-caption text-left">
                                     <h5>Джордж Сорос готов
                                         торговать криптовалютами</h5>
+                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                     <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit, sed do eiusmod tempor incididunt ut labore et
                                         dolore magna aliqua. Ut enim ad minim veniam,
@@ -1141,6 +1275,7 @@ $this->title = 'Smart Crypto Invest';
                                 <div class="carousel-caption text-left">
                                     <h5>Джордж Сорос готов
                                         торговать криптовалютами</h5>
+                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit, sed do eiusmod tempor incididunt ut labore et
                                         dolore magna aliqua. Ut enim ad minim veniam,
@@ -1171,6 +1306,7 @@ $this->title = 'Smart Crypto Invest';
                                 <div class="carousel-caption text-left">
                                     <h5>Джордж Сорос готов
                                         торговать криптовалютами</h5>
+                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit, sed do eiusmod tempor incididunt ut labore et
                                         dolore magna aliqua. Ut enim ad minim veniam,
@@ -1197,6 +1333,7 @@ $this->title = 'Smart Crypto Invest';
                                 <div class="carousel-caption text-left">
                                     <h5>Джордж Сорос готов
                                         торговать криптовалютами</h5>
+                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit, sed do eiusmod tempor incididunt ut labore et
                                         dolore magna aliqua. Ut enim ad minim veniam,
@@ -1226,3 +1363,4 @@ $this->title = 'Smart Crypto Invest';
             </a>
         </div>
     </section>
+</div>

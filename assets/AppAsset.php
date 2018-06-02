@@ -29,6 +29,7 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/Chart.min.js',
+        'js/wow.min.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

@@ -46,8 +46,9 @@ AppAsset::register($this);
             ?>
 
         </section>
-    <?php
 
+        <div class="navigation-top fixed-top">
+    <?php
 
 
     Yii::$app->user->isGuest ? (
@@ -67,11 +68,11 @@ AppAsset::register($this);
 
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-toggleable-md collapse nav-wid',
+        'options' => ['class' => 'navbar-toggleable-md collapse nav-wid ',
             'style' => 'margin: 0 auto;'],
         'items' => [
             ['label' => Yii::t('app', 'About Us'), 'url' => ['/site/index']],
-            ['label' => Yii::t('app', 'Products'), 'url' => ['/site/about']],
+            ['label' => Yii::t('app', 'Products'), 'url' => ['/site/#invest-packages']],
             ['label' =>  Yii::t('app', 'Advantages'), 'url' => ['/site/contact']],
             ['label' =>  Yii::t('app', 'Reporting'), 'url' => ['/site/contact']],
             ['label' => Yii::t('app', 'Questions'), 'url' => ['/site/contact']],
@@ -79,7 +80,7 @@ AppAsset::register($this);
         ],
     ]);
 ?>
-<div class="navbar-text pull-right">
+<div class="navbar-text pull-right ">
     <?php
     echo MultiLang::widget([
         'cssClass'=>'pull-right language'
@@ -96,6 +97,8 @@ AppAsset::register($this);
         <?php
     NavBar::end();
     ?>
+
+    </div>
     </header>
 <div class="wrap">
     <div class="container">

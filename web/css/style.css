@@ -1,11 +1,19 @@
 @font-face {
     font-family: GothaProReg;
     src: url("../font/Gotham Cyrillic/GothaProReg.otf");
+    font-weight: normal;
 }
 
 @font-face {
     font-family: GothaProMed;
     src: url("../font/Gotham Cyrillic/GothaProMed.otf");
+
+}
+
+@font-face {
+    font-family: GothaProBol;
+    src: url("../font/Gotham Cyrillic/GothaProBol.otf");
+    font-weight: bold;
 }
 
 *{
@@ -16,23 +24,41 @@
 
 body{
     font-family: GothaProReg, Arial, sans !important;
-    background: linear-gradient(#060E1F, #22335C, #060E1F);
+    background: linear-gradient(#060e1f, #172341, #060e1f);23,35,65
     color: #fff;
 }
+
 
 .nav-wid a{
     color: #fff;
 }
 
+/*-------------Personal Area-----------------*/
+.btn-own-cab{
+    border-color:#31c37d !important;
+}
+.btn-own-cab:hover{
+    background: linear-gradient(#048949, #05AA5B) !important;
+    border-color: rgba(49, 195, 125,0) !important;
+}
+
+/*--------------------------------------------*/
+
+
+/*--------------Title Text----------------------------*/
 h1{
+    font-family: GothaProMed, Arial, sans;
     font-size: 22px;
     line-height: 26px;
 }
-
 .green b{
     color: green;
 }
 
+.title-text{
+    pointer-events: none;
+    z-index: 999;
+}
 
 .title-text h1 {
     margin-top: 100px;
@@ -46,28 +72,43 @@ h1{
     left: -5%;
     height: 500px !important;
     width: 105% !important; /*работает - НЕ ЛАПАЙ И МОЛИСЬ НА ЭТО!*/
-    z-index: 2;
+   /* z-index: 2;*/
+    pointer-events: none;
 }
 .ellipse-main{
-    z-index: 999;
+    z-index: 2;
 }
 
 
 /*---------cards----------*/
 .invest-packages{
-    margin-top: 100px;
+    margin-top: 230px;
     padding-bottom: 30px;
+    /*z-index: 1000;*/
 }
 
 .card{
     width: 360px;
    // height: 190px !important;
-    margin: 15px 0;
+    margin: 10px 10px;
     background-color: inherit;
     border-radius: 4px 4px 4px 4px;
 }
 .bold-text{
-    font-family: GothaProMed ;
+ /*   font-family: GothaProMed ;*/
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+.card .text{
+   /* padding: 5px 0;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.card-body .col-6{
+    padding: 0;
 }
 .card-header{
     height: 45px;
@@ -96,7 +137,9 @@ table{
 .start-pack{
     background-color: rgba(255, 255, 255, 0.07);
 
+
 }
+
 
 .pro-card{
     background-color: #05AB5B;
@@ -105,15 +148,54 @@ table{
 .pro-pack{
     background-color: rgba(33, 150, 83, 0.4);
 }
+.invest-packages .investr/*,.invest-packages .info*/{
+    width: 160px;
+    height: 33px;
+    padding: 0;
+
+}
 
 .info{
-    width: 140px;
-    margin-right: 30px;
+    width: 147px;
+    height: 33px;
+    padding: 0;
+    border-color: #31c37d;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.investr{
-    width: 160px;
+.btn-invest-start{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: #31c37d !important;
+    color: #31c37d !important;
 }
+
+.btn-invest-pro{
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    background: linear-gradient( #05AA5B, #048949) !important;
+}
+
+.btn-invest-start:hover{
+    border: none !important;
+    color: #fff !important;
+}
+
+.info:hover{
+
+    border: 0;
+}
+.investr:hover, .info:hover{
+
+    background: linear-gradient(#048949, #05AA5B) !important;
+}
+
+/*-----------------------*/
+
 
 .modal {
    // background-color: rgba(6, 11, 22, 0.25);
@@ -172,7 +254,9 @@ table{
 .triangle-container {
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 100%;/*РАБОТАЕТ - НЕ ТРОГАТЬ */
+    overflow: hidden;
+    right: 0;
 }
 
 #aside1 {  /* селектор блока, который будет оставаться на месте */
@@ -180,8 +264,8 @@ table{
     z-index: 101;
     bottom: 0px;
     left: 0px;
-    height: 420px;
-    width: 220px;
+    height: 300px;
+    width: 215px;
     align-items: center;
     background: url(../img/banner/ban.png) no-repeat;
     margin-right: -100%;
@@ -189,12 +273,64 @@ table{
 }
 
 .butt{
-    width: 150px !important;
+    width: 160px !important;
 }
-.button-signup{
+.button-baner{
     background: linear-gradient(180deg, #289FD9 0%, #0A6B9B 100%);
 }
 .elipse{
-    margin: 10% 0;
+    margin: 12% 0 20% 0;
+    width: 110px;
+}
+/*--------------------------------*/
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+    overflow: hidden;
 }
 
+
+/*-------------multilanguage---------------*/
+
+.item-lang a{
+    color: #fff !important;
+}
+
+.item-lang a:hover{
+    color: #31c37d !important;
+    text-decoration: none !important;
+}
+
+.nav-item a{
+
+    border-bottom: 2px solid rgba(0,0,0,0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.nav-item a:hover{
+    color: #31c37d;
+    border-bottom: 2px solid #31c37d;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navigation-top{
+    background: linear-gradient(rgba(6, 14, 31, 0.8), rgba(23, 35, 65,0));
+}
+.navigation-top:hover{
+    background: linear-gradient(rgba(6, 14, 31, 1), rgba(23, 35, 65,0.5));
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
