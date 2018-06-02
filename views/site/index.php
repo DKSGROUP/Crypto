@@ -874,6 +874,7 @@ TO DO:
                 </div>
             </div>
         </div>
+        <!--RECOVER PASSWORD-->
         <div class="modal fade" id="recover-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-recover modal-dialog-centered" role="document">
                 <div class="modal-content">
