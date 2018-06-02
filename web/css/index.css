@@ -44,6 +44,13 @@ body{
     padding: 0 20px;
 }
 /* скрываем чекбоксы и блоки с содержанием */
+.labe{
+  color: rgba(125, 219, 165, 0.74);
+  margin-bottom:15px;
+}
+.question-img{
+  /* margin-bottom:15px; */
+}
 .hide,
 .hide + label ~ div {
     display: none;
@@ -51,8 +58,6 @@ body{
 /* вид текста label */
 .hide + label {
   cursor: pointer;
-  margin: 20px 0 20px 25px;
-  color: rgba(125, 219, 165, 0.74);
   display: inline-block;
 }
 .hide + label::before {
@@ -71,8 +76,8 @@ body{
 /* когда чекбокс активен показываем блоки с содержанием  */
 .hide:checked + label + div {
     display: block;
-    margin-left: 60px;
-    margin-bottom:10px;
+    margin-left: 35px;
+    margin-bottom:20px;
     /* чуточку анимации при появлении */
      -webkit-animation:fade ease-in 0.5s;
      -moz-animation:fade ease-in 0.5s;

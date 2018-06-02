@@ -1164,9 +1164,9 @@ TO DO:
                 <div class="row d-flex align-items-center">
                     <input class="hide" id="hd-1" type="checkbox">
                     <label for="hd-1">
-                        <div class="row">
+                        <div class="row labe">
                             <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"analis\">";
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"question-img\">";
                             ?>
                             <?=Yii::t('app','Why Smart Crypto Invest?')?>
                         </div>
@@ -1178,9 +1178,9 @@ TO DO:
                 <div class="row d-flex align-items-center">
                     <input class="hide" id="hd-2" type="checkbox">
                     <label for="hd-2">
-                        <div class="row">
+                        <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
                             ?>
                             <?=Yii::t('app','Can I trust SCI?')?>
                         </div>
@@ -1192,9 +1192,9 @@ TO DO:
                 <div class="row d-flex align-items-center">
                     <input class="hide" id="hd-3" type="checkbox">
                     <label for="hd-3">
-                        <div class="row">
+                        <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
                             ?>
                             <?=Yii::t('app','How much income can I make?')?>
                         </div>
@@ -1206,9 +1206,9 @@ TO DO:
                 <div class="row d-flex align-items-center">
                     <input class="hide" id="hd-5" type="checkbox">
                     <label for="hd-5">
-                        <div class="row">
+                        <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
                             ?>
                             <?=Yii::t('app','And what about security?')?>
                         </div>
@@ -1220,9 +1220,9 @@ TO DO:
                 <div class="row d-flex align-items-center">
                     <input class="hide" id="hd-6" type="checkbox">
                     <label for="hd-6">
-                        <div class="row">
+                        <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
                             ?>
                             <?=Yii::t('app','Is it easy to use SCI?')?>
                         </div>
