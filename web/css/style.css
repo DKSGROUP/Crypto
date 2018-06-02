@@ -28,18 +28,26 @@ body{
     color: #fff;
 }
 
+.title-text .btn, .report .btn, .questions .btn, .news .btn{
+    background: linear-gradient( #05AA5B, #048949) !important;
+    border: none !important;
+}
 
+.title-text .btn:hover, .report .btn:hover, .questions .btn:hover, .news .btn:hover{
+    border: none !important;
+    background: linear-gradient(#048949, #05AA5B) !important;
+}
 .nav-wid a{
     color: #fff;
 }
 
 /*-------------Personal Area-----------------*/
-.btn-own-cab{
-    border-color:#31c37d !important;
+.btn-personal-area{
+    border: 1px solid #31c37d !important;
 }
-.btn-own-cab:hover{
+.btn-personal-area:hover{
     background: linear-gradient(#048949, #05AA5B) !important;
-    border-color: rgba(49, 195, 125,0) !important;
+    border: 1px solid rgba(0,0,0,0) !important;
 }
 
 /*--------------------------------------------*/
@@ -138,9 +146,7 @@ table{
 .start-pack{
     background-color: rgba(255, 255, 255, 0.07);
 
-
 }
-
 
 .pro-card{
     background-color: #05AB5B;
@@ -149,13 +155,16 @@ table{
 .pro-pack{
     background-color: rgba(33, 150, 83, 0.4);
 }
-.invest-packages .investr/*,.invest-packages .info*/{
+.invest-packages  .investr{
     width: 160px;
     height: 33px;
     padding: 0;
+    margin-top: 5px;
 
 }
 
+.invest-packages{
+}
 .info{
     width: 147px;
     height: 33px;
@@ -175,9 +184,9 @@ table{
 
 .btn-invest-pro{
 
+    border: none!important;
     margin-top: 5px;
     margin-bottom: 5px;
-
     background: linear-gradient( #05AA5B, #048949) !important;
 }
 
@@ -187,11 +196,9 @@ table{
 }
 
 .info:hover{
-
     border: 0;
 }
 .investr:hover, .info:hover{
-
     background: linear-gradient(#048949, #05AA5B) !important;
 }
 
@@ -328,7 +335,7 @@ table{
     background: linear-gradient(rgba(6, 14, 31, 0.8), rgba(23, 35, 65,0));
 }
 .navigation-top:hover{
-    background: linear-gradient(rgba(6, 14, 31, 1), rgba(23, 35, 65,0.5));
+    background: linear-gradient(rgba(6, 14, 31, 1), rgba(23, 35, 65,0.8));
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;

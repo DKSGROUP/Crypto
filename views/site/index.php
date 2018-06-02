@@ -59,8 +59,6 @@ TO DO:
 STATUS: -
 
 TO DO:
--поменять цвет кнопок
--текст "выше" всех
 -прилепить курс валют к сонтейнеру что бы тот не улетал в бок
 
 -->
@@ -143,14 +141,7 @@ TO DO:
             </div>
         </div>
     </section>
-    <!--CHartOne
 
-           Status: -
-
-           To Do:
-           -сделать так что бі тот был под текстом
-           -поменять цвет
-           -->
     <section class="graph" style="z-index: 0;">
         <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:-5px;" class="chartjs-render-monitor"></canvas>
 
@@ -181,7 +172,7 @@ TO DO:
                                 pointStrokeColor: \"#196310\",
                                 pointHighlightFill: \"#196310\",
                                 pointHighlightStroke: \"#31C37D\",
-                                data: [6,4,7,5,8],
+                                data: [9,8,9,8.5,11],
                                 pointHoverBackgroundColor: '#31C37D',//5
                                 pointHoverBorderColor: \"#31C37D\",
                                 backgroundColor: gradientFill,
@@ -249,7 +240,6 @@ TO DO:
         ?>
     </section>
     <section class="invest-packages " style="z-index: 3;">
-        <a href="#invest-packages"></a>
 
         <!--Invest packages
 
@@ -300,7 +290,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
                                              'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
@@ -310,7 +300,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' =>Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
@@ -356,7 +346,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
@@ -366,7 +356,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
                                         'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
@@ -423,7 +413,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr',
+                                            'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
                                         'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?>
@@ -479,7 +469,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr',
+                                            'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
                                         'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?>
@@ -534,7 +524,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr',
+                                            'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
                                         'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?>
@@ -582,7 +572,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
@@ -592,7 +582,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
                                         'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
@@ -636,7 +626,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
@@ -646,7 +636,7 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr',
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
                                         'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
