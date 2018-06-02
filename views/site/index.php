@@ -805,10 +805,8 @@ TO DO:
                         <p class="text-white">
                             У вас уже есть аккаунт?
                         </p>
-                        <!--a class="enter btn btn-outline-success" data-toggle="modal" data-target="#signin"
-                           da data-dismiss="signup" href="#" -->
 
-                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal"" >
+                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal" >
 
                         Войти
                         </a>
@@ -862,13 +860,13 @@ TO DO:
                       <a class="btn button-signin text-white" href="#">
                         Войти
                       </a>
-                      <a class="text-white" style="margin-bottom:40px; margin-top: 10px;"  data-toggle="modal" data-target="#recover-password">
+                      <a class="text-white" style="margin-bottom:40px; margin-top: 10px;"  data-toggle="modal" data-target="#recover-password" data-dismiss="modal">
                           Забыли пароль?
                       </a>
                       <p class="text-white">
                         У вас нет аккаунта?
                     </p>
-                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal"" >
+                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal" >
                         Зарегестрироваться
                       </a>
                     </div>
