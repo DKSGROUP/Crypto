@@ -42,6 +42,6 @@ a{
 
   <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
   <a class="btn btn-outline-success btn-recover2" href="#">
-    Инструкция по восстановлению<br />отправлена на Ваш e-mail
+   <?=Yii::t('app','The recovery instructions')?><br /><?=Yii::t('app','is sent to your e-mail')?>
   </a>
 </div>

@@ -795,20 +795,19 @@ TO DO:
                         <div class="text-center text-white">
                             <p class="signup-text">Smart Crypto Invest</p>
                         </div>
-                        <input class="data form-control" type="text" placeholder="Имя*" />
+                        <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Username*')?>  />
                         <input class="data form-control" type="text" placeholder="E-mail*" />
-                        <input class="data form-control" type="text" placeholder="Пароль*" />
+                        <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Password*')?> />
 
                         <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
-                            Зарегестрироваться
+                            <?=Yii::t('app','Sign up')?>
                         </a>
                         <p class="text-white">
-                            У вас уже есть аккаунт?
+                            <?=Yii::t('app','Already have an account?')?>
                         </p>
 
                         <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal" >
-
-                        Войти
+                            <?=Yii::t('app','Sign in')?>
                         </a>
                     </div>
                 </div>
@@ -854,20 +853,20 @@ TO DO:
                         <p class="signin-text">Smart Crypto Invest</p>
                       </div>
                       <input class="data form-control" type="text" placeholder="E-mail" />
-                      <input class="data form-control" type="text" placeholder="Пароль" />
+                      <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Password')?> />
 
                       <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
                       <a class="btn button-signin text-white" href="#">
-                        Войти
+                          <?=Yii::t('app','Sign in')?>
                       </a>
                       <a class="text-white" style="margin-bottom:40px; margin-top: 10px;"  data-toggle="modal" data-target="#recover-password" data-dismiss="modal">
-                          Забыли пароль?
+                          <?=Yii::t('app','Forgot password?')?>
                       </a>
                       <p class="text-white">
-                        У вас нет аккаунта?
+                          <?=Yii::t('app','Do not have an account?')?>
                     </p>
                         <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal" >
-                        Зарегестрироваться
+                        <?=Yii::t('app','Sign up')?>
                       </a>
                     </div>
 

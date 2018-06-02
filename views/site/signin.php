@@ -48,16 +48,16 @@ input, a{
     <p>Smart Crypto Invest</p>
   </div>
   <input class="data form-control" type="text" placeholder="E-mail" />
-  <input class="data form-control" type="text" placeholder="Пароль" />
+  <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Password')?> />
 
   <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
   <a class="btn button-signin text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
-    Войти
+    <?=Yii::t('app','Sign in')?>
   </a>
   <a class="btn text-white" href="#">
-    У вас нет аккаунта?
+      <?=Yii::t('app','Do not have an account?')?>
   </a>
   <a class="btn btn-outline-success" href="#">
-    Зарегестрироваться
+      <?=Yii::t('app','Sign up')?>
   </a>
 </div>

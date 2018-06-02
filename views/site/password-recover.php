@@ -49,6 +49,6 @@ input, a{
 
     <input class="data form-control" type="text" placeholder="E-mail*" />
     <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
-        Восстановить
+        <?=Yii::t('app','Reestablish')?>
     </a>
 </div>

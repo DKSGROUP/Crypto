@@ -112,10 +112,16 @@ return[
 
     'Username' => 'Логин',
     'Password' => 'Пароль',
+    'Username*' => 'Логин*',
+    'Password*' => 'Пароль*',
     'Sign up' => 'Зарегестрироваться',
     'Already have an account?' => 'У вас уже есть аккаунт?',
-    'Sign in' => 'Увійти',
+    'Sign in' => 'Войти',
+    'Reestablish'=>'Восстановить',
+    'The recovery instructions'=>'Инструкция по восстановлению',
+    'is sent to your e-mail'=>'отправлена на Ваш e-mail',
+    'Do not have an account?'=>'У вас нет аккаунта?',
+    'Forgot password?'=>'Забыли пароль?',
     ''=>'',
     ''=>'',
-
 ];

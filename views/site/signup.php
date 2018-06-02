@@ -51,12 +51,12 @@ input, a{
     <input class="data form-control" type="text" placeholder="Пароль*" />
 
     <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
-        Зарегестрироваться
+        <?=Yii::t('app','Sign up')?>
     </a>
     <a class="btn text-white" href="#">
-        У вас уже есть аккаунт?
+        <?=Yii::t('app','Already have an account?')?>
     </a>
     <a class="btn btn-outline-success" href="#">
-        Войти
+        <?=Yii::t('app','Sign in')?>
     </a>
 </div>
