@@ -33,7 +33,7 @@ TO DO:
 -->
 
 <div class="d-none d-lg-block">
-    <aside id="aside1" class="animated fadeInLeft">
+    <aside id="aside1" class="animated fadeInLeft"  style="z-index:100000;">
         <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
             <div class="text-center text-white textt">
@@ -65,10 +65,10 @@ TO DO:
 
 -->
 
-    <section class="title-text">
+    <section class="title-text" style="z-index: 3;">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7" style="z-index:999;">
                     <h1 class="green" style="font-size:22px;"><b>Smart Crypto Invest</b><?=Yii::t('app',' - the best way to invest into cryptocurrencies')?></h1>
 
                     <p style="font-size: 22px; margin: 30px 0;"><?=Yii::t('app','Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks')?> </p>
@@ -92,7 +92,7 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px;">
+                <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
                         <div class="row">
                             <div class="col-6">
                                 <div class="text text-center">
@@ -143,29 +143,27 @@ TO DO:
             </div>
         </div>
     </section>
+    <!--CHartOne
 
-    <section class="invest-packages " style="z-index: 1000;">
-        <!--CHartOne
+           Status: -
 
-        Status: -
+           To Do:
+           -сделать так что бі тот был под текстом
+           -поменять цвет
+           -->
+    <section class="graph" style="z-index: 0;">
+        <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:-5px;" class="chartjs-render-monitor"></canvas>
 
-        To Do:
-        -сделать так что бі тот был под текстом
-        -поменять цвет
-        -->
-        <section class="graph">
-            <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
-
-            <?php
-            echo"<script language='javascript'>
+        <?php
+        echo"<script language='javascript'>
                 var ctxL = document.getElementById(\"lineChart\").getContext('2d');
 
                 var gradientFill = ctxL.createLinearGradient(0, 410, 0, 0);
-                gradientFill.addColorStop(1, \"rgba(71, 186, 0, 1)\");
+                gradientFill.addColorStop(1, \"rgba(7,115,62, 1)\");
                 gradientFill.addColorStop(0, \"rgba(11,21,42, 0.4)\");
 
                 var gradientFill1 = ctxL.createLinearGradient(0, 410, 0, 0);
-                gradientFill1.addColorStop(1, \"rgba(10,19,39, 1)\");
+                gradientFill1.addColorStop(1, \"rgba(7,115,62, 1)\");
                 gradientFill1.addColorStop(0, \"rgba(11,21,42, 0.8)\");
 
 
@@ -183,12 +181,12 @@ TO DO:
                                 pointStrokeColor: \"#196310\",
                                 pointHighlightFill: \"#196310\",
                                 pointHighlightStroke: \"rgba(25, 99, 16,1)\",
-                                data: [9,7.5,9,8,11],
+                                data: [9,8,9,8.5,11],
                                 pointHoverBackgroundColor: '#196310',//5
                                 pointHoverBorderColor: \"rgba(25, 99, 16,1)\",
                                 backgroundColor: gradientFill,
                                 borderColor: [
-                                    'rgba(25,99,16,1)'
+                                    'rgba(49,195,125,1)'
                                 ],
                                 borderWidth: 1
                             },
@@ -200,7 +198,7 @@ TO DO:
                                 pointStrokeColor: \"#47ba00\",
                                 pointHighlightFill: \"#47ba00\",
                                 pointHighlightStroke: \"rgba(198,3,16,1)\",
-                                data: [9,7.5,9,8,11],
+                                data: [9,8,9,8.5,11],
                                 pointHoverBackgroundColor: '#47ba00',
                                 pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                                 borderColor: 0,
@@ -248,8 +246,10 @@ TO DO:
 
                 });
         </script>";
-            ?>
-        </section>
+        ?>
+    </section>
+    <section class="invest-packages " style="z-index: 3;">
+
 
         <!--Invest packages
 
@@ -260,7 +260,7 @@ TO DO:
         -цвета кнопок
         -шрифты
         -->
-        <div class="container animated wow fadeIn">
+        <div class="container animated wow fadeIn" >
             <div class="row">
                 <div class="col-12 text-center" style="margin: 25px 0;">
                     <h1 style=" font-size: 22px;"><?=Yii::t('app','Investition Packages')?></h1>
@@ -377,7 +377,6 @@ TO DO:
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="col-xl-4 col-lg-5 col-md-6">
@@ -435,7 +434,6 @@ TO DO:
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--Advanced-->
@@ -547,7 +545,6 @@ TO DO:
                             </div>
                         </div>
                     </div>
-                 
                 </div>
 
                 <div class="col-xl-2 col-lg-2 col-sm-0"></div>
@@ -606,7 +603,6 @@ TO DO:
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--Exlusive-API-->
@@ -661,11 +657,10 @@ TO DO:
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
+        <!--Modal for packages-->
         <div class="modal fade" id="ModalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -770,6 +765,7 @@ TO DO:
                 </div>
             </div>
         </div>
+        <!--Modal SIGN UP-->
         <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -828,6 +824,7 @@ TO DO:
                 </div>
             </div>
         </div>
+        <!--Modal SIGN IN-->
         <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-signup modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -883,6 +880,7 @@ TO DO:
                 </div>
             </div>
         </div>
+        <!--Modal RECOWER PASSWORD-->
         <div class="modal fade" id="recover-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
             <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -921,6 +919,8 @@ TO DO:
         </div>
     </section>
 
+
+    <!--ADVANTEGES-->
     <section class="advnateges  animated wow fadeIn">
         <div class="adv-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','Advantages')?></h1>
@@ -1053,16 +1053,21 @@ TO DO:
                         <h1 style=" font-size: 22px;"><?=Yii::t('app','Our results')?></h1>
                     </div>
 
-                    <section class="result" style=" margin: 0 auto;">
+                    <section class="result" >
 
                         <div class="container" style="position: relative;">
                             <div class="row">
-                                <div class="col-md-6" style="position: absolute; top: 25px;">
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="position: absolute; top: 8px;">
                                     <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
+                                </div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-12" >
+                                    <div class="chart-container">
+                                    <canvas id="lineChartResult"  class="chartjs-render-monitor"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <canvas id="lineChartResult" style="height: 500px;"  class="chartjs-render-monitor"></canvas>
                     </section>
                     <?php
                     echo"<script language='javascript'>
@@ -1100,7 +1105,8 @@ TO DO:
 					                ]
 					            },
 					            options: {
-					                responsive: true ,
+					                responsive: true,
+					                 maintainAspectRatio: false,
 					                scales: {
                                         xAxes: [{
                                                     display:true,
