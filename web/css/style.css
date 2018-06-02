@@ -102,6 +102,21 @@ h1{
     margin: 10px 10px;
     background-color: inherit;
     border-radius: 4px 4px 4px 4px;
+    transition: all .35s ease-in-out;
+}
+.start-grow:hover {
+    z-index: 5;
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+  background: #3A4551;
+}
+.pro-grow:hover {
+    z-index: 5;
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+  background: #05AB5B;
 }
 .bold-text{
  /*   font-family: GothaProMed ;*/

@@ -257,7 +257,7 @@ TO DO:
                 <div class="col-xl-2 col-lg-2 col-sm-3"></div>
                 <div class="col-xl-4 col-lg-6 col-md-6">
                     <!--STARTER-->
-                    <div class="card">
+                    <div class="card start-grow">
                         <div class="card-header  start">
                             <div class="container-fluid">
                                 <div class="row">
@@ -313,7 +313,7 @@ TO DO:
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--STANDART-->
-                    <div class="card">
+                    <div class="card start-grow">
                         <div class="card-header  start">
                             <div class="container-fluid">
                                 <div class="row">
@@ -370,7 +370,7 @@ TO DO:
 
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--Optimal-->
-                    <div class="card">
+                    <div class="card pro-grow">
                         <div class="card-header  pro-card">
                             <div class="container-fluid">
                                 <div class="row">
@@ -426,7 +426,7 @@ TO DO:
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--Advanced-->
-                    <div class="card">
+                    <div class="card pro-grow">
                         <div class="card-header  pro-card">
                             <div class="container-fluid">
                                 <div class="row">
@@ -483,7 +483,7 @@ TO DO:
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--Premium-->
-                    <div class="card">
+                    <div class="card pro-grow">
                         <div class="card-header  pro-card">
                             <div class="container-fluid">
                                 <div class="row">
@@ -539,7 +539,7 @@ TO DO:
                 <div class="col-xl-2 col-lg-2 col-sm-0"></div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--Business - API-->
-                    <div class="card">
+                    <div class="card start-grow">
                         <div class="card-header  start">
                             <div class="container-fluid">
                                 <div class="row">
@@ -595,7 +595,7 @@ TO DO:
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--Exlusive-API-->
-                    <div class="card">
+                    <div class="card start-grow">
                         <div class="card-header  start">
                             <div class="container-fluid">
                                 <div class="row">
