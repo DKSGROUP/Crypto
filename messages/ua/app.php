@@ -6,7 +6,7 @@
  * Time: 18:06
  */
 return[
-    'About Us' => 'Про Нас',
+    'About us' => 'Про нас',
     'Products' => 'Продукти',
     'Advantages' => 'Переваги',
     'Reporting' => 'Звітність',
@@ -96,7 +96,7 @@ return[
 
     'Our results' => 'Наші результати',
 
-    'According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis' => 'Згідно зі статистикою, відображеної на графіку, фінансові операції дають стабільний дохід, що досягає 0,5-1% початкового вкладу в день. При такому прибутку внесок в 1BTC за 17 місяців виріс до 144,5BTC завдяки продуманим стратегіям трейдингу та аналізу ринку.',
+    'According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis' => 'Згідно зі статистикою, відображеною на графіку, фінансові операції дають стабільний дохід, що досягає 0,5-1% початкового вкладу в день. При такому прибутку внесок в 1BTC за 17 місяців виріс до 144,5BTC завдяки продуманим стратегіям трейдингу та аналізу ринку.',
 
     'Why Smart Crypto Invest?' => 'ЧОМУ САМЕ SMART CRYPTO INVEST?',
     'Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!' => 'Наш сервіс потрібен користувачеві не тільки для збільшення прибутковості кріптовалютних операцій, але й для економії часу. За допомогою нашого автотрейдинга ви можете проводити фінансові операції всього за декілька кліків!',

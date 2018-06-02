@@ -33,7 +33,7 @@ TO DO:
 -->
 
 <div class="d-none d-lg-block">
-    <aside id="aside1" class="animated fadeInLeft">
+    <aside id="aside1" class="animated fadeInLeft"  style="z-index:100000;">
         <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
             <div class="text-center text-white textt">
@@ -59,16 +59,14 @@ TO DO:
 STATUS: -
 
 TO DO:
--поменять цвет кнопок
--текст "выше" всех
 -прилепить курс валют к сонтейнеру что бы тот не улетал в бок
 
 -->
 
-    <section class="title-text">
+    <section class="title-text" style="z-index: 3;">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7" style="z-index:999;">
                     <h1 class="green" style="font-size:22px;"><b>Smart Crypto Invest</b><?=Yii::t('app',' - the best way to invest into cryptocurrencies')?></h1>
 
                     <p style="font-size: 22px; margin: 30px 0;"><?=Yii::t('app','Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks')?> </p>
@@ -77,7 +75,7 @@ TO DO:
                     echo Button::widget([
                         'label' => Yii::t('app','Invest'),
                         'options' => ['class' => 'btn  btn-success wow pulse animated', 'style' => 'pointer-events: all;  width: 152px;
-                        height: 33px; font-size: 14px; text-align: center; padding:0; visibility: visible; animation-duration: 2s; 
+                        height: 33px; font-size: 14px; text-align: center; padding:0; visibility: visible; animation-duration: 2s;
                         animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse; border: none; background: linear-gradient(#048949, #05AA5B) !important;',
                             'data-wow-delay' =>'300ms', 'data-wow-iteration' => 'infinite', 'data-wow-duration'=>'2s' ],
 
@@ -92,7 +90,7 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px;">
+                <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
                         <div class="row">
                             <div class="col-6">
                                 <div class="text text-center">
@@ -144,28 +142,19 @@ TO DO:
         </div>
     </section>
 
-    <section class="invest-packages " style="z-index: 1000;">
-        <!--CHartOne
+    <section class="graph" style="z-index: 0;">
+        <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:-5px;" class="chartjs-render-monitor"></canvas>
 
-        Status: -
-
-        To Do:
-        -сделать так что бі тот был под текстом
-        -поменять цвет
-        -->
-        <section class="graph">
-            <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
-
-            <?php
-            echo"<script language='javascript'>
+        <?php
+        echo"<script language='javascript'>
                 var ctxL = document.getElementById(\"lineChart\").getContext('2d');
 
                 var gradientFill = ctxL.createLinearGradient(0, 410, 0, 0);
-                gradientFill.addColorStop(1, \"rgba(71, 186, 0, 1)\");
+                gradientFill.addColorStop(1, \"rgba(7,115,62, 1)\");
                 gradientFill.addColorStop(0, \"rgba(11,21,42, 0.4)\");
 
                 var gradientFill1 = ctxL.createLinearGradient(0, 410, 0, 0);
-                gradientFill1.addColorStop(1, \"rgba(10,19,39, 1)\");
+                gradientFill1.addColorStop(1, \"rgba(7,115,62, 1)\");
                 gradientFill1.addColorStop(0, \"rgba(11,21,42, 0.8)\");
 
 
@@ -182,13 +171,13 @@ TO DO:
                                 pointColor: \"rgba(25, 99, 16 ,1)\",
                                 pointStrokeColor: \"#196310\",
                                 pointHighlightFill: \"#196310\",
-                                pointHighlightStroke: \"rgba(25, 99, 16,1)\",
-                                data: [9,7.5,9,8,11],
-                                pointHoverBackgroundColor: '#196310',//5
-                                pointHoverBorderColor: \"rgba(25, 99, 16,1)\",
+                                pointHighlightStroke: \"#31C37D\",
+                                data: [9,8,9,8.5,11],
+                                pointHoverBackgroundColor: '#31C37D',//5
+                                pointHoverBorderColor: \"#31C37D\",
                                 backgroundColor: gradientFill,
                                 borderColor: [
-                                    'rgba(25,99,16,1)'
+                                    '#31C37D'
                                 ],
                                 borderWidth: 1
                             },
@@ -200,7 +189,7 @@ TO DO:
                                 pointStrokeColor: \"#47ba00\",
                                 pointHighlightFill: \"#47ba00\",
                                 pointHighlightStroke: \"rgba(198,3,16,1)\",
-                                data: [9,7.5,9,8,11],
+                                data: [9,8,9,8.5,11],
                                 pointHoverBackgroundColor: '#47ba00',
                                 pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                                 borderColor: 0,
@@ -248,8 +237,9 @@ TO DO:
 
                 });
         </script>";
-            ?>
-        </section>
+        ?>
+    </section>
+    <section class="invest-packages " style="z-index: 3;">
 
         <!--Invest packages
 
@@ -257,10 +247,8 @@ TO DO:
 
         To do :
         -расстояние между блоками
-        -цвета кнопок
-        -шрифты
         -->
-        <div class="container animated wow fadeIn">
+        <div class="container animated wow fadeIn" >
             <div class="row">
                 <div class="col-12 text-center" style="margin: 25px 0;">
                     <h1 style=" font-size: 22px;"><?=Yii::t('app','Investition Packages')?></h1>
@@ -303,7 +291,8 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
@@ -312,8 +301,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' =>Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                                'style' => 'border-color: #31c37d;'
-                                            ],
+                                            'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
                                     </div>
@@ -359,17 +347,17 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
                                     <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' =>Yii::t('app','Invest'),
+                                            'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                                'style' => 'border-color: #31c37d;'
-                                            ],
+                                        'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
                                     </div>
@@ -377,7 +365,6 @@ TO DO:
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="col-xl-4 col-lg-5 col-md-6">
@@ -416,18 +403,18 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info text-white',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
                                     <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' =>Yii::t('app','Invest'),
+                                            'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
-                                                'style' => 'background: linear-gradient(#05AA5B, #048949); color: #fff; border: 0;'
-                                            ],
+                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?>
                                     </div>
@@ -435,7 +422,6 @@ TO DO:
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--Advanced-->
@@ -473,18 +459,18 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info text-white',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
                                     <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' =>Yii::t('app','Invest'),
+                                            'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
-                                                'style' => 'background: linear-gradient(#05AA5B, #048949); color: #fff; border: 0;'
-                                            ],
+                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?>
                                     </div>
@@ -528,18 +514,18 @@ TO DO:
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info text-white',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
                                     <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' =>Yii::t('app','Invest'),
+                                            'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
-                                                'style' => 'background: linear-gradient(#05AA5B, #048949); color: #fff; border: 0;'
-                                            ],
+                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                         ]);
                                         ?>
                                     </div>
@@ -547,7 +533,6 @@ TO DO:
                             </div>
                         </div>
                     </div>
-                 
                 </div>
 
                 <div class="col-xl-2 col-lg-2 col-sm-0"></div>
@@ -588,17 +573,17 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
                                     <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' =>Yii::t('app','Invest'),
+                                            'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                                'style' => 'border-color: #31c37d;'
-                                            ],
+                                        'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
                                     </div>
@@ -606,7 +591,6 @@ TO DO:
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--Exlusive-API-->
@@ -634,7 +618,7 @@ TO DO:
                                     <div class="col-8 text">
                                         <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
                                     </div>
-                                    <div class="col-4 text-right text" style="font-size: 12px;">
+                                    <div class="col-4 text-right text" style="font-size: 10px;">
                                         <?=Yii::t('app','by agreement')?>
                                     </div>
                                     <!--buttons-->
@@ -643,17 +627,17 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                            'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
                                     <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' =>Yii::t('app','Invest'),
+                                            'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                                'style' => 'border-color: #31c37d;'
-                                            ],
+                                        'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?>
                                     </div>
@@ -661,11 +645,10 @@ TO DO:
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
+        <!--Modal for packages-->
         <div class="modal fade" id="ModalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -770,6 +753,7 @@ TO DO:
                 </div>
             </div>
         </div>
+        <!--Modal SIGN UP-->
         <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -777,6 +761,7 @@ TO DO:
                     echo"<style>
                     .modal-signup{
                         max-width:325px !important;
+                        height:570px !important;
                     }
                     .signup{
                       background-image: url(../img/signin/signin_bg.png);
@@ -816,25 +801,25 @@ TO DO:
                         <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
                             Зарегестрироваться
                         </a>
-
-                        <a class=" text-white" style="margin-bottom: 10px;">
+                        <p class="text-white">
                             У вас уже есть аккаунт?
-                        </a>
-
-                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal"" >
+                        </p>
+                        <a class="enter btn btn-outline-success" data-toggle="modal" data-target="#signin" href="#">
                             Войти
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+        <!--Modal SIGN IN-->
         <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-signup modal-signup modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-signin modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <?php
                     echo"<style>
-                    .modal-signup{
+                    .modal-signin{
                         max-width:325px !important;
+                        height:570px !important;
                     }
                     .signin{
                       background-image: url(../img/signin/signin_bg.png);
@@ -869,13 +854,16 @@ TO DO:
                       <input class="data form-control" type="text" placeholder="Пароль" />
 
                       <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
-                      <a class="btn button-signin text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
+                      <a class="btn button-signin text-white" href="#">
                         Войти
                       </a>
-                      <p class=" text-white" style="margin-bottom: 10px;">
+                      <a class="text-white" style="margin-bottom:40px; margin-top: 10px;"  data-toggle="modal" data-target="#recover-password">
+                          Забыли пароль?
+                      </a>
+                      <p class="text-white">
                         У вас нет аккаунта?
-                      </p>
-                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal">
+                    </p>
+                      <a class="btn btn-outline-success" style="margin-bottom:25px;" data-toggle="modal" data-target="#signup" href="#">
                         Зарегестрироваться
                       </a>
                     </div>
@@ -883,15 +871,15 @@ TO DO:
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="recover-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-            <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
+        <div class="modal fade" id="recover-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-recover modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <?php
                     echo"<style>
-                    .modal-signup{
+                    .modal-recover{
                         max-width:325px !important;
                     }
-                    .signup{
+                    .recover{
                       background-image: url(../img/signin/signin_bg.png);
                     }
                     .signup-text{
@@ -915,12 +903,26 @@ TO DO:
                       background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     }</style>"
                     ?>
+                    <div class="recover container-fluid d-flex flex-column justify-content-center align-items-center">
+                        <?php
+                        echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"img-fluid mt-4\">";
+                        ?>
+                        <div class="text-center text-white">
+                            <p>Smart Crypto Invest</p>
+                        </div>
 
+                        <input class="data form-control" type="text" placeholder="E-mail*" />
+                        <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
+                            Восстановить
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+    <!--ADVANTEGES-->
     <section class="advnateges  animated wow fadeIn">
         <div class="adv-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','Advantages')?></h1>
@@ -1023,7 +1025,8 @@ TO DO:
                                 <?php
                                 echo Button::widget([
                                     'label' => Yii::t('app','Download reporting exam'),
-                                    'options' => ['class' => 'btn btn-success text-right'],
+                                    'options' => ['class' => 'btn text-right',
+                                'style' => 'color:white; background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                 ]);
                                 ?>
                             </a>
@@ -1053,16 +1056,21 @@ TO DO:
                         <h1 style=" font-size: 22px;"><?=Yii::t('app','Our results')?></h1>
                     </div>
 
-                    <section class="result" style=" margin: 0 auto;">
+                    <section class="result" >
 
                         <div class="container" style="position: relative;">
                             <div class="row">
-                                <div class="col-md-6" style="position: absolute; top: 25px;">
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="position: absolute; top: 8px;">
                                     <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
+                                </div>
+                                <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
+                                <div class="col-md-12" ">
+                                    <div class="chart-container">
+                                    <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <canvas id="lineChartResult" style="height: 500px;"  class="chartjs-render-monitor"></canvas>
                     </section>
                     <?php
                     echo"<script language='javascript'>
@@ -1086,11 +1094,11 @@ TO DO:
 					                        pointStrokeColor: \"#00ff87\",
 					                        pointHighlightFill: \"#00ff87\",
 					                        pointHighlightStroke: \"rgba(0, 255, 135,1)\",
-					                        data: [0,40,30,60,75,55,100,120,144.5],					                        
+					                        data: [0,40,30,60,75,55,100,120,144.5],
                                             pointBackgroundColor: \"#00ff87\",
                                             pointHoverBackgroundColor: \"#00ff87\",
                                             pointHoverBorderColor: \"#00ff87\",
-                                            
+
 					                        backgroundColor: gradientFillTwo,
 					                    	borderColor: [
 					                        'rgba(0, 255, 135,1)'
@@ -1100,11 +1108,12 @@ TO DO:
 					                ]
 					            },
 					            options: {
-					                responsive: true ,
+					                responsive: true,
+					                 maintainAspectRatio: false,
 					                scales: {
                                         xAxes: [{
                                                     display:true,
-        
+
                                                     gridLines: {
                                                         color: \"rgba(255, 255, 255, 0)\",
                                                     },
@@ -1134,7 +1143,7 @@ TO DO:
                                        display: true,
                                        color : \"#fff\",
                                 },
-                                
+
 
 					        });
                         </script>";
