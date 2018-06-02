@@ -34,6 +34,7 @@ TO DO:
 
 <div class="d-none d-lg-block">
     <aside id="aside1" class="animated fadeInLeft"  style="z-index:100000;">
+
         <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
             <div class="text-center text-white textt">
@@ -754,8 +755,7 @@ TO DO:
             </div>
         </div>
         <!--Modal SIGN UP-->
-        <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel
-" aria-hidden="true">
+        <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <?php
@@ -805,8 +805,12 @@ TO DO:
                         <p class="text-white">
                             У вас уже есть аккаунт?
                         </p>
-                        <a class="enter btn btn-outline-success" data-toggle="modal" data-target="#signin" da data-dismiss="signup" href="#" >
-                            Войти
+                        <!--a class="enter btn btn-outline-success" data-toggle="modal" data-target="#signin"
+                           da data-dismiss="signup" href="#" -->
+
+                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal"" >
+
+                        Войти
                         </a>
                     </div>
                 </div>
@@ -864,7 +868,7 @@ TO DO:
                       <p class="text-white">
                         У вас нет аккаунта?
                     </p>
-                      <a class="btn btn-outline-success" style="margin-bottom:25px;" data-toggle="modal" data-target="#signup" data-dismiss="signin" href="#">
+                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal"" >
                         Зарегестрироваться
                       </a>
                     </div>
@@ -1000,7 +1004,8 @@ TO DO:
             </div>
         </div>
     </section>
-
+<!--                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" onclick="document.getElementById('signup').style.display='none'" >
+-->
     <section class="report  animated wow fadeIn">
         <!-- REPORTS -->
         <div class="container-fluid">
