@@ -7,7 +7,7 @@
  */
 
 return[
-    'About Us' => 'О Нас',
+    'About us' => 'О нас',
     'Products' => 'Продукты',
     'Advantages' => 'Преимущества',
     'Questions' => 'Вопросы',

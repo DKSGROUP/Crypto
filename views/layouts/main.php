@@ -71,7 +71,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-toggleable-md collapse nav-wid ',
             'style' => 'margin: 0 auto;'],
         'items' => [
-            ['label' => Yii::t('app', 'About Us'), 'url' => ['/site/index']],
+            ['label' => Yii::t('app', 'About us'), 'url' => ['/site/index']],
             ['label' => Yii::t('app', 'Products'), 'url' => ['/site/#invest-packages']],
             ['label' =>  Yii::t('app', 'Advantages'), 'url' => ['/site/contact']],
             ['label' =>  Yii::t('app', 'Reporting'), 'url' => ['/site/contact']],
