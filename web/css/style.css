@@ -1,11 +1,19 @@
 @font-face {
     font-family: GothaProReg;
     src: url("../font/Gotham Cyrillic/GothaProReg.otf");
+    font-weight: normal;
 }
 
 @font-face {
     font-family: GothaProMed;
     src: url("../font/Gotham Cyrillic/GothaProMed.otf");
+
+}
+
+@font-face {
+    font-family: GothaProBol;
+    src: url("../font/Gotham Cyrillic/GothaProBol.otf");
+    font-weight: bold;
 }
 
 *{
@@ -20,15 +28,29 @@ body{
     color: #fff;
 }
 
+
 .nav-wid a{
     color: #fff;
 }
 
+/*-------------Personal Area-----------------*/
+.btn-own-cab{
+    border-color:#31c37d !important;
+}
+.btn-own-cab:hover{
+    background: linear-gradient(#048949, #05AA5B) !important;
+    border-color: rgba(49, 195, 125,0) !important;
+}
+
+/*--------------------------------------------*/
+
+
+/*--------------Title Text----------------------------*/
 h1{
+    font-family: GothaProMed, Arial, sans;
     font-size: 22px;
     line-height: 26px;
 }
-
 .green b{
     color: green;
 }
@@ -40,6 +62,7 @@ h1{
 .title-text h1 {
     margin-top: 100px;
 }
+
 
 
 .graph{
@@ -66,12 +89,25 @@ h1{
 .card{
     width: 360px;
    // height: 190px !important;
-    margin: 15px 0;
+    margin: 10px 10px;
     background-color: inherit;
     border-radius: 4px 4px 4px 4px;
 }
 .bold-text{
-    font-family: GothaProMed ;
+ /*   font-family: GothaProMed ;*/
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+.card .text{
+   /* padding: 5px 0;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.card-body .col-6{
+    padding: 0;
 }
 .card-header{
     height: 45px;
@@ -100,7 +136,9 @@ table{
 .start-pack{
     background-color: rgba(255, 255, 255, 0.07);
 
+
 }
+
 
 .pro-card{
     background-color: #05AB5B;
@@ -109,15 +147,54 @@ table{
 .pro-pack{
     background-color: rgba(33, 150, 83, 0.4);
 }
+.invest-packages .investr/*,.invest-packages .info*/{
+    width: 160px;
+    height: 33px;
+    padding: 0;
+
+}
 
 .info{
-    width: 140px;
-    margin-right: 30px;
+    width: 147px;
+    height: 33px;
+    padding: 0;
+    border-color: #31c37d;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.investr{
-    width: 160px;
+.btn-invest-start{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: #31c37d !important;
+    color: #31c37d !important;
 }
+
+.btn-invest-pro{
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    background: linear-gradient( #05AA5B, #048949) !important;
+}
+
+.btn-invest-start:hover{
+    border: none !important;
+    color: #fff !important;
+}
+
+.info:hover{
+
+    border: 0;
+}
+.investr:hover, .info:hover{
+
+    background: linear-gradient(#048949, #05AA5B) !important;
+}
+
+/*-----------------------*/
+
 
 .modal {
    // background-color: rgba(6, 11, 22, 0.25);
@@ -176,7 +253,9 @@ table{
 .triangle-container {
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 100%;/*РАБОТАЕТ - НЕ ТРОГАТЬ */
+    overflow: hidden;
+    right: 0;
 }
 
 #aside1 {  /* селектор блока, который будет оставаться на месте */

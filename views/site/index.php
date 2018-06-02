@@ -11,7 +11,7 @@ AppAsset::register($this);
 
 $this->title = 'Smart Crypto Invest';
 ?>
-
+<!--Initial scripts-->
 <?php
      echo"<script language='javascript' src='../js/wow.min.js'></script>";
 
@@ -21,32 +21,49 @@ $this->title = 'Smart Crypto Invest';
 ?>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<?php
+echo"<script language='javascript' src='../js/Chart.min.js'></script>";
+?>
+
+<!--banner GRAM
+STATUS:-
+
+TO DO:
+-
+-->
+
 <div class="d-none d-lg-block">
-<aside id="aside1" class="animated fadeInLeft">
-    <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'">Х</div>
-    <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
-        <div class="text-center text-white textt">
-            <h4><?=Yii::t('app','We can buy ')?><b>GRAM</b></h4>
-        </div>
-        <div class="text text-center">
-            <?php
-            echo"<img src=\"../img/banner/elipse.png\"; class=\"elipse\">";
-            ?>
-        </div>
+    <aside id="aside1" class="animated fadeInLeft">
+        <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+            <div class="text-center text-white textt">
+                <h4><?=Yii::t('app','We can buy ')?><b>GRAM</b></h4>
+            </div>
+            <div class="text text-center">
+                <?php
+                echo"<img src=\"../img/banner/elipse.png\"; class=\"elipse\">";
+                ?>
+            </div>
             <div class="butt">
                 <a class="btn button-baner text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
                     <?=Yii::t('app','Buy')?>
                 </a>
             </div>
-    </div>
-</aside>
+    </aside>
 </div>
 
 
 <div class="site-index">
 
+<!--Site title
+STATUS: -
 
+TO DO:
+-поменять цвет кнопок
+-текст "выше" всех
+-прилепить курс валют к сонтейнеру что бы тот не улетал в бок
+
+-->
 
     <section class="title-text">
         <div class="container">
@@ -59,8 +76,9 @@ $this->title = 'Smart Crypto Invest';
                     <?php
                     echo Button::widget([
                         'label' => Yii::t('app','Invest'),
-                        'options' => ['class' => 'btn  btn-success wow pulse animated', 'style' => 'width: 152px;
-                        height: 33px; font-size: 14px; text-align: center; padding:0; visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;',
+                        'options' => ['class' => 'btn  btn-success wow pulse animated', 'style' => 'pointer-events: all;  width: 152px;
+                        height: 33px; font-size: 14px; text-align: center; padding:0; visibility: visible; animation-duration: 2s; 
+                        animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse; border: none; background: linear-gradient(#048949, #05AA5B) !important;',
                             'data-wow-delay' =>'300ms', 'data-wow-iteration' => 'infinite', 'data-wow-duration'=>'2s' ],
 
                     ]);
@@ -70,12 +88,11 @@ $this->title = 'Smart Crypto Invest';
                     <div class="d-none d-lg-block offset-11">
                         <div class="pull-right exchange ">
                             BTC/USD <b style="color: #31C37D;">682.20 </b></br>
-                             ETH/USD <b style="color: #31C37D;">12.2700 </b>
+                            ETH/USD <b style="color: #31C37D;">12.2700 </b>
                         </div>
                     </div>
                 </div>
-
-                    <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px;">
+                <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px;">
                         <div class="row">
                             <div class="col-6">
                                 <div class="text text-center">
@@ -120,16 +137,22 @@ $this->title = 'Smart Crypto Invest';
                                     <p class="text-white "><?=Yii::t('app','Make profits')?></p>
                                 </div>
                             </div>
-
-
+                        </div>
 
                 </div>
-
             </div>
         </div>
     </section>
 
     <section class="invest-packages " style="z-index: 1000;">
+        <!--CHartOne
+
+        Status: -
+
+        To Do:
+        -сделать так что бі тот был под текстом
+        -поменять цвет
+        -->
         <section class="graph">
             <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom: -15px;" class="chartjs-render-monitor"></canvas>
 
@@ -160,7 +183,7 @@ $this->title = 'Smart Crypto Invest';
                                 pointStrokeColor: \"#196310\",
                                 pointHighlightFill: \"#196310\",
                                 pointHighlightStroke: \"rgba(25, 99, 16,1)\",
-                                data: [9,7,9,8,11],
+                                data: [9,7.5,9,8,11],
                                 pointHoverBackgroundColor: '#196310',//5
                                 pointHoverBorderColor: \"rgba(25, 99, 16,1)\",
                                 backgroundColor: gradientFill,
@@ -177,7 +200,7 @@ $this->title = 'Smart Crypto Invest';
                                 pointStrokeColor: \"#47ba00\",
                                 pointHighlightFill: \"#47ba00\",
                                 pointHighlightStroke: \"rgba(198,3,16,1)\",
-                                data: [9,7,9,8,11],
+                                data: [9,7.5,9,8,11],
                                 pointHoverBackgroundColor: '#47ba00',
                                 pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                                 borderColor: 0,
@@ -228,6 +251,15 @@ $this->title = 'Smart Crypto Invest';
             ?>
         </section>
 
+        <!--Invest packages
+
+        Status: -
+
+        To do :
+        -расстояние между блоками
+        -цвета кнопок
+        -шрифты
+        -->
         <div class="container animated wow fadeIn">
             <div class="row">
                 <div class="col-12 text-center" style="margin: 25px 0;">
@@ -235,295 +267,401 @@ $this->title = 'Smart Crypto Invest';
                 </div>
                 <div class="col-xl-2 col-lg-2 col-sm-3"></div>
                 <div class="col-xl-4 col-lg-6 col-md-6">
+                    <!--STARTER-->
                     <div class="card">
                         <div class="card-header  start">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Starter')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 50$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Starter')?></h1>
+                                    </div>
+                                    <div class="col-6">
+                                        <h1 class="text-right"style="font-size: 22px;" ><?=Yii::t('app','from 50$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body start-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right"><?=Yii::t('app','test 15 days')?></td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">45/55</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        <?=Yii::t('app','test 15 days')?>
+                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        45/55
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
                                         ]);
                                         ?></td>
-
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
                                             'label' =>Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
+                                                'style' => 'border-color: #31c37d;'
+                                            ],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--STANDART-->
                     <div class="card">
                         <div class="card-header  start">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Standard')?></td>
-                                    <td class="text-right"><?=Yii::t('app','up to 1000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Standard')?></h1>
+                                    </div>
+                                    <div class="col-5">
+                                        <h1 class="text-right"style="font-size: 22px;" ><?=Yii::t('app','up to 1000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body start-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right"><?=Yii::t('app','30 days')?></td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">50/50</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        <?=Yii::t('app','30 days')?>
+                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        50/50
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                            'label' =>Yii::t('app','Invest'),
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
+                                                'style' => 'border-color: #31c37d;'
+                                            ],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--Optimal-->
                     <div class="card">
                         <div class="card-header  pro-card">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Optimal')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 1000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Optimal')?></h1>
+                                    </div>
+                                    <div class="col-5">
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 1000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body pro-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right"><?=Yii::t('app','30 days')?></td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">55/45</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        <?=Yii::t('app','30 days')?>
+                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        55/45
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info text-white',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr'],
+                                            'label' =>Yii::t('app','Invest'),
+                                            'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
+                                                'style' => 'background: linear-gradient(#05AA5B, #048949); color: #fff; border: 0;'
+                                            ],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--Advanced-->
                     <div class="card">
                         <div class="card-header  pro-card">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Advanced')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 3000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Advanced')?></h1>
+                                    </div>
+                                    <div class="col-5">
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 3000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body pro-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right"><?=Yii::t('app','30 days')?></td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">60/40</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        <?=Yii::t('app','30 days')?>
+                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        60/40
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info text-white',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr'],
+                                            'label' =>Yii::t('app','Invest'),
+                                            'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
+                                                'style' => 'background: linear-gradient(#05AA5B, #048949); color: #fff; border: 0;'
+                                            ],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--Premium-->
                     <div class="card">
                         <div class="card-header  pro-card">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Premium')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 5000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Premium')?></h1>
+                                    </div>
+                                    <div class="col-5">
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 5000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body pro-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right">&#8734</td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">55/45</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">&#8734                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        55/45
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info text-white',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-success text-center investr'],
+                                            'label' =>Yii::t('app','Invest'),
+                                            'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
+                                                'style' => 'background: linear-gradient(#05AA5B, #048949); color: #fff; border: 0;'
+                                            ],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                 
                 </div>
 
                 <div class="col-xl-2 col-lg-2 col-sm-0"></div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--Business - API-->
                     <div class="card">
                         <div class="card-header  start">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Business - API')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 2000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Business-API')?></h1>
+                                    </div>
+                                    <div class="col-5">
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 2000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body start-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right"><?=Yii::t('app','test 15 days')?></td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right">50/50</td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        <?=Yii::t('app','test 15 days')?>
+                                    </div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text">
+                                        50/50
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                            'label' =>Yii::t('app','Invest'),
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
+                                                'style' => 'border-color: #31c37d;'
+                                            ],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
+                    <!--Exlusive-API-->
                     <div class="card">
                         <div class="card-header  start">
-                            <table>
-                                <tr>
-                                    <td class="bold-text"><?=Yii::t('app','Exlusive - API')?></td>
-                                    <td class="text-right"><?=Yii::t('app','from 15000$')?></td>
-                                </tr>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Exlusive-API')?></h1>
+                                    </div>
+                                    <div class="col-6">
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 15000$')?></h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body start-pack">
-                            <table>
-                                <tr>
-                                    <td><?=Yii::t('app','Minimal terms of investment')?></td>
-                                    <td class="text-right">&#8734</td>
-                                </tr>
-                                <tr>
-                                    <td><?=Yii::t('app','Profits distribution between an investor/fund(%)')?></td>
-                                    <td class="text-right"><?=Yii::t('app','by agreement')?></td>
-                                </tr>
-                                <tr>
-                                    <td>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Minimal terms of investment')?>
+                                    </div>
+                                    <div class="col-4 text-right text">&#8734</div>
+
+                                    <div class="col-8 text">
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                    </div>
+                                    <div class="col-4 text-right text" style="font-size: 12px;">
+                                        <?=Yii::t('app','by agreement')?>
+                                    </div>
+                                    <!--buttons-->
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                            'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfo"],
                                         ]);
                                         ?></td>
-                                    <td>
+                                    </div>
+                                    <div class="col-6">
                                         <?php
                                         echo Button::widget([
-                                            'label' => Yii::t('app','Invest'),
-                                            'options' => ['class' => 'btn btn-outline-success text-center investr'],
+                                            'label' =>Yii::t('app','Invest'),
+                                            'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
+                                                'style' => 'border-color: #31c37d;'
+                                            ],
                                         ]);
-                                        ?></td>
-                                </tr>
-                            </table>
+                                        ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -678,7 +816,7 @@ $this->title = 'Smart Crypto Invest';
                         <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
                             Зарегестрироваться
                         </a>
-                        
+
                         <a class=" text-white" style="margin-bottom: 10px;">
                             У вас уже есть аккаунт?
                         </a>
