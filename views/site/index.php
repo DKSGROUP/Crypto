@@ -754,7 +754,8 @@ TO DO:
             </div>
         </div>
         <!--Modal SIGN UP-->
-        <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel
+" aria-hidden="true">
             <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <?php
@@ -804,7 +805,7 @@ TO DO:
                         <p class="text-white">
                             У вас уже есть аккаунт?
                         </p>
-                        <a class="enter btn btn-outline-success" data-toggle="modal" data-target="#signin" href="#">
+                        <a class="enter btn btn-outline-success" data-toggle="modal" data-target="#signin" da data-dismiss="signup" href="#" >
                             Войти
                         </a>
                     </div>
@@ -812,7 +813,7 @@ TO DO:
             </div>
         </div>
         <!--Modal SIGN IN-->
-        <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
             <div class="modal-dialog modal-signin modal-signup modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <?php
@@ -863,7 +864,7 @@ TO DO:
                       <p class="text-white">
                         У вас нет аккаунта?
                     </p>
-                      <a class="btn btn-outline-success" style="margin-bottom:25px;" data-toggle="modal" data-target="#signup" href="#">
+                      <a class="btn btn-outline-success" style="margin-bottom:25px;" data-toggle="modal" data-target="#signup" data-dismiss="signin" href="#">
                         Зарегестрироваться
                       </a>
                     </div>
