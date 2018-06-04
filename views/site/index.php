@@ -1065,6 +1065,10 @@ TO DO:
                       background-color: rgba(39, 174, 96, 0.44);
                       padding: 2%; 5% 2% 5%;
                       margin-bottom: 4%;
+                      border: 1px solid #27AE60;
+                      border-radius: 4px;
+                      
+
                     }
                     </style>"
                 ?>
@@ -1165,6 +1169,8 @@ TO DO:
                       background-color: rgba(39, 174, 96, 0.44);
                       padding: 2%; 5% 2% 5%;
                       margin-bottom: 4%;
+                      border: 1px solid #27AE60;
+                      border-radius: 4px;
                     }
                     .button-gramSent{
                       background: linear-gradient(to bottom, #05AB5B, #05AB5B);
