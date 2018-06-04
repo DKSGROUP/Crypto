@@ -241,7 +241,7 @@ TO DO:
         ?>
     </section>
     <section class="invest-packages " style="z-index: 3;">
-
+        <a href="#Products"></a>
         <!--Invest packages
 
         Status: -
@@ -785,7 +785,7 @@ TO DO:
                         margin-bottom:25px;
                     }
 
-                    #closeButton:hover{
+                    #closeButtonModal:hover{
                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     color: #fff !important;
                     border: 1px solid rgba(0,0,0,0);
@@ -805,14 +805,14 @@ TO DO:
                         <input class="data form-control" type="text" placeholder="E-mail*" />
                         <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Password*')?> />
 
-                        <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
+                        <a id="buttonInModal" class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
                             <?=Yii::t('app','Sign up')?>
                         </a>
                         <p class="text-white">
                             <?=Yii::t('app','Already have an account?')?>
                         </p>
 
-                        <a  id="closeButton" class="enter btn btn-outline-success" style ="border-color:#31c37d; color :#31c37d;" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal" >
+                        <a  id="closeButtonModal"  class="enter btn btn-outline-success" style ="border-color:#31c37d; color :#31c37d;" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal" >
                             <?=Yii::t('app','Sign in')?>
                         </a>
                     </div>
@@ -862,7 +862,7 @@ TO DO:
                       <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Password')?> />
 
                       <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
-                      <a class="btn button-signin text-white" href="#">
+                      <a id="buttonInModal" class="btn button-signin text-white" href="#">
                           <?=Yii::t('app','Sign in')?>
                       </a>
                       <a class="text-white" style="margin-bottom:40px; margin-top: 10px;"  data-toggle="modal" data-target="#recover-password" data-dismiss="modal">
@@ -871,7 +871,7 @@ TO DO:
                       <p class="text-white">
                           <?=Yii::t('app','Do not have an account?')?>
                     </p>
-                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal" >
+                        <a  id="closeButtonModal" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal" >
                         <?=Yii::t('app','Sign up')?>
                       </a>
                     </div>
@@ -921,7 +921,8 @@ TO DO:
                         </div>
 
                         <input class="data form-control" type="text" placeholder="E-mail*" />
-                        <a class="btn button-signup text-white" href="#"data-toggle="modal" data-target="#recover-password-two" data-dismiss="modal" style="margin-bottom:40px; margin-top: 10px;">
+                  <a id="buttonInModal" class="btn button-signup text-white" href="#" data-toggle="modal" data-target="#recover-password-two" data-dismiss="modal" style="margin-bottom:40px; margin-top: 10px;">
+
                             Восстановить
                         </a>
                     </div>
@@ -1606,8 +1607,8 @@ TO DO:
                                 </div>
                                 <div class="container">
                                     <div class="carousel-caption text-left">
-                                        <h5>Джордж Сорос готов
-                                            торговать криптовалютами</h5>
+                                        <strong>Джордж Сорос готов
+                                            торговать криптовалютами</strong>
                                         <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                             elit, sed do eiusmod tempor incididunt ut labore et
@@ -1633,8 +1634,8 @@ TO DO:
                                 </div>
                                 <div class="container">
                                     <div class="carousel-caption text-left">
-                                        <h5>Джордж Сорос готов
-                                            торговать криптовалютами</h5>
+                                        <strong>Джордж Сорос готов
+                                            торговать криптовалютами</strong>
                                         <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                             elit, sed do eiusmod tempor incididunt ut labore et

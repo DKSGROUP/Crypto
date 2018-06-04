@@ -71,12 +71,12 @@ AppAsset::register($this);
         'options' => ['class' => ' navbar navbar-expand-lg  collapse nav-wid float-left','id'=>'navigation',
             'style' => 'margin: 0 auto;'],
         'items' => [
-            ['label' => Yii::t('app', 'About us'), 'url' => ['/site/index']],
-            ['label' => Yii::t('app', 'Products'), 'url' => ['/site/#invest-packages']],
-            ['label' =>  Yii::t('app', 'Advantages'), 'url' => ['/site/contact']],
-            ['label' =>  Yii::t('app', 'Reporting'), 'url' => ['/site/contact']],
-            ['label' => Yii::t('app', 'Questions'), 'url' => ['/site/contact']],
-            ['label' => Yii::t('app', 'News'), 'url' => ['/site/contact']]
+            ['label' => Yii::t('app', 'About us'), 'url' => ['/site/index'], '#' => 'content'],
+            ['label' => Yii::t('app', 'Products'), 'url' => ['/site/index'],'#'=>'Products'],
+            ['label' =>  Yii::t('app', 'Advantages'), 'url' => ['/site/index']],
+            ['label' =>  Yii::t('app', 'Reporting'), 'url' => ['/site/index']],
+            ['label' => Yii::t('app', 'Questions'), 'url' => ['/site/index']],
+            ['label' => Yii::t('app', 'News'), 'url' => ['/site/index']]
         ],
     ]);
 ?>
