@@ -144,7 +144,7 @@ TO DO:
     </section>
 
     <section class="graph" style="z-index: 0;">
-        <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:-5px;" class="chartjs-render-monitor"></canvas>
+        <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:0;" class="chartjs-render-monitor"></canvas>
 
         <?php
         echo"<script language='javascript'>
@@ -173,7 +173,7 @@ TO DO:
                                 pointStrokeColor: \"#196310\",
                                 pointHighlightFill: \"#196310\",
                                 pointHighlightStroke: \"#31C37D\",
-                                data: [9,8,9,8.5,10],
+                                data: [10,8.9,10,9,11],
                                 pointHoverBackgroundColor: '#31C37D',//5
                                 pointHoverBorderColor: \"#31C37D\",
                                 backgroundColor: gradientFill,
@@ -190,7 +190,7 @@ TO DO:
                                 pointStrokeColor: \"#47ba00\",
                                 pointHighlightFill: \"#47ba00\",
                                 pointHighlightStroke: \"rgba(198,3,16,1)\",
-                                data: [9,8,9,8.5,10],
+                                data: [10,8.9,10,9,11],
                                 pointHoverBackgroundColor: '#47ba00',
                                 pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                                 borderColor: 0,
