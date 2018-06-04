@@ -1016,14 +1016,14 @@ TO DO:
                 <div class="question container-fluid d-flex flex-column justify-content-center align-items-center">
 
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p>У Вас есть вопрос?</p>
-                            <p style="margin-top: -10px">Напишите и мы ответим в ближайшее время</p>
+                        <p><?=Yii::t('app','You have questions?')?></p>
+                            <p style="margin-top: -10px"><?=Yii::t('app','Write and we will reply shortly')?></p>
                     </div>
 
                     <input class="data form-control" type="text" placeholder="E-mail*" />
-                    <input class="data form-control" type="text" placeholder="Ваше сообщение..." style="min-height: 150px"/>
+                    <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Your message...')?> style="min-height: 150px"/>
                     <a id="closeButton" class="btn button-question text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#haveQuestion2" data-dismiss="modal">
-                        Напишите нам
+                    <?=Yii::t('app','Write to us')?>
                     </a>
                 </div>
             </div>
@@ -1071,12 +1071,12 @@ TO DO:
                 <div class="question2 container-fluid d-flex flex-column justify-content-center align-items-center">
 
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p>У Вас есть вопрос?</p>
-                        <p style="margin-top: -10px">Напишите и мы ответим в ближайшее время</p>
+                        <p><?=Yii::t('app','You have questions?')?></p>
+                        <p style="margin-top: -10px"><?=Yii::t('app','Write and we will reply shortly')?></p>
                     </div>
 
                     <div class="masedge text-center">
-                        <p>Сообщение отправлено</p>
+                        <p><?=Yii::t('app','Message sent')?></p>
                     </div>
                 </div>
             </div>
@@ -1119,14 +1119,13 @@ TO DO:
                 <div class="gram container-fluid d-flex flex-column justify-content-center align-items-center">
 
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p>Хотите купить грам?</p>
-                        <p style="margin-top: -10px">Напишите ваш e-mail и мы свяжемся
-                            с Вами в ближайшее время</p>
+                        <p><?=Yii::t('app','Want to buy Gram?')?></p>
+                        <p style="margin-top: -10px"><?=Yii::t('app','Write your e-mail and we will get back to you soon as possible')?></p>
                     </div>
 
                     <input class="data form-control" type="text" placeholder="E-mail*" />
                     <a id="closeButton" class="btn button-gram text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#gram2" data-dismiss="modal">
-                        Отправить
+                        <?=Yii::t('app','Send')?>
                     </a>
                 </div>
             </div>
@@ -1173,13 +1172,12 @@ TO DO:
                 <div class="gramSent container-fluid d-flex flex-column justify-content-center align-items-center">
 
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p>Хотите купить грам?</p>
-                        <p style="margin-top: -10px">Напишите ваш e-mail и мы свяжемся
-                            с Вами в ближайшее время</p>
+                        <p><?=Yii::t('app','Want to buy Gram?')?></p>
+                        <p style="margin-top: -10px"><?=Yii::t('app','Write your e-mail and we will get back to you soon as possible')?></p>
                     </div>
 
                     <div class="masedge text-center">
-                        <p>Сообщение отправлено</p>
+                        <p><?=Yii::t('app','Message sent')?></p>
                     </div>
                 </div>
             </div>
