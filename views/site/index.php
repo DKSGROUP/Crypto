@@ -930,10 +930,10 @@ TO DO:
                 <?php
                 echo"<style>
                     .modal-recover{
-                        max-width:325px !important;
+                        max-width: 600px !important;
                     }
-                    .recover{
-                      background-image: url(../img/signin/signin_bg.png);
+                    .question {
+                    background: linear-gradient(123.69deg, #0A1327 0%, #1E2842 100%);
                     }
                     .signup-text{
                       margin-bottom: 40px;
@@ -943,7 +943,7 @@ TO DO:
                       width: 290px !important;
                     }
                     .data{
-                      background-color:#1B2435;
+                      background-color:#3B4451;
                       border-radius: 4px;
                       border-color: #3B4451;
                       margin-top: 10px;
@@ -956,17 +956,17 @@ TO DO:
                       background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     }</style>"
                 ?>
-                <div class="recover container-fluid d-flex flex-column justify-content-center align-items-center">
-                    <?php
-                    echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"img-fluid mt-4\">";
-                    ?>
-                    <div class="text-center text-white">
-                        <p>Smart Crypto Invest</p>
+                <div class="question container-fluid d-flex flex-column justify-content-center align-items-center">
+
+                    <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
+                        <p>У Вас есть вопрос?</p>
+                            <p style="margin-top: -10px">Напишите и мы ответим в ближайшее время</p>
                     </div>
 
                     <input class="data form-control" type="text" placeholder="E-mail*" />
+                    <input class="data form-control" type="text" placeholder="Ваше сообщение..." style="min-height: 150px"/>
                     <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
-                        Восстановить
+                        Напишите нам
                     </a>
                 </div>
             </div>
@@ -1284,7 +1284,8 @@ TO DO:
                     <?php
                     echo Button::widget([
                         'label' => Yii::t('app','Any questions?'),
-                        'options' => ['class' => 'btn btn-success text-right'],
+                        'options' => ['class' => 'btn btn-success text-right',
+                        "data-toggle"=>"modal", "data-target"=>"#haveQuestion", ]
                     ]);
                     ?>
                 </a>
