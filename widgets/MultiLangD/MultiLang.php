@@ -1,5 +1,5 @@
 <?php
-namespace app\widgets\MultiLangD;
+namespace app\widgets\multiLangD;
 
 use yii\helpers\Html;
 
