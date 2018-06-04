@@ -784,7 +784,7 @@ TO DO:
                     .enter{
                         margin-bottom:25px;
                     }
-                    
+
                     #closeButtonModal:hover{
                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     color: #fff !important;
@@ -1008,7 +1008,7 @@ TO DO:
                     .enter{
                         margin-bottom:25px;
                     }
-                    .button-signup{
+                    .button-question{
                       background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     }</style>"
                 ?>
@@ -1021,9 +1021,62 @@ TO DO:
 
                     <input class="data form-control" type="text" placeholder="E-mail*" />
                     <input class="data form-control" type="text" placeholder="Ваше сообщение..." style="min-height: 150px"/>
-                    <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
+                    <a id="closeButton" class="btn button-question text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#haveQuestion2" data-dismiss="modal">
                         Напишите нам
                     </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="modal fade" id="haveQuestion2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-haveQuestion2 modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <?php
+                echo"<style>
+                    .modal-recover{
+                        max-width: 600px !important;
+                    }
+                    .question2 {
+                    background: linear-gradient(123.69deg, #0A1327 0%, #1E2842 100%);
+                    }
+                    .signup-text{
+                      margin-bottom: 40px;
+                      margin-top: 10px;
+                    }
+                    .data, .button-signup, .enter{
+                      width: 290px !important;
+                    }
+                    .data{
+                      background-color:#3B4451;
+                      border-radius: 4px;
+                      border-color: #3B4451;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                    }
+                    .enter{
+                        margin-bottom:25px;
+                    }
+                    .button-signup{
+                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
+                    }
+                    .masedge{
+                      background-color: rgba(39, 174, 96, 0.44);
+                      padding: 2%; 5% 2% 5%;
+                      margin-bottom: 4%;
+                    }
+                    </style>"
+                ?>
+                <div class="question2 container-fluid d-flex flex-column justify-content-center align-items-center">
+
+                    <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
+                        <p>У Вас есть вопрос?</p>
+                        <p style="margin-top: -10px">Напишите и мы ответим в ближайшее время</p>
+                    </div>
+
+                    <div class="masedge text-center">
+                        <p>Сообщение отправлено</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1554,8 +1607,8 @@ TO DO:
                                 </div>
                                 <div class="container">
                                     <div class="carousel-caption text-left">
-                                        <h5>Джордж Сорос готов
-                                            торговать криптовалютами</h5>
+                                        <strong>Джордж Сорос готов
+                                            торговать криптовалютами</strong>
                                         <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                             elit, sed do eiusmod tempor incididunt ut labore et
@@ -1581,8 +1634,8 @@ TO DO:
                                 </div>
                                 <div class="container">
                                     <div class="carousel-caption text-left">
-                                        <h5>Джордж Сорос готов
-                                            торговать криптовалютами</h5>
+                                        <strong>Джордж Сорос готов
+                                            торговать криптовалютами</strong>
                                         <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                             elit, sed do eiusmod tempor incididunt ut labore et
