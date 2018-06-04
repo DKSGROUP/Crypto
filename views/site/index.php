@@ -35,7 +35,7 @@ TO DO:
 <div class="d-none d-lg-block">
     <aside id="aside1" class="animated fadeInLeft"  style="z-index:100000;">
 
-        <div id="closeButton" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
+        <div id="closeButton1" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
             <div class="text-center text-white textt">
                 <h4><?=Yii::t('app','We can buy ')?><b>GRAM</b></h4>
