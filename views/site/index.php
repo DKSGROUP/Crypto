@@ -173,7 +173,7 @@ TO DO:
                                 pointStrokeColor: \"#196310\",
                                 pointHighlightFill: \"#196310\",
                                 pointHighlightStroke: \"#31C37D\",
-                                data: [9,8,9,8.5,11],
+                                data: [9,8,9,8.5,10],
                                 pointHoverBackgroundColor: '#31C37D',//5
                                 pointHoverBorderColor: \"#31C37D\",
                                 backgroundColor: gradientFill,
@@ -190,7 +190,7 @@ TO DO:
                                 pointStrokeColor: \"#47ba00\",
                                 pointHighlightFill: \"#47ba00\",
                                 pointHighlightStroke: \"rgba(198,3,16,1)\",
-                                data: [9,8,9,8.5,11],
+                                data: [9,8,9,8.5,10],
                                 pointHoverBackgroundColor: '#47ba00',
                                 pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                                 borderColor: 0,
@@ -784,6 +784,12 @@ TO DO:
                     .enter{
                         margin-bottom:25px;
                     }
+                    
+                    #closeButton:hover{
+                     background: linear-gradient(to bottom, #05AB5B, #05AB5B);
+                    color: #fff !important;
+                    border: 1px solid rgba(0,0,0,0);
+                    }
                     .button-signup{
                       background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     }</style>"
@@ -806,7 +812,7 @@ TO DO:
                             <?=Yii::t('app','Already have an account?')?>
                         </p>
 
-                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal" >
+                        <a  id="closeButton" class="enter btn btn-outline-success" style ="border-color:#31c37d; color :#31c37d;" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal" >
                             <?=Yii::t('app','Sign in')?>
                         </a>
                     </div>
