@@ -784,7 +784,7 @@ TO DO:
                     .enter{
                         margin-bottom:25px;
                     }
-                    
+
                     #closeButtonModal:hover{
                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     color: #fff !important;
@@ -1554,8 +1554,8 @@ TO DO:
                                 </div>
                                 <div class="container">
                                     <div class="carousel-caption text-left">
-                                        <h5>Джордж Сорос готов
-                                            торговать криптовалютами</h5>
+                                        <strong>Джордж Сорос готов
+                                            торговать криптовалютами</strong>
                                         <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                             elit, sed do eiusmod tempor incididunt ut labore et
@@ -1581,8 +1581,8 @@ TO DO:
                                 </div>
                                 <div class="container">
                                     <div class="carousel-caption text-left">
-                                        <h5>Джордж Сорос готов
-                                            торговать криптовалютами</h5>
+                                        <strong>Джордж Сорос готов
+                                            торговать криптовалютами</strong>
                                         <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                                             elit, sed do eiusmod tempor incididunt ut labore et
