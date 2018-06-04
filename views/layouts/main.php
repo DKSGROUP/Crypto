@@ -112,12 +112,12 @@ AppAsset::register($this);
 <footer class="footer" style="width: 100%; background-color: #000000; margin-top: 25px; padding: 10px;">
     <div class="container">
         <div class="row">
-            <div class="col-md-1">
+            <div class="col-md-1 col-sm-4">
                 <?php
                 echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"logo-footer\" style=\"width: 80px; display: flex; vertical-align: middle;\">";
                 ?>
             </div>
-            <div class="col-md-11 d-flex justify-content-end">
+            <div class="col-md-11 col-sm-8 d-flex justify-content-end">
 
 
             <?php
