@@ -10,7 +10,7 @@ class MultiLang extends \yii\bootstrap\Widget
 
     public function run() {
 
-        return $this->render('viewsLang', [
+        return $this->render('Views', [
             'cssClass' => $this->cssClass,
         ]);
     }
