@@ -1,5 +1,5 @@
 <?php
-namespace widgets\MultiLangD\Views;
+namespace widgets\multiLangD\views;
 use yii\helpers\Html;
 use Yii;
 ?>

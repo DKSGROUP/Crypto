@@ -937,7 +937,7 @@ TO DO:
                 </div>
             </div>
         </div>
-        <!--  -->
+        <!-- RECOVER PASSWORD TWO -->
         <div class="modal fade" id="recover-password-two" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-recover modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1023,14 +1023,14 @@ TO DO:
                 <div class="question container-fluid d-flex flex-column justify-content-center align-items-center">
 
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p>У Вас есть вопрос?</p>
-                            <p style="margin-top: -10px">Напишите и мы ответим в ближайшее время</p>
+                        <p><?=Yii::t('app','You have questions?')?></p>
+                            <p style="margin-top: -10px"><?=Yii::t('app','Write and we will reply shortly')?></p>
                     </div>
 
                     <input class="data form-control" type="text" placeholder="E-mail*" />
-                    <input class="data form-control" type="text" placeholder="Ваше сообщение..." style="min-height: 150px"/>
+                    <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Your message...')?> style="min-height: 150px"/>
                     <a id="closeButton" class="btn button-question text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#haveQuestion2" data-dismiss="modal">
-                        Напишите нам
+                    <?=Yii::t('app','Write to us')?>
                     </a>
                 </div>
             </div>
@@ -1082,12 +1082,12 @@ TO DO:
                 <div class="question2 container-fluid d-flex flex-column justify-content-center align-items-center">
 
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p>У Вас есть вопрос?</p>
-                        <p style="margin-top: -10px">Напишите и мы ответим в ближайшее время</p>
+                        <p><?=Yii::t('app','You have questions?')?></p>
+                        <p style="margin-top: -10px"><?=Yii::t('app','Write and we will reply shortly')?></p>
                     </div>
 
                     <div class="masedge text-center">
-                        <p>Сообщение отправлено</p>
+                        <p><?=Yii::t('app','Message sent')?></p>
                     </div>
                 </div>
             </div>
@@ -1130,14 +1130,13 @@ TO DO:
                 <div class="gram container-fluid d-flex flex-column justify-content-center align-items-center">
 
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p>Хотите купить грам?</p>
-                        <p style="margin-top: -10px">Напишите ваш e-mail и мы свяжемся
-                            с Вами в ближайшее время</p>
+                        <p><?=Yii::t('app','Want to buy Gram?')?></p>
+                        <p style="margin-top: -10px"><?=Yii::t('app','Write your e-mail and we will get back to you soon as possible')?></p>
                     </div>
 
                     <input class="data form-control" type="text" placeholder="E-mail*" />
                     <a id="closeButton" class="btn button-gram text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#gram2" data-dismiss="modal">
-                        Отправить
+                        <?=Yii::t('app','Send')?>
                     </a>
                 </div>
             </div>
@@ -1186,13 +1185,12 @@ TO DO:
                 <div class="gramSent container-fluid d-flex flex-column justify-content-center align-items-center">
 
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p>Хотите купить грам?</p>
-                        <p style="margin-top: -10px">Напишите ваш e-mail и мы свяжемся
-                            с Вами в ближайшее время</p>
+                        <p><?=Yii::t('app','Want to buy Gram?')?></p>
+                        <p style="margin-top: -10px"><?=Yii::t('app','Write your e-mail and we will get back to you soon as possible')?></p>
                     </div>
 
                     <div class="masedge text-center">
-                        <p>Сообщение отправлено</p>
+                        <p><?=Yii::t('app','Message sent')?></p>
                     </div>
                 </div>
             </div>
@@ -1200,7 +1198,7 @@ TO DO:
     </div>
     </section>
     <!--ADVANTEGES-->
-    <section class="advnateges  animated wow fadeIn">
+    <section class="advnateges  animated wow fadeIn" >
         <div class="adv-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','Advantages')?></h1>
         </div>
@@ -1276,9 +1274,8 @@ TO DO:
             </div>
         </div>
     </section>
-<!--                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" onclick="document.getElementById('signup').style.display='none'" >
--->
-    <section class="report  animated wow fadeIn">
+
+    <section class="report  animated wow fadeIn" style="margin-bottom: 50px;">
         <!-- REPORTS -->
         <div class="container-fluid">
             <div class="container text-center">
@@ -1342,13 +1339,14 @@ TO DO:
                                     <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
                                 </div>
                                 <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
-                                <div class="col-md-12" ">
+                                <div class="col-md-12">
                                     <div class="chart-container">
                                     <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </section>
                     <?php
                     echo"<script language='javascript'>
@@ -1429,7 +1427,6 @@ TO DO:
                 </div>
             </div>
         </div>
-
         <!-- QUESTIONS -->
         <div class="container" style="margin-top: 50px;">
             <div class="title text-center"><?=Yii::t('app','Questions')?></div>
@@ -1445,7 +1442,14 @@ TO DO:
                         </div>
                     </label>
                     <div>
-                        <?=Yii::t('app','Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!')?>
+                        <div class="d-flex align-items-top">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            ?>
+                            <p>
+                                <?=Yii::t('app','Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!')?>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="row d-flex align-items-center">
@@ -1459,7 +1463,14 @@ TO DO:
                         </div>
                     </label>
                     <div>
-                        <?=Yii::t('app','You don’t have to worry about reliability of our trading – we guarantee full privacy and personal data protection, as well as profitability of financial operations accomplished with the aid of our service.')?>
+                        <div class="d-flex align-items-top">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            ?>
+                            <p>
+                                <?=Yii::t('app','You don’t have to worry about reliability of our trading – we guarantee full privacy and personal data protection, as well as profitability of financial operations accomplished with the aid of our service.')?>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="row d-flex align-items-center">
@@ -1473,7 +1484,14 @@ TO DO:
                         </div>
                     </label>
                     <div>
-                        <?=Yii::t('app','Quantity of currency received depends on your investment package and the situation on the market. Increase your profits by using tariff plans most suitable for you and by regular monitoring of financial operations review!')?>
+                        <div class="d-flex align-items-top">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            ?>
+                            <p>
+                                <?=Yii::t('app','Quantity of currency received depends on your investment package and the situation on the market. Increase your profits by using tariff plans most suitable for you and by regular monitoring of financial operations review!')?>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="row d-flex align-items-center">
@@ -1487,7 +1505,14 @@ TO DO:
                         </div>
                     </label>
                     <div>
-                        <?=Yii::t('app','We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.')?>
+                        <div class="d-flex align-items-top">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            ?>
+                            <p>
+                                <?=Yii::t('app','We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.')?>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="row d-flex align-items-center">
@@ -1501,7 +1526,14 @@ TO DO:
                         </div>
                     </label>
                     <div>
-                        <?=Yii::t('app','Yes! For using our service you need only to sign up, choose your investment package – and receive income!')?>
+                        <div class="d-flex align-items-top">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            ?>
+                            <p>
+                                <?=Yii::t('app','Yes! For using our service you need only to sign up, choose your investment package – and receive income!')?>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1518,6 +1550,8 @@ TO DO:
             </div>
         </div>
     </section>
+
+
 
     <section class="news  animated wow fadeIn">
         <div class="news-caption">
