@@ -1431,7 +1431,14 @@ TO DO:
                         </div>
                     </label>
                     <div>
-                        <?=Yii::t('app','Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!')?>
+                        <div class="d-flex align-items-top">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            ?>
+                            <p>
+                                <?=Yii::t('app','Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!')?>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="row d-flex align-items-center">
@@ -1445,7 +1452,14 @@ TO DO:
                         </div>
                     </label>
                     <div>
-                        <?=Yii::t('app','You don’t have to worry about reliability of our trading – we guarantee full privacy and personal data protection, as well as profitability of financial operations accomplished with the aid of our service.')?>
+                        <div class="d-flex align-items-top">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            ?>
+                            <p>
+                                <?=Yii::t('app','You don’t have to worry about reliability of our trading – we guarantee full privacy and personal data protection, as well as profitability of financial operations accomplished with the aid of our service.')?>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="row d-flex align-items-center">
@@ -1459,7 +1473,14 @@ TO DO:
                         </div>
                     </label>
                     <div>
-                        <?=Yii::t('app','Quantity of currency received depends on your investment package and the situation on the market. Increase your profits by using tariff plans most suitable for you and by regular monitoring of financial operations review!')?>
+                        <div class="d-flex align-items-top">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            ?>
+                            <p>
+                                <?=Yii::t('app','Quantity of currency received depends on your investment package and the situation on the market. Increase your profits by using tariff plans most suitable for you and by regular monitoring of financial operations review!')?>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="row d-flex align-items-center">
@@ -1473,7 +1494,14 @@ TO DO:
                         </div>
                     </label>
                     <div>
-                        <?=Yii::t('app','We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.')?>
+                        <div class="d-flex align-items-top">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            ?>
+                            <p>
+                                <?=Yii::t('app','We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.')?>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="row d-flex align-items-center">
@@ -1487,7 +1515,14 @@ TO DO:
                         </div>
                     </label>
                     <div>
-                        <?=Yii::t('app','Yes! For using our service you need only to sign up, choose your investment package – and receive income!')?>
+                        <div class="d-flex align-items-top">
+                            <?php
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            ?>
+                            <p>
+                                <?=Yii::t('app','Yes! For using our service you need only to sign up, choose your investment package – and receive income!')?>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
