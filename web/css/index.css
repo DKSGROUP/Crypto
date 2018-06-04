@@ -76,7 +76,6 @@ body{
 /* когда чекбокс активен показываем блоки с содержанием  */
 .hide:checked + label + div {
     display: block;
-    margin-left: 35px;
     margin-bottom: 35px;
     /* чуточку анимации при появлении */
      -webkit-animation:fade ease-in 0.5s;
