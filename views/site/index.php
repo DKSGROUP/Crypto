@@ -921,9 +921,58 @@ TO DO:
                         </div>
 
                         <input class="data form-control" type="text" placeholder="E-mail*" />
-                        <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
+                        <a class="btn button-signup text-white" href="#"data-toggle="modal" data-target="#recover-password-two" data-dismiss="modal" style="margin-bottom:40px; margin-top: 10px;">
                             Восстановить
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="modal fade" id="recover-password-two" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-recover modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <?php
+                    echo"<style>
+                    .modal-recover{
+                        max-width:325px !important;
+                    }
+                    .recover{
+                      background-image: url(../img/signin/signin_bg.png);
+                    }
+                    .signup-text{
+                      margin-bottom: 40px;
+                      margin-top: 10px;
+                    }
+                    .data, .button-signup, .enter{
+                      width: 290px !important;
+                    }
+                    .data{
+                      background-color:#1B2435;
+                      border-radius: 4px;
+                      border-color: #3B4451;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                    }
+                    .enter{
+                        margin-bottom:25px;
+                    }
+                    .button-signup{
+                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
+                    }</style>"
+                    ?>
+                    <div class="recover container-fluid d-flex flex-column justify-content-center align-items-center">
+                        <?php
+                        echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"img-fluid mt-4\">";
+                        ?>
+                      <div class="text-center text-white">
+                        <p>Smart Crypto Invest</p>
+                      </div>
+
+                      <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
+                      <a class="btn btn-outline-success btn-recover2 mb-4" href="#">
+                       <?=Yii::t('app','The recovery instructions')?><br /><?=Yii::t('app','is sent to your e-mail')?>
+                      </a>
                     </div>
                 </div>
             </div>
