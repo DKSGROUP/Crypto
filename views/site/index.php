@@ -923,8 +923,56 @@ TO DO:
             </div>
         </div>
     </section>
+    <!--YOU HAVE A QUESTION-->
+    <div class="modal fade" id="haveQuestion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-haveQuestion modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <?php
+                echo"<style>
+                    .modal-recover{
+                        max-width:325px !important;
+                    }
+                    .recover{
+                      background-image: url(../img/signin/signin_bg.png);
+                    }
+                    .signup-text{
+                      margin-bottom: 40px;
+                      margin-top: 10px;
+                    }
+                    .data, .button-signup, .enter{
+                      width: 290px !important;
+                    }
+                    .data{
+                      background-color:#1B2435;
+                      border-radius: 4px;
+                      border-color: #3B4451;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                    }
+                    .enter{
+                        margin-bottom:25px;
+                    }
+                    .button-signup{
+                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
+                    }</style>"
+                ?>
+                <div class="recover container-fluid d-flex flex-column justify-content-center align-items-center">
+                    <?php
+                    echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"img-fluid mt-4\">";
+                    ?>
+                    <div class="text-center text-white">
+                        <p>Smart Crypto Invest</p>
+                    </div>
 
-
+                    <input class="data form-control" type="text" placeholder="E-mail*" />
+                    <a class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
+                        Восстановить
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
     <!--ADVANTEGES-->
     <section class="advnateges  animated wow fadeIn">
         <div class="adv-caption">
@@ -937,7 +985,7 @@ TO DO:
                         <div class="imgg">
 
                             <?php
-                            echo"<img src=\"../img/advanteges/analis.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/analis.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="text-left mincapt"><?=Yii::t('app','Accurate analysis')?></h5>
@@ -948,7 +996,7 @@ TO DO:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"../img/advanteges/exchange.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/exchange.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt"><?=Yii::t('app','Multi-currency trading')?></h5>
@@ -959,7 +1007,7 @@ TO DO:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"../img/advanteges/onlinebanking.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/onlinebanking.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt"><?=Yii::t('app','Easy-to-use management')?></h5>
@@ -970,7 +1018,7 @@ TO DO:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"../img/advanteges/cryptocurrency.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/cryptocurrency.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt"><?=Yii::t('app','Security')?></h5>
@@ -981,7 +1029,7 @@ TO DO:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"../img/advanteges/time.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/time.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt"><?=Yii::t('app','Free time')?></h5>
@@ -992,7 +1040,7 @@ TO DO:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"../img/advanteges/operetions.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/operetions.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="text-left mincapt"><?=Yii::t('app','Operations transparency')?></h5>
