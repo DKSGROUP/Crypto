@@ -46,7 +46,7 @@ TO DO:
                 ?>
             </div>
             <div class="butt">
-                <a class="btn button-baner text-white" onclick="return ar_callLink( {target: '_blank'} );" href="#" style="margin-bottom:40px; margin-top: 10px; width:160px;">
+                <a class="btn button-baner text-white" href="#" data-toggle="modal" data-target="#gram" data-dismiss="modal" style="margin-bottom:40px; margin-top: 10px; width:160px;">
                     <?=Yii::t('app','Buy')?>
                 </a>
             </div>
@@ -78,7 +78,8 @@ TO DO:
                         'options' => ['class' => 'btn  btn-success wow pulse animated', 'style' => 'pointer-events: all;  width: 152px;
                         height: 33px; font-size: 14px; text-align: center; padding:0; visibility: visible; animation-duration: 2s;
                         animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse; border: none; background: linear-gradient(#048949, #05AA5B) !important;',
-                            'data-wow-delay' =>'300ms', 'data-wow-iteration' => 'infinite', 'data-wow-duration'=>'2s' ],
+                            'data-wow-delay' =>'300ms', 'data-wow-iteration' => 'infinite', 'data-wow-duration'=>'2s',
+                            "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
 
                     ]);
                     ?>
@@ -1072,6 +1073,109 @@ TO DO:
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
                         <p>У Вас есть вопрос?</p>
                         <p style="margin-top: -10px">Напишите и мы ответим в ближайшее время</p>
+                    </div>
+
+                    <div class="masedge text-center">
+                        <p>Сообщение отправлено</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--GRAM-->
+    <div class="modal fade" id="gram" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-gram modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <?php
+                echo"<style>
+                    .modal-recover{
+                        max-width: 600px !important;
+                    }
+                    .gram {
+                    background: linear-gradient(123.69deg, #0A1327 0%, #1E2842 100%);
+                    }
+                    .signup-text{
+                      margin-bottom: 40px;
+                      margin-top: 10px;
+                    }
+                    .data, .button-signup, .enter{
+                      width: 290px !important;
+                    }
+                    .data{
+                      background-color:#3B4451;
+                      border-radius: 4px;
+                      border-color: #3B4451;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                    }
+                    .enter{
+                        margin-bottom:25px;
+                    }
+                    .button-gram{
+                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
+                    }</style>"
+                ?>
+                <div class="gram container-fluid d-flex flex-column justify-content-center align-items-center">
+
+                    <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
+                        <p>Хотите купить грам?</p>
+                        <p style="margin-top: -10px">Напишите ваш e-mail и мы свяжемся
+                            с Вами в ближайшее время</p>
+                    </div>
+
+                    <input class="data form-control" type="text" placeholder="E-mail*" />
+                    <a id="closeButton" class="btn button-gram text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#gram2" data-dismiss="modal">
+                        Отправить
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="modal fade" id="gram2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-gram2 modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <?php
+                echo"<style>
+                    .modal-recover{
+                        max-width: 600px !important;
+                    }
+                    .gramSent {
+                    background: linear-gradient(123.69deg, #0A1327 0%, #1E2842 100%);
+                    }
+                    .signup-text{
+                      margin-bottom: 40px;
+                      margin-top: 10px;
+                    }
+                    .data, .button-signup, .enter{
+                      width: 290px !important;
+                    }
+                    .data{
+                      background-color:#3B4451;
+                      border-radius: 4px;
+                      border-color: #3B4451;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                    }
+                    .enter{
+                        margin-bottom:25px;
+                    }
+                    .masedge{
+                      background-color: rgba(39, 174, 96, 0.44);
+                      padding: 2%; 5% 2% 5%;
+                      margin-bottom: 4%;
+                    }
+                    .button-gramSent{
+                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
+                    }</style>"
+                ?>
+                <div class="gramSent container-fluid d-flex flex-column justify-content-center align-items-center">
+
+                    <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
+                        <p>Хотите купить грам?</p>
+                        <p style="margin-top: -10px">Напишите ваш e-mail и мы свяжемся
+                            с Вами в ближайшее время</p>
                     </div>
 
                     <div class="masedge text-center">
