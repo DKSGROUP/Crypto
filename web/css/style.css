@@ -113,14 +113,14 @@ h1{
   -webkit-transform: scale(1.15);
   -ms-transform: scale(1.15);
   transform: scale(1.15);
-  background: #3A4551;
+  background: rgba(58, 69, 81,0.8);
 }
 .pro-grow:hover {
     z-index: 5;
   -webkit-transform: scale(1.15);
   -ms-transform: scale(1.15);
   transform: scale(1.15);
-  background: #05AB5B;
+  background: rgba(20,73,58,0.8);
 }
 .bold-text{
  /*   font-family: GothaProMed ;*/

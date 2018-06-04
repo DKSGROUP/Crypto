@@ -263,10 +263,10 @@ TO DO:
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-6">
-                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Starter')?></h1>
+                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Starter')?></h1>
                                     </div>
                                     <div class="col-6">
-                                        <h1 class="text-right"style="font-size: 22px;" ><?=Yii::t('app','from 50$')?></h1>
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 50$')?></h1>
                                     </div>
                                 </div>
                             </div>
@@ -319,10 +319,10 @@ TO DO:
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Standard')?></h1>
+                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Standard')?></h1>
                                     </div>
                                     <div class="col-5">
-                                        <h1 class="text-right"style="font-size: 22px;" ><?=Yii::t('app','up to 1000$')?></h1>
+                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','up to 1000$')?></h1>
                                     </div>
                                 </div>
                             </div>
@@ -376,7 +376,7 @@ TO DO:
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Optimal')?></h1>
+                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Optimal')?></h1>
                                     </div>
                                     <div class="col-5">
                                         <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 1000$')?></h1>
@@ -432,7 +432,7 @@ TO DO:
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Advanced')?></h1>
+                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Advanced')?></h1>
                                     </div>
                                     <div class="col-5">
                                         <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 3000$')?></h1>
@@ -489,7 +489,7 @@ TO DO:
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h1 style="font-size: 22px;"><?=Yii::t('app','Premium')?></h1>
+                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Premium')?></h1>
                                     </div>
                                     <div class="col-5">
                                         <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 5000$')?></h1>
