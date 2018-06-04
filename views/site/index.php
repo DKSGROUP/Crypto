@@ -784,7 +784,7 @@ TO DO:
                     .enter{
                         margin-bottom:25px;
                     }
-                    
+
                     #closeButton:hover{
                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     color: #fff !important;
@@ -1300,7 +1300,7 @@ TO DO:
 
     <section class="news  animated wow fadeIn">
         <div class="news-caption">
-            <h1 style=" font-size: 22px;"><?=Yii::t('app','News')?></h1>
+            <span style=" font-size: 22px;"><?=Yii::t('app','News')?></span>
         </div>
         <div class="d-none d-lg-block">
         <div id="news-carousel" class="carousel slide" data-ride="carousel">
