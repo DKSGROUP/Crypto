@@ -1052,7 +1052,7 @@ TO DO:
                 </div>
             </div>
         </div>
-
+        <!--RESULT-->
         <div class="chart  wow animated fadeIn">
             <div class="container">
                 <div class="row">
@@ -1064,7 +1064,7 @@ TO DO:
 
                         <div class="container" style="position: relative;">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6" style="position: absolute; top: 8px;">
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="position: absolute; top: 50px; font-size: 16px; line-height: 19px;">
                                     <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
                                 </div>
                                 <div class="col-md-6 col-sm-12" style="height: 10px;"></div>

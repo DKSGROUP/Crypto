@@ -61,14 +61,14 @@ AppAsset::register($this);
         'brandLabel' => '<img src="../img/logo/logo-SCI.png"; class="logo">',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-expand-md ',
+            'class' => 'navbar navbar-expand-lg',
             'style' => 'background-color: inherit;'
 
         ]
 
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-toggleable-md collapse nav-wid ',
+        'options' => ['class' => ' navbar navbar-expand-lg  collapse nav-wid float-left','id'=>'navigation',
             'style' => 'margin: 0 auto;'],
         'items' => [
             ['label' => Yii::t('app', 'About us'), 'url' => ['/site/index']],
@@ -93,6 +93,23 @@ AppAsset::register($this);
         "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
         ]);
     ?>
+
+    <?php
+    echo'<script language="javascript">
+    var elem = document.getElementById(\'navigation\');
+    alert( elem == navigation );
+    
+    if(document.documentElement.clientWidth <= 960 ){
+        /*elem.style.display="block";*/
+        elem.style.cssText =" display: block;"
+        alert(true +"dfghjhgtfrdes");
+    }else {
+        elem.style.cssText ="";
+    }
+    
+    </script> '
+    ?>
+
 </div>
         <?php
     NavBar::end();
