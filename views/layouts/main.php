@@ -97,12 +97,12 @@ AppAsset::register($this);
     <?php
     echo'<script language="javascript">
     var elem = document.getElementById(\'navigation\');
-    alert( elem == navigation );
+    
     
     if(document.documentElement.clientWidth <= 960 ){
         /*elem.style.display="block";*/
         elem.style.cssText =" display: block;"
-        alert(true +"dfghjhgtfrdes");
+        
     }else {
         elem.style.cssText ="";
     }
