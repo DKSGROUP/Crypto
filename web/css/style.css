@@ -52,7 +52,11 @@ body{
 
 /*--------------------------------------------*/
 
+#buttonInModal{
+    background: linear-gradient(#048949, #05AA5B) !important;
+    border: 1px solid rgba(0,0,0,0) !important;
 
+}
 /*--------------Title Text----------------------------*/
 h1{
     font-family: GothaProMed, Arial, sans;
@@ -99,7 +103,7 @@ h1{
 .card{
     width: 360px;
    // height: 190px !important;
-    margin: 10px 10px;
+    margin: 5px 0;
     background-color: inherit;
     border-radius: 4px 4px 4px 4px;
     transition: all .35s ease-in-out;
