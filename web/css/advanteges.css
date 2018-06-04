@@ -25,7 +25,16 @@ p{
     border-radius: 4px;
     margin: 35px 5px;
     padding: 17px 15px 15px 17px;
+    transition: all .35s ease-in-out;
 
+
+}
+.plus:hover{
+  z-index: 5;
+-webkit-transform: scale(1.15);
+-ms-transform: scale(1.15);
+transform: scale(1.15);
+border: 8px  solid rgba(143, 150, 172, 0.6);
 }
 .imgg{
     background-color: transparent;
