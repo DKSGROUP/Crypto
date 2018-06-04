@@ -1,5 +1,5 @@
 <?php
-namespace app\widgets\MultiLangD;
+namespace app\widgets\multiLangD;
 
 use yii\helpers\Html;
 
@@ -10,7 +10,7 @@ class MultiLang extends \yii\bootstrap\Widget
 
     public function run() {
 
-        return $this->render('Views', [
+        return $this->render('viewsLang', [
             'cssClass' => $this->cssClass,
         ]);
     }
