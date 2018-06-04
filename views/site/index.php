@@ -144,7 +144,7 @@ TO DO:
     </section>
 
     <section class="graph" style="z-index: 0;">
-        <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:-5px;" class="chartjs-render-monitor"></canvas>
+        <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:0;" class="chartjs-render-monitor"></canvas>
 
         <?php
         echo"<script language='javascript'>
@@ -173,7 +173,7 @@ TO DO:
                                 pointStrokeColor: \"#196310\",
                                 pointHighlightFill: \"#196310\",
                                 pointHighlightStroke: \"#31C37D\",
-                                data: [9,8,9,8.5,11],
+                                data: [10,8.9,10,9,11],
                                 pointHoverBackgroundColor: '#31C37D',//5
                                 pointHoverBorderColor: \"#31C37D\",
                                 backgroundColor: gradientFill,
@@ -190,7 +190,7 @@ TO DO:
                                 pointStrokeColor: \"#47ba00\",
                                 pointHighlightFill: \"#47ba00\",
                                 pointHighlightStroke: \"rgba(198,3,16,1)\",
-                                data: [9,8,9,8.5,11],
+                                data: [10,8.9,10,9,11],
                                 pointHoverBackgroundColor: '#47ba00',
                                 pointHoverBorderColor: \"rgba(71, 186, 0,1)\",
                                 borderColor: 0,
@@ -784,6 +784,12 @@ TO DO:
                     .enter{
                         margin-bottom:25px;
                     }
+
+                    #closeButton:hover{
+                     background: linear-gradient(to bottom, #05AB5B, #05AB5B);
+                    color: #fff !important;
+                    border: 1px solid rgba(0,0,0,0);
+                    }
                     .button-signup{
                       background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     }</style>"
@@ -806,7 +812,7 @@ TO DO:
                             <?=Yii::t('app','Already have an account?')?>
                         </p>
 
-                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal" >
+                        <a  id="closeButton" class="enter btn btn-outline-success" style ="border-color:#31c37d; color :#31c37d;" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal" >
                             <?=Yii::t('app','Sign in')?>
                         </a>
                     </div>
@@ -1100,7 +1106,7 @@ TO DO:
                 </div>
             </div>
         </div>
-
+        <!--RESULT-->
         <div class="chart  wow animated fadeIn">
             <div class="container">
                 <div class="row">
@@ -1112,7 +1118,7 @@ TO DO:
 
                         <div class="container" style="position: relative;">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6" style="position: absolute; top: 8px;">
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="position: absolute; top: 50px; font-size: 16px; line-height: 19px;">
                                     <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
                                 </div>
                                 <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
@@ -1295,7 +1301,7 @@ TO DO:
 
     <section class="news  animated wow fadeIn">
         <div class="news-caption">
-            <h1 style=" font-size: 22px;"><?=Yii::t('app','News')?></h1>
+            <span style=" font-size: 22px;"><?=Yii::t('app','News')?></span>
         </div>
         <div class="d-none d-lg-block">
         <div id="news-carousel" class="carousel slide" data-ride="carousel">
