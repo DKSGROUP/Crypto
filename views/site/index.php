@@ -929,7 +929,7 @@ TO DO:
                 </div>
             </div>
         </div>
-        <!--  -->
+        <!-- RECOVER PASSWORD TWO -->
         <div class="modal fade" id="recover-password-two" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-recover modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1083,7 +1083,7 @@ TO DO:
     </div>
     </section>
     <!--ADVANTEGES-->
-    <section class="advnateges  animated wow fadeIn">
+    <section class="advnateges  animated wow fadeIn" >
         <div class="adv-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','Advantages')?></h1>
         </div>
@@ -1159,9 +1159,8 @@ TO DO:
             </div>
         </div>
     </section>
-<!--                        <a  id="closeButton" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signin" onclick="document.getElementById('signup').style.display='none'" >
--->
-    <section class="report  animated wow fadeIn">
+
+    <section class="report  animated wow fadeIn" style="margin-bottom: 50px;">
         <!-- REPORTS -->
         <div class="container-fluid">
             <div class="container text-center">
@@ -1225,13 +1224,14 @@ TO DO:
                                     <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
                                 </div>
                                 <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
-                                <div class="col-md-12" ">
+                                <div class="col-md-12">
                                     <div class="chart-container">
                                     <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </section>
                     <?php
                     echo"<script language='javascript'>
@@ -1312,7 +1312,6 @@ TO DO:
                 </div>
             </div>
         </div>
-
         <!-- QUESTIONS -->
         <div class="container" style="margin-top: 50px;">
             <div class="title text-center"><?=Yii::t('app','Questions')?></div>
@@ -1401,6 +1400,8 @@ TO DO:
             </div>
         </div>
     </section>
+
+
 
     <section class="news  animated wow fadeIn">
         <div class="news-caption">
