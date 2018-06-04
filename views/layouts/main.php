@@ -11,7 +11,7 @@ use yii\bootstrap\Button;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use lajax\languagepicker\widgets\LanguagePicker;
-use app\widgets\multiLangD\MultiLang;
+use app\widgets\MultiLangD\MultiLang;
 
 AppAsset::register($this);
 ?>
