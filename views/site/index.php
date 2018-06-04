@@ -985,7 +985,7 @@ TO DO:
                         <div class="imgg">
 
                             <?php
-                            echo"<img src=\"../img/advanteges/analis.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/analis.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="text-left mincapt"><?=Yii::t('app','Accurate analysis')?></h5>
@@ -996,7 +996,7 @@ TO DO:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"../img/advanteges/exchange.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/exchange.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt"><?=Yii::t('app','Multi-currency trading')?></h5>
@@ -1007,7 +1007,7 @@ TO DO:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"../img/advanteges/onlinebanking.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/onlinebanking.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt"><?=Yii::t('app','Easy-to-use management')?></h5>
@@ -1018,7 +1018,7 @@ TO DO:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"../img/advanteges/cryptocurrency.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/cryptocurrency.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt"><?=Yii::t('app','Security')?></h5>
@@ -1029,7 +1029,7 @@ TO DO:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"../img/advanteges/time.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/time.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="mincapt"><?=Yii::t('app','Free time')?></h5>
@@ -1040,7 +1040,7 @@ TO DO:
                     <div class="plus">
                         <div class="imgg">
                             <?php
-                            echo"<img src=\"../img/advanteges/operetions.png\"; class=\"analis\">";
+                            echo"<img src=\"../img/advanteges/operetions.svg\"; class=\"analis\">";
                             ?>
                         </div>
                         <h5 class="text-left mincapt"><?=Yii::t('app','Operations transparency')?></h5>
