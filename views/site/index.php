@@ -1532,14 +1532,8 @@ TO DO:
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <a href="#">
-                    <?php
-                    echo Button::widget([
-                        'label' => Yii::t('app','Any questions?'),
-                        'options' => ['class' => 'btn btn-success text-right',
-                        "data-toggle"=>"modal", "data-target"=>"#haveQuestion", ]
-                    ]);
-                    ?>
+                <a class="btn btn-success text-right" href="#" data-toggle="modal" data-target="#haveQuestion">
+                    <?=Yii::t('app','Any questions?')?>
                 </a>
             </div>
         </div>
