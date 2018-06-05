@@ -242,6 +242,7 @@ TO DO:
         ?>
     </section>
     <section class="invest-packages " style="z-index: 3;">
+        <div id="products"><a name="products" href="#products"></a></div>
         <!--Invest packages
 
         Status: -
@@ -429,6 +430,7 @@ TO DO:
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--Advanced-->
+                    <a name="advantages" href="#advantages"></a>
                     <div class="card pro-grow">
                         <div class="card-header  pro-card">
                             <div class="container-fluid">
