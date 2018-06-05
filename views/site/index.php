@@ -1301,11 +1301,7 @@ TO DO:
                             ?>
                         </div>
                         <div id="report-download-btn">
-<<<<<<< HEAD
-                            <a href="../Reporting.pdf" download>
-=======
                             <a href="../Report_2018_06.docx" download>
->>>>>>> 19669e363ac2a8b0e370917763c18b6cadab9ed1
                                 <?php
                                 echo Button::widget([
                                     'label' => Yii::t('app','Download reporting exam'),
@@ -1313,7 +1309,7 @@ TO DO:
                                 'style' => 'color:white; background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                 ]);
                                 ?>
-                            </a>s
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-6">
