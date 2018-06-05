@@ -12,7 +12,7 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'language' => 'en',
-    'sourceLanguage'=>'ru',
+    'sourceLanguage'=>'en',
 //    'bootstrap' => ['languagepicker'],
     'components' => [
         'request' => [
@@ -50,22 +50,16 @@ $config = [
         'urlManager' => [
             'class'=> 'codemix\localeurls\UrlManager',
             'languages'=>['RU','EN','UA'],
-//            'showScriptName' => false,
-            'enablePrettyUrl' => true,
             'enableDefaultLanguageUrlCode'=>true,
             'enableLanguagePersistence' => false,
             'rules' => [
                 '/' => 'site/index',
                 '<controller:\w+>/<action:\w+>/'=>'<controller>/<action>',
-                '<language:\w+>/<controller>/<action>' => '<controller>/<action>',
-                '<language:\w+>/<controller>/<action>/<id:\d+>' => '<controller>/<action>',
-                '<language:\w+>/<controller>/<action>/<id:\d+>/<title>' => '<controller>/<action>',
-                '<language:\w+>/<controller>/<id:\d+>/<title>' => '<controller>/index',
             ],
         ],
         'i18n'=>[
             'translations' => [
-                'app*' =>[
+                'common*' =>[
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@app/messages',
                 ],
