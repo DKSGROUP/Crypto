@@ -1300,7 +1300,7 @@ TO DO:
                             ?>
                         </div>
                         <div id="report-download-btn">
-                            <a href="#">
+                            <a href="/Reporting.pdf" download>
                                 <?php
                                 echo Button::widget([
                                     'label' => Yii::t('app','Download reporting exam'),
