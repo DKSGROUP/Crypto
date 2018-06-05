@@ -1300,7 +1300,7 @@ TO DO:
                             ?>
                         </div>
                         <div id="report-download-btn">
-                            <a href="/Reporting.pdf" download>
+                            <a href="../Reporting.pdf" download>
                                 <?php
                                 echo Button::widget([
                                     'label' => Yii::t('app','Download reporting exam'),
@@ -1442,7 +1442,7 @@ TO DO:
                     <label for="hd-1">
                         <div class="row labe">
                             <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','Why Smart Crypto Invest?')?>
                         </div>
@@ -1463,7 +1463,7 @@ TO DO:
                     <label for="hd-2">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','Can I trust SCI?')?>
                         </div>
@@ -1484,7 +1484,7 @@ TO DO:
                     <label for="hd-3">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','How much income can I make?')?>
                         </div>
@@ -1505,7 +1505,7 @@ TO DO:
                     <label for="hd-5">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','And what about security?')?>
                         </div>
@@ -1526,7 +1526,7 @@ TO DO:
                     <label for="hd-6">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','Is it easy to use SCI?')?>
                         </div>
@@ -1693,8 +1693,8 @@ TO DO:
             </a>
         </div>
         </div>
-        <div class="d-none d-sm-block d-md-none">
-            <div id="news-carousel" class="carousel slide" data-ride="carousel">
+        <div class="d-block d-md-none">
+            <div id="news-carousel1" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active" >
                         <div class="row">
@@ -1813,11 +1813,11 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#news-carousel1" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#news-carousel1" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
