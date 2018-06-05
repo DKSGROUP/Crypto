@@ -84,7 +84,7 @@ h1{
     bottom: -5px;
     left: -5%;
     height: 500px !important;
-    width: 105% !important; /*работает - НЕ ЛАПАЙ И МОЛИСЬ НА ЭТО!*/
+    width: 105% !important;
     pointer-events: none;
     overflow: hidden;
 }
@@ -249,7 +249,7 @@ table{
 }
 .modal-body  p{
     margin: auto 0;
-    display: inline-block; /* центрировать..*/
+    display: inline-block;
     vertical-align: middle;
 }
 .table{
@@ -331,8 +331,6 @@ table{
     overflow: hidden;
 }
 
-
-/*-------------multilanguage---------------*/
 
 .item-lang a{
     color: #fff !important;

@@ -55,15 +55,6 @@ TO DO:
 
 
 <div class="site-index">
-
-<!--Site title
-STATUS: -
-
-TO DO:
--прилепить курс валют к сонтейнеру что бы тот не улетал в бок
-
--->
-
     <section class="title-text" style="z-index: 3;">
         <div class="container">
             <div class="row">
@@ -247,8 +238,6 @@ TO DO:
 
         Status: -
 
-        To do :
-        -расстояние между блоками
         -->
         <div class="container animated wow fadeIn" >
             <div class="row">
@@ -870,7 +859,6 @@ TO DO:
                       <input class="data form-control" type="text" placeholder="E-mail" />
                       <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Password')?> />
 
-                      <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
                       <a id="buttonInModal" class="btn button-signin text-white" href="#">
                           <?=Yii::t('app','Sign in')?>
                       </a>
