@@ -12,7 +12,7 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'language' => 'en',
-    'sourceLanguage'=>'en',
+    'sourceLanguage'=>'ru',
 //    'bootstrap' => ['languagepicker'],
     'components' => [
         'request' => [
@@ -50,6 +50,8 @@ $config = [
         'urlManager' => [
             'class'=> 'codemix\localeurls\UrlManager',
             'languages'=>['RU','EN','UA'],
+//            'showScriptName' => false,
+            'enablePrettyUrl' => true,
             'enableDefaultLanguageUrlCode'=>true,
             'enableLanguagePersistence' => false,
             'rules' => [
