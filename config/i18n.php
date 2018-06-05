@@ -1,7 +1,7 @@
 <?php
 return [
     'sourcePath' => __DIR__. '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' .    DIRECTORY_SEPARATOR,
-    'languages'=>['RU','EN','UA'],//Add languages to the array for the language files to be generated, here are English and Russian.
+    'languages'=>['ru','en','ua'],//Add languages to the array for the language files to be generated, here are English and Russian.
     'translator' => 'Yii::t',
     'sort' => false,
     'removeUnused' => false,
