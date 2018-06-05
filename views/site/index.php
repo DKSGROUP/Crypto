@@ -256,6 +256,7 @@ TO DO:
                     <h1 style=" font-size: 22px;"><?=Yii::t('app','Investition Packages')?></h1>
                 </div>
                 <div class="col-xl-2 col-lg-2 col-sm-3"></div>
+                <div class="col"></div>
                 <div class="col-xl-4 col-lg-6 col-md-12">
                     <!--STARTER-->
                     <div class="card start-grow">

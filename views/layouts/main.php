@@ -65,10 +65,9 @@ AppAsset::register($this);
             'style' => 'background-color: inherit;'
 
         ]
-
     ]);
     echo Nav::widget([
-        'options' => ['class' => ' navbar navbar-expand-lg  collapse nav-wid float-left','id'=>'navigation',
+        'options' => ['class' => ' navbar navbar-expand-lg d-inline d-sm-block collapse nav-wid float-left','id'=>'navigation',
             'style' => 'margin: 0 auto;'],
         'items' => array(
             array('label' => Yii::t('app', 'About us'), 'url' => ('#content')),
@@ -93,22 +92,6 @@ AppAsset::register($this);
         ]);
     ?>
 
-    <?php
-    echo'<script language="javascript">
-
-
-    var elem = document.getElementById(\'navigation\');
-    
-    
-    if(document.documentElement.clientWidth <= 960 ){
-        /*elem.style.display="block";*/
-        elem.style.cssText =" display: block;"
-        
-    }else {
-        elem.style.cssText ="";
-}
-    </script> '
-    ?>
 
 </div>
         <?php
