@@ -92,9 +92,9 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
+                <div class="col-md-5 d-none d-sm-block ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6 col-sm-0">
                                 <div class="text text-center">
                                 <?php
                                     echo"<img src=\"../img/main/handshake.png\" >";
@@ -103,7 +103,7 @@ TO DO:
                                 <p class="text-white"><?=Yii::t('app','Create account')?></p>
                                 </div>
                             </div>
-                            <div class="col-6 position-relative">
+                            <div class="col-6 col-sm-0 position-relative">
                                 <div class="position-absolute" style="bottom: 0; left: 0;">
                                     <?php
                                     echo"<img src=\"../img/main/arrow-right.png\" class=\"animated fadeIn\" ;>";
@@ -112,14 +112,14 @@ TO DO:
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6 position-relative">
+                            <div class="col-6 col-sm-0 position-relative">
                                 <div class="position-absolute" style="bottom: 0; right: 0;">
                                     <?php
                                     echo"<img src=\"../img/main/arrow-left.png\"  class=\"animated fadeIn\";>";
                                     ?>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-0">
                                 <div class="text text-center">
                                     <?php
                                     echo"<img src=\"../img/main/money.png\";>";
@@ -129,7 +129,7 @@ TO DO:
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6 col-sm-0">
                                 <div class="text text-center">
                                     <?php
                                     echo"<img src=\"../img/main/coins.png\";>";
