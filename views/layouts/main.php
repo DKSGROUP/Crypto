@@ -95,17 +95,22 @@ AppAsset::register($this);
 
     <?php
     echo'<script language="javascript">
+
+
     var elem = document.getElementById(\'navigation\');
     
         
     
+
+setTimeout(function(){  //Тестовое изменение размера через 3сек. 
         if(document.documentElement.clientWidth <= 960 ){
             /*elem.style.display="block";*/
             elem.style.cssText =" display: block;"
-            bool=false;
+          //  bool=false;
         }else {
             elem.style.cssText ="";
         }
+}
     </script> '
     ?>
 
