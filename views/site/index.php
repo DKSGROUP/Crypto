@@ -293,7 +293,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfoStarter",
                                              'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
@@ -313,6 +313,7 @@ TO DO:
                         </div>
                     </div>
                 </div>
+
                 <div class="col-xl-4 col-lg-5 col-md-12 d-sm-flex justify-content-sm-center">
                     <!--STANDART-->
                     <div class="card start-grow">
@@ -350,7 +351,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfoStandart",
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
@@ -408,7 +409,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfoOptimal",
                                             'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
@@ -430,7 +431,6 @@ TO DO:
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-12 d-sm-flex justify-content-sm-center">
                     <!--Advanced-->
-                    <a name="advantages" href="#advantages"></a>
                     <div class="card pro-grow">
                         <div class="card-header  pro-card">
                             <div class="container-fluid">
@@ -466,7 +466,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfoAdvanced",
                                             'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
@@ -522,7 +522,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfoPremium",
                                             'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
@@ -581,7 +581,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfoBusiness",
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
@@ -636,7 +636,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
-                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfo",
+                                                "data-toggle"=>"modal", "data-target"=>"#ModalInfoExlusive",
                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
@@ -656,10 +656,331 @@ TO DO:
                         </div>
                     </div>
                 </div>
+
+                <div id="advantages"><a name="advantages" href="#advantages"></a></div>
             </div>
         </div>
         <!--Modal for packages-->
-        <div class="modal fade" id="ModalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!--STARTER-->
+        <div class="modal fade" id="ModalInfoStarter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel">Starter</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!--Формат-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Format')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal"><?=Yii::t('app','Trust management ')?></p>
+                                </div>
+                                <!--Минимальный вход-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal income')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">50 USD</p>
+                                </div>
+                                <!--Доходность-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Profitability')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">от 6 до 50%</p>
+                                </div>
+                                <!--Минимальный срок инвестирования-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal investment term')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">тестовые 15 дней</p>
+                                </div>
+                                <!--Распределение прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">45/55</p>
+                                </div>
+                                <!--Выплаты-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Payments')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">через 15 дней вся сумма + %</p>
+                                </div>
+                                <!--Условия получения прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income receiving conditions')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">Выплата на  BTC кошелек из bitcoin wallet, комиссию берем на себя</p>
+                                </div>
+                                <!--USD-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','USD withdrawal conditions')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal"> </p>
+                                </div>
+                                <!--Досрочный вывод-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Preschedule withdrawal')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">-</p>
+                                </div>
+                                <!--Формат пополнения-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Replenishment format')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">BTC или через обменник</p>
+                                </div>
+                                <!--Капитализация процентов-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Per cent capitalization')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">-</p>
+                                </div>
+                                <!--Отчетность-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Reporting')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">Каждый день</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--STANDART-->
+        <div class="modal fade" id="ModalInfoStandart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel">Standart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!--Формат-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Format')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal"><?=Yii::t('app','Trust management ')?></p>
+                                </div>
+                                <!--Минимальный вход-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal income')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">до 1000 $</p>
+                                </div>
+                                <!--Доходность-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Profitability')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">от 6 до 50%</p>
+                                </div>
+                                <!--Минимальный срок инвестирования-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal investment term')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">30 дней</p>
+                                </div>
+                                <!--Распределение прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">50/50</p>
+                                </div>
+                                <!--Выплаты-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Payments')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">По истечении срока вклада</p>
+                                </div>
+                                <!--Условия получения прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income receiving conditions')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">на указанный кошелек в BTC</p>
+                                </div>
+                                <!--USD-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','USD withdrawal conditions')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">в долларах через наш обменник</p>
+                                </div>
+                                <!--Досрочный вывод-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Preschedule withdrawal')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">штраф на прибыль инвестора -50%</p>
+                                </div>
+                                <!--Формат пополнения-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Replenishment format')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">BTC или через обменник</p>
+                                </div>
+                                <!--Капитализация процентов-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Per cent capitalization')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">по желанию клиента</p>
+                                </div>
+                                <!--Отчетность-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Reporting')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">каждый день/неделю/30 дней</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Optimal-->
+        <div class="modal fade" id="ModalInfoOptimal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel">Optimal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!--Формат-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Format')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal"><?=Yii::t('app','Trust management ')?></p>
+                                </div>
+                                <!--Минимальный вход-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal income')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">от 1000$ до 3000$</p>
+                                </div>
+                                <!--Доходность-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Profitability')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">от 6 до 50%</p>
+                                </div>
+                                <!--Минимальный срок инвестирования-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal investment term')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">30 дней</p>
+                                </div>
+                                <!--Распределение прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">55/45</p>
+                                </div>
+                                <!--Выплаты-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Payments')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">по истечении срока вклада</p>
+                                </div>
+                                <!--Условия получения прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income receiving conditions')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">на указанный кошелек в BTC</p>
+                                </div>
+                                <!--USD-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','USD withdrawal conditions')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">в долларах через наш обменник</p>
+                                </div>
+                                <!--Досрочный вывод-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Preschedule withdrawal')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">штраф на прибыль инвестора -50%</p>
+                                </div>
+                                <!--Формат пополнения-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Replenishment format')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">BTC или через обменник</p>
+                                </div>
+                                <!--Капитализация процентов-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Per cent capitalization')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">по желанию клиента</p>
+                                </div>
+                                <!--Отчетность-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Reporting')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">каждый день/неделю/30 дней</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Advanced-->
+        <div class="modal fade" id="ModalInfoAdvanced" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -683,14 +1004,332 @@ TO DO:
                                     <p><?=Yii::t('app','Minimal income')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal"> </p>
+                                    <p class="info-modal">от 3000$ до 10000$</p>
                                 </div>
                                 <!--Доходность-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Profitability')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal"> </p>
+                                    <p class="info-modal">от 6 до 50%</p>
+                                </div>
+                                <!--Минимальный срок инвестирования-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal investment term')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">30 дней</p>
+                                </div>
+                                <!--Распределение прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">60/40</p>
+                                </div>
+                                <!--Выплаты-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Payments')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">по истечении срока вклада</p>
+                                </div>
+                                <!--Условия получения прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income receiving conditions')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">на указанный кошелек в BTC</p>
+                                </div>
+                                <!--USD-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','USD withdrawal conditions')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">в долларах через наш обменник</p>
+                                </div>
+                                <!--Досрочный вывод-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Preschedule withdrawal')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">штраф на прибыль инвестора -50%</p>
+                                </div>
+                                <!--Формат пополнения-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Replenishment format')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">BTC или через обменник</p>
+                                </div>
+                                <!--Капитализация процентов-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Per cent capitalization')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">по желанию клиента</p>
+                                </div>
+                                <!--Отчетность-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Reporting')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">каждый день/неделю/30 дней</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Premium-->
+        <div class="modal fade" id="ModalInfoPremium" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel">%NAME%</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!--Формат-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Format')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal"><?=Yii::t('app','Trust management ')?></p>
+                                </div>
+                                <!--Минимальный вход-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal income')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">от 5000$ до 15000$</p>
+                                </div>
+                                <!--Доходность-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Profitability')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">от 6 до 50%</p>
+                                </div>
+                                <!--Минимальный срок инвестирования-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal investment term')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">не ограничен</p>
+                                </div>
+                                <!--Распределение прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">55/45</p>
+                                </div>
+                                <!--Выплаты-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Payments')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">сверка каждую неделю</p>
+                                </div>
+                                <!--Условия получения прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income receiving conditions')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">внутри платформы перевод доли прибыли фонду</p>
+                                </div>
+                                <!--USD-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','USD withdrawal conditions')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">-</p>
+                                </div>
+                                <!--Досрочный вывод-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Preschedule withdrawal')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal"> штраф на прибыль инвестора -50%</p>
+                                </div>
+                                <!--Формат пополнения-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Replenishment format')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">BTC или через обменник</p>
+                                </div>
+                                <!--Капитализация процентов-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Per cent capitalization')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">нет</p>
+                                </div>
+                                <!--Отчетность-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Reporting')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">каждый день</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Business - API-->
+        <div class="modal fade" id="ModalInfoBusiness" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel">Business - API</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!--Формат-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Format')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal"><?=Yii::t('app','Trust management ')?></p>
+                                </div>
+                                <!--Минимальный вход-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal income')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">от 2000$</p>
+                                </div>
+                                <!--Доходность-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Profitability')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">от 6 до 50%</p>
+                                </div>
+                                <!--Минимальный срок инвестирования-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal investment term')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">тестовые 15 дней</p>
+                                </div>
+                                <!--Распределение прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">50/50</p>
+                                </div>
+                                <!--Выплаты-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Payments')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">сверка каждую неделю</p>
+                                </div>
+                                <!--Условия получения прибыли-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Income receiving conditions')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">внутри платформы перевод доли прибыли фонду</p>
+                                </div>
+                                <!--USD-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','USD withdrawal conditions')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">-</p>
+                                </div>
+                                <!--Досрочный вывод-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Preschedule withdrawal')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">штраф на прибыль инвестора -50%</p>
+                                </div>
+                                <!--Формат пополнения-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Replenishment format')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">BTC или через обменник</p>
+                                </div>
+                                <!--Капитализация процентов-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Per cent capitalization')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">нет</p>
+                                </div>
+                                <!--Отчетность-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Reporting')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">каждый день </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Exlusive-API-->
+        <div class="modal fade" id="ModalInfoExlusive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel">Exlusive-API</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!--Формат-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Format')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal"><?=Yii::t('app','Trust management ')?></p>
+                                </div>
+                                <!--Минимальный вход-->
+                                <div class="col-6 dark">
+                                    <p><?=Yii::t('app','Minimal income')?></p>
+                                </div>
+                                <div class="col-6 dark">
+                                    <p class="info-modal">от 15000$</p>
+                                </div>
+                                <!--Доходность-->
+                                <div class="col-6 light">
+                                    <p><?=Yii::t('app','Profitability')?></p>
+                                </div>
+                                <div class="col-6 light">
+                                    <p class="info-modal">от 6 до 50%</p>
                                 </div>
                                 <!--Минимальный срок инвестирования-->
                                 <div class="col-6 dark">
@@ -704,56 +1343,56 @@ TO DO:
                                     <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal"> </p>
+                                    <p class="info-modal">по договоренности (индивидуальные условия)</p>
                                 </div>
                                 <!--Выплаты-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Payments')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal"> </p>
+                                    <p class="info-modal">сверка каждую неделю</p>
                                 </div>
                                 <!--Условия получения прибыли-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Income receiving conditions')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal"> </p>
+                                    <p class="info-modal">внутри платформы перевод доли прибыли фонду</p>
                                 </div>
                                 <!--USD-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','USD withdrawal conditions')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal"> </p>
+                                    <p class="info-modal">-</p>
                                 </div>
                                 <!--Досрочный вывод-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Preschedule withdrawal')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal"> </p>
+                                    <p class="info-modal">штраф на прибыль инвестора -50%</p>
                                 </div>
                                 <!--Формат пополнения-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Replenishment format')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal"> </p>
+                                    <p class="info-modal">BTC или через обменник</p>
                                 </div>
                                 <!--Капитализация процентов-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Per cent capitalization')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal"> </p>
+                                    <p class="info-modal">нет</p>
                                 </div>
                                 <!--Отчетность-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Reporting')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal"> </p>
+                                    <p class="info-modal">каждый день</p>
                                 </div>
 
                             </div>
@@ -763,6 +1402,9 @@ TO DO:
                 </div>
             </div>
         </div>
+
+
+
         <!--Modal SIGN UP-->
         <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
@@ -1199,7 +1841,7 @@ TO DO:
     </div>
     </section>
     <!--ADVANTEGES-->
-    <div id="advantages"><a name="advantages" href="#advantages"></a></div>
+
     <section class="advnateges  animated wow fadeIn" >
         <div class="adv-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','Advantages')?></h1>
@@ -1280,7 +1922,6 @@ TO DO:
     <section class="report  animated wow fadeIn" style="margin-bottom: 50px;">
         <!-- REPORTS -->
         <div id="reporting"><a name="reporting" href="#reporting"></a></div>
-
         <div class="container-fluid">
             <div class="container text-center">
                 <div class="title">
@@ -1328,7 +1969,6 @@ TO DO:
             </div>
         </div>
         <!--RESULT-->
-
         <div class="chart  wow animated fadeIn">
             <div class="container">
                 <div class="row">
@@ -1396,7 +2036,7 @@ TO DO:
                                                     display:true,
 
                                                     gridLines: {
-                                                        color: \"rgba(255, 255, 255, 0)\",
+                                                        color: \"rgba(0,1,4, 0)\",
                                                     },
                                                     ticks: {
                                                         display: true,
@@ -1404,9 +2044,9 @@ TO DO:
                                                     }
                                                 }],
                                         yAxes: [{
-                                                    display:false,
+                                                    display: false,
                                                     gridLines: {
-                                                        color: \"rgba(255, 0, 0, 0)\",
+                                                        color: \"rgba(255, 0, 0,0)\",
                                                     },
                                                     ticks: {
                                                         display: false
