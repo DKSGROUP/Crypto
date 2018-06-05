@@ -67,7 +67,7 @@ AppAsset::register($this);
         ]
     ]);
     echo Nav::widget([
-        'options' => ['class' => ' navbar navbar-expand-lg  collapse nav-wid float-left','id'=>'navigation',
+        'options' => ['class' => ' navbar navbar-expand-lg navbar-nav collapse nav-wid float-left','id'=>'navigation',
             'style' => 'margin: 0 auto;'],
         'items' => array(
             array('label' => Yii::t('app', 'About us'), 'url' => ('#content')),
