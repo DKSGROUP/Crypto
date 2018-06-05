@@ -256,7 +256,7 @@ TO DO:
                     <h1 style=" font-size: 22px;"><?=Yii::t('app','Investition Packages')?></h1>
                 </div>
                 <div class="col-xl-2 col-lg-2 col-sm-3"></div>
-                <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="col-xl-4 col-lg-6 col-md-12">
                     <!--STARTER-->
                     <div class="card start-grow">
                         <div class="card-header  start">
@@ -313,7 +313,7 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-5 col-md-6">
+                <div class="col-xl-4 col-lg-5 col-md-12">
                     <!--STANDART-->
                     <div class="card start-grow">
                         <div class="card-header  start">
@@ -371,7 +371,7 @@ TO DO:
                     </div>
                 </div>
 
-                <div class="col-xl-4 col-lg-5 col-md-6">
+                <div class="col-xl-4 col-lg-5 col-md-12">
                     <!--Optimal-->
                     <div class="card pro-grow">
                         <div class="card-header  pro-card">
@@ -428,7 +428,7 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-5 col-md-6">
+                <div class="col-xl-4 col-lg-5 col-md-12">
                     <!--Advanced-->
                     <a name="advantages" href="#advantages"></a>
                     <div class="card pro-grow">
@@ -487,7 +487,7 @@ TO DO:
                     </div>
 
                 </div>
-                <div class="col-xl-4 col-lg-5 col-md-6">
+                <div class="col-xl-4 col-lg-5 col-md-12">
                     <!--Premium-->
                     <div class="card pro-grow">
                         <div class="card-header  pro-card">
@@ -544,7 +544,7 @@ TO DO:
                 </div>
 
                 <div class="col-xl-2 col-lg-2 col-sm-0"></div>
-                <div class="col-xl-4 col-lg-5 col-md-6">
+                <div class="col-xl-4 col-lg-5 col-md-12">
                     <!--Business - API-->
                     <div class="card start-grow">
                         <div class="card-header  start">
@@ -601,7 +601,7 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-5 col-md-6">
+                <div class="col-xl-4 col-lg-5 col-md-12">
                     <!--Exlusive-API-->
                     <div class="card start-grow">
                         <div class="card-header  start">
@@ -1300,7 +1300,11 @@ TO DO:
                             ?>
                         </div>
                         <div id="report-download-btn">
+<<<<<<< HEAD
                             <a href="../Reporting.pdf" download>
+=======
+                            <a href="../Report_2018_06.docx" download>
+>>>>>>> 19669e363ac2a8b0e370917763c18b6cadab9ed1
                                 <?php
                                 echo Button::widget([
                                     'label' => Yii::t('app','Download reporting exam'),
@@ -1308,7 +1312,7 @@ TO DO:
                                 'style' => 'color:white; background: linear-gradient(to bottom, #05AB5B, #048748);'],
                                 ]);
                                 ?>
-                            </a>
+                            </a>s
                         </div>
                     </div>
                     <div class="col-md-6">

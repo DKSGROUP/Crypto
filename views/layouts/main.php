@@ -95,6 +95,8 @@ AppAsset::register($this);
 
     <?php
     echo'<script language="javascript">
+
+
     var elem = document.getElementById(\'navigation\');
     
     
@@ -104,8 +106,7 @@ AppAsset::register($this);
         
     }else {
         elem.style.cssText ="";
-    }
-    
+}
     </script> '
     ?>
 
