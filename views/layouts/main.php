@@ -70,15 +70,14 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => ' navbar navbar-expand-lg  collapse nav-wid float-left','id'=>'navigation',
             'style' => 'margin: 0 auto;'],
-        'items' => [
-            ['label' => Yii::t('app', 'About us'), 'url' => ['/site/index'], '#' => 'content'],
-            ['label' => Yii::t('app', 'Products'), 'url' => ['/site/index'],'#'=>'Products'],
-            ['label' =>  Yii::t('app', 'Advantages'), 'url' => ['/site/index']],
-            ['label' =>  Yii::t('app', 'Reporting'), 'url' => ['/site/index']],
-            ['label' => Yii::t('app', 'Questions'), 'url' => ['/site/index']],
-            ['label' => Yii::t('app', 'News'), 'url' => ['/site/index']]
-        ],
-    ]);
+        'items' => array(
+            array('label' => Yii::t('app', 'About us'), 'url' => array('/site/index'), '#' => 'content'),
+            array('label' => Yii::t('app', 'Products'), 'url' => array('/site/index','id' => 'products', '#' => 'products')),
+            array('label' =>  Yii::t('app', 'Advantages'), 'url' => array('/site/index', 'id' => 'advantages', '#' => 'advantages')),
+            array('label' =>  Yii::t('app', 'Reporting'), 'url' => array('/site/index', 'id' => 'reporting', '#' => 'reporting')),
+            array('label' => Yii::t('app', 'Questions'), 'url' => array('/site/index', 'id' => 'questions', '#' => 'questions')),
+            array('label' => Yii::t('app', 'News'), 'url' => array('/site/index', 'id' => 'news', '#' => 'news')),
+    )]);
 ?>
 <div class="navbar-text pull-right ">
     <?php
