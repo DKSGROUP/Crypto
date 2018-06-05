@@ -92,7 +92,7 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
+                <div class="col-md-5 d-sm-none ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
                         <div class="row">
                             <div class="col-6">
                                 <div class="text text-center">
