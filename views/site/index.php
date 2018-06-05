@@ -1430,7 +1430,7 @@ TO DO:
                     <label for="hd-1">
                         <div class="row labe">
                             <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','Why Smart Crypto Invest?')?>
                         </div>
@@ -1451,7 +1451,7 @@ TO DO:
                     <label for="hd-2">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','Can I trust SCI?')?>
                         </div>
@@ -1472,7 +1472,7 @@ TO DO:
                     <label for="hd-3">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','How much income can I make?')?>
                         </div>
@@ -1493,7 +1493,7 @@ TO DO:
                     <label for="hd-5">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','And what about security?')?>
                         </div>
@@ -1514,7 +1514,7 @@ TO DO:
                     <label for="hd-6">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','Is it easy to use SCI?')?>
                         </div>
