@@ -5,6 +5,7 @@
  * Date: 28.05.2018
  * Time: 15:47
  */
+
 return[
     'About us' => 'О нас',
     'Products' => 'Продукты',
@@ -106,7 +107,7 @@ return[
     'Replenishment format'=>'Формат пополнения',
     'Per cent capitalization'=>'Капитализация процентов',
 
-    'You can buy '=>'У нас можно купить ',
+    'We can buy '=>'У нас можно купить ',
     'Buy'=>'Купить',
 
     'Username' => 'Логин',
