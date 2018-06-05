@@ -103,7 +103,7 @@ h1{
 .card{
     width: 360px;
    // height: 190px !important;
-    margin: 5px 0;
+    margin: 15px 0;
     background-color: inherit;
     border-radius: 4px 4px 4px 4px;
     transition: all .35s ease-in-out;
