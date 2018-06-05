@@ -1675,8 +1675,8 @@ TO DO:
             </a>
         </div>
         </div>
-        <div class="d-none d-sm-block d-md-none">
-            <div id="news-carousel" class="carousel slide" data-ride="carousel">
+        <div class="d-block d-md-none">
+            <div id="news-carousel1" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active" >
                         <div class="row">
@@ -1795,11 +1795,11 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#news-carousel1" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#news-carousel1" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
