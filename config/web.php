@@ -55,11 +55,15 @@ $config = [
             'rules' => [
                 '/' => 'site/index',
                 '<controller:\w+>/<action:\w+>/'=>'<controller>/<action>',
+                '<language:\w+>/<controller>/<action>' => '<controller>/<action>',
+                '<language:\w+>/<controller>/<action>/<id:\d+>' => '<controller>/<action>',
+                '<language:\w+>/<controller>/<action>/<id:\d+>/<title>' => '<controller>/<action>',
+                '<language:\w+>/<controller>/<id:\d+>/<title>' => '<controller>/index',
             ],
         ],
         'i18n'=>[
             'translations' => [
-                'common*' =>[
+                'app*' =>[
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@app/messages',
                 ],
