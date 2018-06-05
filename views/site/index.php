@@ -242,7 +242,7 @@ TO DO:
         ?>
     </section>
     <section class="invest-packages " style="z-index: 3;">
-        <a href="#Products"></a>
+        <div id="products"><a name="products" href="#products"></a></div>
         <!--Invest packages
 
         Status: -
@@ -430,6 +430,7 @@ TO DO:
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6">
                     <!--Advanced-->
+                    <a name="advantages" href="#advantages"></a>
                     <div class="card pro-grow">
                         <div class="card-header  pro-card">
                             <div class="container-fluid">
@@ -1198,6 +1199,7 @@ TO DO:
     </div>
     </section>
     <!--ADVANTEGES-->
+    <div id="advantages"><a name="advantages" href="#advantages"></a></div>
     <section class="advnateges  animated wow fadeIn" >
         <div class="adv-caption">
             <h1 style=" font-size: 22px;"><?=Yii::t('app','Advantages')?></h1>
@@ -1277,6 +1279,8 @@ TO DO:
 
     <section class="report  animated wow fadeIn" style="margin-bottom: 50px;">
         <!-- REPORTS -->
+        <div id="reporting"><a name="reporting" href="#reporting"></a></div>
+
         <div class="container-fluid">
             <div class="container text-center">
                 <div class="title">
@@ -1324,6 +1328,7 @@ TO DO:
             </div>
         </div>
         <!--RESULT-->
+
         <div class="chart  wow animated fadeIn">
             <div class="container">
                 <div class="row">
@@ -1428,6 +1433,7 @@ TO DO:
             </div>
         </div>
         <!-- QUESTIONS -->
+        <div id="questions"><a name="questions" href="#questions"></a></div>
         <div class="container" style="margin-top: 50px;">
             <div class="title text-center"><?=Yii::t('app','Questions')?></div>
             <div class="questions">
@@ -1546,7 +1552,7 @@ TO DO:
     </section>
 
 
-
+    <div id="news"><a name="news" href="#news"></a></div>
     <section class="news  animated wow fadeIn">
         <div class="news-caption">
             <span style=" font-size: 22px;"><?=Yii::t('app','News')?></span>
