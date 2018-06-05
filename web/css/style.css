@@ -1,18 +1,18 @@
 @font-face {
-    font-family: GothaProReg;
-    src: url("../font/Gotham Cyrillic/GothaProReg.otf");
+    font-family: MontserratRegular;
+    src: url("../font/Montserrat/Montserrat-Regular.ttf");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: GothaProMed;
-    src: url("../font/Gotham Cyrillic/GothaProMed.otf");
+    font-family: MontserratMedium;
+    src: url("../font/Montserrat/Montserrat-Medium.ttf");
 
 }
 
 @font-face {
-    font-family: GothaProBol;
-    src: url("../font/Gotham Cyrillic/GothaProBol.otf");
+    font-family: MontserratBold;
+    src: url("../font/Montserrat/Montserrat-Bold.ttf");
     font-weight: bold;
 }
 
@@ -22,7 +22,7 @@
     border: 0;
 }
 body{
-    font-family: GothaProReg, Arial, sans !important;
+    font-family: MontserratRegular, Arial, sans !important;
     background: linear-gradient(#060e1f, #121c36, #060e1f);
     color: #fff;
 }
@@ -59,7 +59,7 @@ body{
 }
 /*--------------Title Text----------------------------*/
 h1{
-    font-family: GothaProMed, Arial, sans;
+    font-family: MontserratMedium, Arial, sans;
     font-size: 22px;
     line-height: 26px;
 }

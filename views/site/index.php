@@ -38,7 +38,7 @@ TO DO:
         <div id="closeButton1" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
             <div class="text-center text-white textt">
-                <h4><?=Yii::t('app','We can buy ')?><b>GRAM</b></h4>
+                <h4><?=Yii::t('app','You can buy ')?><b>GRAM</b></h4>
             </div>
             <div class="text text-center">
                 <?php
@@ -83,9 +83,9 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
+                <div class="col-md-5 d-none d-sm-block ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6 col-sm-0">
                                 <div class="text text-center">
                                 <?php
                                     echo"<img src=\"../img/main/handshake.png\" >";
@@ -94,7 +94,7 @@ TO DO:
                                 <p class="text-white"><?=Yii::t('app','Create account')?></p>
                                 </div>
                             </div>
-                            <div class="col-6 position-relative">
+                            <div class="col-6 col-sm-0 position-relative">
                                 <div class="position-absolute" style="bottom: 0; left: 0;">
                                     <?php
                                     echo"<img src=\"../img/main/arrow-right.png\" class=\"animated fadeIn\" ;>";
@@ -103,14 +103,14 @@ TO DO:
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6 position-relative">
+                            <div class="col-6 col-sm-0 position-relative">
                                 <div class="position-absolute" style="bottom: 0; right: 0;">
                                     <?php
                                     echo"<img src=\"../img/main/arrow-left.png\"  class=\"animated fadeIn\";>";
                                     ?>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-0">
                                 <div class="text text-center">
                                     <?php
                                     echo"<img src=\"../img/main/money.png\";>";
@@ -120,7 +120,7 @@ TO DO:
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6 col-sm-0">
                                 <div class="text text-center">
                                     <?php
                                     echo"<img src=\"../img/main/coins.png\";>";
