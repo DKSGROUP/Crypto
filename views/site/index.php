@@ -38,7 +38,7 @@ TO DO:
         <div id="closeButton1" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
             <div class="text-center text-white textt">
-                <h4><?=Yii::t('app','We can buy ')?><b>GRAM</b></h4>
+                <h4><?=Yii::t('app','You can buy ')?><b>GRAM</b></h4>
             </div>
             <div class="text text-center">
                 <?php
@@ -55,15 +55,6 @@ TO DO:
 
 
 <div class="site-index">
-
-<!--Site title
-STATUS: -
-
-TO DO:
--прилепить курс валют к сонтейнеру что бы тот не улетал в бок
-
--->
-
     <section class="title-text" style="z-index: 3;">
         <div class="container">
             <div class="row">
@@ -92,9 +83,9 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
+                <div class="col-md-5 d-none d-sm-block ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6 col-sm-0">
                                 <div class="text text-center">
                                 <?php
                                     echo"<img src=\"../img/main/handshake.png\" >";
@@ -103,7 +94,7 @@ TO DO:
                                 <p class="text-white"><?=Yii::t('app','Create account')?></p>
                                 </div>
                             </div>
-                            <div class="col-6 position-relative">
+                            <div class="col-6 col-sm-0 position-relative">
                                 <div class="position-absolute" style="bottom: 0; left: 0;">
                                     <?php
                                     echo"<img src=\"../img/main/arrow-right.png\" class=\"animated fadeIn\" ;>";
@@ -112,14 +103,14 @@ TO DO:
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6 position-relative">
+                            <div class="col-6 col-sm-0 position-relative">
                                 <div class="position-absolute" style="bottom: 0; right: 0;">
                                     <?php
                                     echo"<img src=\"../img/main/arrow-left.png\"  class=\"animated fadeIn\";>";
                                     ?>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-0">
                                 <div class="text text-center">
                                     <?php
                                     echo"<img src=\"../img/main/money.png\";>";
@@ -129,7 +120,7 @@ TO DO:
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6 col-sm-0">
                                 <div class="text text-center">
                                     <?php
                                     echo"<img src=\"../img/main/coins.png\";>";
@@ -247,8 +238,6 @@ TO DO:
 
         Status: -
 
-        To do :
-        -расстояние между блоками
         -->
         <div class="container animated wow fadeIn" >
             <div class="row">
@@ -870,7 +859,6 @@ TO DO:
                       <input class="data form-control" type="text" placeholder="E-mail" />
                       <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Password')?> />
 
-                      <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
                       <a id="buttonInModal" class="btn button-signin text-white" href="#">
                           <?=Yii::t('app','Sign in')?>
                       </a>
@@ -1442,7 +1430,7 @@ TO DO:
                     <label for="hd-1">
                         <div class="row labe">
                             <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','Why Smart Crypto Invest?')?>
                         </div>
@@ -1463,7 +1451,7 @@ TO DO:
                     <label for="hd-2">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','Can I trust SCI?')?>
                         </div>
@@ -1484,7 +1472,7 @@ TO DO:
                     <label for="hd-3">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','How much income can I make?')?>
                         </div>
@@ -1505,7 +1493,7 @@ TO DO:
                     <label for="hd-5">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','And what about security?')?>
                         </div>
@@ -1526,7 +1514,7 @@ TO DO:
                     <label for="hd-6">
                         <div class="row labe">
                             <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img\">";
+                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
                             ?>
                             <?=Yii::t('app','Is it easy to use SCI?')?>
                         </div>
@@ -1544,14 +1532,8 @@ TO DO:
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <a href="#">
-                    <?php
-                    echo Button::widget([
-                        'label' => Yii::t('app','Any questions?'),
-                        'options' => ['class' => 'btn btn-success text-right',
-                        "data-toggle"=>"modal", "data-target"=>"#haveQuestion", ]
-                    ]);
-                    ?>
+                <a class="btn btn-success text-right" href="#" data-toggle="modal" data-target="#haveQuestion">
+                    <?=Yii::t('app','Any questions?')?>
                 </a>
             </div>
         </div>
@@ -1693,8 +1675,8 @@ TO DO:
             </a>
         </div>
         </div>
-        <div class="d-none d-sm-block d-md-none">
-            <div id="news-carousel" class="carousel slide" data-ride="carousel">
+        <div class="d-block d-md-none">
+            <div id="news-carousel1" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active" >
                         <div class="row">
@@ -1813,11 +1795,11 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#news-carousel1" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#news-carousel1" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>

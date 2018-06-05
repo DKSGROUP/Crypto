@@ -61,19 +61,16 @@ body{
   display: inline-block;
 }
 .hide + label::before {
-  /*юля, я с этим доразбираюсь.
-  Там картинка не ставится, сволочь,
-  оно пока не хочет работать.
-  Но я его заставлю*/
+
   display:block;
   float: left;
 }
 
-/* вид текста label при активном переключателе */
+
 .hide:checked + label {
     color:#7DDBA5;
 }
-/* когда чекбокс активен показываем блоки с содержанием  */
+
 .hide:checked + label + div {
     display: block;
     margin-bottom: 35px;

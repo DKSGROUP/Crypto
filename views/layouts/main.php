@@ -97,15 +97,15 @@ AppAsset::register($this);
     echo'<script language="javascript">
     var elem = document.getElementById(\'navigation\');
     
-    
-    if(document.documentElement.clientWidth <= 960 ){
-        /*elem.style.display="block";*/
-        elem.style.cssText =" display: block;"
         
-    }else {
-        elem.style.cssText ="";
-    }
     
+        if(document.documentElement.clientWidth <= 960 ){
+            /*elem.style.display="block";*/
+            elem.style.cssText =" display: block;"
+            bool=false;
+        }else {
+            elem.style.cssText ="";
+        }
     </script> '
     ?>
 
