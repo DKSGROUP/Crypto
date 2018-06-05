@@ -11,21 +11,21 @@ use Yii;
     </a>
     <ul class="dropdown-menu" style="color: #fff; background-color: rgba(51, 63, 87, 0.98);">
         <li class="item-lang" style="padding-left: 15px;">
-            <?= Html::a('EN', array_merge(
+            <?= Html::a('en', array_merge(
                 \Yii::$app->request->get(),
-                [\Yii::$app->controller->route, 'language' => 'EN']
+                [\Yii::$app->controller->route, 'language' => 'en']
             )); ?>
         </li>
         <li class="item-lang" style="padding-left: 15px;">
-            <?= Html::a('RU', array_merge(
+            <?= Html::a('ru', array_merge(
                 \Yii::$app->request->get(),
-                [\Yii::$app->controller->route, 'language' => 'RU']
+                [\Yii::$app->controller->route, 'language' => 'ru']
             )); ?>
         </li>
         <li class="item-lang" style="padding-left: 15px;">
-            <?= Html::a('UA', array_merge(
+            <?= Html::a('ua', array_merge(
                 \Yii::$app->request->get(),
-                [\Yii::$app->controller->route, 'language' => 'UA']
+                [\Yii::$app->controller->route, 'language' => 'ua']
             )); ?>
         </li>
     </ul>
