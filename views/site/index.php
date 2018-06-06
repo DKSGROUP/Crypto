@@ -1412,7 +1412,7 @@ TO DO:
 
         <!--Modal SIGN UP-->
         <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-signup modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-signup modal-dialog-centered" style="transform: translate(0, -50%);top: 50%;margin: 0 auto;" role="document">
                 <div class="modal-content">
                     <?php
                     echo"<style>
