@@ -1024,7 +1024,9 @@ TO DO:
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
                                 </div>
-                                    <p class="info-modal">60/40</p>
+
+                                <div class="col-6 light">
+                                <p class="info-modal">60/40</p>
                                 </div>
                                 <!--Выплаты-->
                                 <div class="col-6 dark">
@@ -1075,11 +1077,9 @@ TO DO:
                                 <div class="col-6 dark">
                                     <p class="info-modal"><?=Yii::t('app','every day/week/30 days')?></p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
