@@ -255,7 +255,7 @@ TO DO:
                 <div class="col-12 text-center" style="margin: 25px 0;">
                     <h1 style=" font-size: 22px;"><?=Yii::t('app','Investition Packages')?></h1>
                 </div>
-                <div class="col-xl-2 col-lg-2 col-sm-3"></div>
+                <div class="col-xl-2 col-lg-3 col-sm-3"></div>
                 <div class="col-xl-4 col-lg-6 col-md-12 d-sm-flex justify-content-sm-center">
                     <!--STARTER-->
                     <div class="card start-grow">
@@ -314,6 +314,8 @@ TO DO:
                     </div>
                 </div>
 
+                <div class="d-none d-xl-none col-lg-3 d-lg-block"></div>
+                <div class="d-none d-xl-none col-lg-1 d-lg-block"></div>
                 <div class="col-xl-4 col-lg-5 col-md-12 d-sm-flex justify-content-sm-center">
                     <!--STANDART-->
                     <div class="card start-grow">
@@ -429,6 +431,9 @@ TO DO:
                         </div>
                     </div>
                 </div>
+
+                <div class="d-none d-xl-none col-lg-1 d-lg-block"></div>
+                <div class="d-none d-xl-none col-lg-1 d-lg-block"></div>
                 <div class="col-xl-4 col-lg-5 col-md-12 d-sm-flex justify-content-sm-center">
                     <!--Advanced-->
                     <div class="card pro-grow">
@@ -543,7 +548,8 @@ TO DO:
                     </div>
                 </div>
 
-                <div class="col-xl-2 col-lg-2 col-sm-0"></div>
+                <div class="d-none col-xl-2 col-lg-1 d-lg-block"></div>
+                <div class="d-none d-xl-none col-lg-1 d-lg-block"></div>
                 <div class="col-xl-4 col-lg-5 col-md-12 d-sm-flex justify-content-sm-center">
                     <!--Business - API-->
                     <div class="card start-grow">
