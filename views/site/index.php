@@ -1676,7 +1676,7 @@ TO DO:
                     </div>
 
                     <input class="data form-control" type="text" placeholder="E-mail*" />
-                    <input class="data form-control" type="text" placeholder="Your message..."?> style="min-height: 150px"/>
+                    <input class="data form-control" type="text" placeholder="Your message...">
                     <a id="closeButton" class="btn button-question text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#haveQuestion2" data-dismiss="modal">
                         <?=Yii::t('app','Write to us')?>
                     </a>
