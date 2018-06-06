@@ -38,7 +38,7 @@ TO DO:
         <div id="closeButton1" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
             <div class="text-center text-white textt">
-                <h4><?=Yii::t('app','You can buy ')?><b>GRAM</b></h4>
+                <h4><?=Yii::t('app','We can buy ')?><b>GRAM</b></h4>
             </div>
             <div class="text text-center">
                 <?php
@@ -119,7 +119,7 @@ TO DO:
                                     ?>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 ">
                                 <div class="text text-center">
                                     <?php
                                     echo"<img src=\"../img/main/money.png\";>";
@@ -144,7 +144,7 @@ TO DO:
         </div>
     </section>
 
-    <section class="graph d-sm-hide d-xs-hide" style="z-index: 0;">
+    <section class="graph" style="z-index: 0;">
         <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:0;" class="chartjs-render-monitor"></canvas>
 
         <?php
@@ -282,13 +282,13 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         45/55
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6 text-center">
+                                    <div class="col-6  text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -298,7 +298,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 ">
                                         <?php
                                         echo Button::widget([
                                             'label' =>Yii::t('app','Invest'),
@@ -340,13 +340,13 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         50/50
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6 text-center">
+                                    <div class="col-6 text-center ">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -356,7 +356,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 ">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -398,7 +398,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         55/45
@@ -414,7 +414,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 ">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -455,13 +455,13 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         60/40
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6 text-center">
+                                    <div class="col-6   text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -511,13 +511,13 @@ TO DO:
                                     <div class="col-4 text-right text">&#8734                                    </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         55/45
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6 text-center">
+                                    <div class="col-6   text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -527,7 +527,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 ">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -570,7 +570,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         50/50
@@ -586,7 +586,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 ">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -619,13 +619,13 @@ TO DO:
                         <div class="card-body start-pack">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-8 text">
+                                    <div class="col-8   text">
                                         <?=Yii::t('app','Minimal terms of investment')?>
                                     </div>
                                     <div class="col-4 text-right text">&#8734</div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text" style="font-size: 9px;">
                                         <?=Yii::t('app','by agreement')?>
@@ -641,7 +641,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6  ">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
