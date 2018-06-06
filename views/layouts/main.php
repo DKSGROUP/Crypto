@@ -118,9 +118,6 @@ AppAsset::register($this);
                 ?>
                 </div>
 
-            </div>
-            <div class="col-md-11 col-sm-8 col-xs-11 d-flex justify-content-end">
-
 
             <?php
                 echo Button::widget([
