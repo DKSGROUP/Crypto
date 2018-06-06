@@ -339,10 +339,10 @@ table{
 }
 @media (max-width: 767px) {
     .carousel-control-next{
-        margin-left: 5%;
+        margin-left: 4%;
     }
     .carousel-control-prev{
-        margin-left: -5%;
+        margin-left: -4%;
     }
 }
 
