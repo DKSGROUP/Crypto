@@ -110,14 +110,14 @@ AppAsset::register($this);
 <footer class="footer" style="width: 100%; background-color: #000000; margin-top: 25px; padding: 10px;">
     <div class="container">
         <div class="row">
-            <div class="col-1  text-sm-center">
+            <div class="col-4">
                 <div class="left">
                 <?php
                 echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"logo-footer\" style=\"width: 80px; display: flex; vertical-align: middle;\">";
                 ?>
                 </div>
             </div>
-                <div class="col-11  d-flex justify-content-md-end ">
+                <div class="col-8 d-flex justify-content-end">
                 <a href="#">
                     <?php
                     echo "<img src=\"../img/footer/telegram.png\"; class=\"telegram\" style=\"width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;\">"
