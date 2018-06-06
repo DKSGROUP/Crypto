@@ -1983,7 +1983,7 @@ TO DO:
                                 </div>
                                 <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
                                 <div class="col-md-12">
-                                    <div class="chart-container">
+                                    <div class="chart-container" style="margin-top: 80px;">
                                     <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
                                     </div>
                                 </div>
