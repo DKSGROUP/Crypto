@@ -1939,23 +1939,23 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
       LIGHT.proxy.setPosition(LIGHT.xPos, LIGHT.yPos, LIGHT.proxy.position[2]);
     } 
   }
-
+/*
   // Hide the controls completely on pressing H
-  Mousetrap.bind('H', function() { 
+  Mousetrap.bind('H', function() {
     toggleEl('controls')
   });
 
   // Add a light on ENTER key
-  Mousetrap.bind('enter', function() { 
+  Mousetrap.bind('enter', function() {
     LIGHT.count++;
-    addLight(); 
+    addLight();
   });
 
   // Pick up the light when a space is pressed
-  Mousetrap.bind('space', function() { 
+  Mousetrap.bind('space', function() {
     LIGHT.pickedup = !LIGHT.pickedup;
   });
-
+*/
   // Let there be light!
   initialise();
 
