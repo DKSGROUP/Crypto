@@ -263,10 +263,10 @@ TO DO:
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-6">
-                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Starter')?></h1>
+                                        <h1 style="font-size: 16px;"><?=Yii::t('app','Starter')?></h1>
                                     </div>
                                     <div class="col-6">
-                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 50$')?></h1>
+                                        <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','from 50$')?></h1>
                                     </div>
                                 </div>
                             </div>
@@ -298,7 +298,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6 ">
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' =>Yii::t('app','Invest'),
@@ -321,10 +321,10 @@ TO DO:
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Standard')?></h1>
+                                        <h1 style="font-size: 16px;"><?=Yii::t('app','Standard')?></h1>
                                     </div>
                                     <div class="col-5">
-                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','up to 1000$')?></h1>
+                                        <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','up to 1000$')?></h1>
                                     </div>
                                 </div>
                             </div>
@@ -356,7 +356,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6 ">
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -379,10 +379,10 @@ TO DO:
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Optimal')?></h1>
+                                        <h1 style="font-size: 16px;"><?=Yii::t('app','Optimal')?></h1>
                                     </div>
                                     <div class="col-5">
-                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 1000$')?></h1>
+                                        <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','from 1000$')?></h1>
                                     </div>
                                 </div>
                             </div>
@@ -414,7 +414,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6 ">
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -436,10 +436,10 @@ TO DO:
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Advanced')?></h1>
+                                        <h1 style="font-size: 16px;"><?=Yii::t('app','Advanced')?></h1>
                                     </div>
                                     <div class="col-5">
-                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 3000$')?></h1>
+                                        <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','from 3000$')?></h1>
                                     </div>
                                 </div>
                             </div>
@@ -471,7 +471,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -494,10 +494,10 @@ TO DO:
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Premium')?></h1>
+                                        <h1 style="font-size: 16px;"><?=Yii::t('app','Premium')?></h1>
                                     </div>
                                     <div class="col-5">
-                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 5000$')?></h1>
+                                        <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','from 5000$')?></h1>
                                     </div>
                                 </div>
                             </div>
@@ -517,7 +517,7 @@ TO DO:
                                         55/45
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6   text-center">
+                                    <div class="col-6  text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -527,7 +527,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6 ">
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -551,10 +551,10 @@ TO DO:
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Business-API')?></h1>
+                                        <h1 style="font-size: 16px;"><?=Yii::t('app','Business-API')?></h1>
                                     </div>
                                     <div class="col-5">
-                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 2000$')?></h1>
+                                        <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','from 2000$')?></h1>
                                     </div>
                                 </div>
                             </div>
@@ -586,7 +586,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6 ">
+                                    <div class="col-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -641,7 +641,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6  ">
+                                    <div class="col-6  text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -2302,7 +2302,7 @@ TO DO:
                                     <h5>Джордж Сорос готов
                                         торговать криптовалютами</h5>
                                     <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    <p class="d-sm-hide">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit, sed do eiusmod tempor incididunt ut labore et
                                         dolore magna aliqua. Ut enim ad minim veniam,
                                         quis nostrud exercitation ullamco laboris nisi ut </p>
