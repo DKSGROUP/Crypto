@@ -666,7 +666,7 @@ TO DO:
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel">Starter</h5>
+                        <h5 class="modal-title text-center" id="exampleModalLabel"><?=Yii::t('app','Starter')?></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -772,7 +772,7 @@ TO DO:
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel">Standart</h5>
+                        <h5 class="modal-title text-center" id="exampleModalLabel"><?=Yii::t('app','Standard')?></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -878,7 +878,7 @@ TO DO:
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel">Optimal</h5>
+                        <h5 class="modal-title text-center" id="exampleModalLabel"><?=Yii::t('app','Optimal')?></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -984,7 +984,7 @@ TO DO:
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel">%NAME%</h5>
+                        <h5 class="modal-title text-center" id="exampleModalLabel"><?=Yii::t('app','Advanced')?></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -1089,7 +1089,7 @@ TO DO:
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel">%NAME%</h5>
+                        <h5 class="modal-title text-center" id="exampleModalLabel"><?=Yii::t('app','Premium')?></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -1195,7 +1195,7 @@ TO DO:
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel">Business - API</h5>
+                        <h5 class="modal-title text-center" id="exampleModalLabel"><?=Yii::t('app','Business - API')?></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -1301,7 +1301,7 @@ TO DO:
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel">Exlusive-API</h5>
+                        <h5 class="modal-title text-center" id="exampleModalLabel"><?=Yii::t('app','Exlusive - API')?></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
