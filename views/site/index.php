@@ -144,8 +144,9 @@ TO DO:
         </div>
     </section>
 
-    <section class="graph" style="z-index: 0;">
-        <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:0;" class="chartjs-render-monitor"></canvas>
+    <section class="graph d-none d-md-block" style="z-index: 0;">
+        <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:0;"
+                class="chartjs-render-monitor"></canvas>
 
         <?php
         echo"<script language='javascript'>
