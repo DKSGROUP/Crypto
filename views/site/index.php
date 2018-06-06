@@ -283,7 +283,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         45/55
@@ -343,7 +343,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         50/50
@@ -401,7 +401,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         55/45
@@ -461,7 +461,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         60/40
@@ -517,7 +517,7 @@ TO DO:
                                     <div class="col-4 text-right text">&#8734                                    </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         55/45
@@ -577,7 +577,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         50/50
@@ -632,7 +632,7 @@ TO DO:
                                     <div class="col-4 text-right text">&#8734</div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text" style="font-size: 9px;">
                                         <?=Yii::t('app','by agreement')?>
