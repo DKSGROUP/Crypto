@@ -1665,19 +1665,19 @@ TO DO:
 
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
                         <p><?=Yii::t('app','You have questions?')?></p>
-                            <p style="margin-top: -10px"><?=Yii::t('app','Write and we will reply shortly')?></p>
+                        <p style="margin-top: -10px"><?=Yii::t('app','Write and we will reply shortly')?></p>
                     </div>
 
                     <input class="data form-control" type="text" placeholder="E-mail*" />
-                    <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Your message...')?> style="min-height: 150px"/>
+                    <input class="data form-control" type="text" placeholder="Your message..."?> style="min-height: 150px"/>
                     <a id="closeButton" class="btn button-question text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#haveQuestion2" data-dismiss="modal">
-                    <?=Yii::t('app','Write to us')?>
+                        <?=Yii::t('app','Write to us')?>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    </section>
+
     <div class="modal fade" id="haveQuestion2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-haveQuestion2 modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -1734,7 +1734,7 @@ TO DO:
             </div>
         </div>
     </div>
-    </section>
+
     <!--GRAM-->
     <div class="modal fade" id="gram" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-gram modal-dialog-centered" role="document">
@@ -2086,9 +2086,9 @@ TO DO:
                         </div>
                     </label>
                     <div>
-                        <div class="d-flex align-items-top">
+                        <div class="d-flex align-items-top ">
                             <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
                             ?>
                             <p>
                                 <?=Yii::t('app','Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!')?>
@@ -2109,7 +2109,7 @@ TO DO:
                     <div>
                         <div class="d-flex align-items-top">
                             <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
                             ?>
                             <p>
                                 <?=Yii::t('app','You don’t have to worry about reliability of our trading – we guarantee full privacy and personal data protection, as well as profitability of financial operations accomplished with the aid of our service.')?>
@@ -2130,7 +2130,7 @@ TO DO:
                     <div>
                         <div class="d-flex align-items-top">
                             <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
                             ?>
                             <p>
                                 <?=Yii::t('app','Quantity of currency received depends on your investment package and the situation on the market. Increase your profits by using tariff plans most suitable for you and by regular monitoring of financial operations review!')?>
@@ -2151,7 +2151,7 @@ TO DO:
                     <div>
                         <div class="d-flex align-items-top">
                             <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
                             ?>
                             <p>
                                 <?=Yii::t('app','We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.')?>
@@ -2172,7 +2172,7 @@ TO DO:
                     <div>
                         <div class="d-flex align-items-top">
                             <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; style=\"margin-right:35px;\">";
+                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
                             ?>
                             <p>
                                 <?=Yii::t('app','Yes! For using our service you need only to sign up, choose your investment package – and receive income!')?>
