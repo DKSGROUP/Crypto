@@ -47,7 +47,7 @@ AppAsset::register($this);
 
         </section>
 
-        < class="navigation-top fixed-top">
+        <div class="navigation-top fixed-top">
     <?php
 
 
@@ -67,8 +67,8 @@ AppAsset::register($this);
         ]
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'col-sm-12 col-md-7 ml-md-auto navbar navbar-expand-lg navbar-nav collapse nav-wid float-left','id'=>'navigation',
-            'style' => 'margin: 0 auto;'],
+        'options' => ['class' => 'col-sm-12 col-md-8 navbar navbar-expand-lg navbar-nav collapse nav-wid ','id'=>'navigation',
+            'style' => 'margin: 0 auto;padding-left: 30px;'],
         'items' => array(
             array('label' => Yii::t('app', 'About us'), 'url' => ('#content')),
             array('label' => Yii::t('app', 'Products'), 'url' => ('#products')),
@@ -78,10 +78,10 @@ AppAsset::register($this);
             array('label' => Yii::t('app', 'News'), 'url' => ('#news')),
         )]);
 ?>
-
+<div style="text-align: center;">
     <?php
     echo MultiLang::widget([
-        'cssClass'=>'col-sm-12 col-md-3 pull-right navbar-nav navbar navbar-expand-lg language'
+        'cssClass'=>'col-sm-12 col-md-8 text-center navbar-nav navbar navbar-expand-lg language'
     ]);
 
         echo Button::widget([
@@ -91,7 +91,7 @@ AppAsset::register($this);
         "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
         ]);
     ?>
-
+</div>
         <?php
     NavBar::end();
     ?>
