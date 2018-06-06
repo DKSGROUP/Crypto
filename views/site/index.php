@@ -1974,7 +1974,7 @@ TO DO:
                         <h1 style=" font-size: 22px;"><?=Yii::t('app','Our results')?></h1>
                     </div>
 
-                    <section class="result" >
+                    <section class="result" style="width: 100%" >
 
                         <div class="container" style="position: relative;">
                             <div class="row">
@@ -2028,7 +2028,7 @@ TO DO:
 					            },
 					            options: {
 					                responsive: true,
-					                 maintainAspectRatio: false,
+					                maintainAspectRatio: false,
 					                scales: {
                                         xAxes: [{
                                                     display:true,
@@ -2050,7 +2050,7 @@ TO DO:
                                                         display: false
                                                     }
                                                 }]
-                                        },
+                                    },
                                         legend: {
                                                 display: false
                                              },
