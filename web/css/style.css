@@ -101,8 +101,9 @@ h1{
 }
 
 .card{
-    width: 360px;
-   // height: 190px !important;
+  /*  width: 360px;*/
+    min-width: 230px;
+// height: 190px !important;
     margin: 15px 0;
     background-color: inherit;
     border-radius: 4px 4px 4px 4px;
@@ -175,19 +176,24 @@ table{
     background-color: rgba(33, 150, 83, 0.4);
 }
 .invest-packages  .investr{
-    width: 160px;
+    /*width: 160px;*/
     height: 33px;
     padding: 0;
     margin-top: 5px;
 
 }
 
-.invest-packages{
+.btn-invest-pro{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
 }
 .info{
-    width: 147px;
+    /*width: 147px;*/
     height: 33px;
-    padding: 0;
+    /*padding: 15px 0;*/
+    padding-left: 25px;
+    padding-right: 25px;
     border-color: #31c37d;
 
     margin-top: 5px;
@@ -195,6 +201,8 @@ table{
 }
 
 .btn-invest-start{
+    padding-left: 25px;
+    padding-right: 25px;
     margin-top: 5px;
     margin-bottom: 5px;
     border-color: #31c37d !important;
@@ -203,6 +211,8 @@ table{
 
 .btn-invest-pro{
 
+    padding-left: 25px;
+    padding-right: 25px;
     border: none!important;
     margin-top: 5px;
     margin-bottom: 5px;

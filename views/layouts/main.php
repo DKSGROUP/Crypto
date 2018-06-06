@@ -110,20 +110,23 @@ AppAsset::register($this);
 <footer class="footer" style="width: 100%; background-color: #000000; margin-top: 25px; padding: 10px;">
     <div class="container">
         <div class="row">
-            <div class="col-md-1 col-sm-4">
+            <div class="col-12">
+            <div class="col-md-1 col-sm-4 col-xs-1">
+                <div class="left">
                 <?php
                 echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"logo-footer\" style=\"width: 80px; display: flex; vertical-align: middle;\">";
                 ?>
+                </div>
+
             </div>
-            <div class="col-md-11 col-sm-8 d-flex justify-content-end">
+            <div class="col-md-11 col-sm-8 col-xs-11 d-flex justify-content-end">
 
 
             <?php
-
                 echo Button::widget([
                         'label' => ' ',
                         'options'=>['class' => 'btn',
-                            'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/telegram.png) center center no-repeat; background-size : 100%;',
+                            'style' => 'width : 37px; height: 37px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/telegram.png) center center no-repeat; background-size : 100%;',
                             ],
                 ]);
 
@@ -132,23 +135,24 @@ AppAsset::register($this);
                 <?php
                 echo Button::widget([
                 'label' => ' ',
-                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/vk.png) center center no-repeat;background-size : 100%;'],
+                'options'=>['class' => 'btn', 'style' => 'width : 37px; height: 37px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/vk.png) center center no-repeat;background-size : 100%;'],
                 ]);
                 ?>
                 <?php
                 echo Button::widget([
                 'label' => ' ',
-                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/facebook.png) center center no-repeat;background-size : 100%;'],
+                'options'=>['class' => 'btn', 'style' => 'width : 37px; height: 37px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/facebook.png) center center no-repeat;background-size : 100%;'],
                 ]);
                 ?>
                 <?php
                 echo Button::widget([
                 'label' => ' ',
-                'options'=>['class' => 'btn', 'style' => 'width : 50px; height: 50px; border-radius: 50%; margin-left: 3px; background: #123 url(../img/footer/instagram.png) center center no-repeat;background-size : 100%;'],
+                'options'=>['class' => 'btn', 'style' => 'width : 37px; height: 37px; border-radius: 50%; margin-left: 3px; background: #123 url(../img/footer/instagram.png) center center no-repeat;background-size : 100%;'],
                 ]);
                 ?>
             </div>
-        </div>
+            </div>
+            </div>
 
 
     </div>

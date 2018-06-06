@@ -144,7 +144,7 @@ TO DO:
         </div>
     </section>
 
-    <section class="graph" style="z-index: 0;">
+    <section class="graph d-sm-hide d-xs-hide" style="z-index: 0;">
         <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:0;" class="chartjs-render-monitor"></canvas>
 
         <?php
@@ -303,7 +303,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' =>Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                            'style' => 'color:#31C37D; border-color:#31C37D;',
+                                            'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -361,7 +361,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                        'style' => 'color:#31C37D; border-color:#31C37D;',
+                                        'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -419,7 +419,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
-                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);',
+                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748); padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -476,7 +476,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
-                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);',
+                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748); padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -532,7 +532,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
-                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);',
+                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -591,7 +591,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                        'style' => 'color:#31C37D; border-color:#31C37D;',
+                                        'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -646,7 +646,7 @@ TO DO:
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                        'style' => 'color:#31C37D; border-color:#31C37D;',
+                                        'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
