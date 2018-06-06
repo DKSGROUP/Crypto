@@ -70,7 +70,7 @@ return[
     'Track your tradings’ profitability in the real-time, using our site’s financial reporting'=>'Следите в режиме реального времени за прибыльностью своих трейдингов, используя отчетность нашего сервиса перед клиентами',
 
     'Trust management'=>'Доверительное управление',
-    'When using trust management investor receives reports in the form of a downloadable document which contains detailed information about investor’s financial operations'=>'Используя Доверительное Управление инвестор вкладывает деньги трейдеру, отправляя их на его счёт и полностью поручая управление средствами сервису. При этом больший процент прибыли, чем при API-управлении, отчисляется клиенту.',
+    'When using trust management investor receives reports in the form of a downloadable document which contains detailed information about investor’s financial operations'=>'Используя Доверительное Управление, инвестор поручает руководство своими средствами трейдеру. При этом у него всегда остается возможность получить отчетность и убедиться в прибыльности нашего сервиса. Выбирая такой тариф, клиент получает больший процент дохода, чем при API-управлении.',
     'Download reporting exam'=>'Скачать пример отчетности',
 
     'Reporting'=>'Отчетность',
