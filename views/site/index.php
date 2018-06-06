@@ -693,14 +693,14 @@ TO DO:
                                     <p><?=Yii::t('app','Profitability')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">от 6 до 50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 6 to 50%')?></p>
                                 </div>
                                 <!--Минимальный срок инвестирования-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Minimal investment term')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">тестовые 15 дней</p>
+                                    <p class="info-modal"><?=Yii::t('app','test 15 days')?></p>
                                 </div>
                                 <!--Распределение прибыли-->
                                 <div class="col-6 light">
@@ -714,14 +714,14 @@ TO DO:
                                     <p><?=Yii::t('app','Payments')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">через 15 дней вся сумма + %</p>
+                                    <p class="info-modal"><?=Yii::t('app','in 15 days the whole amount + %')?></p>
                                 </div>
                                 <!--Условия получения прибыли-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Income receiving conditions')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">Выплата на  BTC кошелек из bitcoin wallet, комиссию берем на себя</p>
+                                    <p class="info-modal"><?=Yii::t('app','Payment to BTC wallet from bitcoin wallet, we take commission')?></p>
                                 </div>
                                 <!--USD-->
                                 <div class="col-6 dark">
@@ -742,7 +742,7 @@ TO DO:
                                     <p><?=Yii::t('app','Replenishment format')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">BTC или через обменник</p>
+                                    <p class="info-modal"><?=Yii::t('app','BTC or via exchanger')?></p>
                                 </div>
                                 <!--Капитализация процентов-->
                                 <div class="col-6 light">
@@ -756,7 +756,7 @@ TO DO:
                                     <p><?=Yii::t('app','Reporting')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">Каждый день</p>
+                                    <p class="info-modal"><?=Yii::t('app','Everyday')?></p>
                                 </div>
 
                             </div>
@@ -792,21 +792,21 @@ TO DO:
                                     <p><?=Yii::t('app','Minimal income')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">до 1000 $</p>
+                                    <p class="info-modal"><?=Yii::t('app','up to 1000$')?></p>
                                 </div>
                                 <!--Доходность-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Profitability')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">от 6 до 50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 6 to 50%')?></p>
                                 </div>
                                 <!--Минимальный срок инвестирования-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Minimal investment term')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">30 дней</p>
+                                    <p class="info-modal"><?=Yii::t('app','30 days')?></p>
                                 </div>
                                 <!--Распределение прибыли-->
                                 <div class="col-6 light">
@@ -820,49 +820,49 @@ TO DO:
                                     <p><?=Yii::t('app','Payments')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">По истечении срока вклада</p>
+                                    <p class="info-modal"><?=Yii::t('app','At the end of the deposit term')?></p>
                                 </div>
                                 <!--Условия получения прибыли-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Income receiving conditions')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">на указанный кошелек в BTC</p>
+                                    <p class="info-modal"><?=Yii::t('app','to the specified purse in BTC')?></p>
                                 </div>
                                 <!--USD-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','USD withdrawal conditions')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">в долларах через наш обменник</p>
+                                    <p class="info-modal"><?=Yii::t('app','in dollars through our exchanger')?></p>
                                 </div>
                                 <!--Досрочный вывод-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Preschedule withdrawal')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">штраф на прибыль инвестора -50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','penalty on the investor\'s profit -50%')?></p>
                                 </div>
                                 <!--Формат пополнения-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Replenishment format')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">BTC или через обменник</p>
+                                    <p class="info-modal"><?=Yii::t('app','BTC or via exchanger')?></p>
                                 </div>
                                 <!--Капитализация процентов-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Per cent capitalization')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">по желанию клиента</p>
+                                    <p class="info-modal"><?=Yii::t('app','at the request of the client')?></p>
                                 </div>
                                 <!--Отчетность-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Reporting')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">каждый день/неделю/30 дней</p>
+                                    <p class="info-modal"><?=Yii::t('app','every day/week/30 days')?></p>
                                 </div>
 
                             </div>
@@ -898,21 +898,21 @@ TO DO:
                                     <p><?=Yii::t('app','Minimal income')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">от 1000$ до 3000$</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 1000$ to 3000$')?></p>
                                 </div>
                                 <!--Доходность-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Profitability')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">от 6 до 50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 6 to 50%')?></p>
                                 </div>
                                 <!--Минимальный срок инвестирования-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Minimal investment term')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">30 дней</p>
+                                    <p class="info-modal"><?=Yii::t('app','30 days')?></p>
                                 </div>
                                 <!--Распределение прибыли-->
                                 <div class="col-6 light">
@@ -926,49 +926,49 @@ TO DO:
                                     <p><?=Yii::t('app','Payments')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">по истечении срока вклада</p>
+                                    <p class="info-modal"><?=Yii::t('app','At the end of the deposit term')?></p>
                                 </div>
                                 <!--Условия получения прибыли-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Income receiving conditions')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">на указанный кошелек в BTC</p>
+                                    <p class="info-modal"><?=Yii::t('app','to the specified purse in BTC')?></p>
                                 </div>
                                 <!--USD-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','USD withdrawal conditions')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">в долларах через наш обменник</p>
+                                    <p class="info-modal"><?=Yii::t('app','in dollars through our exchanger')?></p>
                                 </div>
                                 <!--Досрочный вывод-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Preschedule withdrawal')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">штраф на прибыль инвестора -50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','penalty on the investor\'s profit -50%')?></p>
                                 </div>
                                 <!--Формат пополнения-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Replenishment format')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">BTC или через обменник</p>
+                                    <p class="info-modal"><?=Yii::t('app','BTC or via exchanger')?></p>
                                 </div>
                                 <!--Капитализация процентов-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Per cent capitalization')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">по желанию клиента</p>
+                                    <p class="info-modal"><?=Yii::t('app','at the request of the client')?></p>
                                 </div>
                                 <!--Отчетность-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Reporting')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">каждый день/неделю/30 дней</p>
+                                    <p class="info-modal"><?=Yii::t('app','every day/week/30 days')?></p>
                                 </div>
 
                             </div>
@@ -1004,27 +1004,26 @@ TO DO:
                                     <p><?=Yii::t('app','Minimal income')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">от 3000$ до 10000$</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 3000$ to 10000$')?></p>
                                 </div>
                                 <!--Доходность-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Profitability')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">от 6 до 50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 6 to 50%')?></p>
                                 </div>
                                 <!--Минимальный срок инвестирования-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Minimal investment term')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">30 дней</p>
+                                    <p class="info-modal"><?=Yii::t('app','30 days')?></p>
                                 </div>
                                 <!--Распределение прибыли-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
                                 </div>
-                                <div class="col-6 light">
                                     <p class="info-modal">60/40</p>
                                 </div>
                                 <!--Выплаты-->
@@ -1032,49 +1031,49 @@ TO DO:
                                     <p><?=Yii::t('app','Payments')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">по истечении срока вклада</p>
+                                    <p class="info-modal"><?=Yii::t('app','At the end of the deposit term')?></p>
                                 </div>
                                 <!--Условия получения прибыли-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Income receiving conditions')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">на указанный кошелек в BTC</p>
+                                    <p class="info-modal"><?=Yii::t('app','to the specified purse in BTC')?></p>
                                 </div>
                                 <!--USD-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','USD withdrawal conditions')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">в долларах через наш обменник</p>
+                                    <p class="info-modal"><?=Yii::t('app','in dollars through our exchanger')?></p>
                                 </div>
                                 <!--Досрочный вывод-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Preschedule withdrawal')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">штраф на прибыль инвестора -50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','penalty on the investor\'s profit -50%')?></p>
                                 </div>
                                 <!--Формат пополнения-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Replenishment format')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">BTC или через обменник</p>
+                                    <p class="info-modal"><?=Yii::t('app','BTC or via exchanger')?></p>
                                 </div>
                                 <!--Капитализация процентов-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Per cent capitalization')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">по желанию клиента</p>
+                                    <p class="info-modal"><?=Yii::t('app','at the request of the client')?></p>
                                 </div>
                                 <!--Отчетность-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Reporting')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">каждый день/неделю/30 дней</p>
+                                    <p class="info-modal"><?=Yii::t('app','every day/week/30 days')?></p>
                                 </div>
 
                             </div>
@@ -1110,21 +1109,21 @@ TO DO:
                                     <p><?=Yii::t('app','Minimal income')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">от 5000$ до 15000$</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 5000$ to 15000$')?></p>
                                 </div>
                                 <!--Доходность-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Profitability')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">от 6 до 50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 6 to 50%')?></p>
                                 </div>
                                 <!--Минимальный срок инвестирования-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Minimal investment term')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">не ограничен</p>
+                                    <p class="info-modal"><?=Yii::t('app','is not limited')?></p>
                                 </div>
                                 <!--Распределение прибыли-->
                                 <div class="col-6 light">
@@ -1138,14 +1137,14 @@ TO DO:
                                     <p><?=Yii::t('app','Payments')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">сверка каждую неделю</p>
+                                    <p class="info-modal"><?=Yii::t('app','verification every week')?></p>
                                 </div>
                                 <!--Условия получения прибыли-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Income receiving conditions')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">внутри платформы перевод доли прибыли фонду</p>
+                                    <p class="info-modal"><?=Yii::t('app','within the platform transfer of the profit to the fund')?></p>
                                 </div>
                                 <!--USD-->
                                 <div class="col-6 dark">
@@ -1159,28 +1158,28 @@ TO DO:
                                     <p><?=Yii::t('app','Preschedule withdrawal')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal"> штраф на прибыль инвестора -50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','penalty on the investor\'s profit -50%')?></p>
                                 </div>
                                 <!--Формат пополнения-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Replenishment format')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">BTC или через обменник</p>
+                                    <p class="info-modal"><?=Yii::t('app','BTC or via exchanger')?></p>
                                 </div>
                                 <!--Капитализация процентов-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Per cent capitalization')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">нет</p>
+                                    <p class="info-modal">-</p>
                                 </div>
                                 <!--Отчетность-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Reporting')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">каждый день</p>
+                                    <p class="info-modal"><?=Yii::t('app','Everyday')?></p>
                                 </div>
 
                             </div>
@@ -1216,21 +1215,21 @@ TO DO:
                                     <p><?=Yii::t('app','Minimal income')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">от 2000$</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 2000$')?></p>
                                 </div>
                                 <!--Доходность-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Profitability')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">от 6 до 50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 6 to 50%')?></p>
                                 </div>
                                 <!--Минимальный срок инвестирования-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Minimal investment term')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">тестовые 15 дней</p>
+                                    <p class="info-modal"><?=Yii::t('app','test 15 days')?></p>
                                 </div>
                                 <!--Распределение прибыли-->
                                 <div class="col-6 light">
@@ -1244,14 +1243,14 @@ TO DO:
                                     <p><?=Yii::t('app','Payments')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">сверка каждую неделю</p>
+                                    <p class="info-modal"><?=Yii::t('app','verification every week')?></p>
                                 </div>
                                 <!--Условия получения прибыли-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Income receiving conditions')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">внутри платформы перевод доли прибыли фонду</p>
+                                    <p class="info-modal">><?=Yii::t('app','within the platform transfer of the profit to the fund')?></p>
                                 </div>
                                 <!--USD-->
                                 <div class="col-6 dark">
@@ -1265,28 +1264,28 @@ TO DO:
                                     <p><?=Yii::t('app','Preschedule withdrawal')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">штраф на прибыль инвестора -50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','penalty on the investor\'s profit -50%')?></p>
                                 </div>
                                 <!--Формат пополнения-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Replenishment format')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">BTC или через обменник</p>
+                                    <p class="info-modal"><?=Yii::t('app','BTC or via exchanger')?></p>
                                 </div>
                                 <!--Капитализация процентов-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Per cent capitalization')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">нет</p>
+                                    <p class="info-modal">-</p>
                                 </div>
                                 <!--Отчетность-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Reporting')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">каждый день </p>
+                                    <p class="info-modal"><?=Yii::t('app','Everyday')?></p>
                                 </div>
 
                             </div>
@@ -1322,14 +1321,14 @@ TO DO:
                                     <p><?=Yii::t('app','Minimal income')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">от 15000$</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 15000$')?></p>
                                 </div>
                                 <!--Доходность-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Profitability')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">от 6 до 50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','from 6 to 50%')?></p>
                                 </div>
                                 <!--Минимальный срок инвестирования-->
                                 <div class="col-6 dark">
@@ -1343,21 +1342,21 @@ TO DO:
                                     <p><?=Yii::t('app','Income distribution investor/fund in %')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">по договоренности (индивидуальные условия)</p>
+                                    <p class="info-modal"><?=Yii::t('app','by agreement (individual conditions)')?></p>
                                 </div>
                                 <!--Выплаты-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Payments')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">сверка каждую неделю</p>
+                                    <p class="info-modal"><?=Yii::t('app','verification every week')?></p>
                                 </div>
                                 <!--Условия получения прибыли-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Income receiving conditions')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">внутри платформы перевод доли прибыли фонду</p>
+                                    <p class="info-modal"><?=Yii::t('app','within the platform transfer of the profit to the fund')?></p>
                                 </div>
                                 <!--USD-->
                                 <div class="col-6 dark">
@@ -1371,28 +1370,28 @@ TO DO:
                                     <p><?=Yii::t('app','Preschedule withdrawal')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">штраф на прибыль инвестора -50%</p>
+                                    <p class="info-modal"><?=Yii::t('app','penalty on the investor\'s profit -50%')?></p>
                                 </div>
                                 <!--Формат пополнения-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Replenishment format')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">BTC или через обменник</p>
+                                    <p class="info-modal"><?=Yii::t('app','BTC or via exchanger')?></p>
                                 </div>
                                 <!--Капитализация процентов-->
                                 <div class="col-6 light">
                                     <p><?=Yii::t('app','Per cent capitalization')?></p>
                                 </div>
                                 <div class="col-6 light">
-                                    <p class="info-modal">нет</p>
+                                    <p class="info-modal">-</p>
                                 </div>
                                 <!--Отчетность-->
                                 <div class="col-6 dark">
                                     <p><?=Yii::t('app','Reporting')?></p>
                                 </div>
                                 <div class="col-6 dark">
-                                    <p class="info-modal">каждый день</p>
+                                    <p class="info-modal"><?=Yii::t('app','Everyday')?></p>
                                 </div>
 
                             </div>
@@ -1574,7 +1573,7 @@ TO DO:
                         <input class="data form-control" type="text" placeholder="E-mail*" />
                   <a id="buttonInModal" class="btn button-signup text-white" href="#" data-toggle="modal" data-target="#recover-password-two" data-dismiss="modal" style="margin-bottom:40px; margin-top: 10px;">
 
-                            Восстановить
+                           <?=Yii::t('app','Reestablish')?>
                         </a>
                     </div>
                 </div>
@@ -1621,7 +1620,6 @@ TO DO:
                         <p>Smart Crypto Invest</p>
                       </div>
 
-                      <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
                       <a class="btn btn-outline-success btn-recover2 mb-4" href="#">
                        <?=Yii::t('app','The recovery instructions')?><br /><?=Yii::t('app','is sent to your e-mail')?>
                       </a>
