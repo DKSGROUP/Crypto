@@ -38,7 +38,7 @@ TO DO:
         <div id="closeButton1" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
             <div class="text-center text-white textt">
-                <h4><?=Yii::t('app','We can buy ')?><b>GRAM</b></h4>
+                <h4><?=Yii::t('app','You can buy ')?><b>GRAM</b></h4>
             </div>
             <div class="text text-center">
                 <?php
@@ -282,7 +282,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         45/55
@@ -340,7 +340,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         50/50
@@ -398,7 +398,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         55/45
@@ -455,7 +455,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         60/40
@@ -511,7 +511,7 @@ TO DO:
                                     <div class="col-4 text-right text">&#8734                                    </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         55/45
@@ -570,7 +570,7 @@ TO DO:
                                     </div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text">
                                         50/50
@@ -625,7 +625,7 @@ TO DO:
                                     <div class="col-4 text-right text">&#8734</div>
 
                                     <div class="col-8 text">
-                                        <?=Yii::t('app','Profits distribution between an investor/fund(%)')?>
+                                        <?=Yii::t('app','Profits distribution investor/fund(%)')?>
                                     </div>
                                     <div class="col-4 text-right text" style="font-size: 9px;">
                                         <?=Yii::t('app','by agreement')?>
