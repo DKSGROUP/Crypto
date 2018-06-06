@@ -2208,141 +2208,12 @@ TO DO:
         <div class="news-caption">
             <span style=" font-size: 22px;"><?=Yii::t('app','News')?></span>
         </div>
-        <div class="d-none d-lg-block">
-        <div id="news-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active" style="margin-left: 95px;">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-5">
-                            <div class="news-img">
-                                <?php
-                                echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"First slide\">";
-                                ?>
-                            </div>
-                            <div class="container">
-                                <div class="carousel-caption text-left">
-                                    <h5>Джордж Сорос готов
-                                        торговать криптовалютами</h5>
-                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                    <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut </p>
-                                    <p><a href="#">
-                                            <?php
-                                            echo Button::widget([
-                                                'label' => Yii::t('app','Read more'),
-                                                'options' => ['class' => 'btn btn-success text-left'],
-                                            ]);
-                                            ?>
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-none d-lg-block col-lg-5">
-                            <div class="news-img">
-                                <?php
-                                echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"First slide\">";
-                                ?>
-                            </div>
-                            <div class="container">
-                                <div class="carousel-caption text-left">
-                                    <h5>Джордж Сорос готов
-                                        торговать криптовалютами</h5>
-                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut </p>
-                                    <p><a href="#">
-                                            <?php
-                                            echo Button::widget([
-                                                'label' => Yii::t('app','Read more'),
-                                                'options' => ['class' => 'btn btn-success text-left'],
-                                            ]);
-                                            ?>
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" style="margin-left: 95px;">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-5">
-                            <div class="news-img">
-                                <?php
-                                echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"Second slide\">";
-                                ?>
-                            </div>
-                            <div class="container">
-                                <div class="carousel-caption text-left">
-                                    <h5>Джордж Сорос готов
-                                        торговать криптовалютами</h5>
-                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut </p>
-                                    <p><a href="#">
-                                            <?php
-                                            echo Button::widget([
-                                                'label' => Yii::t('app','Read more'),
-                                                'options' => ['class' => 'btn btn-success text-left'],
-                                            ]);
-                                            ?>
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-none d-lg-block col-lg-5">
-                            <div class="news-img">
-                                <?php
-                                echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"Second slide\">";
-                                ?>
-                            </div>
-                            <div class="container">
-                                <div class="carousel-caption text-left">
-                                    <h5>Джордж Сорос готов
-                                        торговать криптовалютами</h5>
-                                    <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                    <p class="d-sm-hide">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut </p>
-                                    <p><a href="#">
-                                            <?php
-                                            echo Button::widget([
-                                                'label' => Yii::t('app','Read more'),
-                                                'options' => ['class' => 'btn btn-success text-left'],
-                                            ]);
-                                            ?>
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        </div>
-        <div class="d-block d-md-none">
-            <div id="news-carousel1" class="carousel slide" data-ride="carousel">
+        <div class="d-block">
+            <div id="news-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active" >
+                    <div class="carousel-item active">
                         <div class="row">
+                            <div class="col-md-1"></div>
                             <div class="col-sm-12 col-md-5">
                                 <div class="news-img">
                                     <?php
@@ -2353,8 +2224,8 @@ TO DO:
                                     <div class="carousel-caption text-left">
                                         <h5>Джордж Сорос готов
                                             торговать криптовалютами</h5>
-                                        <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                        <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
                                             elit, sed do eiusmod tempor incididunt ut labore et
                                             dolore magna aliqua. Ut enim ad minim veniam,
                                             quis nostrud exercitation ullamco laboris nisi ut </p>
@@ -2370,7 +2241,7 @@ TO DO:
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-none d-lg-block col-lg-5">
+                            <div class="d-none d-md-block col-md-5">
                                 <div class="news-img">
                                     <?php
                                     echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"First slide\">";
@@ -2380,8 +2251,8 @@ TO DO:
                                     <div class="carousel-caption text-left">
                                         <h5>Джордж Сорос готов
                                             торговать криптовалютами</h5>
-                                        <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
                                             elit, sed do eiusmod tempor incididunt ut labore et
                                             dolore magna aliqua. Ut enim ad minim veniam,
                                             quis nostrud exercitation ullamco laboris nisi ut </p>
@@ -2401,6 +2272,7 @@ TO DO:
                     </div>
                     <div class="carousel-item">
                         <div class="row">
+                            <div class="col-md-1"></div>
                             <div class="col-sm-12 col-md-5">
                                 <div class="news-img">
                                     <?php
@@ -2409,10 +2281,10 @@ TO DO:
                                 </div>
                                 <div class="container">
                                     <div class="carousel-caption text-left">
-                                        <strong>Джордж Сорос готов
-                                            торговать криптовалютами</strong>
-                                        <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        <h5>Джордж Сорос готов
+                                            торговать криптовалютами</h5>
+                                        <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
                                             elit, sed do eiusmod tempor incididunt ut labore et
                                             dolore magna aliqua. Ut enim ad minim veniam,
                                             quis nostrud exercitation ullamco laboris nisi ut </p>
@@ -2428,7 +2300,7 @@ TO DO:
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-none d-lg-block col-lg-5">
+                            <div class="d-none d-md-block col-md-5">
                                 <div class="news-img">
                                     <?php
                                     echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"Second slide\">";
@@ -2436,10 +2308,10 @@ TO DO:
                                 </div>
                                 <div class="container">
                                     <div class="carousel-caption text-left">
-                                        <strong>Джордж Сорос готов
-                                            торговать криптовалютами</strong>
-                                        <hr style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        <h5>Джордж Сорос готов
+                                            торговать криптовалютами</h5>
+                                        <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                        <p class="d-none d-lg-block" class="d-sm-hide">Lorem ipsum dolor sit amet, consectetur adipiscing
                                             elit, sed do eiusmod tempor incididunt ut labore et
                                             dolore magna aliqua. Ut enim ad minim veniam,
                                             quis nostrud exercitation ullamco laboris nisi ut </p>
@@ -2458,11 +2330,11 @@ TO DO:
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#news-carousel1" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#news-carousel1" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>

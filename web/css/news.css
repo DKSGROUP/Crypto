@@ -12,9 +12,14 @@
 #news-carousel{
     max-height: 500px;
 }
-#news-carousel1{
-    max-height: 500px;
+
+@media (max-width: 767px) {
+    .carousel-item .row{
+        width: 90%;
+        margin: 0 5%;
+    }
 }
+
 .first-slide{
     max-height: 500px;
 }
