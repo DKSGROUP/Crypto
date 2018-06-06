@@ -15,7 +15,7 @@ return[
     'User Account'=>'Личный кабинет',
 
     ' - the best way to invest into cryptocurrencies'=>' - лучший способ инвестировать в криптовалюты',
-    'Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks'=>'Наша система автоматизированного трейдинга позволяет роизводить прибыльные трейдинговые операции за несколько кликов ',
+    'Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks'=>'Наша система автоматизированного трейдинга позволяет производить прибыльные трейдинговые операции за несколько кликов ',
     'Invest'=>'Инвестировать',
 
     'Create account'=>'Регистрируйся',
@@ -52,7 +52,7 @@ return[
     'by agreement'=>'по договоренности',
 
     'Accurate analysis'=>'Достоверный анализ',
-    'Our service specialises on cryptocurrencies purchase&sale, using precise trading strategies to deal bids according to  exchange rates'=>'Наш сервис занимается покупкой и продажей криптовалюты, достигая доходность благодаря оценке рынка и грамотному трейдингу',
+    'Our service specialises on cryptocurrencies purchase&sale, using precise trading strategies to deal bids according to  exchange rates'=>'Наш сервис занимается покупкой и продажей криптовалюты, достигая доходности благодаря оценке рынка и грамотному трейдингу',
 
     'Multi-currency trading'=>'Мультивалютный трейдинг',
     'SCI supports investment in Bitcoin as well as Ethereum allowing you to profit from exchange rate differencies'=>'SCI поддерживает размещение сбережений как в Bitcoin, так и в Ethereum. Получайте прибыль за счет курсовой разницы валют',
@@ -70,7 +70,7 @@ return[
     'Track your tradings’ profitability in the real-time, using our site’s financial reporting'=>'Следите в режиме реального времени за прибыльностью своих трейдингов, используя отчетность нашего сервиса перед клиентами',
 
     'Trust management'=>'Доверительное управление',
-    'When using trust management investor receives reports in the form of a downloadable document which contains detailed information about investor’s financial operations'=>'Используя Доверительное Управление инвестор доверяет деньги трейдеру, отправляя их на его счёт и полностью поручая управление средствами сервису. При этом больший процент прибыли, чем при API-управлении, отчисляется клиенту.',
+    'When using trust management investor receives reports in the form of a downloadable document which contains detailed information about investor’s financial operations'=>'Используя Доверительное Управление инвестор вкладывает деньги трейдеру, отправляя их на его счёт и полностью поручая управление средствами сервису. При этом больший процент прибыли, чем при API-управлении, отчисляется клиенту.',
     'Download reporting exam'=>'Скачать пример отчетности',
 
     'Reporting'=>'Отчетность',
@@ -114,7 +114,7 @@ return[
     'Password' => 'Пароль',
     'Username*' => 'Логин*',
     'Password*' => 'Пароль*',
-    'Sign up' => 'Зарегестрироваться',
+    'Sign up' => 'Зарегистрироваться',
     'Already have an account?' => 'У вас уже есть аккаунт?',
     'Sign in' => 'Войти',
     'Reestablish'=>'Восстановить',
