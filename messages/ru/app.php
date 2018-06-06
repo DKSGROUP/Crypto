@@ -28,7 +28,7 @@ return[
     'from 50$'=>'от 50$',
     'Minimal terms of investment'=>'Минимальный срок инвестирования',
     'test 15 days'=>'тестовые 15 дней',
-    'Profits distribution between an investor/fund(%)'=>'Распределение прибыли инвестор/фонд(%)',
+    'Profits distribution investor/fund(%)'=>'Распределение прибыли инвестор/фонд(%)',
     'More'=>'Подробнее',
 
     'Standard'=>'Стандартный',
@@ -107,7 +107,7 @@ return[
     'Replenishment format'=>'Формат пополнения',
     'Per cent capitalization'=>'Капитализация процентов',
 
-    'We can buy '=>'У нас можно купить ',
+    'You can buy '=>'У нас можно купить ',
     'Buy'=>'Купить',
 
     'Username' => 'Логин',
@@ -127,7 +127,7 @@ return[
     'Your message...'=>'Ваше сообщение...',
     'Write to us'=>'Напишите нам',
     'Message sent'=>'Сообщение отправлено',
-    'Want to buy Gram?'=>'Хотите купить грам?',
+    'Want to buy GRAM?'=>'Хотите купить GRAM?',
     'Write your e-mail and we will get back to you soon as possible'=>'Напишите ваш e-mail и мы свяжемся с Вами в ближайшее время',
     'Send'=>'Отправить',
 
