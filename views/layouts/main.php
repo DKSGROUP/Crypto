@@ -110,46 +110,39 @@ AppAsset::register($this);
 <footer class="footer" style="width: 100%; background-color: #000000; margin-top: 25px; padding: 10px;">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-            <div class="col-md-1 col-sm-4 col-xs-1">
+            <div class="col-1 text-sm-center">
                 <div class="left">
                 <?php
                 echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"logo-footer\" style=\"width: 80px; display: flex; vertical-align: middle;\">";
                 ?>
                 </div>
-
-
-            <?php
-                echo Button::widget([
-                        'label' => ' ',
-                        'options'=>['class' => 'btn',
-                            'style' => 'width : 37px; height: 37px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/telegram.png) center center no-repeat; background-size : 100%;',
-                            ],
-                ]);
-
-                ?>
-
-                <?php
-                echo Button::widget([
-                'label' => ' ',
-                'options'=>['class' => 'btn', 'style' => 'width : 37px; height: 37px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/vk.png) center center no-repeat;background-size : 100%;'],
-                ]);
-                ?>
-                <?php
-                echo Button::widget([
-                'label' => ' ',
-                'options'=>['class' => 'btn', 'style' => 'width : 37px; height: 37px; border-radius: 50%; margin: 0 3px; background: #123 url(../img/footer/facebook.png) center center no-repeat;background-size : 100%;'],
-                ]);
-                ?>
-                <?php
-                echo Button::widget([
-                'label' => ' ',
-                'options'=>['class' => 'btn', 'style' => 'width : 37px; height: 37px; border-radius: 50%; margin-left: 3px; background: #123 url(../img/footer/instagram.png) center center no-repeat;background-size : 100%;'],
-                ]);
-                ?>
             </div>
+                <div class="col-11 pull-right text-sm-center">
+                <a href="#">
+                    <?php
+                    echo "<img src=\"../img/footer/telegram.png\"; class=\"telegram\" style=\"width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;\">"
+                    ?>
+                </a>
+                <a href="#">
+                    <?php
+                    echo "<img src=\"../img/footer/vk.png\"; class=\"vk\" style=\"width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;\">"
+                    ?>
+                </a>
+                <a href="#">
+                    <?php
+                    echo "<img src=\"../img/footer/facebook.png\"; class=\"facebook\" style=\"width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;\">"
+                    ?>
+                </a>
+
+                <a href="#">
+                    <?php
+                    echo "<img src=\"../img/footer/instagram.png\"; class=\"instagram\" style=\"width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;\">"
+                    ?>
+                </a>
+
+
             </div>
-            </div>
+        </div>
 
 
     </div>
