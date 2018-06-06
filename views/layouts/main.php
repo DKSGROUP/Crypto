@@ -47,7 +47,7 @@ AppAsset::register($this);
 
         </section>
 
-        <div class="navigation-top fixed-top">
+        < class="navigation-top fixed-top">
     <?php
 
 
@@ -67,7 +67,7 @@ AppAsset::register($this);
         ]
     ]);
     echo Nav::widget([
-        'options' => ['class' => ' navbar navbar-expand-lg navbar-nav collapse nav-wid float-left','id'=>'navigation',
+        'options' => ['class' => 'col-sm-12 col-md-7 ml-md-auto navbar navbar-expand-lg navbar-nav collapse nav-wid float-left','id'=>'navigation',
             'style' => 'margin: 0 auto;'],
         'items' => array(
             array('label' => Yii::t('app', 'About us'), 'url' => ('#content')),
@@ -78,10 +78,10 @@ AppAsset::register($this);
             array('label' => Yii::t('app', 'News'), 'url' => ('#news')),
         )]);
 ?>
-<div class="navbar-text pull-right ">
+
     <?php
     echo MultiLang::widget([
-        'cssClass'=>'pull-right language'
+        'cssClass'=>'col-sm-12 col-md-3 pull-right navbar-nav navbar navbar-expand-lg language'
     ]);
 
         echo Button::widget([
@@ -92,8 +92,6 @@ AppAsset::register($this);
         ]);
     ?>
 
-
-</div>
         <?php
     NavBar::end();
     ?>
