@@ -44,11 +44,11 @@ return[
     'Premium' => 'Преміум',
     'from 5000$' => 'від 5000$',
 
-    'Business - API' => 'Бізнес - API',
+    'Business-API' => 'Бізнес - API',
     'from 2000$' => 'від 2000$',
 
 
-    'Exlusive - API' => 'Ексклюзив - API',
+    'Exclusive-API' => 'Ексклюзив - API',
     'from 15000$' => 'від 15000$',
     'by agreement' => 'за домовленістю',
 

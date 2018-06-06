@@ -262,10 +262,10 @@ TO DO:
                         <div class="card-header  start">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-6 text-nowrap">
                                         <h1 style="font-size: 16px;"><?=Yii::t('app','Starter')?></h1>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 text-nowrap">
                                         <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','from 50$')?></h1>
                                     </div>
                                 </div>
@@ -322,10 +322,10 @@ TO DO:
                         <div class="card-header  start">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-7">
+                                    <div class="col-6 text-nowrap">
                                         <h1 style="font-size: 16px;"><?=Yii::t('app','Standard')?></h1>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col-6 text-nowrap">
                                         <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','up to 1000$')?></h1>
                                     </div>
                                 </div>
@@ -380,10 +380,10 @@ TO DO:
                         <div class="card-header  pro-card">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-7">
+                                    <div class="col-6 text-nowrap">
                                         <h1 style="font-size: 16px;"><?=Yii::t('app','Optimal')?></h1>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col-6 text-nowrap">
                                         <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','from 1000$')?></h1>
                                     </div>
                                 </div>
@@ -440,10 +440,10 @@ TO DO:
                         <div class="card-header  pro-card">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-7">
+                                    <div class="col-6 text-nowrap">
                                         <h1 style="font-size: 16px;"><?=Yii::t('app','Advanced')?></h1>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col-6 text-nowrap">
                                         <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','from 3000$')?></h1>
                                     </div>
                                 </div>
@@ -498,10 +498,10 @@ TO DO:
                         <div class="card-header  pro-card">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-7">
+                                    <div class="col-6 text-nowrap">
                                         <h1 style="font-size: 16px;"><?=Yii::t('app','Premium')?></h1>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col-6 text-nowrap">
                                         <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','from 5000$')?></h1>
                                     </div>
                                 </div>
@@ -556,10 +556,10 @@ TO DO:
                         <div class="card-header  start">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-7">
+                                    <div class="col-6 text-nowrap">
                                         <h1 style="font-size: 16px;"><?=Yii::t('app','Business-API')?></h1>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col-6 text-nowrap">
                                         <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','from 2000$')?></h1>
                                     </div>
                                 </div>
@@ -608,16 +608,16 @@ TO DO:
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-12 d-sm-flex justify-content-sm-center">
-                    <!--Exlusive-API-->
+                    <!--Exclusive-API-->
                     <div class="card start-grow">
                         <div class="card-header  start">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-6">
-                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Exlusive-API')?></h1>
+                                    <div class="col-6 text-nowrap">
+                                        <h1 style="font-size: 18px;"><?=Yii::t('app','Exclusive-API')?></h1>
                                     </div>
-                                    <div class="col-6">
-                                        <h1 class="text-right"style="font-size: 18px;" ><?=Yii::t('app','from 15000$')?></h1>
+                                    <div class="col-6 text-nowrap">
+                                        <h1 class="text-right"style="font-size: 16px;" ><?=Yii::t('app','from 15000$')?></h1>
                                     </div>
                                 </div>
                             </div>

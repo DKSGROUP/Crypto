@@ -44,10 +44,10 @@ return[
     'Premium'=>'Премиум',
     'from 5000$'=>'от 5000$',
 
-    'Business - API'=>'Бизнес - API',
+    'Business-API'=>'Бизнес - API',
     'from 2000$'=>'от 2000$',
 
-    'Exlusive - API'=>'Эксклюзив - API',
+    'Exclusive-API'=>'Эксклюзив - API',
     'from 15000$'=>'от 15000$',
     'by agreement'=>'по договоренности',
 
