@@ -75,8 +75,8 @@ TO DO:
                     <?php
                     echo Button::widget([
                         'label' => Yii::t('app','Invest'),
-                        'options' => ['class' => 'btn  btn-success wow pulse animated', 'style' => 'pointer-events: all;  width: 152px;
-                        height: 33px; font-size: 14px; text-align: center; padding:0; visibility: visible; animation-duration: 2s;
+                        'options' => ['class' => 'btn  btn-success wow pulse animated', 'style' => 'margin-top: 20px;pointer-events: all;  width: 230px;
+                        height: 55px; font-size: 20px; text-align: center; padding:0; visibility: visible; animation-duration: 2s;
                         animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse; border: none; background: linear-gradient(#048949, #05AA5B) !important;',
                             'data-wow-delay' =>'300ms', 'data-wow-iteration' => 'infinite', 'data-wow-duration'=>'2s',
                             "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
