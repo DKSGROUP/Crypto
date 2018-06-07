@@ -128,7 +128,7 @@ return[
     'Your message...'=>'Ваше сообщение...',
     'Write to us'=>'Напишите нам',
     'Message sent'=>'Сообщение отправлено',
-    'Want to buy Gram?'=>'Хотите купить GRAM?',
+    'Want to buy GRAM?'=>'Хотите купить GRAM?',
     'Write your e-mail and we will get back to you soon as possible'=>'Напишите ваш e-mail и мы свяжемся с Вами в ближайшее время',
     'Send'=>'Отправить',
 

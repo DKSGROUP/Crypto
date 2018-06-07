@@ -1788,7 +1788,7 @@ TO DO:
                 <div class="gram container-fluid d-flex flex-column justify-content-center align-items-center">
 
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p><?=Yii::t('app','Want to buy Gram?')?></p>
+                        <p><?=Yii::t('app','Want to buy GRAM?')?></p>
                         <p style="margin-top: -10px"><?=Yii::t('app','Write your e-mail and we will get back to you soon as possible')?></p>
                     </div>
 
@@ -1843,7 +1843,7 @@ TO DO:
                 <div class="gramSent container-fluid d-flex flex-column justify-content-center align-items-center">
 
                     <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p><?=Yii::t('app','Want to buy Gram?')?></p>
+                        <p><?=Yii::t('app','Want to buy GRAM?')?></p>
                         <p style="margin-top: -10px"><?=Yii::t('app','Write your e-mail and we will get back to you soon as possible')?></p>
                     </div>
 
