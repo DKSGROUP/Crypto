@@ -1995,12 +1995,12 @@ TO DO:
 
                         <div class="container" style="position: relative;">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6" style="position: absolute; top: 50px; font-size: 16px; line-height: 19px;">
+                                <div id="chart2-text" class="col-lg-6 col-md-6 col-sm-6" style="top: 50px; font-size: 16px; line-height: 19px;">
                                     <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
                                 </div>
                                 <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
                                 <div class="col-md-12">
-                                    <div class="chart-container" id="chart2">
+                                    <div class="chart-container">
                                     <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
                                     </div>
                                 </div>
