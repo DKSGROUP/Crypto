@@ -327,8 +327,8 @@ table{
     z-index: 101;
     bottom: 0px;
     left: 0px;
-    height: 300px;
-    width: 170px;
+    height: 290px;
+    width: 180px;
     align-items: center;
     background: url(../img/banner/ban.png) no-repeat;
     margin-right: -100%;
@@ -337,6 +337,7 @@ table{
 }
 
 .butt{
+
     width: 160px !important;
 }
 .button-baner{
@@ -344,7 +345,7 @@ table{
 }
 .elipse{
     margin: 12% 0 20% 0;
-    width: 110px;
+    width: 100px;
 }
 @media (min-width: 768px) {
     .carousel-control-next{
