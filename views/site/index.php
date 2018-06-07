@@ -242,8 +242,8 @@ TO DO:
         </script>";
         ?>
     </section>
+    <div id="products"><a name="products" href="#products"></a></div>
     <section class="invest-packages " style="z-index: 3;">
-        <div id="products"><a name="products" href="#products"></a></div>
         <!--Invest packages
 
         Status: -
