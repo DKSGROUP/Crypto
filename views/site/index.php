@@ -1413,7 +1413,7 @@ TO DO:
 
         <!--Modal SIGN UP-->
         <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-signup modal-dialog-centered" style="transform: translate(0, -50%);top: 50%;margin: 0 auto;" role="document">
+            <div class="modal-dialog modal-signup modal-dialog-centered" style="transform: translate(0, -45%);top: 50%;margin: 0 auto;" role="document">
                 <div class="modal-content">
                     <?php
                     echo"<style>
@@ -1452,6 +1452,11 @@ TO DO:
                     }</style>"
                     ?>
                     <div class="signup container-fluid d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-12">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
                         <?php
                         echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"img-fluid mt-4\">";
                         ?>
@@ -1509,6 +1514,11 @@ TO DO:
                     </style>"
                     ?>
                     <div class="signin container-fluid d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-12">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
                       <?php
                         echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"img-fluid mt-4\">";
                        ?>
