@@ -46,29 +46,28 @@ AppAsset::register($this);
             ?>
 
         </section>
-    <div class="'container-fluid">
         <div class="navigation-top fixed-top">
-    <?php
-
-
-    Yii::$app->user->isGuest ? (
+            <div class="container-fluid">
+    <?php    Yii::$app->user->isGuest ? (
                 $endDiv = Yii::t('app','User Account')
             ) : (
                 $endDiv = Yii::$app->user->identity->username
             );
+
 
     NavBar::begin([
         'brandLabel' => '<img src="../img/logo/logo-SCI.png"; class="logo">',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar navbar-expand-lg',
-            'style' => 'background-color: inherit;'
+            'style' => 'background-color: inherit; position: absolut; right: 0;'
 
         ]
     ]);
+
     echo Nav::widget([
-        'options' => ['class' => 'col-sm-12 col-md-9 navbar navbar-expand-lg navbar-nav collapse nav-wid text-center','id'=>'navigation',
-            'style' => ' font-size: 15px; display: flex;    justify-content: center;'],
+        'options' => ['class' => ' col-sm-12 col-md-9 navbar navbar-expand-lg navbar-nav collapse nav-wid text-center','id'=>'navigation',
+            'style' => ' font-size: 15px; '],
         'items' => array(
             array('label' => Yii::t('app', 'About us'), 'url' => ('#content')),
             array('label' => Yii::t('app', 'Products'), 'url' => ('#products')),
@@ -79,7 +78,7 @@ AppAsset::register($this);
             array('label' => Yii::t('app', 'Cooperation'), 'url' => ('#cooperation')),
         )]);
 ?>
-<div class="text-nowrap" style="text-align: center;">
+<div class="col-md-3 text-lg-right text-nowrap" style="text-align: center;">
     <?php
     echo MultiLang::widget([
         'cssClass'=>'col-sm-12 col-md-8 text-center navbar-nav navbar navbar-expand-lg language  '
