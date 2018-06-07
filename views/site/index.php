@@ -289,7 +289,7 @@ TO DO:
                                         45/55
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6  text-center">
+                                    <div class="col-12 col-sm-6  text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -299,7 +299,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6 text-center">
+                                    <div class="col-12 col-sm-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' =>Yii::t('app','Invest'),
@@ -349,7 +349,7 @@ TO DO:
                                         50/50
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6 text-center ">
+                                    <div class="col-12 col-sm-6 text-center ">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -359,7 +359,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6 text-center">
+                                    <div class="col-12 col-sm-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -407,7 +407,7 @@ TO DO:
                                         55/45
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6 text-center">
+                                    <div class="col-12 col-sm-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -417,7 +417,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6 text-center">
+                                    <div class="col-12 col-sm-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -467,7 +467,7 @@ TO DO:
                                         60/40
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6   text-center">
+                                    <div class="col-12 col-sm-6   text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -477,7 +477,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6 text-center">
+                                    <div class="col-12 col-sm-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -523,7 +523,7 @@ TO DO:
                                         55/45
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6  text-center">
+                                    <div class="col-12 col-sm-6  text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -533,7 +533,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6 text-center">
+                                    <div class="col-12 col-sm-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -583,7 +583,7 @@ TO DO:
                                         50/50
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6 text-center">
+                                    <div class="col-12 col-sm-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -593,7 +593,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6 text-center">
+                                    <div class="col-12 col-sm-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
@@ -638,7 +638,7 @@ TO DO:
                                         <?=Yii::t('app','by agreement')?>
                                     </div>
                                     <!--buttons-->
-                                    <div class="col-6 text-center">
+                                    <div class="col-12 col-sm-6 text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','More'),
@@ -648,7 +648,7 @@ TO DO:
                                         ]);
                                         ?></td>
                                     </div>
-                                    <div class="col-6  text-center">
+                                    <div class="col-12 col-sm-6  text-center">
                                         <?php
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
