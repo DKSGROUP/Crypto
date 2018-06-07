@@ -2366,11 +2366,11 @@ TO DO:
         </div>
         <div class="col-md-12">
             <div class="form-group">
-                <input type="text" class="form-control" id="usr" placeholder="Name" style=" width: 50%; margin: 15px auto;">
+                <input type="text" class="form-control" id="usr" placeholder="Name" style=" width: 65%; margin: 15px auto;">
 
-                <input type="text" class="form-control" id="pwd" placeholder="Email" style=" width: 50%; margin: 15px auto;">
+                <input type="text" class="form-control" id="pwd" placeholder="Email" style=" width: 65%; margin: 15px auto;">
 
-                <textarea class="form-control" rows="5" id="comment" placeholder="Write your message here..." style=" width: 50%; margin: 15px auto;"></textarea>
+                <textarea class="form-control" rows="5" id="comment" placeholder="Write your message here..." style=" width: 65%; margin: 15px auto;"></textarea>
                 <div class="col-12 text-center">
                     <?php
                     echo Button::widget([
