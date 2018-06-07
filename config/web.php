@@ -49,6 +49,10 @@ $config = [
         'urlManager' => [
             'class'=> 'codemix\localeurls\UrlManager',
             'languages'=>['ru','en','ua'],
+            'showScriptName' => false, //отключаем r=routes
+            //запретить стандартные URL если не соответствует правилам класса
+            'enableStrictParsing' => true,
+            'enablePrettyUrl' => true,
             'enableDefaultLanguageUrlCode'=>true,
             'enableLanguagePersistence' => false,
             'rules' => [
