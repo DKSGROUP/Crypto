@@ -76,7 +76,7 @@ TO DO:
                     echo Button::widget([
                         'label' => Yii::t('app','Invest'),
                         'options' => ['class' => 'btn  btn-success wow pulse animated', 'style' => 'margin-top: 20px;pointer-events: all;  width: 230px;
-                        height: 55px; font-size: 20px; text-align: center; padding:0; visibility: visible; animation-duration: 2s;
+                        height: 55px; font-size: 24px; text-align: center; padding:0; visibility: visible; animation-duration: 2s;
                         animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse; border: none; background: linear-gradient(#048949, #05AA5B) !important;',
                             'data-wow-delay' =>'300ms', 'data-wow-iteration' => 'infinite', 'data-wow-duration'=>'2s',
                             "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
@@ -154,11 +154,11 @@ TO DO:
 
                 var gradientFill = ctxL.createLinearGradient(0, 410, 0, 0);
                 gradientFill.addColorStop(1, \"rgba(7,115,62, 1)\");
-                gradientFill.addColorStop(0, \"rgba(11,21,42, 0.4)\");
+                gradientFill.addColorStop(0, \"rgba(9,18,37, 0.4)\");
 
                 var gradientFill1 = ctxL.createLinearGradient(0, 410, 0, 0);
                 gradientFill1.addColorStop(1, \"rgba(7,115,62, 1)\");
-                gradientFill1.addColorStop(0, \"rgba(11,21,42, 0.8)\");
+                gradientFill1.addColorStop(0, \"rgba(9,18,37, 0.8)\");
 
 
                 var myLineChart = new Chart(ctxL, {
@@ -242,6 +242,9 @@ TO DO:
         </script>";
         ?>
     </section>
+    <img class="poligon animated wow bounce" src="../img/main/Polygon.png" style="animation-duration: 3s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: bounce;
+position: absolute; right: 50%; bottom: 20px;">
+
     <div id="products"><a name="products" href="#products"></a></div>
     <section class="invest-packages " style="z-index: 3;">
         <!--Invest packages
