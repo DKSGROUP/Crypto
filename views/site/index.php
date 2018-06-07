@@ -2000,7 +2000,7 @@ TO DO:
                                 </div>
                                 <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
                                 <div class="col-md-12">
-                                    <div class="chart-container chart2" style="@media (max-width: 576px) {.chart2 {margin-top: 120px;}}">
+                                    <div class="chart-container" id="chart2">
                                     <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
                                     </div>
                                 </div>
