@@ -242,7 +242,7 @@ TO DO:
         </script>";
         ?>
     </section>
-    <img class="poligon animated wow bounce" src="../img/main/Polygon.png" style="animation-duration: 3s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: bounce;
+    <img class="poligon animated wow bounce d-none d-md-block" src="../img/main/Polygon.png" style="animation-duration: 3s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: bounce;
 position: absolute; right: 50%; bottom: 20px;">
 
     <div id="products"><a name="products" href="#products"></a></div>
