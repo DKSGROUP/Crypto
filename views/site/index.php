@@ -2363,17 +2363,17 @@ position: absolute; right: 50%; bottom: 20px;">
         </div>
         <div class="col-12 text-center">
             <p>
-                <?=Yii::t('app','On all questions of cooperation address on our e-mail:')?>
+                <?=Yii::t('app','On all questions of cooperation address on our e-mail: ')?>
             </p>
 
         </div>
         <div class="col-md-12">
             <div class="form-group">
-                <input type="text" class="form-control" id="usr" placeholder="Name" style=" width: 65%; margin: 15px auto;">
+                <input type="text" class="form-control" id="usr" placeholder=<?=Yii::t('app','Name')?> style=" width: 65%; margin: 15px auto;">
 
                 <input type="text" class="form-control" id="pwd" placeholder="Email" style=" width: 65%; margin: 15px auto;">
 
-                <textarea class="form-control" rows="5" id="comment" placeholder="Write your message here..." style=" width: 65%; margin: 15px auto;"></textarea>
+                <textarea class="form-control" rows="5" id="comment" placeholder=<?=Yii::t('app','Write your message here...')?> style=" width: 65%; margin: 15px auto;"></textarea>
                 <div class="col-12 text-center">
                     <?php
                     echo Button::widget([

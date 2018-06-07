@@ -126,7 +126,8 @@ return[
 
 
     'On all questions of cooperation address on our e-mail: ' => 'По всім питанням щодо співпраці чи роботи - пишіть нам на пошту:',
-
+    'Write your message here...'=>'Напишіть своє повідомлення тут...',
+    'Name'=>'Ім\'я',
     'Username' => 'Логін',
     'Password' => 'Пароль',
     'Username*' => 'Логін*',

@@ -111,6 +111,8 @@ return[
     'You can buy '=>'У нас можно купить ',
     'Buy'=>'Купить',
 
+    'Name'=>'Имя',
+    'Write your message here...'=>'Напишите свое сообщение здесь...',
     'Username' => 'Логин',
     'Password' => 'Пароль',
     'Username*' => 'Логин*',
