@@ -2351,4 +2351,40 @@ TO DO:
             </div>
         </div>
     </section>
+
+
+    <div id="cooperation"><a name="cooperation" href="#cooperation"></a></div>
+    <section class="cooperation  animated wow fadeIn">
+        <div class="cooperation-caption text-center" style="padding-bottom: 30px;" >
+            <span style="font-size: 22px;"><?=Yii::t('app', 'Cooperation')?></span>
+        </div>
+        <div class="col-12 text-center">
+            <p>
+                <?=Yii::t('app','On all questions of cooperation address on our e-mail:')?>
+            </p>
+
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <input type="text" class="form-control" id="usr" placeholder="Name" style=" width: 50%; margin: 15px auto;">
+
+                <input type="text" class="form-control" id="pwd" placeholder="Email" style=" width: 50%; margin: 15px auto;">
+
+                <textarea class="form-control" rows="5" id="comment" placeholder="Write your message here..." style=" width: 50%; margin: 15px auto;"></textarea>
+                <div class="col-12 text-center">
+                    <?php
+                    echo Button::widget([
+                        'label' => Yii::t('app','Send'),
+                        'options' => ['class' => 'btn btn-outline-success text-center info',
+                            "data-toggle"=>"modal", "data-target"=>"#ModalInfoOptimal",
+                            'style' => 'color:white; border-color:#31C37D;'],
+                    ]);
+                    ?></td>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
 </div>

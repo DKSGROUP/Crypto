@@ -12,6 +12,7 @@ return[
     'Reporting' => 'Звітність',
     'Questions' => 'Питання',
     'News' => 'Новини',
+    'Cooperation' => 'Співпраця',
     'User Account' => 'Особистий кабінет',
 
     ' - the best way to invest into cryptocurrencies' => ' - найкращий спосіб інвестувати в криптовалюту',
@@ -124,7 +125,7 @@ return[
     'Buy' => 'Купити',
 
 
-
+    'On all questions of cooperation address on our e-mail: ' => 'По всім питанням щодо співпраці чи роботи - пишіть нам на пошту:',
 
     'Username' => 'Логін',
     'Password' => 'Пароль',

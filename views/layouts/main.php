@@ -46,7 +46,7 @@ AppAsset::register($this);
             ?>
 
         </section>
-
+    <div class="'container-fluid">
         <div class="navigation-top fixed-top">
     <?php
 
@@ -67,8 +67,8 @@ AppAsset::register($this);
         ]
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'col-sm-12 col-md-8 navbar navbar-expand-lg navbar-nav collapse nav-wid ','id'=>'navigation',
-            'style' => 'margin: 0 auto;padding-left: 30px;'],
+        'options' => ['class' => 'col-sm-12 col-md-9 navbar navbar-expand-lg navbar-nav collapse nav-wid text-center','id'=>'navigation',
+            'style' => ' font-size: 15px; display: flex;    justify-content: center;'],
         'items' => array(
             array('label' => Yii::t('app', 'About us'), 'url' => ('#content')),
             array('label' => Yii::t('app', 'Products'), 'url' => ('#products')),
@@ -76,12 +76,13 @@ AppAsset::register($this);
             array('label' =>  Yii::t('app', 'Reporting'), 'url' => ('#reporting')),
             array('label' => Yii::t('app', 'Questions'), 'url' => ('#questions')),
             array('label' => Yii::t('app', 'News'), 'url' => ('#news')),
+            array('label' => Yii::t('app', 'Cooperation'), 'url' => ('#cooperation')),
         )]);
 ?>
-<div style="text-align: center;">
+<div class="text-nowrap" style="text-align: center;">
     <?php
     echo MultiLang::widget([
-        'cssClass'=>'col-sm-12 col-md-8 text-center navbar-nav navbar navbar-expand-lg language'
+        'cssClass'=>'col-sm-12 col-md-8 text-center navbar-nav navbar navbar-expand-lg language  '
     ]);
 
         echo Button::widget([
@@ -96,6 +97,7 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
+    </div>
     </div>
     </header>
 <div class="wrap">
