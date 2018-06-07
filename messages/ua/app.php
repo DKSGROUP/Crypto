@@ -143,7 +143,7 @@ return[
     'Your message...'=>'Ваше повідомлення...',
     'Write to us'=>'Напишіть нам',
     'Message sent'=>'Повідомлення відправлено',
-    'Want to buy GRAM?'=>'Бажаєте придбати GRAM?',
+    'Want to buy Gram?'=>'Бажаєте придбати GRAM?',
     'Write your e-mail and we will get back to you soon as possible'=>'Напишіть Ваш e-mail і ми зв\'яжемося з Вами найближчим часом',
     'Send'=>'Відправити',
 
