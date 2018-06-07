@@ -199,6 +199,7 @@ table{
 
 }
 .info{
+    padding: 0;
     /*width: 147px;*/
     height: 33px;
     /*padding: 15px 0;*/
