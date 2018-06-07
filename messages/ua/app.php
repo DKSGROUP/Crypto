@@ -15,7 +15,7 @@ return[
     'User Account' => 'Особистий кабінет',
 
     ' - the best way to invest into cryptocurrencies' => ' - найкращий спосіб інвестувати в криптовалюту',
-    'Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks' => 'Наша система автоматизованого трейдингу дозволяє виробляти прибуткові трейдингові операції за декілька кліків',
+    'Our automated crypto-trading system allows you to accomplish profitable financial operations in a few clicks' => 'Наша система автоматизованого трейдингу дозволяє здійснювати прибуткові трейдингові операції за декілька кліків',
     'Invest' => 'Інвестувати',
 
     'Create account' => 'Реєструйся',
