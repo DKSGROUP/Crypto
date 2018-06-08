@@ -125,7 +125,7 @@ return[
     'Buy' => 'Купити',
 
 
-    'On all questions of cooperation address on our e-mail: ' => 'По всім питанням щодо співпраці чи роботи - пишіть нам на пошту:',
+    'On all questions of cooperation address on our e-mail: ' => 'По всім питанням щодо співпраці чи роботи - пишіть нам на e-mail:',
     'Write your message here...'=>'Напишіть своє повідомлення тут...',
     'Name'=>'Ім\'я',
     'Username' => 'Логін',

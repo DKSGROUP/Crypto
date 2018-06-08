@@ -153,7 +153,7 @@ return[
     'verification every week'=>'сверка каждую неделю',
     'within the platform transfer of the profit to the fund'=>'внутри платформы перевод доли прибыли фонду',
     'by agreement (individual conditions)'=>'по договоренности (индивидуальные условия)',
-    'On all questions of cooperation address on our e-mail: ' => 'По вопросам сотрудничества и работы в нашей компании пожалуйста обращайтесь к нам по э-почте:',
+    'On all questions of cooperation address on our e-mail: ' => 'По вопросам сотрудничества и работы в нашей компании пожалуйста обращайтесь к нам  на e-mail:',
     ''=>'',
     ''=>'',
     ''=>'',
