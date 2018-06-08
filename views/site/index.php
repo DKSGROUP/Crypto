@@ -35,14 +35,14 @@ TO DO:
 <div class="d-none d-lg-block">
     <aside id="aside1" class="animated fadeInLeft"  style="z-index:100000;">
 
-        <div id="closeButton1" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/banner/Group.png" style="pointer-events: all;"></div>
+        <div id="closeButton1" class="text-right" onclick="document.getElementById('aside1').style.display='none'"><img src="../img/gram/group.png" style="pointer-events: all;"></div>
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
             <div class="text-center text-white textt">
                 <h4><?=Yii::t('app','You can buy ')?><b>GRAM</b></h4>
             </div>
             <div class="text text-center">
                 <?php
-                echo"<img src=\"../img/banner/elipse.png\"; class=\"elipse\">";
+                echo"<img src=\"../img/gram/elipse.png\"; class=\"elipse\">";
                 ?>
             </div>
             <div class="butt">
