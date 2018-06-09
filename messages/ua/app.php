@@ -148,7 +148,7 @@ return[
     'Want to buy GRAM?'=>'Бажаєте придбати GRAM?',
     'Write your e-mail and we will get back to you soon as possible'=>'Напишіть Ваш e-mail і ми зв\'яжемося з Вами найближчим часом',
     'Send'=>'Відправити',
-
+    'Invest in the Future' => 'Інвестуй в майбутнє',
     'from 6 to 50%'=>'від 6 до 50%',
     'in 15 days the whole amount + %'=>'через 15 днів вся сума +%',
     'Payment to BTC wallet from bitcoin wallet, we take commission'=>'Виплата на BTC гаманець з bitcoin wallet, комісію беремо на себе',

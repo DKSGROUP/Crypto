@@ -1690,66 +1690,9 @@ position: absolute; right: 50%; bottom: 20px;">
 
                     <input class="data form-control" type="text" placeholder="E-mail*" />
                     <input class="data form-control" type="text" placeholder="Your message...">
-                    <a id="closeButton" class="btn button-question text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#haveQuestion2" data-dismiss="modal">
+                    <a id="closeButton" class="btn button-question text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#message-send" data-dismiss="modal">
                         <?=Yii::t('app','Write to us')?>
                     </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="haveQuestion2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-haveQuestion2 modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <?php
-                echo"<style>
-                    .modal-recover{
-                        max-width: 600px !important;
-                    }
-                    .question2 {
-                    background: linear-gradient(123.69deg, #0A1327 0%, #1E2842 100%);
-                    }
-                    .signup-text{
-                      margin-bottom: 40px;
-                      margin-top: 10px;
-                    }
-                    .data, .button-signup, .enter{
-                      width: 290px !important;
-                    }
-                    .data{
-                      background-color:#3B4451;
-                      border-radius: 4px;
-                      border-color: #3B4451;
-                      margin-top: 10px;
-                      margin-bottom: 10px;
-                    }
-                    .enter{
-                        margin-bottom:25px;
-                    }
-                    .button-signup{
-                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
-                    }
-                    .masedge{
-                      background-color: rgba(39, 174, 96, 0.44);
-                      padding: 2%; 5% 2% 5%;
-                      margin-bottom: 4%;
-                      border: 1px solid #27AE60;
-                      border-radius: 4px;
-                      
-
-                    }
-                    </style>"
-                ?>
-                <div class="question2 container-fluid d-flex flex-column justify-content-center align-items-center">
-
-                    <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p><?=Yii::t('app','You have questions?')?></p>
-                        <p style="margin-top: -10px"><?=Yii::t('app','Write and we will reply shortly')?></p>
-                    </div>
-
-                    <div class="masedge text-center">
-                        <p><?=Yii::t('app','Message sent')?></p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1803,7 +1746,7 @@ position: absolute; right: 50%; bottom: 20px;">
             </div>
         </div>
     </div>
-    </section>
+
     <div class="modal fade" id="gram2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-gram2 modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -1857,7 +1800,23 @@ position: absolute; right: 50%; bottom: 20px;">
             </div>
         </div>
     </div>
-    </section>
+
+    <!--Message Send-->
+    <div class="modal fade" id="message-send" tabindex="-1" role="dialog" aria-labelledby="message-send-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="height: 150px; margin: 0 auto;">
+                <div class="modal-header" style="background-color:rgb(13,22,43);border:none;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color:white;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center " style="padding : 25px; font-size: 30px; background-color:rgb(13,22,43); border:none;">
+                    <?=Yii::t('app','Message sent')?>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!--ADVANTEGES-->
 
     <section class="advnateges  animated wow fadeIn" >
@@ -2002,9 +1961,29 @@ position: absolute; right: 50%; bottom: 20px;">
                                     <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
                                 </div>
                                 <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
-                                <div class="col-md-12">
+                                <div class="col-md-8">
                                     <div class="chart-container">
                                     <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                    <div class="back" style="background-color:#111229; width: 400px; padding:20px;">
+                                        <div class="text-invest-future text-center" >
+                                            <h1 style="font-size: 18px; text-align: center;"><?=Yii::t('app','Invest in the Future')?></h1>
+                                            <form>
+                                                <input type="text" class="form-control" id="usr" required placeholder=<?=Yii::t('app','Name')?> style=" width: 100%; margin: 15px auto;">
+
+                                                <input type="text" class="form-control" id="pwd" required placeholder="Email" style=" width: 100%; margin: 15px auto;">
+
+                                                <textarea class="form-control" rows="5" id="comment" placeholder=<?=Yii::t('app','Write your message here...')?> style=" width: 100%; margin: 15px auto;"></textarea>
+                                                <?php
+                                                echo Button::widget([ 'label' => Yii::t('app','Invest'),
+                                                    'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                        "data-toggle"=>"modal", "data-target"=>"#message-send",
+                                                        'style' => 'color:white; border-color:#31C37D;'],]);
+                                                ?>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2015,9 +1994,9 @@ position: absolute; right: 50%; bottom: 20px;">
                     echo"<script language='javascript'>
                         var ctxL2 = document.getElementById(\"lineChartResult\").getContext('2d');
 
-                        var gradientFillTwo = ctxL2.createLinearGradient(0, 50, 0, 10);
-                        gradientFillTwo.addColorStop(1, \"rgba(17, 77, 49, 1)\");
-                        gradientFillTwo.addColorStop(0, \"rgba(17, 77, 49, 0.6)\");
+                        var gradientFillTwo = ctxL2.createLinearGradient(0, 0, 1000, 0);
+                        gradientFillTwo.addColorStop(0, \"rgba(17, 77, 49, 1)\");
+                        gradientFillTwo.addColorStop(1, \"rgba(10,19,39, 0)\");
 
                         var myNewLineChart = new Chart(ctxL2, {
 					            type: 'line',
@@ -2369,9 +2348,10 @@ position: absolute; right: 50%; bottom: 20px;">
         </div>
         <div class="col-md-12">
             <div class="form-group">
-                <input type="text" class="form-control" id="usr" placeholder=<?=Yii::t('app','Name')?> style=" width: 65%; margin: 15px auto;">
 
-                <input type="text" class="form-control" id="pwd" placeholder="Email" style=" width: 65%; margin: 15px auto;">
+                <input type="text" class="form-control" id="usr" required="s;kbdn;sdjbh;slbns;fbn" placeholder=<?=Yii::t('app','Name')?> style=" width: 65%; margin: 15px auto;">
+
+                <input type="text" class="form-control" id="pwd" required placeholder="Email" style=" width: 65%; margin: 15px auto;">
 
                 <textarea class="form-control" rows="5" id="comment" placeholder=<?=Yii::t('app','Write your message here...')?> style=" width: 65%; margin: 15px auto;"></textarea>
                 <div class="col-12 text-center">
@@ -2379,11 +2359,12 @@ position: absolute; right: 50%; bottom: 20px;">
                     echo Button::widget([
                         'label' => Yii::t('app','Send'),
                         'options' => ['class' => 'btn btn-outline-success text-center info',
-                            "data-toggle"=>"modal", "data-target"=>"#ModalInfoOptimal",
+                            "data-toggle"=>"modal", "data-target"=>"#message-send",
                             'style' => 'color:white; border-color:#31C37D;'],
                     ]);
-                    ?></td>
+                    ?>
                 </div>
+                </form>
 
 
             </div>
