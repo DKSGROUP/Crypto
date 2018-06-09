@@ -1468,7 +1468,7 @@ position: absolute; right: 50%; bottom: 20px;">
                         </div>
                         <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Username*')?>  />
                         <input class="data form-control" type="text" placeholder="E-mail*" />
-                        <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Password*')?> />
+                        <input class="data form-control" type="password" placeholder=<?=Yii::t('app','Password*')?> />
 
                         <a id="buttonInModal" class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
                             <?=Yii::t('app','Sign up')?>
@@ -1529,7 +1529,7 @@ position: absolute; right: 50%; bottom: 20px;">
                         <p class="signin-text">Smart Crypto Invest</p>
                       </div>
                       <input class="data form-control" type="text" placeholder="E-mail" />
-                      <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Password')?> />
+                      <input class="data form-control" type="password" placeholder=<?=Yii::t('app','Password')?> />
 
                       <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
                       <a id="buttonInModal" class="btn button-signin text-white" href="#">
@@ -1689,7 +1689,9 @@ position: absolute; right: 50%; bottom: 20px;">
                     </div>
 
                     <input class="data form-control" type="text" placeholder="E-mail*" />
-                    <input class="data form-control" type="text" placeholder="Your message...">
+                    <textarea class="form-control" rows="5" style="width: 290px !important;background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;"  placeholder=<?=Yii::t('app','Write your message here...')?> ></textarea>
+
+
                     <a id="closeButton" class="btn button-question text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#message-send" data-dismiss="modal">
                         <?=Yii::t('app','Write to us')?>
                     </a>
@@ -1971,11 +1973,11 @@ position: absolute; right: 50%; bottom: 20px;">
                                         <div class="text-invest-future text-center" >
                                             <h1 style="font-size: 18px; text-align: center;"><?=Yii::t('app','Invest in the Future')?></h1>
                                             <form>
-                                                <input type="text" class="form-control" id="usr" required placeholder=<?=Yii::t('app','Name')?> style=" width: 100%; margin: 15px auto;">
+                                                <input type="text" class="form-control"  required placeholder=<?=Yii::t('app','Name')?> style=" width: 100%; margin: 15px auto;">
 
-                                                <input type="text" class="form-control" id="pwd" required placeholder="Email" style=" width: 100%; margin: 15px auto;">
+                                                <input type="text" class="form-control"  required placeholder="Email" style=" width: 100%; margin: 15px auto;">
 
-                                                <textarea class="form-control" rows="5" id="comment" placeholder=<?=Yii::t('app','Write your message here...')?> style=" width: 100%; margin: 15px auto;"></textarea>
+                                                <textarea class="form-control" rows="5"  style="background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;" placeholder=<?=Yii::t('app','Write your message here...')?> style=" width: 100%; margin: 15px auto;"></textarea>
                                                 <?php
                                                 echo Button::widget([ 'label' => Yii::t('app','Invest'),
                                                     'options' => ['class' => 'btn btn-outline-success text-center info',
@@ -2349,11 +2351,11 @@ position: absolute; right: 50%; bottom: 20px;">
         <div class="col-md-12">
             <div class="form-group">
 
-                <input type="text" class="form-control" id="usr" required="s;kbdn;sdjbh;slbns;fbn" placeholder=<?=Yii::t('app','Name')?> style=" width: 65%; margin: 15px auto;">
+                <input type="text" class="form-control"  required="s;kbdn;sdjbh;slbns;fbn" placeholder=<?=Yii::t('app','Name')?> style=" width: 65%; margin: 15px auto;">
 
-                <input type="text" class="form-control" id="pwd" required placeholder="Email" style=" width: 65%; margin: 15px auto;">
+                <input type="text" class="form-control"  required placeholder="Email" style=" width: 65%; margin: 15px auto;">
 
-                <textarea class="form-control" rows="5" id="comment" placeholder=<?=Yii::t('app','Write your message here...')?> style=" width: 65%; margin: 15px auto;"></textarea>
+                <textarea class="form-control" rows="5" style="background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;"  placeholder=<?=Yii::t('app','Write your message here...')?> ></textarea>
                 <div class="col-12 text-center">
                     <?php
                     echo Button::widget([
