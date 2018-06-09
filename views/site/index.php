@@ -1957,7 +1957,7 @@ position: absolute; right: 50%; bottom: 20px;">
 
                         <div class="container" style="position: relative;">
                             <div class="row">
-                                <div id="chart2-text" class="col-lg-6 col-md-6 col-sm-6" style="top: 50px; font-size: 16px; line-height: 19px;">
+                                <div id="chart2-text" class="col-lg-6 col-md-6 col-sm-7" style="top: 50px; font-size: 16px; line-height: 19px;">
                                     <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
                                 </div>
                                 <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
@@ -2012,7 +2012,7 @@ position: absolute; right: 50%; bottom: 20px;">
 					                        pointStrokeColor: \"#00ff87\",
 					                        pointHighlightFill: \"#00ff87\",
 					                        pointHighlightStroke: \"rgba(0, 255, 135,1)\",
-					                        data: [0,40,30,60,75,55,100,120,144.5],
+					                        data: [0,40,30,60,75,55,85,110,144.5],
                                             pointBackgroundColor: \"#00ff87\",
                                             pointHoverBackgroundColor: \"#00ff87\",
                                             pointHoverBorderColor: \"#00ff87\",
