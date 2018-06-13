@@ -1449,7 +1449,8 @@ position: absolute; right: 50%; bottom: 20px;">
                         height:570px !important;
                     }
                     .signup{
-                      background-image: url(../img/signin/signin_bg.png);
+                    background: url(../img/signin/signin_bg.png) no-repeat top center #112229;
+                      background-size: 115%;
                     }
                     .signup-text{
                       margin-bottom: 40px;
@@ -1519,7 +1520,8 @@ position: absolute; right: 50%; bottom: 20px;">
                         height:570px !important;
                     }
                     .signin{
-                      background-image: url(../img/signin/signin_bg.png);
+                      background: url(../img/signin/signin_bg.png) no-repeat top center #112229;
+                      background-size: 115%;
                     }
                     .signin-text{
                       margin-bottom: 40px;
@@ -1555,7 +1557,6 @@ position: absolute; right: 50%; bottom: 20px;">
                         <input class="data form-control" type="text" placeholder="E-mail" />
                         <input class="data form-control" type="password" placeholder=<?=Yii::t('app','Password')?> />
 
-                        <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
                         <a id="buttonInModal" class="btn button-signin text-white" href="#">
                             <?=Yii::t('app','Sign in')?>
                         </a>

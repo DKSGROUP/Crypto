@@ -119,26 +119,9 @@ AppAsset::register($this);
                 </div>
             </div>
                 <div class="col-8 d-flex justify-content-end">
-                <a href="#">
-                    <?php
-                    echo "<img src=\"../img/footer/telegram.png\"; class=\"telegram\" style=\"width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;\">"
-                    ?>
+                <a href="https://t.me/SCI_Crypto_NEWS" target="_blank"><img src="../img/footer/telegram.png"; class="telegram" style="width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;">
                 </a>
-                <a href="#">
-                    <?php
-                    echo "<img src=\"../img/footer/vk.png\"; class=\"vk\" style=\"width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;\">"
-                    ?>
-                </a>
-                <a href="#">
-                    <?php
-                    echo "<img src=\"../img/footer/facebook.png\"; class=\"facebook\" style=\"width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;\">"
-                    ?>
-                </a>
-
-                <a href="#">
-                    <?php
-                    echo "<img src=\"../img/footer/instagram.png\"; class=\"instagram\" style=\"width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;\">"
-                    ?>
+                <a href="https://www.instagram.com/smart.crypto.invest/" target="_blank"><img src="../img/footer/instagram.png"; class="instagram" style="width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;">
                 </a>
 
 
