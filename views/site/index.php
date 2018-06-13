@@ -49,7 +49,7 @@ echo"<script language='javascript' src='../js/Chart.min.js'></script>";
     </aside>
 </div>
 
-<div class="d-none  d-xs-block d-sm-block d-md-block d-lg-none " style="position: fixed; bottom:0; z-index:1000000;  width: 100% !important; left:0;">
+<div class="d-block d-sm-block d-lg-none " style="position: fixed; bottom:0; z-index:1000000;  width: 100% !important; left:0;">
     <aside id="aside" class="animated fadeInUp"  style="background: url(../img/gram/ban.png) no-repeat;    background-size: 100%;">
 
         <div id="closeButton1" class="text-right" onclick="document.getElementById('aside').style.display='none'"><img src="../img/gram/group.png" style="pointer-events: all;"></div>
@@ -1942,7 +1942,6 @@ position: absolute; right: 50%; bottom: 20px;">
                                         <div class="container">
                                             <div class="row d-none d-lg-block">
 
-                                                <div class="back" style="background-color:rgba(0, 255, 135,0.3); border-radius: 4px; box-shadow: 0 0 20px rgba(0, 255, 135,0.1);width: 300px; padding:15px;">
                                             <div class="col-md-4 button-in-bottom d-flex align-items-center justify-content-end " style=" position: absolute;top: 50%;right: 0;">
                                                 <div class="back" style="background-color:rgba(0, 255, 135,0.3);border-radius: 4px; box-shadow: 0 0 20px rgba(0, 255, 135,0.1);width: 300px; padding:15px;">
                                                     <div class="text-invest-future text-center" >
