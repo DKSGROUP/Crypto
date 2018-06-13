@@ -2296,7 +2296,7 @@ position: absolute; right: 50%; bottom: 20px;">
         <div class="col-md-12">
             <div class="form-group">
 
-                <input type="text" class="form-control"  required="s;kbdn;sdjbh;slbns;fbn" placeholder=<?=Yii::t('app','Name')?> style=" width: 65%; margin: 15px auto;">
+                <input type="text" class="form-control"  required placeholder="<?=Yii::t('app','Name')?>" style=" width: 65%; margin: 15px auto;">
 
                 <input type="text" class="form-control"  required placeholder="Email" style=" width: 65%; margin: 15px auto;">
 
