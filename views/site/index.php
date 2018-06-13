@@ -1647,9 +1647,9 @@ position: absolute; right: 50%; bottom: 20px;">
                 </div>
             </div>
         </div>
-    </section>
+
     <!--YOU HAVE A QUESTION-->
-    <div class="modal fade" id="haveQuestion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal fade" id="haveQuestion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-haveQuestion modal-dialog-centered" role="document">
             <div class="modal-content">
                 <?php
@@ -1692,9 +1692,11 @@ position: absolute; right: 50%; bottom: 20px;">
                     <textarea class="form-control" rows="5" style="width: 290px !important;background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;"  placeholder=<?=Yii::t('app','Write your message here...')?> ></textarea>
 
 
-                    <a id="closeButton" class="btn button-question text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#message-send" data-dismiss="modal">
+                    <a id="closeButton" class="btn button-question text-white" style="margin-bottom:40px; margin-top: 10px;" data-toggle="modal"
+                       data-target="#message-send" data-dismiss="modal">
                         <?=Yii::t('app','Write to us')?>
                     </a>
+
                 </div>
             </div>
         </div>
@@ -1741,63 +1743,9 @@ position: absolute; right: 50%; bottom: 20px;">
                     </div>
 
                     <input class="data form-control" type="text" placeholder="E-mail*" />
-                    <a id="closeButton" class="btn button-gram text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#gram2" data-dismiss="modal">
+                    <a id="closeButton" class="btn button-gram text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#message-send" data-dismiss="modal">
                         <?=Yii::t('app','Send')?>
                     </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="gram2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-gram2 modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <?php
-                echo"<style>
-                    .modal-recover{
-                        max-width: 600px !important;
-                    }
-                    .gramSent {
-                    background: linear-gradient(123.69deg, #0A1327 0%, #1E2842 100%);
-                    }
-                    .signup-text{
-                      margin-bottom: 40px;
-                      margin-top: 10px;
-                    }
-                    .data, .button-signup, .enter{
-                      width: 290px !important;
-                    }
-                    .data{
-                      background-color:#3B4451;
-                      border-radius: 4px;
-                      border-color: #3B4451;
-                      margin-top: 10px;
-                      margin-bottom: 10px;
-                    }
-                    .enter{
-                        margin-bottom:25px;
-                    }
-                    .masedge{
-                      background-color: rgba(39, 174, 96, 0.44);
-                      padding: 2%; 5% 2% 5%;
-                      margin-bottom: 4%;
-                      border: 1px solid #27AE60;
-                      border-radius: 4px;
-                    }
-                    .button-gramSent{
-                      background: linear-gradient(to bottom, #05AB5B, #05AB5B);
-                    }</style>"
-                ?>
-                <div class="gramSent container-fluid d-flex flex-column justify-content-center align-items-center">
-
-                    <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p><?=Yii::t('app','Want to buy GRAM?')?></p>
-                        <p style="margin-top: -10px"><?=Yii::t('app','Write your e-mail and we will get back to you soon as possible')?></p>
-                    </div>
-
-                    <div class="masedge text-center">
-                        <p><?=Yii::t('app','Message sent')?></p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -2182,15 +2130,13 @@ position: absolute; right: 50%; bottom: 20px;">
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <a href="#">
                     <?php
                     echo Button::widget([
                         'label' => Yii::t('app','Any questions?'),
                         'options' => ['class' => 'btn btn-success text-right',
-                        "data-toggle"=>"modal", "data-target"=>"#haveQuestion", ]
+                        "data-toggle"=>"modal", "data-target"=>"#haveQuestion",]
                     ]);
                     ?>
-                </a>
             </div>
         </div>
     </section>
