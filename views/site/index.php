@@ -1935,30 +1935,33 @@ position: absolute; right: 50%; bottom: 20px;">
                                         <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
                                     </div>
                                     <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
-                                    <div class="col-md-8">
-                                        <div class="chart-container">
+                                    <div class="col-md-12">
+                                        <div class="chart-container" >
                                             <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                                        <div class="back" style="background-color:#111229; width: 400px; padding:20px;">
-                                            <div class="text-invest-future text-center" >
-                                                <h1 style="font-size: 18px; text-align: center;"><?=Yii::t('app','Invest in the Future')?></h1>
-                                                <form>
-                                                    <input type="text" class="form-control"  required placeholder=<?=Yii::t('app','Name')?> style=" width: 100%; margin: 15px auto;">
+                                        <div class="container">
+                                            <div class="row">
 
-                                                    <input type="text" class="form-control"  required placeholder="Email" style=" width: 100%; margin: 15px auto;">
+                                            <div class="col-md-4 d-flex  align-items-center justify-content-end " style=" position: absolute;top: 50%;right: 0;">
+                                                <div class="back" style="background-color:rgba(0, 255, 135,0.3); border-radius: 4px; box-shadow: 0 0 20px rgba(0, 255, 135,0.1);width: 300px; padding:15px;">
+                                                    <div class="text-invest-future text-center" >
+                                                        <h1 style="font-size: 18px; text-align: center;"><?=Yii::t('app','Invest in the Future')?></h1>
 
-                                                    <?php
-                                                    echo Button::widget([ 'label' => Yii::t('app','Invest'),
-                                                        'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                            "data-toggle"=>"modal", "data-target"=>"#signin",
-                                                            'style' => 'color:white; border-color:#31C37D;'],]);
-                                                    ?>
-                                                </form>
+                                                            <?php
+                                                            echo Button::widget([ 'label' => Yii::t('app','Invest'),
+                                                                'options' => ['class' => 'btn btn-outline-success text-center info wow pulse animated',
+                                                                    "data-toggle"=>"modal", "data-target"=>"#signin",
+                                                                    'data-wow-delay' =>'300ms', 'data-wow-iteration' => 'infinite', 'data-wow-duration'=>'2s',
+                                                                    'style' => 'color:white; border-color:#31C37D;'],]);
+                                                            ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -1970,11 +1973,18 @@ position: absolute; right: 50%; bottom: 20px;">
                         var gradientFillTwo = ctxL2.createLinearGradient(0, 0, 1000, 0);
                         gradientFillTwo.addColorStop(0, \"rgba(17, 77, 49, 1)\");
                         gradientFillTwo.addColorStop(1, \"rgba(10,19,39, 0)\");
-
+                        
+                        var gradientFill = ctxL2.createLinearGradient(0, 0, 1300, 0);
+                        gradientFill.addColorStop(0, \"rgba(0, 255, 135 , 1)\");
+                        gradientFill.addColorStop(1, \"rgba(0, 255, 135 , 0.2)\");
+                        
+                        var d = new Date();
+                        var day = d.getDate() +'.'+d.getFullYear();
+                        
                         var myNewLineChart = new Chart(ctxL2, {
 					            type: 'line',
 					            data: {
-					                labels: [\"01.2017\", \"03.2017\", \"05.2017\", \"07.2017\", \"09.2017\",\"11.2017\",\"01.2018\",\"03.2018\",\"05.2018\"],
+					                labels: [\"01.2017\", \"03.2017\", \"05.2017\", \"07.2017\", \"09.2017\",\"11.2017\",\"01.2018\",\"03.2018\",\"05.2018\", day,'Future','','next week','','next year'],
 					                scaleLabel: false,
 					                datasets: [
 					                    {
@@ -1985,15 +1995,13 @@ position: absolute; right: 50%; bottom: 20px;">
 					                        pointStrokeColor: \"#00ff87\",
 					                        pointHighlightFill: \"#00ff87\",
 					                        pointHighlightStroke: \"rgba(0, 255, 135,1)\",
-					                        data: [0,40,30,60,75,55,85,110,144.5],
-                                            pointBackgroundColor: \"#00ff87\",
+					                        data: [0,40,30,60,75,55,85,110,144.5,140,130,180,175,185,190],
+                                            pointBackgroundColor: gradientFill,
                                             pointHoverBackgroundColor: \"#00ff87\",
                                             pointHoverBorderColor: \"#00ff87\",
 
 					                        backgroundColor: gradientFillTwo,
-					                    	borderColor: [
-					                        'rgba(0, 255, 135,1)'
-					                    	],
+					                    	borderColor: gradientFill,
 					                    	borderWidth: 1
 					                    }
 					                ]
@@ -2192,14 +2200,14 @@ position: absolute; right: 50%; bottom: 20px;">
                                                 elit, sed do eiusmod tempor incididunt ut labore et
                                                 dolore magna aliqua. Ut enim ad minim veniam,
                                                 quis nostrud exercitation ullamco laboris nisi ut </p>
-                                            <p><a href="#">
+                                            <p>
                                                     <?php
                                                     echo Button::widget([
                                                         'label' => Yii::t('app','Read more'),
                                                         'options' => ['class' => 'btn btn-success text-left'],
                                                     ]);
                                                     ?>
-                                                </a>
+
                                             </p>
                                         </div>
                                     </div>
@@ -2219,14 +2227,14 @@ position: absolute; right: 50%; bottom: 20px;">
                                                 elit, sed do eiusmod tempor incididunt ut labore et
                                                 dolore magna aliqua. Ut enim ad minim veniam,
                                                 quis nostrud exercitation ullamco laboris nisi ut </p>
-                                            <p><a href="#">
+                                            <p>
                                                     <?php
                                                     echo Button::widget([
                                                         'label' => Yii::t('app','Read more'),
                                                         'options' => ['class' => 'btn btn-success text-left'],
                                                     ]);
                                                     ?>
-                                                </a>
+
                                             </p>
                                         </div>
                                     </div>
@@ -2251,14 +2259,14 @@ position: absolute; right: 50%; bottom: 20px;">
                                                 elit, sed do eiusmod tempor incididunt ut labore et
                                                 dolore magna aliqua. Ut enim ad minim veniam,
                                                 quis nostrud exercitation ullamco laboris nisi ut </p>
-                                            <p><a href="#">
+                                            <p>
                                                     <?php
                                                     echo Button::widget([
                                                         'label' => Yii::t('app','Read more'),
                                                         'options' => ['class' => 'btn btn-success text-left'],
                                                     ]);
                                                     ?>
-                                                </a>
+
                                             </p>
                                         </div>
                                     </div>
@@ -2278,14 +2286,14 @@ position: absolute; right: 50%; bottom: 20px;">
                                                 elit, sed do eiusmod tempor incididunt ut labore et
                                                 dolore magna aliqua. Ut enim ad minim veniam,
                                                 quis nostrud exercitation ullamco laboris nisi ut </p>
-                                            <p><a href="#">
+                                            <p>
                                                     <?php
                                                     echo Button::widget([
                                                         'label' => Yii::t('app','Read more'),
                                                         'options' => ['class' => 'btn btn-success text-left'],
                                                     ]);
                                                     ?>
-                                                </a>
+
                                             </p>
                                         </div>
                                     </div>
