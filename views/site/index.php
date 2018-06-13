@@ -1977,11 +1977,10 @@ position: absolute; right: 50%; bottom: 20px;">
 
                                                 <input type="text" class="form-control"  required placeholder="Email" style=" width: 100%; margin: 15px auto;">
 
-                                                <textarea class="form-control" rows="5"  style="background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;" placeholder=<?=Yii::t('app','Write your message here...')?> style=" width: 100%; margin: 15px auto;"></textarea>
                                                 <?php
                                                 echo Button::widget([ 'label' => Yii::t('app','Invest'),
                                                     'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                        "data-toggle"=>"modal", "data-target"=>"#message-send",
+                                                        "data-toggle"=>"modal", "data-target"=>"#signin",
                                                         'style' => 'color:white; border-color:#31C37D;'],]);
                                                 ?>
                                             </form>
