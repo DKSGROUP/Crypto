@@ -462,3 +462,10 @@ textarea:focus{
     background-color: #fff !important;
     color:#000 !important;
 }
+
+
+@media screen and (max-width: 400px) {
+    div.button-in-bottom {
+        display: none;
+    }
+}

@@ -1940,10 +1940,11 @@ position: absolute; right: 50%; bottom: 20px;">
                                             <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
                                         </div>
                                         <div class="container">
-                                            <div class="row">
+                                            <div class="row d-none d-lg-block">
 
-                                            <div class="col-md-4 d-flex  align-items-center justify-content-end " style=" position: absolute;top: 50%;right: 0;">
                                                 <div class="back" style="background-color:rgba(0, 255, 135,0.3); border-radius: 4px; box-shadow: 0 0 20px rgba(0, 255, 135,0.1);width: 300px; padding:15px;">
+                                            <div class="col-md-4 button-in-bottom d-flex align-items-center justify-content-end " style=" position: absolute;top: 50%;right: 0;">
+                                                <div class="back" style="background-color:rgba(0, 255, 135,0.3);border-radius: 4px; box-shadow: 0 0 20px rgba(0, 255, 135,0.1);width: 300px; padding:15px;">
                                                     <div class="text-invest-future text-center" >
                                                         <h1 style="font-size: 18px; text-align: center;"><?=Yii::t('app','Invest in the Future')?></h1>
 
@@ -1958,6 +1959,21 @@ position: absolute; right: 50%; bottom: 20px;">
                                                 </div>
                                             </div>
 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12  d-none d-sm-block d-lg-none d-flex align-items-center justify-content-center">
+                                        <div class="back" style="background-color:rgba(0, 255, 135,0.3); border-radius: 4px; box-shadow: 0 0 20px rgba(0, 255, 135,0.1);width: 300px; padding:15px; margin: 0 auto;">
+                                            <div class="text-invest-future text-center" >
+                                                <h1 style="font-size: 18px; text-align: center;"><?=Yii::t('app','Invest in the Future')?></h1>
+
+                                                <?php
+                                                echo Button::widget([ 'label' => Yii::t('app','Invest'),
+                                                    'options' => ['class' => 'btn btn-outline-success text-center info wow pulse animated',
+                                                        "data-toggle"=>"modal", "data-target"=>"#signin",
+                                                        'data-wow-delay' =>'300ms', 'data-wow-iteration' => 'infinite', 'data-wow-duration'=>'2s',
+                                                        'style' => 'color:white; border-color:#31C37D;'],]);
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
