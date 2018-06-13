@@ -25,12 +25,7 @@ $this->title = 'Smart Crypto Invest';
 echo"<script language='javascript' src='../js/Chart.min.js'></script>";
 ?>
 
-<!--banner GRAM
-STATUS:-
 
-TO DO:
--
--->
 <div id="content"><a name="content" href="#content"></a></div>
 <div class="d-none d-lg-block">
     <aside id="aside1" class="animated fadeInLeft"  style="z-index:100000;">
@@ -50,19 +45,48 @@ TO DO:
                     <?=Yii::t('app','Buy')?>
                 </a>
             </div>
+        </div>
+    </aside>
+</div>
+
+<div class="d-none  d-xs-block d-sm-block d-md-block d-lg-none " style="position: fixed; bottom:0; z-index:1000000;  width: 100% !important; left:0;">
+    <aside id="aside" class="animated fadeInUp"  style="background: url(../img/gram/ban.png) no-repeat;    background-size: 100%;">
+
+        <div id="closeButton1" class="text-right" onclick="document.getElementById('aside').style.display='none'"><img src="../img/gram/group.png" style="pointer-events: all;"></div>
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-8 text-center text-white textt">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-9">
+                                <h4><?=Yii::t('app','You can buy ')?><b>GRAM</b></h4>
+                            </div>
+                            <div class="col-3">
+                                <div class="text text-center">
+                                    <?php
+                                    echo"<img src=\"../img/gram/elipse.png\"; class=\"elipse2\" style='width: 60px; height: 60px; margin: 0;'>";
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-4 butt">
+                    <a class="btn button-baner text-white" href="#" data-toggle="modal" data-target="#gram" data-dismiss="modal" style="margin-bottom:40px; margin-top: 10px; max-width:160px;">
+                        <?=Yii::t('app','Buy')?>
+                    </a>
+                </div>
+            </div>
+        </div>
     </aside>
 </div>
 
 
+
 <div class="site-index">
 
-<!--Site title
-STATUS: -
-
-TO DO:
--прилепить курс валют к сонтейнеру что бы тот не улетал в бок
-
--->
 
     <section class="title-text" style="z-index: 3;">
         <div class="container">
@@ -93,51 +117,51 @@ TO DO:
                     </div>
                 </div>
                 <div class="col-md-5 d-none d-sm-block ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="text text-center">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text text-center">
                                 <?php
-                                    echo"<img src=\"../img/main/handshake.png\" >";
+                                echo"<img src=\"../img/main/handshake.png\" >";
 
                                 ?>
                                 <p class="text-white"><?=Yii::t('app','Create account')?></p>
-                                </div>
-                            </div>
-                            <div class="col-6 position-relative">
-                                <div class="position-absolute" style="bottom: 0; left: 0;">
-                                    <?php
-                                    echo"<img src=\"../img/main/arrow-right.png\" class=\"animated fadeIn\" ;>";
-                                    ?>
-                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6 position-relative">
-                                <div class="position-absolute" style="bottom: 0; right: 0;">
-                                    <?php
-                                    echo"<img src=\"../img/main/arrow-left.png\"  class=\"animated fadeIn\";>";
-                                    ?>
-                                </div>
-                            </div>
-                            <div class="col-6 ">
-                                <div class="text text-center">
-                                    <?php
-                                    echo"<img src=\"../img/main/money.png\";>";
-                                    ?>
-                                    <p class="text-white"><?=Yii::t('app',' Invest ')?></p>
-                                </div>
+                        <div class="col-6 position-relative">
+                            <div class="position-absolute" style="bottom: 0; left: 0;">
+                                <?php
+                                echo"<img src=\"../img/main/arrow-right.png\" class=\"animated fadeIn\" ;>";
+                                ?>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="text text-center">
-                                    <?php
-                                    echo"<img src=\"../img/main/coins.png\";>";
-                                    ?>
-                                    <p class="text-white "><?=Yii::t('app','Make profits')?></p>
-                                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 position-relative">
+                            <div class="position-absolute" style="bottom: 0; right: 0;">
+                                <?php
+                                echo"<img src=\"../img/main/arrow-left.png\"  class=\"animated fadeIn\";>";
+                                ?>
                             </div>
                         </div>
+                        <div class="col-6 ">
+                            <div class="text text-center">
+                                <?php
+                                echo"<img src=\"../img/main/money.png\";>";
+                                ?>
+                                <p class="text-white"><?=Yii::t('app',' Invest ')?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text text-center">
+                                <?php
+                                echo"<img src=\"../img/main/coins.png\";>";
+                                ?>
+                                <p class="text-white "><?=Yii::t('app','Make profits')?></p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -298,7 +322,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfoStarter",
-                                             'style' => 'color:#31C37D; border-color:#31C37D;'],
+                                                'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
@@ -307,7 +331,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                         echo Button::widget([
                                             'label' =>Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                            'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
+                                                'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -358,7 +382,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfoStandart",
-                                            'style' => 'color:#31C37D; border-color:#31C37D;'],
+                                                'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
@@ -367,7 +391,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                        'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
+                                                'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -416,7 +440,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfoOptimal",
-                                            'style' => 'color:white; border-color:#31C37D;'],
+                                                'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
@@ -425,7 +449,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
-                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748); padding-left:10px; padding-right: 10px;',
+                                                'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748); padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -476,7 +500,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfoAdvanced",
-                                            'style' => 'color:white; border-color:#31C37D;'],
+                                                'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
@@ -485,7 +509,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
-                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748); padding-left:10px; padding-right: 10px;',
+                                                'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748); padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -532,7 +556,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfoPremium",
-                                            'style' => 'color:white; border-color:#31C37D;'],
+                                                'style' => 'color:white; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
@@ -541,7 +565,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-success text-center investr btn-invest-pro',
-                                        'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);padding-left:10px; padding-right: 10px;',
+                                                'style' => 'color:white;  background: linear-gradient(to bottom, #05AB5B, #048748);padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -592,7 +616,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfoBusiness",
-                                            'style' => 'color:#31C37D; border-color:#31C37D;'],
+                                                'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
@@ -601,7 +625,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                        'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
+                                                'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -647,7 +671,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                             'label' => Yii::t('app','More'),
                                             'options' => ['class' => 'btn btn-outline-success text-center info btn-invest-start',
                                                 "data-toggle"=>"modal", "data-target"=>"#ModalInfoExlusive",
-                                            'style' => 'color:#31C37D; border-color:#31C37D;'],
+                                                'style' => 'color:#31C37D; border-color:#31C37D;'],
                                         ]);
                                         ?></td>
                                     </div>
@@ -656,7 +680,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                         echo Button::widget([
                                             'label' => Yii::t('app','Invest'),
                                             'options' => ['class' => 'btn btn-outline-success text-center investr btn-invest-start',
-                                        'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
+                                                'style' => 'color:#31C37D; border-color:#31C37D;padding-left:10px; padding-right: 10px;',
                                                 "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
                                         ]);
                                         ?>
@@ -1036,7 +1060,7 @@ position: absolute; right: 50%; bottom: 20px;">
                                 </div>
 
                                 <div class="col-6 light">
-                                <p class="info-modal">60/40</p>
+                                    <p class="info-modal">60/40</p>
                                 </div>
                                 <!--Выплаты-->
                                 <div class="col-6 dark">
@@ -1522,28 +1546,28 @@ position: absolute; right: 50%; bottom: 20px;">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
-                      <?php
+                        <?php
                         echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"img-fluid mt-4\">";
-                       ?>
-                      <div class="text-center text-white">
-                        <p class="signin-text">Smart Crypto Invest</p>
-                      </div>
-                      <input class="data form-control" type="text" placeholder="E-mail" />
-                      <input class="data form-control" type="password" placeholder=<?=Yii::t('app','Password')?> />
+                        ?>
+                        <div class="text-center text-white">
+                            <p class="signin-text">Smart Crypto Invest</p>
+                        </div>
+                        <input class="data form-control" type="text" placeholder="E-mail" />
+                        <input class="data form-control" type="password" placeholder=<?=Yii::t('app','Password')?> />
 
-                      <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
-                      <a id="buttonInModal" class="btn button-signin text-white" href="#">
-                          <?=Yii::t('app','Sign in')?>
-                      </a>
-                      <a class="text-white" style="margin-bottom:40px; margin-top: 10px;"  data-toggle="modal" data-target="#recover-password" data-dismiss="modal">
-                          <?=Yii::t('app','Forgot password?')?>
-                      </a>
-                      <p class="text-white">
-                          <?=Yii::t('app','Do not have an account?')?>
-                    </p>
+                        <!-- ЮЛЯ, 2 ЧАСА НОЧИ, Я НЕ ЗНАЮ, ЧТО С ЭТИМИ ЛИНКАМИ ДЕЛАТЬ -->
+                        <a id="buttonInModal" class="btn button-signin text-white" href="#">
+                            <?=Yii::t('app','Sign in')?>
+                        </a>
+                        <a class="text-white" style="margin-bottom:40px; margin-top: 10px;"  data-toggle="modal" data-target="#recover-password" data-dismiss="modal">
+                            <?=Yii::t('app','Forgot password?')?>
+                        </a>
+                        <p class="text-white">
+                            <?=Yii::t('app','Do not have an account?')?>
+                        </p>
                         <a  id="closeButtonModal" class="enter btn btn-outline-success" href="#" data-toggle="modal" data-target="#signup" data-dismiss="modal" >
-                        <?=Yii::t('app','Sign up')?>
-                      </a>
+                            <?=Yii::t('app','Sign up')?>
+                        </a>
                     </div>
 
                 </div>
@@ -1591,9 +1615,9 @@ position: absolute; right: 50%; bottom: 20px;">
                         </div>
 
                         <input class="data form-control" type="text" placeholder="E-mail*" />
-                  <a id="buttonInModal" class="btn button-signup text-white" href="#" data-toggle="modal" data-target="#recover-password-two" data-dismiss="modal" style="margin-bottom:40px; margin-top: 10px;">
+                        <a id="buttonInModal" class="btn button-signup text-white" href="#" data-toggle="modal" data-target="#recover-password-two" data-dismiss="modal" style="margin-bottom:40px; margin-top: 10px;">
 
-                           <?=Yii::t('app','Reestablish')?>
+                            <?=Yii::t('app','Reestablish')?>
                         </a>
                     </div>
                 </div>
@@ -1636,24 +1660,24 @@ position: absolute; right: 50%; bottom: 20px;">
                         <?php
                         echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"img-fluid mt-4\">";
                         ?>
-                      <div class="text-center text-white">
-                        <p>Smart Crypto Invest</p>
-                      </div>
+                        <div class="text-center text-white">
+                            <p>Smart Crypto Invest</p>
+                        </div>
 
-                      <a class="btn btn-outline-success btn-recover2 mb-4" href="#">
-                       <?=Yii::t('app','The recovery instructions')?><br /><?=Yii::t('app','is sent to your e-mail')?>
-                      </a>
+                        <a class="btn btn-outline-success btn-recover2 mb-4" href="#">
+                            <?=Yii::t('app','The recovery instructions')?><br /><?=Yii::t('app','is sent to your e-mail')?>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
-    <!--YOU HAVE A QUESTION-->
-     <div class="modal fade" id="haveQuestion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-haveQuestion modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <?php
-                echo"<style>
+        <!--YOU HAVE A QUESTION-->
+        <div class="modal fade" id="haveQuestion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-haveQuestion modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <?php
+                    echo"<style>
                     .modal-recover{
                         max-width: 600px !important;
                     }
@@ -1680,34 +1704,34 @@ position: absolute; right: 50%; bottom: 20px;">
                     .button-question{
                       background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     }</style>"
-                ?>
-                <div class="question container-fluid d-flex flex-column justify-content-center align-items-center">
+                    ?>
+                    <div class="question container-fluid d-flex flex-column justify-content-center align-items-center">
 
-                    <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p><?=Yii::t('app','You have questions?')?></p>
-                        <p style="margin-top: -10px"><?=Yii::t('app','Write and we will reply shortly')?></p>
+                        <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
+                            <p><?=Yii::t('app','You have questions?')?></p>
+                            <p style="margin-top: -10px"><?=Yii::t('app','Write and we will reply shortly')?></p>
+                        </div>
+
+                        <input class="data form-control" type="text" placeholder="E-mail*" />
+                        <textarea class="form-control" rows="5" style="width: 290px !important;background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;"  placeholder=<?=Yii::t('app','Write your message here...')?> ></textarea>
+
+
+                        <a id="closeButton" class="btn button-question text-white" style="margin-bottom:40px; margin-top: 10px;" data-toggle="modal"
+                           data-target="#message-send" data-dismiss="modal">
+                            <?=Yii::t('app','Write to us')?>
+                        </a>
+
                     </div>
-
-                    <input class="data form-control" type="text" placeholder="E-mail*" />
-                    <textarea class="form-control" rows="5" style="width: 290px !important;background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;"  placeholder=<?=Yii::t('app','Write your message here...')?> ></textarea>
-
-
-                    <a id="closeButton" class="btn button-question text-white" style="margin-bottom:40px; margin-top: 10px;" data-toggle="modal"
-                       data-target="#message-send" data-dismiss="modal">
-                        <?=Yii::t('app','Write to us')?>
-                    </a>
-
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--GRAM-->
-    <div class="modal fade" id="gram" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-gram modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <?php
-                echo"<style>
+        <!--GRAM-->
+        <div class="modal fade" id="gram" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-gram modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <?php
+                    echo"<style>
                     .modal-recover{
                         max-width: 600px !important;
                     }
@@ -1734,213 +1758,213 @@ position: absolute; right: 50%; bottom: 20px;">
                     .button-gram{
                       background: linear-gradient(to bottom, #05AB5B, #05AB5B);
                     }</style>"
-                ?>
-                <div class="gram container-fluid d-flex flex-column justify-content-center align-items-center">
+                    ?>
+                    <div class="gram container-fluid d-flex flex-column justify-content-center align-items-center">
 
-                    <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
-                        <p><?=Yii::t('app','Want to buy GRAM?')?></p>
-                        <p style="margin-top: -10px"><?=Yii::t('app','Write your e-mail and we will get back to you soon as possible')?></p>
-                    </div>
+                        <div class="text-center text-white" style="font-size: 14px; text-align: center; margin: 5%">
+                            <p><?=Yii::t('app','Want to buy GRAM?')?></p>
+                            <p style="margin-top: -10px"><?=Yii::t('app','Write your e-mail and we will get back to you soon as possible')?></p>
+                        </div>
 
-                    <input class="data form-control" type="text" placeholder="E-mail*" />
-                    <a id="closeButton" class="btn button-gram text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#message-send" data-dismiss="modal">
-                        <?=Yii::t('app','Send')?>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Message Send-->
-    <div class="modal fade" id="message-send" tabindex="-1" role="dialog" aria-labelledby="message-send-modal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content" style="height: 150px; margin: 0 auto;">
-                <div class="modal-header" style="background-color:rgb(13,22,43);border:none;">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" style="color:white;">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center " style="padding : 25px; font-size: 30px; background-color:rgb(13,22,43); border:none;">
-                    <?=Yii::t('app','Message sent')?>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!--ADVANTEGES-->
-
-    <section class="advnateges  animated wow fadeIn" >
-        <div class="adv-caption">
-            <h1 style=" font-size: 22px;"><?=Yii::t('app','Advantages')?></h1>
-        </div>
-        <div class="adv-content">
-            <div class="row">
-                <div class="text-left col-sm-12 col-md-6 col-lg-4">
-                    <div class="plus">
-                        <div class="imgg">
-
-                            <?php
-                            echo"<img src=\"../img/advanteges/analis.svg\"; class=\"analis\">";
-                            ?>
-                        </div>
-                        <h5 class="text-left mincapt"><?=Yii::t('app','Accurate analysis')?></h5>
-                        <p><?=Yii::t('app','Our service specialises on cryptocurrencies purchase&sale, using precise trading strategies to deal bids according to  exchange rates')?></p>
-                    </div>
-                </div>
-                <div class="text-left col-sm-12 col-md-6 col-lg-4">
-                    <div class="plus">
-                        <div class="imgg">
-                            <?php
-                            echo"<img src=\"../img/advanteges/exchange.svg\"; class=\"analis\">";
-                            ?>
-                        </div>
-                        <h5 class="mincapt"><?=Yii::t('app','Multi-currency trading')?></h5>
-                        <p><?=Yii::t('app','SCI supports investment in Bitcoin as well as Ethereum allowing you to profit from exchange rate differencies')?></p>
-                    </div>
-                </div>
-                <div class="text-left col-sm-12 col-md-6 col-lg-4">
-                    <div class="plus">
-                        <div class="imgg">
-                            <?php
-                            echo"<img src=\"../img/advanteges/onlinebanking.svg\"; class=\"analis\">";
-                            ?>
-                        </div>
-                        <h5 class="mincapt"><?=Yii::t('app','Easy-to-use management')?></h5>
-                        <p><?=Yii::t('app','Give us API access only for trading purposes or choose trust management delegating funds control to us')?></p>
-                    </div>
-                </div>
-                <div class="text-left col-sm-12 col-md-6 col-lg-4">
-                    <div class="plus">
-                        <div class="imgg">
-                            <?php
-                            echo"<img src=\"../img/advanteges/cryptocurrency.svg\"; class=\"analis\">";
-                            ?>
-                        </div>
-                        <h5 class="mincapt"><?=Yii::t('app','Security')?></h5>
-                        <p><?=Yii::t('app','We provide safe protection of your financial operations and personal data from any uncensored access')?></p>
-                    </div>
-                </div>
-                <div class="text-left col-sm-12 col-md-6 col-lg-4">
-                    <div class="plus">
-                        <div class="imgg">
-                            <?php
-                            echo"<img src=\"../img/advanteges/time.svg\"; class=\"analis\">";
-                            ?>
-                        </div>
-                        <h5 class="mincapt"><?=Yii::t('app','Free time')?></h5>
-                        <p><?=Yii::t('app','Automated trading allows you to configure and start the system, saving your time and energy')?></p>
-                    </div>
-                </div>
-                <div class="text-left col-sm-12 col-md-6 col-lg-4">
-                    <div class="plus">
-                        <div class="imgg">
-                            <?php
-                            echo"<img src=\"../img/advanteges/operetions.svg\"; class=\"analis\">";
-                            ?>
-                        </div>
-                        <h5 class="text-left mincapt"><?=Yii::t('app','Operations transparency')?></h5>
-                        <p><?=Yii::t('app','Track your tradings’ profitability in the real-time, using our site’s financial reporting')?></p>
+                        <input class="data form-control" type="text" placeholder="E-mail*" />
+                        <a id="closeButton" class="btn button-gram text-white" href="#" style="margin-bottom:40px; margin-top: 10px;"data-toggle="modal" data-target="#message-send" data-dismiss="modal">
+                            <?=Yii::t('app','Send')?>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="report  animated wow fadeIn" style="margin-bottom: 50px;">
-        <!-- REPORTS -->
-        <div id="reporting"><a name="reporting" href="#reporting"></a></div>
-        <div class="container-fluid">
-            <div class="container text-center">
-                <div class="title">
-                    <h1 style=" font-size: 22px;"><?=Yii::t('app','Reporting')?></h1>
+        <!--Message Send-->
+        <div class="modal fade" id="message-send" tabindex="-1" role="dialog" aria-labelledby="message-send-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="height: 150px; margin: 0 auto;">
+                    <div class="modal-header" style="background-color:rgb(13,22,43);border:none;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color:white;">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center " style="padding : 25px; font-size: 30px; background-color:rgb(13,22,43); border:none;">
+                        <?=Yii::t('app','Message sent')?>
+                    </div>
+
                 </div>
+            </div>
+        </div>
+        <!--ADVANTEGES-->
+
+        <section class="advnateges  animated wow fadeIn" >
+            <div class="adv-caption">
+                <h1 style=" font-size: 22px;"><?=Yii::t('app','Advantages')?></h1>
+            </div>
+            <div class="adv-content">
                 <div class="row">
-                    <div class="col-md-6" style="margin-bottom: 35px;">
-                        <div class="report-title">
-                            <?=Yii::t('app','Trust management')?>
-                        </div>
-                        <div class="report-text">
-                            <?=Yii::t('app','When using trust management investor receives reports in the form of a downloadable document which contains detailed information about investor’s financial operations')?>
-                        </div>
-                        <div class="report-img">
-                            <?php
-                            echo"<img src=\"../img/reports/sheet.png\"; class=\"analis img-fluid\">";
-                            ?>
-                        </div>
-                        <div id="report-download-btn">
-                            <a href="../Report_2018_06.docx" download>
+                    <div class="text-left col-sm-12 col-md-6 col-lg-4">
+                        <div class="plus">
+                            <div class="imgg">
+
                                 <?php
-                                echo Button::widget([
-                                    'label' => Yii::t('app','Download reporting exam'),
-                                    'options' => ['class' => 'btn text-right',
-                                'style' => 'color:white; background: linear-gradient(to bottom, #05AB5B, #048748);'],
-                                ]);
+                                echo"<img src=\"../img/advanteges/analis.svg\"; class=\"analis\">";
                                 ?>
-                            </a>
+                            </div>
+                            <h5 class="text-left mincapt"><?=Yii::t('app','Accurate analysis')?></h5>
+                            <p><?=Yii::t('app','Our service specialises on cryptocurrencies purchase&sale, using precise trading strategies to deal bids according to  exchange rates')?></p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="report-title">
-                            <?=Yii::t('app','Trading via API')?>
+                    <div class="text-left col-sm-12 col-md-6 col-lg-4">
+                        <div class="plus">
+                            <div class="imgg">
+                                <?php
+                                echo"<img src=\"../img/advanteges/exchange.svg\"; class=\"analis\">";
+                                ?>
+                            </div>
+                            <h5 class="mincapt"><?=Yii::t('app','Multi-currency trading')?></h5>
+                            <p><?=Yii::t('app','SCI supports investment in Bitcoin as well as Ethereum allowing you to profit from exchange rate differencies')?></p>
                         </div>
-                        <div class="report-text">
-                            <?=Yii::t('app','If using API management investor can track his operations profits and exchange rate dynamics with the aid of a chart and a diagram in the personal account')?>
+                    </div>
+                    <div class="text-left col-sm-12 col-md-6 col-lg-4">
+                        <div class="plus">
+                            <div class="imgg">
+                                <?php
+                                echo"<img src=\"../img/advanteges/onlinebanking.svg\"; class=\"analis\">";
+                                ?>
+                            </div>
+                            <h5 class="mincapt"><?=Yii::t('app','Easy-to-use management')?></h5>
+                            <p><?=Yii::t('app','Give us API access only for trading purposes or choose trust management delegating funds control to us')?></p>
                         </div>
-                        <div class="report-img">
-                            <?php
-                            echo"<img src=\"../img/reports/report-graphs.png\"; class=\"analis img-fluid\">";
-                            ?>
+                    </div>
+                    <div class="text-left col-sm-12 col-md-6 col-lg-4">
+                        <div class="plus">
+                            <div class="imgg">
+                                <?php
+                                echo"<img src=\"../img/advanteges/cryptocurrency.svg\"; class=\"analis\">";
+                                ?>
+                            </div>
+                            <h5 class="mincapt"><?=Yii::t('app','Security')?></h5>
+                            <p><?=Yii::t('app','We provide safe protection of your financial operations and personal data from any uncensored access')?></p>
+                        </div>
+                    </div>
+                    <div class="text-left col-sm-12 col-md-6 col-lg-4">
+                        <div class="plus">
+                            <div class="imgg">
+                                <?php
+                                echo"<img src=\"../img/advanteges/time.svg\"; class=\"analis\">";
+                                ?>
+                            </div>
+                            <h5 class="mincapt"><?=Yii::t('app','Free time')?></h5>
+                            <p><?=Yii::t('app','Automated trading allows you to configure and start the system, saving your time and energy')?></p>
+                        </div>
+                    </div>
+                    <div class="text-left col-sm-12 col-md-6 col-lg-4">
+                        <div class="plus">
+                            <div class="imgg">
+                                <?php
+                                echo"<img src=\"../img/advanteges/operetions.svg\"; class=\"analis\">";
+                                ?>
+                            </div>
+                            <h5 class="text-left mincapt"><?=Yii::t('app','Operations transparency')?></h5>
+                            <p><?=Yii::t('app','Track your tradings’ profitability in the real-time, using our site’s financial reporting')?></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--RESULT-->
-        <div class="chart  wow animated fadeIn">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1 style=" font-size: 22px;"><?=Yii::t('app','Our results')?></h1>
+        </section>
+
+        <section class="report  animated wow fadeIn" style="margin-bottom: 50px;">
+            <!-- REPORTS -->
+            <div id="reporting"><a name="reporting" href="#reporting"></a></div>
+            <div class="container-fluid">
+                <div class="container text-center">
+                    <div class="title">
+                        <h1 style=" font-size: 22px;"><?=Yii::t('app','Reporting')?></h1>
                     </div>
+                    <div class="row">
+                        <div class="col-md-6" style="margin-bottom: 35px;">
+                            <div class="report-title">
+                                <?=Yii::t('app','Trust management')?>
+                            </div>
+                            <div class="report-text">
+                                <?=Yii::t('app','When using trust management investor receives reports in the form of a downloadable document which contains detailed information about investor’s financial operations')?>
+                            </div>
+                            <div class="report-img">
+                                <?php
+                                echo"<img src=\"../img/reports/sheet.png\"; class=\"analis img-fluid\">";
+                                ?>
+                            </div>
+                            <div id="report-download-btn">
+                                <a href="../Report_2018_06.docx" download>
+                                    <?php
+                                    echo Button::widget([
+                                        'label' => Yii::t('app','Download reporting exam'),
+                                        'options' => ['class' => 'btn text-right',
+                                            'style' => 'color:white; background: linear-gradient(to bottom, #05AB5B, #048748);'],
+                                    ]);
+                                    ?>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="report-title">
+                                <?=Yii::t('app','Trading via API')?>
+                            </div>
+                            <div class="report-text">
+                                <?=Yii::t('app','If using API management investor can track his operations profits and exchange rate dynamics with the aid of a chart and a diagram in the personal account')?>
+                            </div>
+                            <div class="report-img">
+                                <?php
+                                echo"<img src=\"../img/reports/report-graphs.png\"; class=\"analis img-fluid\">";
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--RESULT-->
+            <div class="chart  wow animated fadeIn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1 style=" font-size: 22px;"><?=Yii::t('app','Our results')?></h1>
+                        </div>
 
-                    <section class="result" style="width: 100%" >
+                        <section class="result" style="width: 100%" >
 
-                        <div class="container" style="position: relative;">
-                            <div class="row">
-                                <div id="chart2-text" class="col-lg-6 col-md-6 col-sm-7" style="top: 50px; font-size: 16px; line-height: 19px;">
-                                    <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
-                                </div>
-                                <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
-                                <div class="col-md-8">
-                                    <div class="chart-container">
-                                    <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
+                            <div class="container" style="position: relative;">
+                                <div class="row">
+                                    <div id="chart2-text" class="col-lg-6 col-md-6 col-sm-7" style="top: 50px; font-size: 16px; line-height: 19px;">
+                                        <p><?=Yii::t('app','According to statistics shown on this graph, financial operations give a stable 0.5-1% income a day. Thanks to that, an investment of 1BTC grew up to 144.5BTC due to precise trading strategies and market analysis')?></p>
                                     </div>
-                                </div>
-                                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                                    <div class="back" style="background-color:#111229; width: 400px; padding:20px;">
-                                        <div class="text-invest-future text-center" >
-                                            <h1 style="font-size: 18px; text-align: center;"><?=Yii::t('app','Invest in the Future')?></h1>
-                                            <form>
-                                                <input type="text" class="form-control"  required placeholder=<?=Yii::t('app','Name')?> style=" width: 100%; margin: 15px auto;">
+                                    <div class="col-md-6 col-sm-12" style="height: 10px;"></div>
+                                    <div class="col-md-8">
+                                        <div class="chart-container">
+                                            <canvas id="lineChartResult"  class="chartjs-render-monitor" style="padding-top: 20px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                        <div class="back" style="background-color:#111229; width: 400px; padding:20px;">
+                                            <div class="text-invest-future text-center" >
+                                                <h1 style="font-size: 18px; text-align: center;"><?=Yii::t('app','Invest in the Future')?></h1>
+                                                <form>
+                                                    <input type="text" class="form-control"  required placeholder=<?=Yii::t('app','Name')?> style=" width: 100%; margin: 15px auto;">
 
-                                                <input type="text" class="form-control"  required placeholder="Email" style=" width: 100%; margin: 15px auto;">
+                                                    <input type="text" class="form-control"  required placeholder="Email" style=" width: 100%; margin: 15px auto;">
 
-                                                <?php
-                                                echo Button::widget([ 'label' => Yii::t('app','Invest'),
-                                                    'options' => ['class' => 'btn btn-outline-success text-center info',
-                                                        "data-toggle"=>"modal", "data-target"=>"#signin",
-                                                        'style' => 'color:white; border-color:#31C37D;'],]);
-                                                ?>
-                                            </form>
+                                                    <?php
+                                                    echo Button::widget([ 'label' => Yii::t('app','Invest'),
+                                                        'options' => ['class' => 'btn btn-outline-success text-center info',
+                                                            "data-toggle"=>"modal", "data-target"=>"#signin",
+                                                            'style' => 'color:white; border-color:#31C37D;'],]);
+                                                    ?>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                    </section>
-                    <?php
-                    echo"<script language='javascript'>
+                        </section>
+                        <?php
+                        echo"<script language='javascript'>
                         var ctxL2 = document.getElementById(\"lineChartResult\").getContext('2d');
 
                         var gradientFillTwo = ctxL2.createLinearGradient(0, 0, 1000, 0);
@@ -2014,308 +2038,307 @@ position: absolute; right: 50%; bottom: 20px;">
 
 					        });
                         </script>";
-                    ?>
-                </div>
-            </div>
-        </div>
-        <!-- QUESTIONS -->
-        <div id="questions"><a name="questions" href="#questions"></a></div>
-        <div class="container" style="margin-top: 50px;">
-            <div class="title text-center"><?=Yii::t('app','Questions')?></div>
-            <div class="questions">
-                <div class="row d-flex align-items-center">
-                    <input class="hide" id="hd-1" type="checkbox">
-                    <label for="hd-1">
-                        <div class="row labe">
-                            <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
-                            ?>
-                            <?=Yii::t('app','Why Smart Crypto Invest?')?>
-                        </div>
-                    </label>
-                    <div>
-                        <div class="d-flex align-items-top ">
-                            <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
-                            ?>
-                            <p>
-                                <?=Yii::t('app','Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!')?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex align-items-center">
-                    <input class="hide" id="hd-2" type="checkbox">
-                    <label for="hd-2">
-                        <div class="row labe">
-                            <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
-                            ?>
-                            <?=Yii::t('app','Can I trust SCI?')?>
-                        </div>
-                    </label>
-                    <div>
-                        <div class="d-flex align-items-top">
-                            <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
-                            ?>
-                            <p>
-                                <?=Yii::t('app','You don’t have to worry about reliability of our trading – we guarantee full privacy and personal data protection, as well as profitability of financial operations accomplished with the aid of our service.')?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex align-items-center">
-                    <input class="hide" id="hd-3" type="checkbox">
-                    <label for="hd-3">
-                        <div class="row labe">
-                            <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
-                            ?>
-                            <?=Yii::t('app','How much income can I make?')?>
-                        </div>
-                    </label>
-                    <div>
-                        <div class="d-flex align-items-top">
-                            <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
-                            ?>
-                            <p>
-                                <?=Yii::t('app','Quantity of currency received depends on your investment package and the situation on the market. Increase your profits by using tariff plans most suitable for you and by regular monitoring of financial operations review!')?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex align-items-center">
-                    <input class="hide" id="hd-5" type="checkbox">
-                    <label for="hd-5">
-                        <div class="row labe">
-                            <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
-                            ?>
-                            <?=Yii::t('app','And what about security?')?>
-                        </div>
-                    </label>
-                    <div>
-                        <div class="d-flex align-items-top">
-                            <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
-                            ?>
-                            <p>
-                                <?=Yii::t('app','We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.')?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex align-items-center">
-                    <input class="hide" id="hd-6" type="checkbox">
-                    <label for="hd-6">
-                        <div class="row labe">
-                            <?php
-                            echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
-                            ?>
-                            <?=Yii::t('app','Is it easy to use SCI?')?>
-                        </div>
-                    </label>
-                    <div>
-                        <div class="d-flex align-items-top">
-                            <?php
-                            echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
-                            ?>
-                            <p>
-                                <?=Yii::t('app','Yes! For using our service you need only to sign up, choose your investment package – and receive income!')?>
-                            </p>
-                        </div>
+                        ?>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center">
+            <!-- QUESTIONS -->
+            <div id="questions"><a name="questions" href="#questions"></a></div>
+            <div class="container" style="margin-top: 50px;">
+                <div class="title text-center"><?=Yii::t('app','Questions')?></div>
+                <div class="questions">
+                    <div class="row d-flex align-items-center">
+                        <input class="hide" id="hd-1" type="checkbox">
+                        <label for="hd-1">
+                            <div class="row labe">
+                                <?php
+                                echo"<img for=\"hd-1\"; src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
+                                ?>
+                                <?=Yii::t('app','Why Smart Crypto Invest?')?>
+                            </div>
+                        </label>
+                        <div>
+                            <div class="d-flex align-items-top ">
+                                <?php
+                                echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
+                                ?>
+                                <p>
+                                    <?=Yii::t('app','Users need our service not only for profits increase, but also for time-saving. You can automatically deal financial operations in only a few clicks with our auto-trading!')?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <input class="hide" id="hd-2" type="checkbox">
+                        <label for="hd-2">
+                            <div class="row labe">
+                                <?php
+                                echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
+                                ?>
+                                <?=Yii::t('app','Can I trust SCI?')?>
+                            </div>
+                        </label>
+                        <div>
+                            <div class="d-flex align-items-top">
+                                <?php
+                                echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
+                                ?>
+                                <p>
+                                    <?=Yii::t('app','You don’t have to worry about reliability of our trading – we guarantee full privacy and personal data protection, as well as profitability of financial operations accomplished with the aid of our service.')?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <input class="hide" id="hd-3" type="checkbox">
+                        <label for="hd-3">
+                            <div class="row labe">
+                                <?php
+                                echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
+                                ?>
+                                <?=Yii::t('app','How much income can I make?')?>
+                            </div>
+                        </label>
+                        <div>
+                            <div class="d-flex align-items-top">
+                                <?php
+                                echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
+                                ?>
+                                <p>
+                                    <?=Yii::t('app','Quantity of currency received depends on your investment package and the situation on the market. Increase your profits by using tariff plans most suitable for you and by regular monitoring of financial operations review!')?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <input class="hide" id="hd-5" type="checkbox">
+                        <label for="hd-5">
+                            <div class="row labe">
+                                <?php
+                                echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
+                                ?>
+                                <?=Yii::t('app','And what about security?')?>
+                            </div>
+                        </label>
+                        <div>
+                            <div class="d-flex align-items-top">
+                                <?php
+                                echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
+                                ?>
+                                <p>
+                                    <?=Yii::t('app','We have made a great effort to ensure security of your trading operations  as it is possible to be. Data leak or hacker attack risks are minimized on our site. Furthermore, we are accustomed to the strict security standards, that is why we ensured an excellent trading security.')?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <input class="hide" id="hd-6" type="checkbox">
+                        <label for="hd-6">
+                            <div class="row labe">
+                                <?php
+                                echo"<img src=\"../img/questions/question.png\"; class=\"question-img d-none d-md-block\">";
+                                ?>
+                                <?=Yii::t('app','Is it easy to use SCI?')?>
+                            </div>
+                        </label>
+                        <div>
+                            <div class="d-flex align-items-top">
+                                <?php
+                                echo"<img for=\"hd-1\"; src=\"../img/questions/points.png\"; class='d-none d-md-block'; style=\"margin-right:35px;\">";
+                                ?>
+                                <p>
+                                    <?=Yii::t('app','Yes! For using our service you need only to sign up, choose your investment package – and receive income!')?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
                     <?php
                     echo Button::widget([
                         'label' => Yii::t('app','Any questions?'),
                         'options' => ['class' => 'btn btn-success text-right',
-                        "data-toggle"=>"modal", "data-target"=>"#haveQuestion",]
+                            "data-toggle"=>"modal", "data-target"=>"#haveQuestion",]
                     ]);
                     ?>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <div id="news"><a name="news" href="#news"></a></div>
-    <section class="news  animated wow fadeIn">
-        <div class="news-caption">
-            <span style=" font-size: 22px;"><?=Yii::t('app','News')?></span>
-        </div>
-        <div class="d-block">
-            <div id="news-carousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-1"></div>
-                            <div class="col-sm-12 col-md-5">
-                                <div class="news-img">
-                                    <?php
-                                    echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"First slide\">";
-                                    ?>
+        <div id="news"><a name="news" href="#news"></a></div>
+        <section class="news  animated wow fadeIn">
+            <div class="news-caption">
+                <span style=" font-size: 22px;"><?=Yii::t('app','News')?></span>
+            </div>
+            <div class="d-block">
+                <div id="news-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-sm-12 col-md-5">
+                                    <div class="news-img">
+                                        <?php
+                                        echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"First slide\">";
+                                        ?>
+                                    </div>
+                                    <div class="container">
+                                        <div class="carousel-caption text-left">
+                                            <h5>Джордж Сорос готов
+                                                торговать криптовалютами</h5>
+                                            <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                            <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et
+                                                dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut </p>
+                                            <p><a href="#">
+                                                    <?php
+                                                    echo Button::widget([
+                                                        'label' => Yii::t('app','Read more'),
+                                                        'options' => ['class' => 'btn btn-success text-left'],
+                                                    ]);
+                                                    ?>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="container">
-                                    <div class="carousel-caption text-left">
-                                        <h5>Джордж Сорос готов
-                                            торговать криптовалютами</h5>
-                                        <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit, sed do eiusmod tempor incididunt ut labore et
-                                            dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut </p>
-                                        <p><a href="#">
-                                                <?php
-                                                echo Button::widget([
-                                                    'label' => Yii::t('app','Read more'),
-                                                    'options' => ['class' => 'btn btn-success text-left'],
-                                                ]);
-                                                ?>
-                                            </a>
-                                        </p>
+                                <div class="d-none d-md-block col-md-5">
+                                    <div class="news-img">
+                                        <?php
+                                        echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"First slide\">";
+                                        ?>
+                                    </div>
+                                    <div class="container">
+                                        <div class="carousel-caption text-left">
+                                            <h5>Джордж Сорос готов
+                                                торговать криптовалютами</h5>
+                                            <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                            <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et
+                                                dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut </p>
+                                            <p><a href="#">
+                                                    <?php
+                                                    echo Button::widget([
+                                                        'label' => Yii::t('app','Read more'),
+                                                        'options' => ['class' => 'btn btn-success text-left'],
+                                                    ]);
+                                                    ?>
+                                                </a>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-none d-md-block col-md-5">
-                                <div class="news-img">
-                                    <?php
-                                    echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"First slide\">";
-                                    ?>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-sm-12 col-md-5">
+                                    <div class="news-img">
+                                        <?php
+                                        echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"Second slide\">";
+                                        ?>
+                                    </div>
+                                    <div class="container">
+                                        <div class="carousel-caption text-left">
+                                            <h5>Джордж Сорос готов
+                                                торговать криптовалютами</h5>
+                                            <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                            <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et
+                                                dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut </p>
+                                            <p><a href="#">
+                                                    <?php
+                                                    echo Button::widget([
+                                                        'label' => Yii::t('app','Read more'),
+                                                        'options' => ['class' => 'btn btn-success text-left'],
+                                                    ]);
+                                                    ?>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="container">
-                                    <div class="carousel-caption text-left">
-                                        <h5>Джордж Сорос готов
-                                            торговать криптовалютами</h5>
-                                        <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit, sed do eiusmod tempor incididunt ut labore et
-                                            dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut </p>
-                                        <p><a href="#">
-                                                <?php
-                                                echo Button::widget([
-                                                    'label' => Yii::t('app','Read more'),
-                                                    'options' => ['class' => 'btn btn-success text-left'],
-                                                ]);
-                                                ?>
-                                            </a>
-                                        </p>
+                                <div class="d-none d-md-block col-md-5">
+                                    <div class="news-img">
+                                        <?php
+                                        echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"Second slide\">";
+                                        ?>
+                                    </div>
+                                    <div class="container">
+                                        <div class="carousel-caption text-left">
+                                            <h5>Джордж Сорос готов
+                                                торговать криптовалютами</h5>
+                                            <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                            <p class="d-none d-lg-block" class="d-sm-hide">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et
+                                                dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut </p>
+                                            <p><a href="#">
+                                                    <?php
+                                                    echo Button::widget([
+                                                        'label' => Yii::t('app','Read more'),
+                                                        'options' => ['class' => 'btn btn-success text-left'],
+                                                    ]);
+                                                    ?>
+                                                </a>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-1"></div>
-                            <div class="col-sm-12 col-md-5">
-                                <div class="news-img">
-                                    <?php
-                                    echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-1.png\" alt=\"Second slide\">";
-                                    ?>
-                                </div>
-                                <div class="container">
-                                    <div class="carousel-caption text-left">
-                                        <h5>Джордж Сорос готов
-                                            торговать криптовалютами</h5>
-                                        <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit, sed do eiusmod tempor incididunt ut labore et
-                                            dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut </p>
-                                        <p><a href="#">
-                                                <?php
-                                                echo Button::widget([
-                                                    'label' => Yii::t('app','Read more'),
-                                                    'options' => ['class' => 'btn btn-success text-left'],
-                                                ]);
-                                                ?>
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-none d-md-block col-md-5">
-                                <div class="news-img">
-                                    <?php
-                                    echo"<img class=\"d-block img-fluid\" src=\"../img/news/news-2.png\" alt=\"Second slide\">";
-                                    ?>
-                                </div>
-                                <div class="container">
-                                    <div class="carousel-caption text-left">
-                                        <h5>Джордж Сорос готов
-                                            торговать криптовалютами</h5>
-                                        <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                        <p class="d-none d-lg-block" class="d-sm-hide">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit, sed do eiusmod tempor incididunt ut labore et
-                                            dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut </p>
-                                        <p><a href="#">
-                                                <?php
-                                                echo Button::widget([
-                                                    'label' => Yii::t('app','Read more'),
-                                                    'options' => ['class' => 'btn btn-success text-left'],
-                                                ]);
-                                                ?>
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="cooperation"><a name="cooperation" href="#cooperation"></a></div>
+        <section class="cooperation  animated wow fadeIn">
+            <div class="cooperation-caption text-center" style="padding-bottom: 30px;" >
+                <span style="font-size: 22px;"><?=Yii::t('app', 'Cooperation')?></span>
+            </div>
+            <div class="col-12 text-center">
+                <p>
+                    <?=Yii::t('app','On all questions of cooperation address on our e-mail: ')?>
+                </p>
+
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+
+                    <input type="text" class="form-control"  required placeholder="<?=Yii::t('app','Name')?>" style=" width: 65%; margin: 15px auto;">
+
+                    <input type="text" class="form-control"  required placeholder="Email" style=" width: 65%; margin: 15px auto;">
+
+                    <textarea class="form-control" rows="5" style="background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;"  placeholder=<?=Yii::t('app','Write your message here...')?> ></textarea>
+                    <div class="col-12 text-center">
+                        <?php
+                        echo Button::widget([
+                            'label' => Yii::t('app','Send'),
+                            'options' => ['class' => 'btn btn-outline-success text-center info',
+                                "data-toggle"=>"modal", "data-target"=>"#message-send",
+                                'style' => 'color:white; border-color:#31C37D;'],
+                        ]);
+                        ?>
                     </div>
+                    </form>
+
+
                 </div>
-                <a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-        </div>
-    </section>
-
-
-    <div id="cooperation"><a name="cooperation" href="#cooperation"></a></div>
-    <section class="cooperation  animated wow fadeIn">
-        <div class="cooperation-caption text-center" style="padding-bottom: 30px;" >
-            <span style="font-size: 22px;"><?=Yii::t('app', 'Cooperation')?></span>
-        </div>
-        <div class="col-12 text-center">
-            <p>
-                <?=Yii::t('app','On all questions of cooperation address on our e-mail: ')?>
-            </p>
-
-        </div>
-        <div class="col-md-12">
-            <div class="form-group">
-
-                <input type="text" class="form-control"  required placeholder="<?=Yii::t('app','Name')?>" style=" width: 65%; margin: 15px auto;">
-
-                <input type="text" class="form-control"  required placeholder="Email" style=" width: 65%; margin: 15px auto;">
-
-                <textarea class="form-control" rows="5" style="background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;"  placeholder=<?=Yii::t('app','Write your message here...')?> ></textarea>
-                <div class="col-12 text-center">
-                    <?php
-                    echo Button::widget([
-                        'label' => Yii::t('app','Send'),
-                        'options' => ['class' => 'btn btn-outline-success text-center info',
-                            "data-toggle"=>"modal", "data-target"=>"#message-send",
-                            'style' => 'color:white; border-color:#31C37D;'],
-                    ]);
-                    ?>
-                </div>
-                </form>
-
-
-            </div>
-        </div>
-
-    </section>
+        </section>
 </div>
