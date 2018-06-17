@@ -116,7 +116,7 @@ echo"<script language='javascript' src='../js/Chart.min.js'></script>";
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 d-none d-sm-block ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
+                <div class="col-md-5 d-none d-lg-block ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
                     <div class="row">
                         <div class="col-6">
                             <div class="text text-center">
@@ -168,7 +168,7 @@ echo"<script language='javascript' src='../js/Chart.min.js'></script>";
         </div>
     </section>
 
-    <section class="graph d-none d-md-block" style="z-index: 0;">
+    <section class="graph d-none d-lg-block" style="z-index: 0;">
         <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:0;"
                 class="chartjs-render-monitor"></canvas>
 
