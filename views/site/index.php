@@ -169,7 +169,7 @@ echo"<script language='javascript' src='../js/Chart.min.js'></script>";
     </section>
 
     <section class="graph d-none d-lg-block" style="z-index: 0;">
-        <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom:0;"
+        <canvas id="lineChart" style="display: block; width: 100%; height: 410px !important; position: absolute; bottom: -15px; "
                 class="chartjs-render-monitor"></canvas>
 
         <?php
@@ -267,7 +267,7 @@ echo"<script language='javascript' src='../js/Chart.min.js'></script>";
         ?>
     </section>
     <img class="poligon animated wow bounce d-none d-md-block" src="../img/main/Polygon.png" style="animation-duration: 3s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: bounce;
-position: absolute; right: 50%; bottom: 20px;">
+position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
 
     <div id="products"><a name="products" href="#products"></a></div>
     <section class="invest-packages " style="z-index: 3;">
