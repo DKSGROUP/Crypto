@@ -55,13 +55,13 @@ echo"<script language='javascript' src='../js/Chart.min.js'></script>";
         <div id="closeButton1" class="text-right" onclick="document.getElementById('aside').style.display='none'"><img src="../img/gram/group.png" style="pointer-events: all;"></div>
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
             <div class="row">
-                <div class="col-8 text-center text-white textt">
+                <div class="col-7 text-center text-white textt">
                     <div class="container">
                         <div class="row">
-                            <div class="col-9">
+                            <div class="col-7">
                                 <h4><?=Yii::t('app','You can buy ')?><b>GRAM</b></h4>
                             </div>
-                            <div class="col-3">
+                            <div class="col-5">
                                 <div class="text text-center">
                                     <?php
                                     echo"<img src=\"../img/gram/elipse.png\"; class=\"elipse2\" style='width: 60px; height: 60px; margin: 0;'>";
@@ -73,7 +73,7 @@ echo"<script language='javascript' src='../js/Chart.min.js'></script>";
 
 
                 </div>
-                <div class="col-4 butt">
+                <div class="col-5 butt">
                     <a class="btn button-baner text-white" href="#" data-toggle="modal" data-target="#gram" data-dismiss="modal" style="margin-bottom:40px; margin-top: 10px; max-width:160px;">
                         <?=Yii::t('app','Buy')?>
                     </a>
@@ -116,7 +116,7 @@ echo"<script language='javascript' src='../js/Chart.min.js'></script>";
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 d-none d-lg-block ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
+                <div class="col-md-5 d-none d-xl-block ellipse-main" style="padding-top:100px; padding-left:100px; z-index:999;">
                     <div class="row">
                         <div class="col-6">
                             <div class="text text-center">
