@@ -2237,7 +2237,7 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                                     
                                     
                                 </div>
-                        ',],]));?>-
+                        ',],]));?>
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                             <img src="http://placehold.it/250" class="img-fluid" alt="First slide">
                         </div>
