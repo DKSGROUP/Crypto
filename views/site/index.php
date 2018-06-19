@@ -2212,7 +2212,7 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                                 <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                     
                                     <div class="news-img">
-                                        <img class="img-fluid" src="{{image}}" alt="Image slide">;
+                                        <img class="img-fluid" src="{{image}}" alt="Image slide">
                                     </div>
 
                                     <div class="container">
