@@ -20,7 +20,8 @@
         "bower-asset/bootstrap": "4.0.0",
         "bower-asset/font-awesome": "4.*",
         "lajax/yii2-language-picker": "^1.2",
-        "codemix/yii2-localeurls": "^1.7"
+        "codemix/yii2-localeurls": "^1.7",
+        "nirvana-msu/yii2-instafeed": "1.0.*@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

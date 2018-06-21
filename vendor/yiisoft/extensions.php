@@ -60,10 +60,19 @@ return array (
   'codemix/yii2-localeurls' => 
   array (
     'name' => 'codemix/yii2-localeurls',
-    'version' => '1.7.0.0',
+    'version' => '1.7.1.0',
     'alias' => 
     array (
       '@codemix/localeurls' => $vendorDir . '/codemix/yii2-localeurls',
+    ),
+  ),
+  'nirvana-msu/yii2-instafeed' => 
+  array (
+    'name' => 'nirvana-msu/yii2-instafeed',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@nirvana/instafeed' => $vendorDir . '/nirvana-msu/yii2-instafeed',
     ),
   ),
 );
