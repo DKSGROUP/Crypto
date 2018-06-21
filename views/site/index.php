@@ -2190,88 +2190,8 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
         </section>
 
 
-        <div id="news"><a name="news" href="#news"></a></div>
-        <section class="news animated wow fadeIn">
-            <div class="news-caption">
-                <span style=" font-size: 22px;"><?=Yii::t('app','News')?></span>
-            </div>
-            <div class="d-block">
-                <div id="news-carousel" class="carousel multi slide" data-ride="carousel" data-itemcount-l="2" data-itemcount-m="2" data-itemcount-s="1">
-                    <div class="carousel-inner" id="instafeed" role="listbox">
-                        <?php
-                        echo (nirvana\instafeed\Instafeed::widget([
-                                'renderThumbnailDiv' => false,
-                                        'pluginOptions' => [
-                                            'get' => 'user',
-                                            'userId' => '5374080819',
-                                            'limit' => 12,
-                                            'resolution' => 'standard_resolution',
-                                            'accessToken' => '5374080819.1677ed0.8539b68579cb476eba73d40803da5170',
-                                            'sortBy' => 'most-recent',
-                                            'template' => '
-                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                    
-                                    <div class="news-img">
-                                        <img class="img-fluid" src="{{image}}" alt="Image slide">
-                                    </div>
-
-                                    <div class="container">
-                                        <div class="carousel-caption text-left">
-                                            <h5>{{caption}}</h5>
-                                            <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                            <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris nisi ut </p>
-                                            <p>
-                                            <!--button-->
-                                            <!--<?php
-                                                    echo Button::widget([
-                                                        \'label\' => Yii::t(\'app\',\'Read more\'),
-                                                        \'options\' => [\'class\' => \'btn btn-success text-left\'],
-                                                    ]);
-                                            ?>-->
-                                            </p>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                </div>
-                        ',],]));?>
-                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                            <img src="http://placehold.it/250" class="img-fluid" alt="First slide">
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                            <img src="http://placehold.it/250" class="img-fluid" alt="Second slide">
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                            <img src="http://placehold.it/250" class="img-fluid" alt="Third slide">
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                            <img src="http://placehold.it/250" class="img-fluid" alt="First slide">
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                            <img src="http://placehold.it/250" class="img-fluid" alt="Second slide">
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                            <img src="http://placehold.it/250" class="img-fluid" alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
         <script>
-            (function ($) {
+            function pageLoaded(){
                 function calcStepSize(optionNode) {
                     var breakM = 990;
                     var breakS = 768;
@@ -2332,8 +2252,81 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
 
                 });
 
-            }(jQuery));
+            }
         </script>
+
+        <div id="news"><a name="news" href="#news"></a></div>
+        <section class="news animated wow fadeIn">
+            <div class="news-caption">
+                <span style=" font-size: 22px;"><?=Yii::t('app','News')?></span>
+            </div>
+            <div class="d-block">
+                <div id="news-carousel" class="carousel multi slide" data-ride="carousel" data-itemcount-l="2" data-itemcount-m="2" data-itemcount-s="1">
+                    <div class="carousel-inner" id="instafeed" role="listbox">
+                        <?php
+                        echo (nirvana\instafeed\Instafeed::widget([
+                                        'renderThumbnailDiv' => false,
+                                        'pluginOptions' => [
+                                            'get' => 'user',
+                                            'userId' => '5374080819',
+                                            'limit' => 12,
+                                            'resolution' => 'standard_resolution',
+                                            'accessToken' => '5374080819.1677ed0.8539b68579cb476eba73d40803da5170',
+                                            'sortBy' => 'most-recent',
+                                            'template' => '
+                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                    
+                                    <div class="news-img">
+                                        <img class="img-fluid" src="{{image}}" alt="Image slide">
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="carousel-caption text-left">
+                                            <h5>{{caption}}</h5>
+                                            <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
+                                            <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et
+                                                dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut </p>
+                                            <p>
+                                            <!--button-->
+                                            <!--<?php
+                                                    echo Button::widget([
+                                                        \'label\' => Yii::t(\'app\',\'Read more\'),
+                                                        \'options\' => [\'class\' => \'btn btn-success text-left\'],
+                                                    ]);
+                                            ?>-->
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                            ',
+                                             'after' => new \yii\web\JsExpression("
+                                             function(){
+                                                var elem = document.getElementsByClassName(\"carousel-item\");
+                                                //elem[0].classList.add(\"active\");
+                                                pageLoaded();
+                                             }
+                                             "),
+                                            ],]));
+                        ?>
+                    </div>
+                    <a class="carousel-control-prev" href="#news-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#news-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
 
         <div id="cooperation"><a name="cooperation" href="#cooperation"></a></div>
         <section class="cooperation  animated wow fadeIn">
