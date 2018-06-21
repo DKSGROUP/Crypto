@@ -2282,21 +2282,8 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
 
                                     <div class="container">
                                         <div class="carousel-caption text-left">
-                                            <h5>{{caption}}</h5>
                                             <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                            <p class="d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit, sed do eiusmod tempor incididunt ut labore et
-                                                dolore magna aliqua. Ut enim ad minim veniam,
-                                                quis nostrud exercitation ullamco laboris nisi ut </p>
-                                            <p>
-                                            <!--button-->
-                                            <!--<?php
-                                                    echo Button::widget([
-                                                        \'label\' => Yii::t(\'app\',\'Read more\'),
-                                                        \'options\' => [\'class\' => \'btn btn-success text-left\'],
-                                                    ]);
-                                            ?>-->
-                                            </p>
+                                            <h5>{{caption}}</h5>
                                         </div>
                                     </div>
                                     
@@ -2322,6 +2309,16 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <a href="http://instagram.com">
+                <?php
+                echo Button::widget([
+                    'label' => Yii::t('app','Read more'),
+                    'options' => ['class' => 'btn btn-success text-right more-news-btn']
+                ]);
+                ?></a>
             </div>
         </section>
 
