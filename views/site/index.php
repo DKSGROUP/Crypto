@@ -2274,7 +2274,7 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                                             'accessToken' => '5374080819.1677ed0.8539b68579cb476eba73d40803da5170',
                                             'sortBy' => 'most-recent',
                                             'template' => '
-                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     
                                     <div class="news-img">
                                         <img class="img-fluid" src="{{image}}" alt="Image slide">
