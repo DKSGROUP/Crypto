@@ -9,6 +9,9 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\InsertForm;
+use app\models\Users;
+use app\models\MailerForm;
 
 class SiteController extends Controller
 {
@@ -61,7 +64,26 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = new InsertForm();
+        if($model->load(Yii::$app->request->post())){
+            if($model->save()){
+                Yii::$app->session->setFlash('Ok','Okay');
+                return $this->refresh();
+            }
+            else
+            {
+                Yii::$app->session->setFlash('error','nope');
+            }
+        }
+        $model1 = new MailerForm();
+        if ($model1->load(Yii::$app->request->post()) && $model1->sendEmail()) {
+            Yii::$app->session->setFlash('mailerFormSubmitted');
+            return $this->refresh();
+        }
+        return $this->render('index', [
+            'model' => $model,'model1' => $model1,
+        ]);
+
     }
 
     /**
@@ -81,11 +103,31 @@ class SiteController extends Controller
         }
 
         $model->password = '';
-        return $this->render('login', [
-            'model' => $model,
+        return $this->render('singin', ['model' => $model,
         ]);
     }
 
+      public function actionDatainsert()
+    {
+        $model = new InsertForm();
+         if($model->load(Yii::$app->request->post())){
+            if($model->save()){
+                Yii::$app->session->setFlash('Ok','Okay');
+                return $this->refresh();
+            }
+            else
+            {
+                Yii::$app->session->setFlash('error','nope');
+            } 
+         }
+         return $this->render('singup', [
+            'model' => $model,
+        ]);
+    }
+     public function actionDataoutput(){
+        $users = InsertForm::find()->all();
+       return $this->render('userslist',['users'=>$users]);
+    }
     /**
      * Logout action.
      *
@@ -125,4 +167,16 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-}
+
+     public function actionMailer()
+    {
+        $model = new MailerForm();
+        if ($model->load(Yii::$app->request->post()) && $model->sendEmail()) {
+            Yii::$app->session->setFlash('mailerFormSubmitted');
+            return $this->refresh();
+        }
+        return $this->render('mailer', [
+            'model' => $model,
+        ]);
+    }
+   }
