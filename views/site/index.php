@@ -6,6 +6,7 @@ use yii\bootstrap\Button;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
 
 AppAsset::register($this);
 
@@ -1438,10 +1439,12 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
 
 
 
-        <!--Modal SIGN UP-->
+         <!--Modal SIGN UP-->
         <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-signup modal-dialog-centered" style="transform: translate(0, -45%);top: 50%;margin: 0 auto;" role="document">
                 <div class="modal-content">
+
+
                     <?php
                     echo"<style>
                     .modal-signup{
@@ -1491,13 +1494,13 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                         <div class="text-center text-white">
                             <p class="signup-text">Smart Crypto Invest</p>
                         </div>
-                        <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Username*')?>  />
-                        <input class="data form-control" type="text" placeholder="E-mail*" />
-                        <input class="data form-control" type="password" placeholder=<?=Yii::t('app','Password*')?> />
-
-                        <a id="buttonInModal" class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
-                            <?=Yii::t('app','Sign up')?>
-                        </a>
+                        <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+                        <?= $form->field($model, 'username')->textInput(['autofocus' => true, 'placeholder' => 'Username*'])->label(false) ?>
+                        <?= $form->field($model, 'email')->textInput(['autofocus' => true, 'placeholder' => 'E-mail*'])->label(false) ?>
+                        <?= $form->field($model, 'password')->passwordInput()->textInput(['autofocus' => true, 'placeholder' => 'Password*'])->label(false)  ?>
+                        <div class="form-group">
+                    <?= Html::submitButton('Sign up', ['class' => 'btn button-signup text-white', 'name' => 'signup-button', 'style'=>'style="margin-bottom:40px; margin-top: 10px;']) ?>
+                </div>
                         <p class="text-white">
                             <?=Yii::t('app','Already have an account?')?>
                         </p>
@@ -1505,10 +1508,18 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                         <a  id="closeButtonModal"  class="enter btn btn-outline-success" style ="border-color:#31c37d; color :#31c37d;" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal" >
                             <?=Yii::t('app','Sign in')?>
                         </a>
+
+                </div>
+                        <?php ActiveForm::end(); ?>
+
                     </div>
+
                 </div>
             </div>
         </div>
+
+
+
         <!--Modal SIGN IN-->
         <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
             <div class="modal-dialog modal-signin modal-signup modal-dialog-centered" role="document">
@@ -1554,11 +1565,12 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                         <div class="text-center text-white">
                             <p class="signin-text">Smart Crypto Invest</p>
                         </div>
-                        <input class="data form-control" type="text" placeholder="E-mail" />
-                        <input class="data form-control" type="password" placeholder=<?=Yii::t('app','Password')?> />
-
-                        <a id="buttonInModal" class="btn button-signin text-white" href="#">
-                            <?=Yii::t('app','Sign in')?>
+                        <?php $form = ActiveForm::begin(['id' => 'form-signin']); ?>
+                        <?= $form->field($model, 'username')->textInput(['autofocus' => true, 'placeholder' => 'Username*'])->label(false) ?>
+                        <?= $form->field($model, 'password')->passwordInput()->textInput(['autofocus' => true, 'placeholder' => 'Password*'])->label(false)  ?>
+                        <div class="form-group">
+                        <?= Html::submitButton('Sign in', ['class' => 'btn button-signin text-white', 'name' => 'signin-button', 'style'=>'style="margin-bottom:40px; margin-top: 10px;']) ?>
+                        </div>
                         </a>
                         <a class="text-white" style="margin-bottom:40px; margin-top: 10px;"  data-toggle="modal" data-target="#recover-password" data-dismiss="modal">
                             <?=Yii::t('app','Forgot password?')?>
@@ -1570,7 +1582,7 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                             <?=Yii::t('app','Sign up')?>
                         </a>
                     </div>
-
+                    <?php ActiveForm::end(); ?>
                 </div>
             </div>
         </div>
@@ -2325,7 +2337,7 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
 
 
 
-        <div id="cooperation"><a name="cooperation" href="#cooperation"></a></div>
+      <div id="cooperation"><a name="cooperation" href="#cooperation"></a></div>
         <section class="cooperation  animated wow fadeIn">
             <div class="cooperation-caption text-center" style="padding-bottom: 30px;" >
                 <span style="font-size: 22px;"><?=Yii::t('app', 'Cooperation')?></span>
@@ -2355,6 +2367,57 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                         ?>
                     </div>
                     </form>
+
+
+                    <div class="site-contact">
+                        <h1><?= Html::encode($this->title) ?></h1>
+
+                        <?php if (Yii::$app->session->hasFlash('mailerFormSubmitted')) : ?>
+
+                            <div class="alert alert-success">
+            Your email has been sent
+        </div>
+
+                        <?php else : ?>
+
+                            <p>
+                                This form for sending email from anywhere to anywhere
+                            </p>
+
+                                <div class="col-md-12">
+
+                                    <?php $form = ActiveForm::begin(['id' => 'mailer-form']); ?>
+
+
+                                    <?= $form->field($model1, 'fromName')
+                                    ->textArea([ 'rows' => 1,'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
+                                    'autofocus' => true, 'placeholder' => 'Username'])->label(false) ?>
+                                    <?= $form->field($model1, 'fromEmail')
+                                    ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
+                                    'autofocus' => true, 'placeholder' => 'fromEmail'])->label(false) ?>
+
+                                    <?= $form->field($model1, 'toEmail')
+                                    ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
+                                    'autofocus' => true, 'placeholder' => 'Email'])->label(false) ?>
+
+                                    <?= $form->field($model1, 'subject')
+                                    ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
+                                    'autofocus' => true, 'placeholder' => 'Subject'])->label(false) ?>
+
+                                    <?= $form->field($model1, 'body')
+                                    ->textArea(['rows' => 5, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
+                                    'autofocus' => true, 'placeholder' => 'Write'])->label(false) ?>
+
+                                    <div class="form-group " style="text-align: center;">
+                        <?= Html::submitButton('Send', ['class' => 'btn btn-outline-success', 'name' => 'contact-button','style'=>'    
+                        padding: 0;height: 33px;padding-left: 25px;padding-right: 25px;color: white;border-color: #31C37D;margin-top: 5px;margin-bottom: 5px;']) ?>
+                    </div>
+
+                                    <?php ActiveForm::end(); ?>
+
+                                </div>
+                            </div>
+                        <?php endif; ?>
 
 
                 </div>
