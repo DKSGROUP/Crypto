@@ -2349,24 +2349,39 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
 
             </div>
             <div class="col-md-12">
-                <div class="form-group">
+                <div class="col-md-12">
 
-                    <input type="text" class="form-control"  required placeholder="<?=Yii::t('app','Name')?>" style=" width: 65%; margin: 15px auto;">
+                    <?php $form = ActiveForm::begin(['id' => 'mailer-form']); ?>
 
-                    <input type="text" class="form-control"  required placeholder="Email" style=" width: 65%; margin: 15px auto;">
 
-                    <textarea class="form-control" rows="5" style="background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;"  placeholder=<?=Yii::t('app','Write your message here...')?> ></textarea>
-                    <div class="col-12 text-center">
-                        <?php
-                        echo Button::widget([
-                            'label' => Yii::t('app','Send'),
-                            'options' => ['class' => 'btn btn-outline-success text-center info',
-                                "data-toggle"=>"modal", "data-target"=>"#message-send",
-                                'style' => 'color:white; border-color:#31C37D;'],
-                        ]);
-                        ?>
+                    <?= $form->field($model1, 'fromName')
+                        ->textArea([ 'rows' => 1,'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
+                            'autofocus' => true, 'placeholder' => 'Username'])->label(false) ?>
+                    <?= $form->field($model1, 'fromEmail')
+                        ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
+                            'autofocus' => true, 'placeholder' => 'fromEmail'])->label(false) ?>
+
+                    <?= $form->field($model1, 'toEmail')
+                        ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
+                            'autofocus' => true, 'placeholder' => 'toEmail'])->label(false) ?>
+
+                    <?= $form->field($model1, 'subject')
+                        ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
+                            'autofocus' => true, 'placeholder' => 'Subject'])->label(false) ?>
+
+                    <?= $form->field($model1, 'body')
+                        ->textArea(['rows' => 5, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
+                            'autofocus' => true, 'placeholder' => 'Write'])->label(false) ?>
+
+                    <div class="form-group " style="text-align: center;">
+                        <?= Html::submitButton('Send', ['class' => 'btn btn-outline-success', 'name' => 'contact-button','style'=>'    
+                        padding: 0;height: 33px;padding-left: 25px;padding-right: 25px;color: white;border-color: #31C37D;margin-top: 5px;margin-bottom: 5px;']) ?>
                     </div>
-                    </form>
+
+                    <?php ActiveForm::end(); ?>
+
+                </div>
+
 
 
                     <div class="site-contact">
@@ -2384,38 +2399,7 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                                 This form for sending email from anywhere to anywhere
                             </p>
 
-                                <div class="col-md-12">
 
-                                    <?php $form = ActiveForm::begin(['id' => 'mailer-form']); ?>
-
-
-                                    <?= $form->field($model1, 'fromName')
-                                    ->textArea([ 'rows' => 1,'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
-                                    'autofocus' => true, 'placeholder' => 'Username'])->label(false) ?>
-                                    <?= $form->field($model1, 'fromEmail')
-                                    ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
-                                    'autofocus' => true, 'placeholder' => 'fromEmail'])->label(false) ?>
-
-                                    <?= $form->field($model1, 'toEmail')
-                                    ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
-                                    'autofocus' => true, 'placeholder' => 'Email'])->label(false) ?>
-
-                                    <?= $form->field($model1, 'subject')
-                                    ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
-                                    'autofocus' => true, 'placeholder' => 'Subject'])->label(false) ?>
-
-                                    <?= $form->field($model1, 'body')
-                                    ->textArea(['rows' => 5, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
-                                    'autofocus' => true, 'placeholder' => 'Write'])->label(false) ?>
-
-                                    <div class="form-group " style="text-align: center;">
-                        <?= Html::submitButton('Send', ['class' => 'btn btn-outline-success', 'name' => 'contact-button','style'=>'    
-                        padding: 0;height: 33px;padding-left: 25px;padding-right: 25px;color: white;border-color: #31C37D;margin-top: 5px;margin-bottom: 5px;']) ?>
-                    </div>
-
-                                    <?php ActiveForm::end(); ?>
-
-                                </div>
                             </div>
                         <?php endif; ?>
 
