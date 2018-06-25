@@ -2357,17 +2357,9 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                     <?= $form->field($model1, 'fromName')
                         ->textArea([ 'rows' => 1,'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
                             'autofocus' => true, 'placeholder' => 'Username'])->label(false) ?>
-                    <?= $form->field($model1, 'fromEmail')
-                        ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
-                            'autofocus' => true, 'placeholder' => 'fromEmail'])->label(false) ?>
-
-                    <?= $form->field($model1, 'toEmail')
-                        ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
-                            'autofocus' => true, 'placeholder' => 'toEmail'])->label(false) ?>
-
                     <?= $form->field($model1, 'subject')
                         ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
-                            'autofocus' => true, 'placeholder' => 'Subject'])->label(false) ?>
+                            'autofocus' => true, 'placeholder' => 'Email'])->label(false) ?>
 
                     <?= $form->field($model1, 'body')
                         ->textArea(['rows' => 5, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
