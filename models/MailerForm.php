@@ -8,15 +8,15 @@ use yii\base\Model;
 class MailerForm extends Model
 {
     //public $fromEmail;
-    public $fromName;
+    public $Username;
     //public $toEmail;
-    public $subject;
-    public $body;
+    public $Email;
+    public $Write;
 
     public function rules()
     {
         return [
-            [[/*'fromEmail',*/ 'fromName', /*'toEmail',*/ 'subject', 'body'], 'required'],
+            [[/*'fromEmail',*/ 'Username', /*'toEmail',*/ 'Email', 'Write'], 'required'],
             //['fromEmail', 'email'],
             //['toEmail', 'email']
         ];
@@ -29,9 +29,9 @@ class MailerForm extends Model
                 //->setTo($this->toEmail)
                // ->setFrom([$this->fromEmail => $this->fromName])
                 ->setTo('')
-                ->setFrom(['' => $this->fromName])
-                ->setSubject($this->subject)
-                ->setTextBody($this->body)
+                ->setFrom(['' => $this->Username])
+                ->setSubject($this->Email)
+                ->setTextBody($this->Write)
                 ->send();
 
             return true;

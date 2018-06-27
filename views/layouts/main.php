@@ -129,7 +129,10 @@ AppAsset::register($this);
                 </a>
                 <a href="https://www.instagram.com/smart.crypto.invest/" target="_blank"><img src="../img/footer/instagram.png"; class="instagram" style="width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;">
                 </a>
-
+                    <a href="https://www.facebook.com/SCICrypto/" target="_blank"><img src="../img/footer/facebook.png"; class="instagram" style="width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;">
+                    </a>
+                    <a href="https://vk.com/scifund" target="_blank"><img src="../img/footer/vk.png"; class="vk" style="width : 37px; height: 37px; border-radius: 50%; margin: 0 3px;">
+                    </a>
 
             </div>
         </div>
