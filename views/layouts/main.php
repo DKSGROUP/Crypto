@@ -96,7 +96,7 @@ AppAsset::register($this);
         "data-toggle"=>"modal", "data-target"=>"#signup", "data-dismiss"=>"signin"],
         ]);
     ?>
-    ?>
+
 </div>
         <?php
     NavBar::end();

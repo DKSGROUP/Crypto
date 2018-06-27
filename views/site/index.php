@@ -2349,7 +2349,6 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
 
             </div>
             <div class="col-md-12">
-                <div class="col-md-12">
 
                     <?php $form = ActiveForm::begin(['id' => 'mailer-form']); ?>
 
@@ -2372,11 +2371,11 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
 
                     <?php ActiveForm::end(); ?>
 
-                </div>
 
 
 
-                    <div class="site-contact">
+
+                    <div class="site-contact" style="display: none">
                         <h1><?= Html::encode($this->title) ?></h1>
 
                         <?php if (Yii::$app->session->hasFlash('mailerFormSubmitted')) : ?>

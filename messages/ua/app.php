@@ -168,4 +168,5 @@ return[
     'verification every week'=>'звірка щотижня',
     'within the platform transfer of the profit to the fund'=>'всередині платформи переклад частки прибутку фонду',
     'by agreement (individual conditions)'=>'за домовленістю (індивідуальні умови)',
+    
 ];

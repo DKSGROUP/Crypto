@@ -469,3 +469,8 @@ textarea:focus{
         display: none;
     }
 }
+
+.text-danger{
+    color: #ff293d !important;
+    text-align: center !important;
+}
