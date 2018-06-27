@@ -124,7 +124,7 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
-     public function actionDataoutput(){
+     public function actionUserslist(){
         $users = InsertForm::find()->all();
        return $this->render('userslist',['users'=>$users]);
     }

@@ -24,8 +24,8 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-   <!--  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"> -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
 
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
@@ -146,7 +146,7 @@ AppAsset::register($this);
 </html>
 <?php $this->endPage() ?>
 
-<!-- <?php /*echo "
+<?php echo "
 
 <script type=\"text/javascript\" src=\"https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js\"></script>
 <script type=\"text/javascript\" src=\"https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js\"></script>
@@ -154,5 +154,5 @@ AppAsset::register($this);
  $(document).ready(function() {
         $('#example').DataTable();
 } );
- </script>"*/ ?> -->
+ </script>"?>
 
