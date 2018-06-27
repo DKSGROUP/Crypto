@@ -2280,24 +2280,19 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                                         'renderThumbnailDiv' => false,
                                         'pluginOptions' => [
                                             'get' => 'user',
-                                            'userId' => '5374080819',
+                                            'userId' => '7240258781',
                                             'limit' => 12,
                                             'resolution' => 'standard_resolution',
-                                            'accessToken' => '5374080819.1677ed0.8539b68579cb476eba73d40803da5170',
+                                            'accessToken' => '7240258781.1677ed0.e9fed38a40944cc18f1364abd0a9e3ed',
                                             'sortBy' => 'most-recent',
                                             'template' => '
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                     
+                                    <a href="{{link}}">
                                     <div class="news-img">
                                         <img class="img-fluid" src="{{image}}" alt="Image slide">
                                     </div>
-
-                                    <div class="container">
-                                        <div class="carousel-caption text-left">
-                                            <hr class="d-none d-lg-block" style="border-top: 2px solid #00A656; margin:5px 0px" width="18%">
-                                            <h5>{{caption}}</h5>
-                                        </div>
-                                    </div>
+                                    </a>
                                     
                                     
                                 </div>
@@ -2322,16 +2317,6 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                     </a>
                 </div>
             </div>
-
-            <div class="row d-flex justify-content-center">
-                <a href="http://instagram.com">
-                <?php
-                echo Button::widget([
-                    'label' => Yii::t('app','Read more'),
-                    'options' => ['class' => 'btn btn-success text-right more-news-btn']
-                ]);
-                ?></a>
-            </div>
         </section>
 
 
@@ -2349,18 +2334,19 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
 
             </div>
             <div class="col-md-12">
+                <div class="col-md-12">
 
                     <?php $form = ActiveForm::begin(['id' => 'mailer-form']); ?>
 
 
-                    <?= $form->field($model1, 'Username')
+                    <?= $form->field($model1, 'fromName')
                         ->textArea([ 'rows' => 1,'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
                             'autofocus' => true, 'placeholder' => 'Username'])->label(false) ?>
-                    <?= $form->field($model1, 'Email')
+                    <?= $form->field($model1, 'subject')
                         ->textArea([ 'rows' => 1, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
                             'autofocus' => true, 'placeholder' => 'Email'])->label(false) ?>
 
-                    <?= $form->field($model1, 'Write')
+                    <?= $form->field($model1, 'body')
                         ->textArea(['rows' => 5, 'style'=>'background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;width: 65%; margin: 15px auto;',
                             'autofocus' => true, 'placeholder' => 'Write'])->label(false) ?>
 
@@ -2371,7 +2357,7 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
 
                     <?php ActiveForm::end(); ?>
 
-
+                </div>
 
 
 
