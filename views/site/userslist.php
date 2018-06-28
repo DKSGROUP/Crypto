@@ -16,6 +16,7 @@ $this->title = 'Smart Crypto Invest';
         <th>username</th>
         <th>password</th>
         <th>email</th>
+        <th>dtime_registration</th>
     </tr>
     </thead>
     <tbody>
@@ -26,6 +27,7 @@ $this->title = 'Smart Crypto Invest';
         echo "<td>".$user->username. "</td>";
         echo "<td>".$user->password. "</td>";
         echo "<td>".$user->email. "</td>";
+        echo "<td>".$user->dtime_registration. "</td>";
         echo "</tr>";
     }
     ?>
