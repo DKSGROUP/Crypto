@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 28, 2018 at 09:38 AM
+-- Generation Time: Jun 28, 2018 at 09:50 AM
 -- Server version: 5.6.34-log
 -- PHP Version: 7.2.1
 
@@ -21,28 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `cryptousers`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `contactform`
---
-
-CREATE TABLE `contactform` (
-  `username` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `subject` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `body` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `verifyCode` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `contactform`
---
-
-INSERT INTO `contactform` (`username`, `email`, `subject`, `body`, `verifyCode`) VALUES
-('erg3', 'ere', 'reg', 'egr', 'erge'),
-('erg3', 'ere', 'reg', 'egr', 'erge');
+CREATE DATABASE IF NOT EXISTS `cryptousers` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `cryptousers`;
 
 -- --------------------------------------------------------
 
@@ -50,6 +30,7 @@ INSERT INTO `contactform` (`username`, `email`, `subject`, `body`, `verifyCode`)
 -- Table structure for table `users`
 --
 
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `userid` int(11) NOT NULL,
   `username` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
