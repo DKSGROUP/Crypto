@@ -5,11 +5,6 @@ use yii\db\ActiveRecord;
  
 class InsertForm extends ActiveRecord 
 {
-	/*public $Id;
-    public $Username;
-    public $Passwd;
-*/
-
 	public static function tableName(){
 		return 'users';
 	}
@@ -23,9 +18,20 @@ class InsertForm extends ActiveRecord
 	}
 	 	public function rules(){
  		return[
- 		 		[['username', 'password','email'], 'required'],
- 				 			];
-
+ 		 		[['username', 'password','email'], 'required'],];
  	}
-
+    // Метод, который будет вызываться до сохранения данных в БД
+//    public function beforeSave($insert)
+//    {
+//        if(parent::beforeSave())
+//        {
+//            if($this->isNewRecord)
+//            {
+//                // Время регистрации
+//                $this->dtime_registration = time();
+//            }
+//
+//            return true;
+//        }
+//    }
 }

@@ -16,8 +16,6 @@ $this->title = 'Smart Crypto Invest';
         <th>username</th>
         <th>password</th>
         <th>email</th>
-        <th>auth_key</th>
-        <th>access_token</th>
     </tr>
     </thead>
     <tbody>
@@ -28,8 +26,6 @@ $this->title = 'Smart Crypto Invest';
         echo "<td>".$user->username. "</td>";
         echo "<td>".$user->password. "</td>";
         echo "<td>".$user->email. "</td>";
-        echo "<td>".$user->auth_key. "</td>";
-        echo "<td>".$user->access_token. "</td>";
         echo "</tr>";
     }
     ?>

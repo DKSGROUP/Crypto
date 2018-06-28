@@ -1,6 +1,7 @@
 <?php
 
 namespace app\models;
+namespace yii\behaviors\TimestampBehavior;
 
 use Yii;
 
@@ -12,8 +13,10 @@ use Yii;
  * @property string $password
  * @property string $email
  */
+
 class Users extends \yii\db\ActiveRecord
 {
+
     
     public static function tableName()
     {
@@ -35,10 +38,25 @@ class Users extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'userid' => 'Userid',
             'username' => 'Username',
             'password' => 'Password',
             'email' => 'Email',
         ];
+    }
+    // Метод, который будет вызываться до сохранения данных в БД
+    public function beforeSave()
+    {
+        if(parent::beforeSave())
+        {
+            if($this->isNewRecord)
+            {
+                // Время регистрации
+                $this->dtime_registration = time();
+            }
+
+            return true;
+        }
+
+        return false;
     }
 }
