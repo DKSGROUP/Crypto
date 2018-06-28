@@ -40,9 +40,7 @@ h5,p{
     background-color: rgba(100, 100,100,0.0);
 }
 .news-img{
-    opacity: .45;
-    border-radius: 30px;/*не работает*/
-
+    border-radius: 30px;
 }
 .carousel-control-prev{
     right: 0%;
